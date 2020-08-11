@@ -1,0 +1,1161 @@
+components:
+  examples:
+    exampleQubecartAdminGetbyidPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          addressline1: 112/4
+          addressline2: Beleghata main road
+          admn_user_id: 6
+          city_name: Kolkata
+          contact_phone: '8335968075'
+          countries_name: India
+          email_id: sourav.mondal@msqube.com
+          name: sourav mondal
+          pin: 700010
+          states_name: West Bengal
+          user_status: 1
+          user_type: 1
+          user_type_name: Super Admin
+          username: sourav
+        exception: false
+      x-response-id: 0819c4c8-f568-468a-ac63-aef67a604107
+    exampleQubecartAdminLoginPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          address_id: 6
+          addressline1: 112/4
+          addressline2: Beleghata main road
+          admn_user_id: 6
+          city_name: Kolkata
+          contact_phone: '8335968075'
+          countries_name: India
+          email_id: sourav.mondal@msqube.com
+          firstname: sourav
+          lastname: mondal
+          pin: 700010
+          states_name: West Bengal
+          user_type_name: Super Admin
+          username: sourav
+        exception: false
+      x-response-id: fd089192-92e6-4c3a-91f7-147301bdfaf5
+    exampleQubecartAdminPartnerApprovePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: d5141d30-92e4-48ea-86e3-05e29d6b4d56
+    exampleQubecartAdminPartnerCreatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 0c219586-0858-44f0-bfca-1fcf7a38b48e
+    exampleQubecartAdminPartnerDetailsbyidPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          approval_status: 2
+          approval_status_name: Active
+          company_name: TEST2 company
+          contact_email: souravcristiano502@gmail.com
+          contact_person: null
+          contact_person_designation: Owner
+          contact_phone: '9073448330'
+          gst_numbers: ADF12456
+          pan: DHA1234
+          partner_address:
+            address_id: 18
+            address_type: null
+            addressline1: 112/4
+            addressline2: beleghata main road
+            city: 1
+            city_name: Kolkata
+            countries_name: India
+            country: 1
+            pin: 700010
+            state: 1
+            states_name: West Bengal
+          partner_address_id: 18
+          partner_bank_id: 2147483647
+          partner_category: 1
+          partner_code: TEST2
+          qc_partner_id: 10
+          stores:
+          - addressline1: 112/4
+            addressline2: Beleghata main road
+            city_name: Kolkata
+            countries_name: India
+            pin: 700010
+            qc_partner_id: 10
+            states_name: West Bengal
+            store_address_id: 6
+            store_category: 2
+            store_id: 1
+            store_image: store4.jpg
+            store_location: null
+            store_name: Adi Mohini Mohon Kanjilal
+            store_type_name: Garments
+          updated_on: '2020-08-03T09:10:11'
+        exception: false
+      x-response-id: 1edac995-c7e6-4531-9e28-4e804cbeecb3
+    exampleQubecartAdminPartnerGetallPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - approval_status: 1
+          approval_status_name: Added
+          company_name: TEST2 company
+          contact_email: souravcristiano502@gmail.com
+          contact_person: sourav2
+          contact_person_designation: Owner
+          contact_phone: '9073448330'
+          partner_code: TEST2
+          partner_name: TEST2 partner
+          partner_type: 1
+          qc_partner_id: 10
+          updated_on: '2020-08-03T09:10:11'
+        - approval_status: 2
+          approval_status_name: Active
+          company_name: TEST company
+          contact_email: souravcristiano502@gmail.com
+          contact_person: sourav
+          contact_person_designation: Owner
+          contact_phone: '9073448330'
+          partner_code: TEST
+          partner_name: TEST partner
+          partner_type: 1
+          qc_partner_id: 9
+          updated_on: null
+        exception: false
+      x-response-id: b116464b-bf97-4d69-a9af-de1eeb02b205
+    exampleQubecartSharedDomainPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - domain_code: 1
+          domain_data_type: string
+          domain_id: 2
+          domain_text: Added
+          domain_type: partner_status
+          domain_value: Added
+        - domain_code: 2
+          domain_data_type: string
+          domain_id: 3
+          domain_text: Active
+          domain_type: partner_status
+          domain_value: Active
+        - domain_code: 3
+          domain_data_type: string
+          domain_id: 4
+          domain_text: Inactive
+          domain_type: partner_status
+          domain_value: Inactive
+        - domain_code: 4
+          domain_data_type: string
+          domain_id: 5
+          domain_text: Not Approved
+          domain_type: partner_status
+          domain_value: Not Approved
+        exception: false
+      x-response-id: beaa3fda-81f1-462f-816e-a432bf3148dd
+    exampleQubecartSharedErrorframeworkGet200:
+      value:
+      - error_code: SE001
+        error_id: 1
+        error_message: Error Encountered. Please Try Again
+        level_of_severity: 3
+      - error_code: SE002
+        error_id: 2
+        error_message: Invalid Phone or Email
+        level_of_severity: 3
+      - error_code: BE001
+        error_id: 3
+        error_message: Invalid Username or Password
+        level_of_severity: 3
+      - error_code: BE002
+        error_id: 4
+        error_message: Sorry, Your request is not approved
+        level_of_severity: 3
+      - error_code: BE003
+        error_id: 5
+        error_message: User does not exists
+        level_of_severity: 3
+      - error_code: BE004
+        error_id: 6
+        error_message: Email or phone already exists
+        level_of_severity: 3
+      x-response-id: 9e252482-88d9-4c17-88de-147360fcc0c3
+    exampleQubecartSharedGetCityGet200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - city_code: '033'
+          city_id: 1
+          city_name: Kolkata
+        exception: false
+      x-response-id: 56c333b1-9003-4ea7-ba99-9aa53c45d6c6
+    exampleQubecartSharedGetCitystatecountryGet200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          cities:
+          - city_code: '033'
+            city_id: 1
+            city_name: Kolkata
+          countries:
+          - countries_code: IND
+            countries_id: 1
+            countries_name: India
+          states:
+          - states_code: WB
+            states_id: 1
+            states_name: West Bengal
+        exception: false
+      x-response-id: 714efd26-cdfd-4f5c-8053-89c6dd532ec9
+    exampleQubecartSharedGetCountriesGet200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - countries_code: IND
+          countries_id: 1
+          countries_name: India
+        exception: false
+      x-response-id: 54e96dde-be50-4725-b5f7-0b72110e2df7
+    exampleQubecartSharedGetStatesGet200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - states_code: WB
+          states_id: 1
+          states_name: West Bengal
+        exception: false
+      x-response-id: e5dc4836-3de4-4987-b665-6ad5df00c46e
+  schemas:
+    schemaQubecartAdminGetbyidPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            addressline1:
+              type: string
+            addressline2:
+              type: string
+            admn_user_id:
+              format: int32
+              type: integer
+            city_name:
+              type: string
+            contact_phone:
+              type: string
+            countries_name:
+              type: string
+            email_id:
+              type: string
+            name:
+              type: string
+            pin:
+              format: int32
+              type: integer
+            states_name:
+              type: string
+            user_status:
+              format: int32
+              type: integer
+            user_type:
+              format: int32
+              type: integer
+            user_type_name:
+              type: string
+            username:
+              type: string
+          required:
+          - admn_user_id
+          - user_type
+          - user_status
+          - username
+          - name
+          - contact_phone
+          - email_id
+          - addressline1
+          - addressline2
+          - pin
+          - city_name
+          - states_name
+          - countries_name
+          - user_type_name
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartAdminLoginPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            address_id:
+              format: int32
+              type: integer
+            addressline1:
+              type: string
+            addressline2:
+              type: string
+            admn_user_id:
+              format: int32
+              type: integer
+            city_name:
+              type: string
+            contact_phone:
+              type: string
+            countries_name:
+              type: string
+            email_id:
+              type: string
+            firstname:
+              type: string
+            lastname:
+              type: string
+            pin:
+              format: int32
+              type: integer
+            states_name:
+              type: string
+            user_type_name:
+              type: string
+            username:
+              type: string
+          required:
+          - admn_user_id
+          - username
+          - contact_phone
+          - email_id
+          - firstname
+          - lastname
+          - user_type_name
+          - address_id
+          - addressline1
+          - addressline2
+          - city_name
+          - states_name
+          - countries_name
+          - pin
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartAdminPartnerApprovePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartAdminPartnerCreatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartAdminPartnerDetailsbyidPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            approval_status:
+              format: int32
+              type: integer
+            approval_status_name:
+              type: string
+            company_name:
+              type: string
+            contact_email:
+              type: string
+            contact_person: {}
+            contact_person_designation:
+              type: string
+            contact_phone:
+              type: string
+            gst_numbers:
+              type: string
+            pan:
+              type: string
+            partner_address:
+              properties:
+                address_id:
+                  format: int32
+                  type: integer
+                address_type: {}
+                addressline1:
+                  type: string
+                addressline2:
+                  type: string
+                city:
+                  format: int32
+                  type: integer
+                city_name:
+                  type: string
+                countries_name:
+                  type: string
+                country:
+                  format: int32
+                  type: integer
+                pin:
+                  format: int32
+                  type: integer
+                state:
+                  format: int32
+                  type: integer
+                states_name:
+                  type: string
+              required:
+              - address_id
+              - addressline1
+              - addressline2
+              - pin
+              - city
+              - state
+              - country
+              - address_type
+              - city_name
+              - states_name
+              - countries_name
+              type: object
+            partner_address_id:
+              format: int32
+              type: integer
+            partner_bank_id:
+              format: int32
+              type: integer
+            partner_category:
+              format: int32
+              type: integer
+            partner_code:
+              type: string
+            qc_partner_id:
+              format: int32
+              type: integer
+            stores:
+              items:
+                properties:
+                  addressline1:
+                    type: string
+                  addressline2:
+                    type: string
+                  city_name:
+                    type: string
+                  countries_name:
+                    type: string
+                  pin:
+                    format: int32
+                    type: integer
+                  qc_partner_id:
+                    format: int32
+                    type: integer
+                  states_name:
+                    type: string
+                  store_address_id:
+                    format: int32
+                    type: integer
+                  store_category:
+                    format: int32
+                    type: integer
+                  store_id:
+                    format: int32
+                    type: integer
+                  store_image:
+                    type: string
+                  store_location: {}
+                  store_name:
+                    type: string
+                  store_type_name:
+                    type: string
+                required:
+                - store_id
+                - store_address_id
+                - store_name
+                - store_location
+                - store_category
+                - store_image
+                - qc_partner_id
+                - addressline1
+                - addressline2
+                - pin
+                - city_name
+                - states_name
+                - countries_name
+                - store_type_name
+                type: object
+              type: array
+            updated_on:
+              type: string
+          required:
+          - qc_partner_id
+          - partner_category
+          - partner_code
+          - approval_status
+          - approval_status_name
+          - company_name
+          - contact_phone
+          - contact_email
+          - contact_person
+          - contact_person_designation
+          - updated_on
+          - pan
+          - gst_numbers
+          - partner_bank_id
+          - partner_address_id
+          - partner_address
+          - stores
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartAdminPartnerGetallPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            allOf:
+            - properties:
+                approval_status:
+                  format: int32
+                  type: integer
+                approval_status_name:
+                  type: string
+                company_name:
+                  type: string
+                contact_email:
+                  type: string
+                contact_person:
+                  type: string
+                contact_person_designation:
+                  type: string
+                contact_phone:
+                  type: string
+                partner_code:
+                  type: string
+                partner_name:
+                  type: string
+                partner_type:
+                  format: int32
+                  type: integer
+                qc_partner_id:
+                  format: int32
+                  type: integer
+                updated_on:
+                  type: string
+              required:
+              - qc_partner_id
+              - partner_type
+              - partner_code
+              - partner_name
+              - approval_status
+              - approval_status_name
+              - company_name
+              - contact_phone
+              - contact_email
+              - contact_person
+              - contact_person_designation
+              - updated_on
+              type: object
+            - properties:
+                approval_status:
+                  format: int32
+                  type: integer
+                approval_status_name:
+                  type: string
+                company_name:
+                  type: string
+                contact_email:
+                  type: string
+                contact_person:
+                  type: string
+                contact_person_designation:
+                  type: string
+                contact_phone:
+                  type: string
+                partner_code:
+                  type: string
+                partner_name:
+                  type: string
+                partner_type:
+                  format: int32
+                  type: integer
+                qc_partner_id:
+                  format: int32
+                  type: integer
+                updated_on: {}
+              required:
+              - qc_partner_id
+              - partner_type
+              - partner_code
+              - partner_name
+              - approval_status
+              - approval_status_name
+              - company_name
+              - contact_phone
+              - contact_email
+              - contact_person
+              - contact_person_designation
+              - updated_on
+              type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartSharedDomainPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              domain_code:
+                format: int32
+                type: integer
+              domain_data_type:
+                type: string
+              domain_id:
+                format: int32
+                type: integer
+              domain_text:
+                type: string
+              domain_type:
+                type: string
+              domain_value:
+                type: string
+            required:
+            - domain_id
+            - domain_value
+            - domain_code
+            - domain_type
+            - domain_text
+            - domain_data_type
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartSharedErrorframeworkGet200:
+      items:
+        properties:
+          error_code:
+            type: string
+          error_id:
+            format: int32
+            type: integer
+          error_message:
+            type: string
+          level_of_severity:
+            format: int32
+            type: integer
+        required:
+        - error_id
+        - error_code
+        - error_message
+        - level_of_severity
+        type: object
+      type: array
+    schemaQubecartSharedGetCityGet200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              city_code:
+                type: string
+              city_id:
+                format: int32
+                type: integer
+              city_name:
+                type: string
+            required:
+            - city_id
+            - city_code
+            - city_name
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartSharedGetCitystatecountryGet200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            cities:
+              items:
+                properties:
+                  city_code:
+                    type: string
+                  city_id:
+                    format: int32
+                    type: integer
+                  city_name:
+                    type: string
+                required:
+                - city_id
+                - city_code
+                - city_name
+                type: object
+              type: array
+            countries:
+              items:
+                properties:
+                  countries_code:
+                    type: string
+                  countries_id:
+                    format: int32
+                    type: integer
+                  countries_name:
+                    type: string
+                required:
+                - countries_id
+                - countries_name
+                - countries_code
+                type: object
+              type: array
+            states:
+              items:
+                properties:
+                  states_code:
+                    type: string
+                  states_id:
+                    format: int32
+                    type: integer
+                  states_name:
+                    type: string
+                required:
+                - states_id
+                - states_code
+                - states_name
+                type: object
+              type: array
+          required:
+          - countries
+          - states
+          - cities
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartSharedGetCountriesGet200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              countries_code:
+                type: string
+              countries_id:
+                format: int32
+                type: integer
+              countries_name:
+                type: string
+            required:
+            - countries_id
+            - countries_name
+            - countries_code
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartSharedGetStatesGet200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              states_code:
+                type: string
+              states_id:
+                format: int32
+                type: integer
+              states_name:
+                type: string
+            required:
+            - states_id
+            - states_code
+            - states_name
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+info:
+  title: Qubecart_admin
+  version: 1.0.0
+openapi: 3.0.0
+paths:
+  /qubecart/admin/partner/getall/:
+    post:
+      description: '## Get all partners (requested)'
+      operationId: QubecartAdminPartnerGetallPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"requested\" : false\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"requested\" : true\n}"
+              x-response-id: adc759cc-f04a-4818-9247-22873534e090
+            - value: "{\n    \"requested\" : false\n}"
+              x-response-id: b116464b-bf97-4d69-a9af-de1eeb02b205
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Endpoint8001QubecartAdminPartnerGetall:
+                  $ref: '#/components/examples/exampleQubecartAdminPartnerGetallPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminPartnerGetallPost200'
+          description: '{{endpoint}}:8001/qubecart/admin/partner/getall/'
+      summary: GET ALL PARTNERS
+  /qubecart/admin/partner/approve/:
+    post:
+      description: '## Approve a requested partner'
+      operationId: QubecartAdminPartnerApprovePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
+                }"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
+                }"
+              x-response-id: d5141d30-92e4-48ea-86e3-05e29d6b4d56
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                ApprovePartner:
+                  $ref: '#/components/examples/exampleQubecartAdminPartnerApprovePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminPartnerApprovePost200'
+          description: APPROVE PARTNER
+      summary: APPROVE PARTNER
+  /qubecart/admin/partner/create/:
+    post:
+      description: '## Partner on boarding API'
+      operationId: QubecartAdminPartnerCreatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\"\
+                ,\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\"\
+                ,\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n\
+                \    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\"\
+                \ : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"\
+                billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\"\
+                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\"\
+                ,\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\"\
+                \ : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\"\
+                \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
+                country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
+                }"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\"\
+                ,\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\"\
+                ,\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n\
+                \    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\"\
+                \ : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"\
+                billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\"\
+                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\"\
+                ,\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\"\
+                \ : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\"\
+                \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
+                country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
+                }"
+              x-response-id: 0c219586-0858-44f0-bfca-1fcf7a38b48e
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                CreatePartner:
+                  $ref: '#/components/examples/exampleQubecartAdminPartnerCreatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminPartnerCreatePost200'
+          description: CREATE PARTNER
+      summary: CREATE PARTNER
+  /qubecart/shared/errorframework/:
+    get:
+      description: '## GET error framework '
+      operationId: QubecartSharedErrorframeworkGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                ErrorFramework:
+                  $ref: '#/components/examples/exampleQubecartSharedErrorframeworkGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartSharedErrorframeworkGet200'
+          description: ERROR FRAMEWORK
+      summary: ERROR FRAMEWORK
+  /qubecart/shared/domain/:
+    post:
+      description: '## Get domain by domain type'
+      operationId: QubecartSharedDomainPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"domain_type\" : \"partner_status\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"domain_type\" : \"partner_status\"\n}"
+              x-response-id: beaa3fda-81f1-462f-816e-a432bf3148dd
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Domain:
+                  $ref: '#/components/examples/exampleQubecartSharedDomainPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartSharedDomainPost200'
+          description: DOMAIN
+      summary: DOMAIN
+  /qubecart/admin/login/:
+    post:
+      description: '## Admin login API'
+      operationId: QubecartAdminLoginPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
+                \n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
+                \n}"
+              x-response-id: fd089192-92e6-4c3a-91f7-147301bdfaf5
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                AdminLogin:
+                  $ref: '#/components/examples/exampleQubecartAdminLoginPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminLoginPost200'
+          description: ADMIN LOGIN
+      summary: ADMIN LOGIN
+  /qubecart/shared/get/countries/:
+    get:
+      description: '## Get all countries'
+      operationId: QubecartSharedGetCountriesGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetCountries:
+                  $ref: '#/components/examples/exampleQubecartSharedGetCountriesGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartSharedGetCountriesGet200'
+          description: GET COUNTRIES
+      summary: GET COUNTRIES
+  /qubecart/shared/get/states/:
+    get:
+      description: '## Get all states'
+      operationId: QubecartSharedGetStatesGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAllStates:
+                  $ref: '#/components/examples/exampleQubecartSharedGetStatesGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartSharedGetStatesGet200'
+          description: GET ALL STATES
+      summary: GET ALL STATES
+  /qubecart/shared/get/city/:
+    get:
+      description: '## Get all cities'
+      operationId: QubecartSharedGetCityGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAllCities:
+                  $ref: '#/components/examples/exampleQubecartSharedGetCityGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartSharedGetCityGet200'
+          description: GET ALL CITIES
+      summary: GET ALL CITIES
+  /qubecart/shared/get/citystatecountry/:
+    get:
+      operationId: QubecartSharedGetCitystatecountryGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAllCitiesStatesCountries:
+                  $ref: '#/components/examples/exampleQubecartSharedGetCitystatecountryGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartSharedGetCitystatecountryGet200'
+          description: GET ALL CITIES STATES COUNTRIES
+      summary: GET ALL CITIES STATES COUNTRIES
+  /qubecart/admin/partner/detailsbyid/:
+    post:
+      description: '## Get partner details by id'
+      operationId: QubecartAdminPartnerDetailsbyidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 10\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 10\n}"
+              x-response-id: 1edac995-c7e6-4531-9e28-4e804cbeecb3
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetPartnerDetail:
+                  $ref: '#/components/examples/exampleQubecartAdminPartnerDetailsbyidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminPartnerDetailsbyidPost200'
+          description: GET PARTNER DETAIL
+      summary: GET PARTNER DETAIL
+  /qubecart/admin/getbyid/:
+    post:
+      description: '## Get admin details by id'
+      operationId: QubecartAdminGetbyidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"admn_user_id\" : 6\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"admn_user_id\" : 6\n}"
+              x-response-id: 0819c4c8-f568-468a-ac63-aef67a604107
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAdminDetail:
+                  $ref: '#/components/examples/exampleQubecartAdminGetbyidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminGetbyidPost200'
+          description: GET ADMIN DETAIL
+      summary: GET ADMIN DETAIL

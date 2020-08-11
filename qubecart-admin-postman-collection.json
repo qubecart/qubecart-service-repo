@@ -1,0 +1,1271 @@
+{
+	"info": {
+		"_postman_id": "da93f8fb-934c-4e5f-8558-2aa71476b50f",
+		"name": "Qubecart_admin",
+		"description": "## API collection for qubecart admin backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL PARTNERS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"requested\" : false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"partner",
+						"getall",
+						""
+					]
+				},
+				"description": "## Get all partners (requested)"
+			},
+			"response": [
+				{
+					"name": "GET ALL PARTNERS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requested\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"partner",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 Aug 2020 14:29:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "404"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requested\" : false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"partner",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 Aug 2020 14:31:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "732"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        },\n        {\n            \"qc_partner_id\": 9,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST\",\n            \"partner_name\": \"TEST partner\",\n            \"approval_status\": 2,\n            \"approval_status_name\": \"Active\",\n            \"company_name\": \"TEST company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "APPROVE PARTNER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/partner/approve/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"partner",
+						"approve",
+						""
+					]
+				},
+				"description": "## Approve a requested partner"
+			},
+			"response": [
+				{
+					"name": "APPROVE PARTNER",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/partner/approve/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"partner",
+								"approve",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 Aug 2020 14:35:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE PARTNER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\",\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\",\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\" : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\",\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\",\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\" : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/partner/create/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"partner",
+						"create",
+						""
+					]
+				},
+				"description": "## Partner on boarding API"
+			},
+			"response": [
+				{
+					"name": "CREATE PARTNER",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\",\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\",\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\" : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\",\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\",\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\" : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/partner/create/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"partner",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 04 Aug 2020 15:34:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "ERROR FRAMEWORK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "3.7.66.177:8001/qubecart/shared/errorframework/",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"shared",
+						"errorframework",
+						""
+					]
+				},
+				"description": "## GET error framework "
+			},
+			"response": [
+				{
+					"name": "ERROR FRAMEWORK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "3.7.66.177:8001/qubecart/shared/errorframework/",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"shared",
+								"errorframework",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 06 Aug 2020 08:03:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "632"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"error_id\": 1,\n        \"error_code\": \"SE001\",\n        \"error_message\": \"Error Encountered. Please Try Again\",\n        \"level_of_severity\": 3\n    },\n    {\n        \"error_id\": 2,\n        \"error_code\": \"SE002\",\n        \"error_message\": \"Invalid Phone or Email\",\n        \"level_of_severity\": 3\n    },\n    {\n        \"error_id\": 3,\n        \"error_code\": \"BE001\",\n        \"error_message\": \"Invalid Username or Password\",\n        \"level_of_severity\": 3\n    },\n    {\n        \"error_id\": 4,\n        \"error_code\": \"BE002\",\n        \"error_message\": \"Sorry, Your request is not approved\",\n        \"level_of_severity\": 3\n    },\n    {\n        \"error_id\": 5,\n        \"error_code\": \"BE003\",\n        \"error_message\": \"User does not exists\",\n        \"level_of_severity\": 3\n    },\n    {\n        \"error_id\": 6,\n        \"error_code\": \"BE004\",\n        \"error_message\": \"Email or phone already exists\",\n        \"level_of_severity\": 3\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "DOMAIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"domain_type\" : \"partner_status\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "3.7.66.177:8001/qubecart/shared/domain/",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"shared",
+						"domain",
+						""
+					]
+				},
+				"description": "## Get domain by domain type"
+			},
+			"response": [
+				{
+					"name": "DOMAIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"domain_type\" : \"partner_status\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "3.7.66.177:8001/qubecart/shared/domain/",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"shared",
+								"domain",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 06 Aug 2020 08:04:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "621"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"domain_id\": 2,\n            \"domain_value\": \"Added\",\n            \"domain_code\": 1,\n            \"domain_type\": \"partner_status\",\n            \"domain_text\": \"Added\",\n            \"domain_data_type\": \"string\"\n        },\n        {\n            \"domain_id\": 3,\n            \"domain_value\": \"Active\",\n            \"domain_code\": 2,\n            \"domain_type\": \"partner_status\",\n            \"domain_text\": \"Active\",\n            \"domain_data_type\": \"string\"\n        },\n        {\n            \"domain_id\": 4,\n            \"domain_value\": \"Inactive\",\n            \"domain_code\": 3,\n            \"domain_type\": \"partner_status\",\n            \"domain_text\": \"Inactive\",\n            \"domain_data_type\": \"string\"\n        },\n        {\n            \"domain_id\": 5,\n            \"domain_value\": \"Not Approved\",\n            \"domain_code\": 4,\n            \"domain_type\": \"partner_status\",\n            \"domain_text\": \"Not Approved\",\n            \"domain_data_type\": \"string\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ADMIN LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "3.7.66.177:8001/qubecart/admin/login/",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"login",
+						""
+					]
+				},
+				"description": "## Admin login API"
+			},
+			"response": [
+				{
+					"name": "ADMIN LOGIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "3.7.66.177:8001/qubecart/admin/login/",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 06 Aug 2020 12:06:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "394"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"username\": \"sourav\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"sourav.mondal@msqube.com\",\n        \"firstname\": \"sourav\",\n        \"lastname\": \"mondal\",\n        \"user_type_name\": \"Super Admin\",\n        \"address_id\": 6,\n        \"addressline1\": \"112/4\",\n        \"addressline2\": \"Beleghata main road\",\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"pin\": 700010\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET COUNTRIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/shared/get/countries/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"shared",
+						"get",
+						"countries",
+						""
+					]
+				},
+				"description": "## Get all countries"
+			},
+			"response": [
+				{
+					"name": "GET COUNTRIES",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/shared/get/countries/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"shared",
+								"get",
+								"countries",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Aug 2020 08:28:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "122"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"countries_id\": 1,\n            \"countries_name\": \"India\",\n            \"countries_code\": \"IND\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL STATES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/shared/get/states/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"shared",
+						"get",
+						"states",
+						""
+					]
+				},
+				"description": "## Get all states"
+			},
+			"response": [
+				{
+					"name": "GET ALL STATES",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/shared/get/states/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"shared",
+								"get",
+								"states",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Aug 2020 08:30:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"states_id\": 1,\n            \"states_code\": \"WB\",\n            \"states_name\": \"West Bengal\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL CITIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/shared/get/city/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"shared",
+						"get",
+						"city",
+						""
+					]
+				},
+				"description": "## Get all cities"
+			},
+			"response": [
+				{
+					"name": "GET ALL CITIES",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/shared/get/city/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"shared",
+								"get",
+								"city",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Aug 2020 08:31:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "109"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"city_id\": 1,\n            \"city_code\": \"033\",\n            \"city_name\": \"Kolkata\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL CITIES STATES COUNTRIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/shared/get/citystatecountry/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"shared",
+						"get",
+						"citystatecountry",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL CITIES STATES COUNTRIES",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/shared/get/citystatecountry/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"shared",
+								"get",
+								"citystatecountry",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Aug 2020 08:31:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "275"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"countries\": [\n            {\n                \"countries_id\": 1,\n                \"countries_name\": \"India\",\n                \"countries_code\": \"IND\"\n            }\n        ],\n        \"states\": [\n            {\n                \"states_id\": 1,\n                \"states_code\": \"WB\",\n                \"states_name\": \"West Bengal\"\n            }\n        ],\n        \"cities\": [\n            {\n                \"city_id\": 1,\n                \"city_code\": \"033\",\n                \"city_name\": \"Kolkata\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET PARTNER DETAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"qc_partner_id\" : 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/partner/detailsbyid/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"partner",
+						"detailsbyid",
+						""
+					]
+				},
+				"description": "## Get partner details by id"
+			},
+			"response": [
+				{
+					"name": "GET PARTNER DETAIL",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"qc_partner_id\" : 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/partner/detailsbyid/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"partner",
+								"detailsbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Aug 2020 11:41:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1052"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"qc_partner_id\": 10,\n        \"partner_category\": 1,\n        \"partner_code\": \"TEST2\",\n        \"approval_status\": 2,\n        \"approval_status_name\": \"Active\",\n        \"company_name\": \"TEST2 company\",\n        \"contact_phone\": \"9073448330\",\n        \"contact_email\": \"souravcristiano502@gmail.com\",\n        \"contact_person\": null,\n        \"contact_person_designation\": \"Owner\",\n        \"updated_on\": \"2020-08-03T09:10:11\",\n        \"pan\": \"DHA1234\",\n        \"gst_numbers\": \"ADF12456\",\n        \"partner_bank_id\": 2147483647,\n        \"partner_address_id\": 18,\n        \"partner_address\": {\n            \"address_id\": 18,\n            \"addressline1\": \"112/4\",\n            \"addressline2\": \"beleghata main road\",\n            \"pin\": 700010,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\"\n        },\n        \"stores\": [\n            {\n                \"store_id\": 1,\n                \"store_address_id\": 6,\n                \"store_name\": \"Adi Mohini Mohon Kanjilal\",\n                \"store_location\": null,\n                \"store_category\": 2,\n                \"store_image\": \"store4.jpg\",\n                \"qc_partner_id\": 10,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"Beleghata main road\",\n                \"pin\": 700010,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"store_type_name\": \"Garments\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ADMIN DETAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admn_user_id\" : 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/getbyid/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"getbyid",
+						""
+					]
+				},
+				"description": "## Get admin details by id"
+			},
+			"response": [
+				{
+					"name": "GET ADMIN DETAIL",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/getbyid/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"getbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Aug 2020 16:36:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"user_type\": 1,\n        \"user_status\": 1,\n        \"username\": \"sourav\",\n        \"name\": \"sourav mondal\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"sourav.mondal@msqube.com\",\n        \"addressline1\": \"112/4\",\n        \"addressline2\": \"Beleghata main road\",\n        \"pin\": 700010,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"user_type_name\": \"Super Admin\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "0a1178d3-a18c-43ab-8f8f-07a9fb6092c3",
+			"key": "base_url",
+			"value": "3.7.66.177"
+		},
+		{
+			"id": "8af60324-ddcd-4afa-900a-f0e129dbc832",
+			"key": "port",
+			"value": "8001"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
