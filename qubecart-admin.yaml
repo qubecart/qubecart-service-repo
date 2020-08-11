@@ -6,19 +6,19 @@ components:
         code: '001'
         data:
           addressline1: 112/4
-          addressline2: Beleghata main road
+          addressline2: Joke main road
           admn_user_id: 6
-          city_name: Kolkata
-          contact_phone: '8335968075'
+          city_name: Wonderland
+          contact_phone: '0000000000'
           countries_name: India
-          email_id: sourav.mondal@msqube.com
-          name: sourav mondal
+          email_id: Jon.Doe@dummy.com
+          name: Jon Doe
           pin: 700010
           states_name: West Bengal
           user_status: 1
           user_type: 1
           user_type_name: Super Admin
-          username: sourav
+          username: Jon
         exception: false
       x-response-id: 0819c4c8-f568-468a-ac63-aef67a604107
     exampleQubecartAdminLoginPost200:
@@ -28,18 +28,18 @@ components:
         data:
           address_id: 6
           addressline1: 112/4
-          addressline2: Beleghata main road
+          addressline2: Joke main road
           admn_user_id: 6
-          city_name: Kolkata
-          contact_phone: '8335968075'
+          city_name: Wonderland
+          contact_phone: '0000000000'
           countries_name: India
-          email_id: sourav.mondal@msqube.com
-          firstname: sourav
-          lastname: mondal
+          email_id: Jon.Doe@dummy.com
+          firstname: Jon
+          lastname: Doe
           pin: 700010
           states_name: West Bengal
           user_type_name: Super Admin
-          username: sourav
+          username: Jon
         exception: false
       x-response-id: fd089192-92e6-4c3a-91f7-147301bdfaf5
     exampleQubecartAdminPartnerApprovePost200:
@@ -62,19 +62,19 @@ components:
           approval_status: 2
           approval_status_name: Active
           company_name: TEST2 company
-          contact_email: souravcristiano502@gmail.com
+          contact_email: Joncristiano502@gmail.com
           contact_person: null
           contact_person_designation: Owner
-          contact_phone: '9073448330'
+          contact_phone: '0000000000'
           gst_numbers: ADF12456
           pan: DHA1234
           partner_address:
             address_id: 18
             address_type: null
             addressline1: 112/4
-            addressline2: beleghata main road
+            addressline2: Joke main road
             city: 1
-            city_name: Kolkata
+            city_name: Wonderland
             countries_name: India
             country: 1
             pin: 700010
@@ -87,8 +87,8 @@ components:
           qc_partner_id: 10
           stores:
           - addressline1: 112/4
-            addressline2: Beleghata main road
-            city_name: Kolkata
+            addressline2: Joke main road
+            city_name: Wonderland
             countries_name: India
             pin: 700010
             qc_partner_id: 10
@@ -111,10 +111,10 @@ components:
         - approval_status: 1
           approval_status_name: Added
           company_name: TEST2 company
-          contact_email: souravcristiano502@gmail.com
-          contact_person: sourav2
+          contact_email: Joncristiano502@gmail.com
+          contact_person: Jon2
           contact_person_designation: Owner
-          contact_phone: '9073448330'
+          contact_phone: '0000000000'
           partner_code: TEST2
           partner_name: TEST2 partner
           partner_type: 1
@@ -123,10 +123,10 @@ components:
         - approval_status: 2
           approval_status_name: Active
           company_name: TEST company
-          contact_email: souravcristiano502@gmail.com
-          contact_person: sourav
+          contact_email: Joncristiano502@gmail.com
+          contact_person: Jon
           contact_person_designation: Owner
-          contact_phone: '9073448330'
+          contact_phone: '0000000000'
           partner_code: TEST
           partner_name: TEST partner
           partner_type: 1
@@ -199,7 +199,7 @@ components:
         data:
         - city_code: '033'
           city_id: 1
-          city_name: Kolkata
+          city_name: Wonderland
         exception: false
       x-response-id: 56c333b1-9003-4ea7-ba99-9aa53c45d6c6
     exampleQubecartSharedGetCitystatecountryGet200:
@@ -210,7 +210,7 @@ components:
           cities:
           - city_code: '033'
             city_id: 1
-            city_name: Kolkata
+            city_name: Wonderland
           countries:
           - countries_code: IND
             countries_id: 1
@@ -948,12 +948,12 @@ paths:
                 ,\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\"\
                 ,\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n\
                 \    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"\
+                \ : \"0000000000\",\n    \"contact_person\" : \"Jon\",\n    \"\
                 billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\"\
-                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\"\
+                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"Jon.Doe@dummy.com\"\
                 ,\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\"\
                 \ : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\"\
-                \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
+                \ : \"Joke main road Wonderland\",\n    \"state_id\" : 1,\n    \"\
                 country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
                 }"
             schema:
@@ -963,12 +963,12 @@ paths:
                 ,\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\"\
                 ,\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n\
                 \    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"\
+                \ : \"0000000000\",\n    \"contact_person\" : \"Jon\",\n    \"\
                 billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\"\
-                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\"\
+                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"Jon.Doe@dummy.com\"\
                 ,\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\"\
                 \ : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\"\
-                \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
+                \ : \"Joke main road Wonderland\",\n    \"state_id\" : 1,\n    \"\
                 country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
                 }"
               x-response-id: 0c219586-0858-44f0-bfca-1fcf7a38b48e
@@ -1031,12 +1031,12 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
+              value: "{\n    \"username\" : \"Jon\",\n    \"password\" : \"1234\"\
                 \n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
+            - value: "{\n    \"username\" : \"Jon\",\n    \"password\" : \"1234\"\
                 \n}"
               x-response-id: fd089192-92e6-4c3a-91f7-147301bdfaf5
       responses:
