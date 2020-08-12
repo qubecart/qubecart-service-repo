@@ -1165,11 +1165,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/getbyid/",
+					"raw": "192.168.0.105:8000/qubecart/admin/getbyid/",
 					"host": [
-						"{{endpoint}}"
+						"192",
+						"168",
+						"0",
+						"105"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"qubecart",
 						"admin",
@@ -1195,11 +1198,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/getbyid/",
+							"raw": "192.168.0.105:8000/qubecart/admin/getbyid/",
 							"host": [
-								"{{endpoint}}"
+								"192",
+								"168",
+								"0",
+								"105"
 							],
-							"port": "8001",
+							"port": "8000",
 							"path": [
 								"qubecart",
 								"admin",
@@ -1214,11 +1220,11 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Mon, 10 Aug 2020 16:36:15 GMT"
+							"value": "Wed, 12 Aug 2020 13:16:22 GMT"
 						},
 						{
 							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.6.11"
+							"value": "WSGIServer/0.2 CPython/3.6.9"
 						},
 						{
 							"key": "Content-Type",
@@ -1238,19 +1244,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "391"
+							"value": "450"
 						},
 						{
 							"key": "X-Content-Type-Options",
 							"value": "nosniff"
-						},
-						{
-							"key": "Referrer-Policy",
-							"value": "same-origin"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"user_type\": 1,\n        \"user_status\": 1,\n        \"username\": \"sourav\",\n        \"name\": \"sourav mondal\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"sourav.mondal@msqube.com\",\n        \"addressline1\": \"112/4\",\n        \"addressline2\": \"Beleghata main road\",\n        \"pin\": 700010,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"user_type_name\": \"Super Admin\"\n    }\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"user_type\": 1,\n        \"user_status\": 1,\n        \"username\": \"sourav\",\n        \"firstname\": \"msqube\",\n        \"lastname\": \"Technologies\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"contact@msqube.com\",\n        \"addressline1\": \"pinnacle tower\",\n        \"addressline2\": \"chinar park\",\n        \"pin\": 700135,\n        \"city_id\": 1,\n        \"state_id\": 1,\n        \"country_id\": 1,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"user_type_name\": \"Super Admin\"\n    }\n}"
 				}
 			]
 		},
@@ -1501,16 +1503,388 @@
 					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE002\",\n                \"Message\": \"Invalid Username or Password\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "GET TEMPLATE BY CATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/getbycategory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"getbycategory",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET TEMPLATE BY CATEGORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/getbycategory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"getbycategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 13:17:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "426"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 1,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-12T12:22:57\",\n            \"item_name\": \"Rice\",\n            \"item_description\": null,\n            \"template_ref_no\": \"Grocery_001\",\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 2,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-12T12:22:57\",\n            \"item_name\": \"Musturd Oil\",\n            \"item_description\": null,\n            \"template_ref_no\": \"Grocery_001\",\n            \"category_name\": \"Grocery\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL TEMPLATE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.0.105:8000/qubecart/admin/template/getall/",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"105"
+					],
+					"port": "8000",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"getall",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL TEMPLATE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "192.168.0.105:8000/qubecart/admin/template/getall/",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"105"
+							],
+							"port": "8000",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 13:17:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "426"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 1,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-12T12:22:57\",\n            \"item_name\": \"Rice\",\n            \"item_description\": null,\n            \"template_ref_no\": \"Grocery_001\",\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 2,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-12T12:22:57\",\n            \"item_name\": \"Musturd Oil\",\n            \"item_description\": null,\n            \"template_ref_no\": \"Grocery_001\",\n            \"category_name\": \"Grocery\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE TEMPLATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : [\"T-shirt\", \"Shirt\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/create/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"create",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE TEMPLATE SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : [\"T-shirt\", \"Shirt\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/create/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 13:23:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				},
+				{
+					"name": "CREATE TEMPLATE EMPTY LIST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/create/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 13:23:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE006\",\n                \"Message\": \"Item list can not be empty\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "1c60896c-1fd4-48c9-a108-64c4d8b56e72",
+			"id": "02ff49e5-a5c5-4ab6-b1c7-46b7e84da974",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "bcf80d5e-05e9-4704-b054-1cd46e07bbf4",
+			"id": "5fd9854a-efdc-4c78-b8f2-4b1c97c1287c",
 			"key": "port",
 			"value": "8001"
 		}
