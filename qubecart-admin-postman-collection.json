@@ -1253,16 +1253,264 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"user_type\": 1,\n        \"user_status\": 1,\n        \"username\": \"sourav\",\n        \"name\": \"sourav mondal\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"sourav.mondal@msqube.com\",\n        \"addressline1\": \"112/4\",\n        \"addressline2\": \"Beleghata main road\",\n        \"pin\": 700010,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"user_type_name\": \"Super Admin\"\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "UPDATE ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/update/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"update",
+						""
+					]
+				},
+				"description": "## Update admin details"
+			},
+			"response": [
+				{
+					"name": "UPDATE ADMIN SUCCESSFUL",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/update/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 07:43:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				},
+				{
+					"name": "UPDATE ADMIN GENERIC ERROR",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/update/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 07:42:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "169"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "UPDATE ADMIN WRONG PASSWORD",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/update/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Aug 2020 07:41:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "162"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE002\",\n                \"Message\": \"Invalid Username or Password\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "0a1178d3-a18c-43ab-8f8f-07a9fb6092c3",
+			"id": "1c60896c-1fd4-48c9-a108-64c4d8b56e72",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "8af60324-ddcd-4afa-900a-f0e129dbc832",
+			"id": "bcf80d5e-05e9-4704-b054-1cd46e07bbf4",
 			"key": "port",
 			"value": "8001"
 		}
