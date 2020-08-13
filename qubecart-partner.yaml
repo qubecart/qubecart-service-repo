@@ -143,16 +143,16 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"partner_phone\" : \"9874319714\",\n    \"partner_email\"\
-                \ : \"souravmondal@msqube.com\",\n    \"partner_category\" : 1\n}"
+              value: "{\n    \"partner_phone\" : \"9999999999\",\n    \"partner_email\"\
+                \ : \"jondoe@dummy.com\",\n    \"partner_category\" : 1\n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"partner_phone\" : \"9874319714\",\n    \"partner_email\"\
-                \ : \"souravmondal@msqube.com\",\n    \"partner_category\" : 1\n}"
+            - value: "{\n    \"partner_phone\" : \"9999999999\",\n    \"partner_email\"\
+                \ : \"souravdoe@dummy.com\",\n    \"partner_category\" : 1\n}"
               x-response-id: 5310157e-b67f-4104-b209-eea109601925
-            - value: "{\n    \"partner_phone\" : \"9874319714\",\n    \"partner_email\"\
-                \ : \"souravmondal@msqube.com\",\n    \"partner_category\" : 1\n}"
+            - value: "{\n    \"partner_phone\" : \"9999999999\",\n    \"partner_email\"\
+                \ : \"souravdoe@dummy.com\",\n    \"partner_category\" : 1\n}"
               x-response-id: 6b4f01cd-c58d-4ba0-badb-e7ae6d7eb61b
       responses:
         '200':
@@ -210,15 +210,15 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
+              value: "{\n    \"username\" : \"souravdoe@dummy.com\",\n    \"password\"\
                 \ : \"1234\"\n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"username\" : \"9874319714\",\n    \"password\" : \"\
+            - value: "{\n    \"username\" : \"9999999999\",\n    \"password\" : \"\
                 1234\"\n}"
               x-response-id: bdbc0231-a464-4030-8b50-c6f16d6012e3
-            - value: "{\n    \"username\" : \"souravmondal#gmail.com\",\n    \"password\"\
+            - value: "{\n    \"username\" : \"souravdoe#gmail.com\",\n    \"password\"\
                 \ : \"1234\"\n}"
               x-response-id: 9bdf2357-4e84-4d4e-a29a-f245288bc176
             - value: "{\n    \"username\" : \"9874311714\",\n    \"pasword\" : \"\
