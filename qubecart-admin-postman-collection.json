@@ -1615,14 +1615,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "192.168.0.105:8000/qubecart/admin/template/getall/",
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/getall/",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"105"
+						"{{endpoint}}"
 					],
-					"port": "8000",
+					"port": "8001",
 					"path": [
 						"qubecart",
 						"admin",
@@ -1705,7 +1702,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : [\"T-shirt\", \"Shirt\"]\n}",
+					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : [{\"name\" : \"Vest\"}, {\"name\" : \"Jeans\"}]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1875,16 +1872,154 @@
 					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE006\",\n                \"Message\": \"Item list can not be empty\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "CHECK DUPLICATE ITEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item\" : \"rice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/checkduplicate/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"checkduplicate",
+						""
+					]
+				},
+				"description": "## Checks duplicate item in template"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ITEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"template_id\" : 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/deleteitem/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"deleteitem",
+						""
+					]
+				},
+				"description": "## Delete item from admin template "
+			},
+			"response": [
+				{
+					"name": "DELETE ITEM",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"template_id\" : 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/deleteitem/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"deleteitem",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 14 Aug 2020 06:05:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "02ff49e5-a5c5-4ab6-b1c7-46b7e84da974",
+			"id": "b7def715-9eb4-480c-ad2c-d4e725c6cf4d",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "5fd9854a-efdc-4c78-b8f2-4b1c97c1287c",
+			"id": "2d7a88c1-2eea-4f61-8edf-c1e26614442e",
 			"key": "port",
 			"value": "8001"
 		}

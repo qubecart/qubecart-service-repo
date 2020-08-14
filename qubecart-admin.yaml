@@ -24,7 +24,7 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: eb8e123c-9c23-4f96-a613-6438f5c2b171
+      x-response-id: 9235a742-f60d-40a4-ad82-8db221f0805a
     exampleQubecartAdminLoginPost200:
       value:
         Errors: null
@@ -45,19 +45,19 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: bbce1837-b3db-4f50-93b0-08b68e80171f
+      x-response-id: b85a97c9-ba84-41bb-8dc9-1bc539302d81
     exampleQubecartAdminPartnerApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: f6dd9116-7545-4e0a-8d6b-6d927d8b1113
+      x-response-id: c09f141e-2a8d-4457-8e6f-ec9f1bec8c75
     exampleQubecartAdminPartnerCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 376e1333-57ee-4d4e-b500-b6761b7678e9
+      x-response-id: ec8a4281-be24-456e-be99-fa3ed96b6c28
     exampleQubecartAdminPartnerDetailsbyidPost200:
       value:
         Errors: null
@@ -106,7 +106,7 @@ components:
             store_type_name: Garments
           updated_on: '2020-08-03T09:10:11'
         exception: false
-      x-response-id: f9125475-03b7-41de-af6e-a0c0b90f3bb9
+      x-response-id: 283f5141-925a-42da-996d-62a98ac8719f
     exampleQubecartAdminPartnerGetallPost200:
       value:
         Errors: null
@@ -137,7 +137,7 @@ components:
           qc_partner_id: 9
           updated_on: null
         exception: false
-      x-response-id: 476fe497-9627-47bd-a3ee-d55daff3d6b8
+      x-response-id: 49a6640b-55e5-45c8-9c29-a43c1a135073
     exampleQubecartAdminTemplateCreatePost200:
       value:
         Errors:
@@ -149,7 +149,13 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 9cab1ea5-2595-42e9-98e9-a277ecd2a1f4
+      x-response-id: 81769ef6-4675-4ebb-9696-d927fe6853a9
+    exampleQubecartAdminTemplateDeleteitemPost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 1b4c3eab-0227-4fca-aef1-248ae1acba5d
     exampleQubecartAdminTemplateGetallGet200:
       value:
         Errors: null
@@ -172,7 +178,7 @@ components:
           updated_by: 6
           updated_on: '2020-08-12T12:22:57'
         exception: false
-      x-response-id: b329d9e8-3c54-44ce-9d51-a4c67a5510e6
+      x-response-id: 3c48de4a-5be5-4946-85ac-13997270f0af
     exampleQubecartAdminTemplateGetbycategoryPost200:
       value:
         Errors: null
@@ -195,7 +201,7 @@ components:
           updated_by: 6
           updated_on: '2020-08-12T12:22:57'
         exception: false
-      x-response-id: 04a4a900-4eec-4b37-8419-4e5bb52a41fa
+      x-response-id: 812ec07e-c39c-4d37-a5e3-13b5e5a84b37
     exampleQubecartAdminUpdatePost200:
       value:
         Errors:
@@ -207,7 +213,7 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 93fb6d58-5626-4b1a-8855-a9018607eab0
+      x-response-id: 658b60be-75ee-440b-a7e5-ef660095e915
     exampleQubecartSharedDomainPost200:
       value:
         Errors: null
@@ -238,7 +244,7 @@ components:
           domain_type: partner_status
           domain_value: Not Approved
         exception: false
-      x-response-id: a47f7b1d-a570-4424-9179-fe0e0a64049e
+      x-response-id: 15f1fee6-0875-4d51-b313-ab7953e6c895
     exampleQubecartSharedErrorframeworkGet200:
       value:
       - error_code: SE001
@@ -265,7 +271,7 @@ components:
         error_id: 6
         error_message: Email or phone already exists
         level_of_severity: 3
-      x-response-id: f730dbab-4a84-4de1-af54-c9a8a36f0b5b
+      x-response-id: 2e3e6f70-7bd6-4802-a849-2eb00bb086ce
     exampleQubecartSharedGetCityGet200:
       value:
         Errors: null
@@ -275,7 +281,7 @@ components:
           city_id: 1
           city_name: Kolkata
         exception: false
-      x-response-id: 043808d9-c135-441c-a7aa-4b4466f2f16b
+      x-response-id: 90d6ab09-f298-4a21-b3af-4ee358e14f7d
     exampleQubecartSharedGetCitystatecountryGet200:
       value:
         Errors: null
@@ -294,7 +300,7 @@ components:
             states_id: 1
             states_name: West Bengal
         exception: false
-      x-response-id: 6f92e80e-2c7a-4bb6-b7d6-99871fd6928f
+      x-response-id: ab5aeacf-abc0-467d-a5d2-b7368081d696
     exampleQubecartSharedGetCountriesGet200:
       value:
         Errors: null
@@ -304,7 +310,7 @@ components:
           countries_id: 1
           countries_name: India
         exception: false
-      x-response-id: 02cf742a-bf16-4ffd-a9ef-a2775a777718
+      x-response-id: 0af3d726-8874-4934-b546-f4b086def423
     exampleQubecartSharedGetStatesGet200:
       value:
         Errors: null
@@ -314,7 +320,7 @@ components:
           states_id: 1
           states_name: West Bengal
         exception: false
-      x-response-id: 3b94768e-e393-4367-9c0e-109e779fbb47
+      x-response-id: 4fdfcfe4-0269-4eb9-bf0e-a6dae50b85f1
   schemas:
     schemaQubecartAdminGetbyidPost200:
       properties:
@@ -787,6 +793,19 @@ components:
       - exception
       - Errors
       type: object
+    schemaQubecartAdminTemplateDeleteitemPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
     schemaQubecartAdminTemplateGetallGet200:
       properties:
         Errors: {}
@@ -1156,9 +1175,9 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"requested\" : true\n}"
-              x-response-id: 5398f021-9372-4682-a5f7-0b4a15ceceed
+              x-response-id: 46dfa45c-daa5-4787-83b2-c149265c9529
             - value: "{\n    \"requested\" : false\n}"
-              x-response-id: 476fe497-9627-47bd-a3ee-d55daff3d6b8
+              x-response-id: 49a6640b-55e5-45c8-9c29-a43c1a135073
       responses:
         '200':
           content:
@@ -1185,7 +1204,7 @@ paths:
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
                 }"
-              x-response-id: f6dd9116-7545-4e0a-8d6b-6d927d8b1113
+              x-response-id: c09f141e-2a8d-4457-8e6f-ec9f1bec8c75
       responses:
         '200':
           content:
@@ -1232,7 +1251,7 @@ paths:
                 \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
                 country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
                 }"
-              x-response-id: 376e1333-57ee-4d4e-b500-b6761b7678e9
+              x-response-id: ec8a4281-be24-456e-be99-fa3ed96b6c28
       responses:
         '200':
           content:
@@ -1272,7 +1291,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"domain_type\" : \"partner_status\"\n}"
-              x-response-id: a47f7b1d-a570-4424-9179-fe0e0a64049e
+              x-response-id: 15f1fee6-0875-4d51-b313-ab7953e6c895
       responses:
         '200':
           content:
@@ -1299,7 +1318,7 @@ paths:
             x-link-response:
             - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
                 \n}"
-              x-response-id: bbce1837-b3db-4f50-93b0-08b68e80171f
+              x-response-id: b85a97c9-ba84-41bb-8dc9-1bc539302d81
       responses:
         '200':
           content:
@@ -1383,7 +1402,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10\n}"
-              x-response-id: f9125475-03b7-41de-af6e-a0c0b90f3bb9
+              x-response-id: 283f5141-925a-42da-996d-62a98ac8719f
       responses:
         '200':
           content:
@@ -1408,7 +1427,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 6\n}"
-              x-response-id: eb8e123c-9c23-4f96-a613-6438f5c2b171
+              x-response-id: 9235a742-f60d-40a4-ad82-8db221f0805a
       responses:
         '200':
           content:
@@ -1445,7 +1464,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 76bd7adc-75a2-4cfc-bd2d-b7d29dc5018e
+              x-response-id: 6631a552-7cba-4be5-b660-10c6ca0d58f4
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -1453,7 +1472,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\"\
                 \ : 1\n}"
-              x-response-id: 76e66e19-8c0c-4cd0-bc8e-4793fb497d15
+              x-response-id: 49ca6e83-3e30-4332-ab1d-bab9f1a402eb
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -1461,7 +1480,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 93fb6d58-5626-4b1a-8855-a9018607eab0
+              x-response-id: 658b60be-75ee-440b-a7e5-ef660095e915
       responses:
         '200':
           content:
@@ -1485,7 +1504,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"category\" : 1\n}"
-              x-response-id: 04a4a900-4eec-4b37-8419-4e5bb52a41fa
+              x-response-id: 812ec07e-c39c-4d37-a5e3-13b5e5a84b37
       responses:
         '200':
           content:
@@ -1519,16 +1538,16 @@ paths:
           '*/*':
             example:
               value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
-                \ \"items\" : [\"T-shirt\", \"Shirt\"]\n}"
+                \ \"items\" : [{\"name\" : \"Vest\"}, {\"name\" : \"Jeans\"}]\n}"
             schema:
               type: string
             x-link-response:
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : [\"T-shirt\", \"Shirt\"]\n}"
-              x-response-id: 6631dacc-3ebf-4521-be0b-40060a5c88e2
+              x-response-id: d1e31cb2-7230-4f72-a4a8-8f93d570af64
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : []\n}"
-              x-response-id: 9cab1ea5-2595-42e9-98e9-a277ecd2a1f4
+              x-response-id: 81769ef6-4675-4ebb-9696-d927fe6853a9
       responses:
         '200':
           content:
@@ -1540,3 +1559,44 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartAdminTemplateCreatePost200'
           description: CREATE TEMPLATE EMPTY LIST
       summary: CREATE TEMPLATE
+  /qubecart/admin/template/checkduplicate/:
+    post:
+      description: '## Checks duplicate item in template'
+      operationId: QubecartAdminTemplateCheckduplicatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"item\" : \"rice\"\n}"
+            schema:
+              type: string
+            x-link-response: []
+      responses:
+        '200':
+          description: ''
+      summary: CHECK DUPLICATE ITEM
+  /qubecart/admin/template/deleteitem/:
+    post:
+      description: '## Delete item from admin template '
+      operationId: QubecartAdminTemplateDeleteitemPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"template_id\" : 15\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"template_id\" : 15\n}"
+              x-response-id: 1b4c3eab-0227-4fca-aef1-248ae1acba5d
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                DeleteItem:
+                  $ref: '#/components/examples/exampleQubecartAdminTemplateDeleteitemPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminTemplateDeleteitemPost200'
+          description: DELETE ITEM
+      summary: DELETE ITEM
