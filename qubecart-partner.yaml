@@ -1,135 +1,3 @@
-components:
-  examples:
-    exampleQubecartPartnerGeneratecodePost200:
-      value:
-        Errors:
-          Business_Errors:
-          - Code: BE004
-            Message: Email or phone already exists
-          Info: []
-          System_Errors: []
-          Warnings: []
-        code: null
-        data: null
-        exception: true
-      x-response-id: 6b4f01cd-c58d-4ba0-badb-e7ae6d7eb61b
-    exampleQubecartPartnerLoginPost200:
-      value:
-        Errors:
-          Business_Errors:
-          - Code: BE003
-            Message: User does not exists
-          Info: []
-          System_Errors: []
-          Warnings: []
-        code: null
-        data: null
-        exception: true
-      x-response-id: aa0263ff-83d8-4884-964f-eb6c0a535d09
-    exampleQubecartPartnerSignupPost200:
-      value:
-        Errors: null
-        code: '001'
-        exception: false
-      x-response-id: cb92989b-244a-4efd-a9fe-509d5803a3ee
-  schemas:
-    schemaQubecartPartnerGeneratecodePost200:
-      properties:
-        Errors:
-          properties:
-            Business_Errors:
-              items:
-                properties:
-                  Code:
-                    type: string
-                  Message:
-                    type: string
-                required:
-                - Code
-                - Message
-                type: object
-              type: array
-            Info:
-              items: {}
-              type: array
-            System_Errors:
-              items: {}
-              type: array
-            Warnings:
-              items: {}
-              type: array
-          required:
-          - Info
-          - Business_Errors
-          - Warnings
-          - System_Errors
-          type: object
-        code: {}
-        data: {}
-        exception:
-          format: 'null'
-          type: boolean
-      required:
-      - code
-      - exception
-      - Errors
-      - data
-      type: object
-    schemaQubecartPartnerLoginPost200:
-      properties:
-        Errors:
-          properties:
-            Business_Errors:
-              items:
-                properties:
-                  Code:
-                    type: string
-                  Message:
-                    type: string
-                required:
-                - Code
-                - Message
-                type: object
-              type: array
-            Info:
-              items: {}
-              type: array
-            System_Errors:
-              items: {}
-              type: array
-            Warnings:
-              items: {}
-              type: array
-          required:
-          - Info
-          - Business_Errors
-          - Warnings
-          - System_Errors
-          type: object
-        code: {}
-        data: {}
-        exception:
-          format: 'null'
-          type: boolean
-      required:
-      - code
-      - exception
-      - Errors
-      - data
-      type: object
-    schemaQubecartPartnerSignupPost200:
-      properties:
-        Errors: {}
-        code:
-          type: string
-        exception:
-          format: 'null'
-          type: boolean
-      required:
-      - code
-      - exception
-      - Errors
-      type: object
 info:
   title: Qubeacart_partner
   version: 1.0.0
@@ -143,27 +11,14 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"partner_phone\" : \"9999999999\",\n    \"partner_email\"\
-                \ : \"jondoe@dummy.com\",\n    \"partner_category\" : 1\n}"
+              value: "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\"\
+                \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
             schema:
               type: string
-            x-link-response:
-            - value: "{\n    \"partner_phone\" : \"9999999999\",\n    \"partner_email\"\
-                \ : \"souravdoe@dummy.com\",\n    \"partner_category\" : 1\n}"
-              x-response-id: 5310157e-b67f-4104-b209-eea109601925
-            - value: "{\n    \"partner_phone\" : \"9999999999\",\n    \"partner_email\"\
-                \ : \"souravdoe@dummy.com\",\n    \"partner_category\" : 1\n}"
-              x-response-id: 6b4f01cd-c58d-4ba0-badb-e7ae6d7eb61b
+            x-link-response: []
       responses:
         '200':
-          content:
-            application/json:
-              examples:
-                GeneratePartnerCode2:
-                  $ref: '#/components/examples/exampleQubecartPartnerGeneratecodePost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerGeneratecodePost200'
-          description: GENERATE PARTNER CODE 2
+          description: ''
       summary: GENERATE PARTNER CODE
   /qubecart/partner/signup/:
     post:
@@ -182,25 +37,10 @@ paths:
                 \ : \"asdf12345\"\n}"
             schema:
               type: string
-            x-link-response:
-            - value: "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\"\
-                \ : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\"\
-                ,\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"\
-                700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n  \
-                \  \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"\
-                stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\"\
-                \ : \"asdf12345\"\n}"
-              x-response-id: cb92989b-244a-4efd-a9fe-509d5803a3ee
+            x-link-response: []
       responses:
         '200':
-          content:
-            application/json:
-              examples:
-                PartnerCreate:
-                  $ref: '#/components/examples/exampleQubecartPartnerSignupPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerSignupPost200'
-          description: PARTNER CREATE
+          description: ''
       summary: PARTNER CREATE
   /qubecart/partner/login/:
     post:
@@ -210,31 +50,65 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"username\" : \"souravdoe@dummy.com\",\n    \"password\"\
+              value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
                 \ : \"1234\"\n}"
             schema:
               type: string
-            x-link-response:
-            - value: "{\n    \"username\" : \"9999999999\",\n    \"password\" : \"\
-                1234\"\n}"
-              x-response-id: bdbc0231-a464-4030-8b50-c6f16d6012e3
-            - value: "{\n    \"username\" : \"souravdoe#gmail.com\",\n    \"password\"\
-                \ : \"1234\"\n}"
-              x-response-id: 9bdf2357-4e84-4d4e-a29a-f245288bc176
-            - value: "{\n    \"username\" : \"9874311714\",\n    \"pasword\" : \"\
-                1234\"\n}"
-              x-response-id: eb87b2e2-e758-4ae5-9aa1-baf7aeef9227
-            - value: "{\n    \"username\" : \"9874311714\",\n    \"password\" : \"\
-                1234\"\n}"
-              x-response-id: aa0263ff-83d8-4884-964f-eb6c0a535d09
+            x-link-response: []
       responses:
         '200':
-          content:
-            application/json:
-              examples:
-                PartnerLoginFail1:
-                  $ref: '#/components/examples/exampleQubecartPartnerLoginPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerLoginPost200'
-          description: PARTNER LOGIN FAIL1
+          description: ''
       summary: PARTNER LOGIN
+  /qubecart/partner/checkunique/:
+    post:
+      description: '## Checks whether a partner is unique or not using phone and email'
+      operationId: QubecartPartnerCheckuniquePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\"\
+                \ : \"jon.Doe@dummy.com\"\n}"
+            schema:
+              type: string
+            x-link-response: []
+      responses:
+        '200':
+          description: ''
+      summary: CHECK UNIQUE PARTNER
+  /qubecart/partner/store/create/:
+    post:
+      description: '## Creates store for partner'
+      operationId: QubecartPartnerStoreCreatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 13,\n    \"addressline1\" : \"21\"\
+                ,\n    \"addressline2\" : \"Bekar street\",\n    \"state_id\" : 1,\n\
+                \    \"country_id\" : 1,\n    \"pin\" : \"01580012\",\n    \"city_id\"\
+                \ : 1,\n    \"store_name\" : \"wonderland\",\n    \"store_category\"\
+                \ : 2\n}"
+            schema:
+              type: string
+            x-link-response: []
+      responses:
+        '200':
+          description: ''
+      summary: CREATE STORE
+  /qubecart/partner/store/get/:
+    post:
+      description: '## Returns stores of customer'
+      operationId: QubecartPartnerStoreGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 13\n}"
+            schema:
+              type: string
+            x-link-response: []
+      responses:
+        '200':
+          description: ''
+      summary: GET STORE
