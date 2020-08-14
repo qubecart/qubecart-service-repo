@@ -1636,14 +1636,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "192.168.0.105:8000/qubecart/admin/template/getall/",
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/getall/",
 							"host": [
-								"192",
-								"168",
-								"0",
-								"105"
+								"{{endpoint}}"
 							],
-							"port": "8000",
+							"port": "8001",
 							"path": [
 								"qubecart",
 								"admin",
@@ -1659,11 +1656,11 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Wed, 12 Aug 2020 13:17:51 GMT"
+							"value": "Fri, 14 Aug 2020 11:04:42 GMT"
 						},
 						{
 							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.6.9"
+							"value": "WSGIServer/0.2 CPython/3.6.11"
 						},
 						{
 							"key": "Content-Type",
@@ -1675,7 +1672,7 @@
 						},
 						{
 							"key": "Allow",
-							"value": "OPTIONS, GET"
+							"value": "GET, OPTIONS"
 						},
 						{
 							"key": "X-Frame-Options",
@@ -1683,15 +1680,19 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "426"
+							"value": "323"
 						},
 						{
 							"key": "X-Content-Type-Options",
 							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 1,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-12T12:22:57\",\n            \"item_name\": \"Rice\",\n            \"item_description\": null,\n            \"template_ref_no\": \"Grocery_001\",\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 2,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-12T12:22:57\",\n            \"item_name\": \"Musturd Oil\",\n            \"item_description\": null,\n            \"template_ref_no\": \"Grocery_001\",\n            \"category_name\": \"Grocery\"\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 25,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-14T10:27:26\",\n            \"template_name\": \"Temp_g_001\",\n            \"template_description\": null,\n            \"template_ref_no\": \"1597400846\",\n            \"status\": 1,\n            \"username\": \"msqube Technologies Corp\",\n            \"category_name\": \"Grocery\",\n            \"status_name\": \"Active\"\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -1702,7 +1703,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : [{\"name\" : \"Vest\"}, {\"name\" : \"Jeans\"}]\n}",
+					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"template_name\" : \"Temp_gm_001\",\n    \"items\" : [{\"name\" : \"Tshirt\"}, {\"name\" : \"Chinos\"}]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1880,7 +1881,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"item\" : \"rice\"\n}",
+					"raw": "{\n    \"template_name\" : \"Temp_g_002\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1903,7 +1904,81 @@
 				},
 				"description": "## Checks duplicate item in template"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "CHECK DUPLICATE ITEM",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"template_name\" : \"Temp_g_002\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/checkduplicate/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"checkduplicate",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 14 Aug 2020 11:04:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "DELETE ITEM",
@@ -2010,16 +2085,47 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "INACTIVE TEMPLATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admn_user_id\" : 6,\n    \"template_id\" : 25,\n    \"inactive_flag\" : true \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/inactive/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"inactive",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "b7def715-9eb4-480c-ad2c-d4e725c6cf4d",
+			"id": "75382e32-d5d3-4389-8f97-a83a852ffe02",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "2d7a88c1-2eea-4f61-8edf-c1e26614442e",
+			"id": "7c3ee21b-6533-41c3-b50b-d39116929bf3",
 			"key": "port",
 			"value": "8001"
 		}

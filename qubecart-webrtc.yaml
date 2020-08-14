@@ -1,0 +1,178 @@
+info:
+    title: qubecart_webrtc_collection
+    version: 1.0.0
+openapi: 3.0.0
+paths:
+    /qubecart/webrtc/offercall/:
+      post:
+        description: Cusstomer creates a call offer with this service
+        operationId: QubecartWebrtcOffercallPost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                  \n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Create an offer
+    /qubecart/webrtc/answercall/:
+      post:
+        description: Partner uses this service to answers a call offer request by a
+          customer.
+        operationId: QubecartWebrtcAnswercallPost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\
+                  \t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Answer to an offer
+    /qubecart/webrtc/sendice/:
+      post:
+        description: Both customer and partner use this to send ice candidates to the
+          other side
+        operationId: QubecartWebrtcSendicePost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\
+                  \t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\"\
+                  : \"offer_ice\"\n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Send ice candidate
+    /qubecart/webrtc/getoffers/:
+      post:
+        description: Partner polls this service to receive active call offers
+        operationId: QubecartWebrtcGetoffersPost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"partner_id\": 1\n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Get offers
+    /qubecart/webrtc/polloffer/:
+      post:
+        description: Partner polls this service to get offer payload with latest ice
+          candiates
+        operationId: QubecartWebrtcPollofferPost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                  ,\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\"\n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Poll offer
+    /qubecart/webrtc/pollanswer/:
+      post:
+        description: Customer polls this service to get answer payload from partner
+          and latest ice candidates
+        operationId: QubecartWebrtcPollanswerPost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                  \n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Poll answer
+    /qubecart/webrtc/hangupcall/:
+      post:
+        description: Customer and partner both can call this service to hangup a call.
+        operationId: QubecartWebrtcHangupcallPost
+        parameters:
+        - in: header
+          name: Content-Type
+          schema:
+            example: application/json
+            type: string
+          x-link-response: []
+        requestBody:
+          content:
+            application/json:
+              example:
+                value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                  \n}"
+              schema:
+                type: string
+              x-link-response: []
+        responses:
+          '200':
+            description: ''
+        summary: Hangup call
+  

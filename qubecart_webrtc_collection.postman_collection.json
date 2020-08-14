@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "5894a77b-62c2-46da-a9d9-6d8276361e6c",
+		"name": "qubecart_webrtc_collection",
+		"description": "WebRTC related services for QubeCart customer and partner apps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create an offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"offercall",
+						""
+					]
+				},
+				"description": "Cusstomer creates a call offer with this service"
+			},
+			"response": []
+		},
+		{
+			"name": "Answer to an offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"answercall",
+						""
+					]
+				},
+				"description": "Partner uses this service to answers a call offer request by a customer."
+			},
+			"response": []
+		},
+		{
+			"name": "Send ice candidate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"sendice",
+						""
+					]
+				},
+				"description": "Both customer and partner use this to send ice candidates to the other side"
+			},
+			"response": []
+		},
+		{
+			"name": "Get offers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"partner_id\": 1\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"getoffers",
+						""
+					]
+				},
+				"description": "Partner polls this service to receive active call offers"
+			},
+			"response": []
+		},
+		{
+			"name": "Poll offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\"\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"polloffer",
+						""
+					]
+				},
+				"description": "Partner polls this service to get offer payload with latest ice candiates"
+			},
+			"response": []
+		},
+		{
+			"name": "Poll answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"pollanswer",
+						""
+					]
+				},
+				"description": "Customer polls this service to get answer payload from partner and latest ice candidates"
+			},
+			"response": []
+		},
+		{
+			"name": "Hangup call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8004",
+					"path": [
+						"qubecart",
+						"webrtc",
+						"hangupcall",
+						""
+					]
+				},
+				"description": "Customer and partner both can call this service to hangup a call."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
