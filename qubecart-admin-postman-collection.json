@@ -1703,7 +1703,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"template_name\" : \"Temp_gm_001\",\n    \"items\" : [{\"name\" : \"Tshirt\"}, {\"name\" : \"Chinos\"}]\n}",
+					"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 1,\n    \"template_name\" : \"Men's Fashion\",\n    \"items\" : [{\"name\" : \"Top wear\"}, {\"name\" : \"Bottom wear\"}]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2116,16 +2116,440 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET SUBCATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"template_item_id\" : 13\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/getsubcategory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"getsubcategory",
+						""
+					]
+				},
+				"description": "## Get subcategory by template"
+			},
+			"response": [
+				{
+					"name": "GET SUBCATEGORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"template_item_id\" : 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/getsubcategory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"getsubcategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Aug 2020 09:23:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "143"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"product_subcategory_id\": 1,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"product_category_id\": 10\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET BRANDS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"subcategory_id\" : 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/getbrands/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"getbrands",
+						""
+					]
+				},
+				"description": "## Get brands by subcategory"
+			},
+			"response": [
+				{
+					"name": "GET BRANDS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subcategory_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/getbrands/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"getbrands",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Aug 2020 07:06:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "797"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_product_brand_id\": 1,\n            \"product_brand_name\": \"India Gate\",\n            \"product_brand_description\": \"\",\n            \"subcategory_id\": 1,\n            \"updated_on\": null,\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        },\n        {\n            \"admn_product_brand_id\": 2,\n            \"product_brand_name\": \"Daawat\",\n            \"product_brand_description\": \"\",\n            \"subcategory_id\": 1,\n            \"updated_on\": null,\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        },\n        {\n            \"admn_product_brand_id\": 3,\n            \"product_brand_name\": \"Fortune\",\n            \"product_brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-18T12:49:43\",\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        },\n        {\n            \"admn_product_brand_id\": 4,\n            \"product_brand_name\": \"Elina\",\n            \"product_brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-18T12:49:43\",\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE SUBCATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"template_item_id\" : 13,\n    \"subcategory_name\" : \"T-shirt\",\n    \"brands\" : [{\"name\" : \"Lee\", \"description\" : \"\"}, {\"name\" : \"Levi's\", \"description\" : \"\"}],\n    \"admn_user_id\" : 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/createsubcategory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"createsubcategory",
+						""
+					]
+				},
+				"description": "## Creates a subcategory of a given template and adds brands to it"
+			},
+			"response": [
+				{
+					"name": "CREATE SUBCATEGORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"template_item_id\" : 13,\n    \"subcategory_name\" : \"T-shirt\",\n    \"brands\" : [{\"name\" : \"Lee\", \"description\" : \"\"}, {\"name\" : \"Levi's\", \"description\" : \"\"}],\n    \"admn_user_id\" : 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/createsubcategory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"createsubcategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 20 Aug 2020 11:00:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "ADD BRANDS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"subcategory_id\" : 2,\n    \"loggedin_user\" : 6,\n    \"brands\" : [{\"name\" : \"Wrangler\"}, {\"name\" : \"Peter England\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/addbrands/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"addbrands",
+						""
+					]
+				},
+				"description": "## Adds brands for subcategory"
+			},
+			"response": [
+				{
+					"name": "ADD BRANDS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subcategory_id\" : 2,\n    \"loggedin_user\" : 6,\n    \"brands\" : [{\"name\" : \"Wrangler\"}, {\"name\" : \"Peter England\"}]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/addbrands/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"addbrands",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 20 Aug 2020 11:22:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "75382e32-d5d3-4389-8f97-a83a852ffe02",
+			"id": "cf3bc1a0-afb8-4881-823b-523035e5a977",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "7c3ee21b-6533-41c3-b50b-d39116929bf3",
+			"id": "a9ba3721-1d9c-4754-82d6-8b6d335b6e18",
 			"key": "port",
 			"value": "8001"
 		}
