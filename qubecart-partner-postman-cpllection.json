@@ -136,7 +136,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"qc_partner_id\" : 13,\n    \"addressline1\" : \"21\",\n    \"addressline2\" : \"Bekar street\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"01580012\",\n    \"city_id\" : 1,\n    \"store_name\" : \"wonderland\",\n    \"store_category\" : 2\n}",
+					"raw": "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12\",\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"city_id\" : 1,\n    \"store_name\" : \"Daily Fashion branch\",\n    \"store_category\" : 2\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -191,7 +191,293 @@
 				},
 				"description": "## Returns stores of customer"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET STORE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"qc_partner_id\" : 13\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/get/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"get",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 20 Aug 2020 18:01:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "401"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"store_id\": 7,\n            \"store_address_id\": 29,\n            \"store_name\": \"wonderland\",\n            \"store_location\": null,\n            \"store_category\": 2,\n            \"store_image\": null,\n            \"qc_partner_id\": 13,\n            \"addressline1\": \"21\",\n            \"addressline2\": \"Bekar street\",\n            \"pin\": 1580012,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"domain_category_name\": \"Garments\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET PRODUCTS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/getproducts/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"getproducts",
+						""
+					]
+				},
+				"description": "## Get products by store"
+			},
+			"response": [
+				{
+					"name": "GET PRODUCTS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/getproducts/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"getproducts",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 20 Aug 2020 07:25:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1117"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"bucket_name\": \"qubecart\",\n        \"folder_name\": \"Item_image\",\n        \"items\": [\n            {\n                \"partner_product_id\": 1,\n                \"updated_on\": \"2020-08-19T07:23:57\",\n                \"updated_by\": 9,\n                \"product_description\": \"Fortune Rozana Basmati Rice offers in economi\",\n                \"product_unit\": 1,\n                \"product_quantity\": 5,\n                \"product_rating\": null,\n                \"product_mrp\": 585,\n                \"product_selling_price\": 311,\n                \"product_discount\": 47,\n                \"stock_amount\": 10,\n                \"product_brand_name\": \"Fortune\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"product_thumbnail\": \"fortunebasmatirice.jpg\",\n                \"unit_name\": \"Kg\",\n                \"product_title\": \"Fortune Basmati Rice,5Kg\",\n                \"stock_statement\": \"In Stock\"\n            },\n            {\n                \"partner_product_id\": 2,\n                \"updated_on\": \"2020-08-19T07:33:31\",\n                \"updated_by\": 9,\n                \"product_description\": \"India Gate Basmati Rice, Rozana. Used finest \",\n                \"product_unit\": 1,\n                \"product_quantity\": 5,\n                \"product_rating\": null,\n                \"product_mrp\": 485,\n                \"product_selling_price\": 349,\n                \"product_discount\": 28,\n                \"stock_amount\": 10,\n                \"product_brand_name\": \"India Gate\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"product_thumbnail\": \"indiagatebasmatirice.jpg\",\n                \"unit_name\": \"Kg\",\n                \"product_title\": \"India Gate Basmati Rice,5Kg\",\n                \"stock_statement\": \"In Stock\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\" : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n    \"stock_amount\" : 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/createproduct/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"createproduct",
+						""
+					]
+				},
+				"description": "## Creates a product for a store by partner"
+			},
+			"response": [
+				{
+					"name": "CREATE PRODUCT",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\" : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n    \"stock_amount\" : 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/createproduct/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"createproduct",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 20 Aug 2020 12:06:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
