@@ -478,6 +478,218 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "UPDATE STORE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\",\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" : 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n    \"store_category\" : 1,\n    \"store_image\" : null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/update/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"update",
+						""
+					]
+				},
+				"description": "## Updates a store "
+			},
+			"response": [
+				{
+					"name": "UPDATE STORE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\",\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" : 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n    \"store_category\" : 1,\n    \"store_image\" : null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/update/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Aug 2020 13:58:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET STORE BY ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 16\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/getbyid/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"getbyid",
+						""
+					]
+				},
+				"description": "## Returns a stores basic details by id"
+			},
+			"response": [
+				{
+					"name": "GET STORE BY ID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 16\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/getbyid/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"getbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Aug 2020 14:13:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "408"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"store_id\": 16,\n        \"store_address_id\": 50,\n        \"store_name\": \"HighwaytoHell Store\",\n        \"store_location\": null,\n        \"store_category\": 1,\n        \"store_image\": null,\n        \"qc_partner_id\": 25,\n        \"addressline1\": \"111/1\",\n        \"addressline2\": \"highway to hell\",\n        \"pin\": 999999,\n        \"state\": 1,\n        \"country\": 1,\n        \"city\": 1,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"store_type_name\": \"Grocery\"\n    }\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}

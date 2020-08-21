@@ -1,3 +1,377 @@
+components:
+  examples:
+    exampleQubecartPartnerStoreCreateproductPost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 55b5f7f5-6b3a-4677-8727-40b857b5cd2c
+    exampleQubecartPartnerStoreGetPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - addressline1: '21'
+          addressline2: Bekar street
+          city: 1
+          city_name: Kolkata
+          countries_name: India
+          country: 1
+          domain_category_name: Garments
+          pin: 1580012
+          qc_partner_id: 13
+          state: 1
+          states_name: West Bengal
+          store_address_id: 29
+          store_category: 2
+          store_id: 7
+          store_image: null
+          store_location: null
+          store_name: wonderland
+        exception: false
+      x-response-id: ee9078f7-7000-4dfc-9bcd-dc333aae2ca3
+    exampleQubecartPartnerStoreGetbyidPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          addressline1: 111/1
+          addressline2: highway to hell
+          city: 1
+          city_name: Kolkata
+          countries_name: India
+          country: 1
+          pin: 999999
+          qc_partner_id: 25
+          state: 1
+          states_name: West Bengal
+          store_address_id: 50
+          store_category: 1
+          store_id: 16
+          store_image: null
+          store_location: null
+          store_name: HighwaytoHell Store
+          store_type_name: Grocery
+        exception: false
+      x-response-id: ff62ea6b-d4a0-4733-b67b-2c35c6c63e91
+    exampleQubecartPartnerStoreGetproductsPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          bucket_name: qubecart
+          folder_name: Item_image
+          items:
+          - partner_product_id: 1
+            product_brand_name: Fortune
+            product_description: Fortune Rozana Basmati Rice offers in economi
+            product_discount: 47
+            product_mrp: 585
+            product_quantity: 5
+            product_rating: null
+            product_selling_price: 311
+            product_thumbnail: fortunebasmatirice.jpg
+            product_title: Fortune Basmati Rice,5Kg
+            product_unit: 1
+            stock_amount: 10
+            stock_statement: In Stock
+            subcategory_name: Basmati Rice
+            unit_name: Kg
+            updated_by: 9
+            updated_on: '2020-08-19T07:23:57'
+          - partner_product_id: 2
+            product_brand_name: India Gate
+            product_description: 'India Gate Basmati Rice, Rozana. Used finest '
+            product_discount: 28
+            product_mrp: 485
+            product_quantity: 5
+            product_rating: null
+            product_selling_price: 349
+            product_thumbnail: indiagatebasmatirice.jpg
+            product_title: India Gate Basmati Rice,5Kg
+            product_unit: 1
+            stock_amount: 10
+            stock_statement: In Stock
+            subcategory_name: Basmati Rice
+            unit_name: Kg
+            updated_by: 9
+            updated_on: '2020-08-19T07:33:31'
+        exception: false
+      x-response-id: 0ab545fe-dfcf-4e06-be3b-ca782a694287
+    exampleQubecartPartnerStoreUpdatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: f755a5c9-c40f-4a81-88a4-7b329067ba56
+  schemas:
+    schemaQubecartPartnerStoreCreateproductPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartPartnerStoreGetPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              addressline1:
+                type: string
+              addressline2:
+                type: string
+              city:
+                format: int32
+                type: integer
+              city_name:
+                type: string
+              countries_name:
+                type: string
+              country:
+                format: int32
+                type: integer
+              domain_category_name:
+                type: string
+              pin:
+                format: int32
+                type: integer
+              qc_partner_id:
+                format: int32
+                type: integer
+              state:
+                format: int32
+                type: integer
+              states_name:
+                type: string
+              store_address_id:
+                format: int32
+                type: integer
+              store_category:
+                format: int32
+                type: integer
+              store_id:
+                format: int32
+                type: integer
+              store_image: {}
+              store_location: {}
+              store_name:
+                type: string
+            required:
+            - store_id
+            - store_address_id
+            - store_name
+            - store_location
+            - store_category
+            - store_image
+            - qc_partner_id
+            - addressline1
+            - addressline2
+            - pin
+            - city
+            - state
+            - country
+            - city_name
+            - states_name
+            - countries_name
+            - domain_category_name
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerStoreGetbyidPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            addressline1:
+              type: string
+            addressline2:
+              type: string
+            city:
+              format: int32
+              type: integer
+            city_name:
+              type: string
+            countries_name:
+              type: string
+            country:
+              format: int32
+              type: integer
+            pin:
+              format: int32
+              type: integer
+            qc_partner_id:
+              format: int32
+              type: integer
+            state:
+              format: int32
+              type: integer
+            states_name:
+              type: string
+            store_address_id:
+              format: int32
+              type: integer
+            store_category:
+              format: int32
+              type: integer
+            store_id:
+              format: int32
+              type: integer
+            store_image: {}
+            store_location: {}
+            store_name:
+              type: string
+            store_type_name:
+              type: string
+          required:
+          - store_id
+          - store_address_id
+          - store_name
+          - store_location
+          - store_category
+          - store_image
+          - qc_partner_id
+          - addressline1
+          - addressline2
+          - pin
+          - state
+          - country
+          - city
+          - city_name
+          - states_name
+          - countries_name
+          - store_type_name
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerStoreGetproductsPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            bucket_name:
+              type: string
+            folder_name:
+              type: string
+            items:
+              items:
+                properties:
+                  partner_product_id:
+                    format: int32
+                    type: integer
+                  product_brand_name:
+                    type: string
+                  product_description:
+                    type: string
+                  product_discount:
+                    format: int32
+                    type: integer
+                  product_mrp:
+                    format: int32
+                    type: integer
+                  product_quantity:
+                    format: int32
+                    type: integer
+                  product_rating: {}
+                  product_selling_price:
+                    format: int32
+                    type: integer
+                  product_thumbnail:
+                    type: string
+                  product_title:
+                    type: string
+                  product_unit:
+                    format: int32
+                    type: integer
+                  stock_amount:
+                    format: int32
+                    type: integer
+                  stock_statement:
+                    type: string
+                  subcategory_name:
+                    type: string
+                  unit_name:
+                    type: string
+                  updated_by:
+                    format: int32
+                    type: integer
+                  updated_on:
+                    type: string
+                required:
+                - partner_product_id
+                - updated_on
+                - updated_by
+                - product_description
+                - product_unit
+                - product_quantity
+                - product_rating
+                - product_mrp
+                - product_selling_price
+                - product_discount
+                - stock_amount
+                - product_brand_name
+                - subcategory_name
+                - product_thumbnail
+                - unit_name
+                - product_title
+                - stock_statement
+                type: object
+              type: array
+          required:
+          - bucket_name
+          - folder_name
+          - items
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerStoreUpdatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
 info:
   title: Qubeacart_partner
   version: 1.0.0
@@ -84,11 +458,11 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"qc_partner_id\" : 13,\n    \"addressline1\" : \"21\"\
-                ,\n    \"addressline2\" : \"Bekar street\",\n    \"state_id\" : 1,\n\
-                \    \"country_id\" : 1,\n    \"pin\" : \"01580012\",\n    \"city_id\"\
-                \ : 1,\n    \"store_name\" : \"wonderland\",\n    \"store_category\"\
-                \ : 2\n}"
+              value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12\"\
+                ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
+                \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
+                city_id\" : 1,\n    \"store_name\" : \"Daily Fashion branch\",\n \
+                \   \"store_category\" : 2\n}"
             schema:
               type: string
             x-link-response: []
@@ -107,8 +481,139 @@ paths:
               value: "{\n    \"qc_partner_id\" : 13\n}"
             schema:
               type: string
-            x-link-response: []
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 13\n}"
+              x-response-id: ee9078f7-7000-4dfc-9bcd-dc333aae2ca3
       responses:
         '200':
-          description: ''
+          content:
+            application/json:
+              examples:
+                GetStore:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetPost200'
+          description: GET STORE
       summary: GET STORE
+  /qubecart/partner/store/getproducts/:
+    post:
+      description: '## Get products by store'
+      operationId: QubecartPartnerStoreGetproductsPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 3\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 3\n}"
+              x-response-id: 0ab545fe-dfcf-4e06-be3b-ca782a694287
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetProducts:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsPost200'
+          description: GET PRODUCTS
+      summary: GET PRODUCTS
+  /qubecart/partner/store/createproduct/:
+    post:
+      description: '## Creates a product for a store by partner'
+      operationId: QubecartPartnerStoreCreateproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n\
+                \    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic\
+                \ Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"\
+                product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\"\
+                \ : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\"\
+                \ : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"\
+                images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n   \
+                \ \"stock_amount\" : 6\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n\
+                \    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic\
+                \ Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"\
+                product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\"\
+                \ : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\"\
+                \ : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"\
+                images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n   \
+                \ \"stock_amount\" : 6\n}"
+              x-response-id: 55b5f7f5-6b3a-4677-8727-40b857b5cd2c
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                CreateProduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreCreateproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreateproductPost200'
+          description: CREATE PRODUCT
+      summary: CREATE PRODUCT
+  /qubecart/partner/store/update/:
+    post:
+      description: '## Updates a store '
+      operationId: QubecartPartnerStoreUpdatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
+                ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
+                \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
+                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
+                \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
+                ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
+                \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
+                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
+                \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
+              x-response-id: f755a5c9-c40f-4a81-88a4-7b329067ba56
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                UpdateStore:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatePost200'
+          description: UPDATE STORE
+      summary: UPDATE STORE
+  /qubecart/partner/store/getbyid/:
+    post:
+      description: '## Returns a stores basic details by id'
+      operationId: QubecartPartnerStoreGetbyidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 16\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 16\n}"
+              x-response-id: ff62ea6b-d4a0-4733-b67b-2c35c6c63e91
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetStoreById:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetbyidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbyidPost200'
+          description: GET STORE BY ID
+      summary: GET STORE BY ID
