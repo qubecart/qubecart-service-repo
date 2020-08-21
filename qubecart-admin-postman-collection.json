@@ -2540,16 +2540,122 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "GET CATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"template_id\" : 29\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/template/getcategory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"getcategory",
+						""
+					]
+				},
+				"description": "## Returns a list of product category by template id"
+			},
+			"response": [
+				{
+					"name": "GET CATEGORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"template_id\" : 29\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/template/getcategory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"getcategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Aug 2020 15:14:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "286"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_item_id\": 10,\n            \"product_category_name\": \"Rice\",\n            \"template_id\": 29\n        },\n        {\n            \"template_item_id\": 11,\n            \"product_category_name\": \"Wheat\",\n            \"template_id\": 29\n        },\n        {\n            \"template_item_id\": 12,\n            \"product_category_name\": \"Edible Oils & Ghee\",\n            \"template_id\": 29\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "bfbd9be1-741d-4750-8cf6-87fc83aeb145",
+			"id": "4c931b1a-0cb2-4a86-8d4a-1c4d79ba3854",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "765a8611-47e4-4edc-ba1e-57424ff04ffc",
+			"id": "b1654c43-9b0d-4104-a01a-87d355fe9eb5",
 			"key": "port",
 			"value": "8001"
 		}

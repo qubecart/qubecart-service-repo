@@ -10,11 +10,11 @@ components:
           admn_user_id: 6
           city_id: 1
           city_name: Kolkata
-          contact_phone: '8335968075'
+          contact_phone: '9999999999'
           countries_name: India
           country_id: 1
-          email_id: contact@msqube.com
-          firstname: msqube
+          email_id: contact@dummy.com
+          firstname: dummy
           lastname: Technologies
           pin: 700135
           state_id: 1
@@ -22,9 +22,9 @@ components:
           user_status: 1
           user_type: 1
           user_type_name: Super Admin
-          username: sourav
+          username: jon
         exception: false
-      x-response-id: 382da546-53c9-408d-979e-edc7b8c59a73
+      x-response-id: e0f18466-9cb2-4734-8d70-4f6ae397dcc9
     exampleQubecartAdminLoginPost200:
       value:
         Errors: null
@@ -32,32 +32,32 @@ components:
         data:
           address_id: 6
           addressline1: 112/4
-          addressline2: Beleghata main road
+          addressline2: dummy main road
           admn_user_id: 6
           city_name: Kolkata
-          contact_phone: '8335968075'
+          contact_phone: '9999999999'
           countries_name: India
-          email_id: sourav.mondal@msqube.com
-          firstname: sourav
-          lastname: mondal
-          pin: 700010
+          email_id: jon.doe@dummy.com
+          firstname: jon
+          lastname: doe
+          pin: 700000
           states_name: West Bengal
           user_type_name: Super Admin
-          username: sourav
+          username: jon
         exception: false
-      x-response-id: 78644c55-2248-4c69-b71a-445c59cbe9a3
+      x-response-id: 11c632e3-c411-4a35-b7bb-26b9b35a8aec
     exampleQubecartAdminPartnerApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: dc2fae43-d2ef-443e-9f34-3f9c8e34cd58
+      x-response-id: 4703aa32-05d3-4992-9223-5a492ed0db95
     exampleQubecartAdminPartnerCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: a565dbd1-22a0-44d6-8cbb-28103e9de6ff
+      x-response-id: 24985759-b0f4-4b78-bd79-b0c0589c7d51
     exampleQubecartAdminPartnerDetailsbyidPost200:
       value:
         Errors: null
@@ -66,22 +66,22 @@ components:
           approval_status: 2
           approval_status_name: Active
           company_name: TEST2 company
-          contact_email: souravcristiano502@gmail.com
+          contact_email: joncristiano502@gmail.com
           contact_person: null
           contact_person_designation: Owner
-          contact_phone: '9073448330'
+          contact_phone: '9999999999'
           gst_numbers: ADF12456
           pan: DHA1234
           partner_address:
             address_id: 18
             address_type: null
             addressline1: 112/4
-            addressline2: beleghata main road
+            addressline2: dummy main road
             city: 1
             city_name: Kolkata
             countries_name: India
             country: 1
-            pin: 700010
+            pin: 700000
             state: 1
             states_name: West Bengal
           partner_address_id: 18
@@ -91,10 +91,10 @@ components:
           qc_partner_id: 10
           stores:
           - addressline1: 112/4
-            addressline2: Beleghata main road
+            addressline2: dummy main road
             city_name: Kolkata
             countries_name: India
-            pin: 700010
+            pin: 700000
             qc_partner_id: 10
             states_name: West Bengal
             store_address_id: 6
@@ -106,7 +106,7 @@ components:
             store_type_name: Garments
           updated_on: '2020-08-03T09:10:11'
         exception: false
-      x-response-id: 33c9017a-8ed5-4712-9ed7-f6b68d48126a
+      x-response-id: 24b40c97-2854-4541-b8cf-49c974630b60
     exampleQubecartAdminPartnerGetallPost200:
       value:
         Errors: null
@@ -115,10 +115,10 @@ components:
         - approval_status: 1
           approval_status_name: Added
           company_name: TEST2 company
-          contact_email: souravcristiano502@gmail.com
-          contact_person: sourav2
+          contact_email: joncristiano502@gmail.com
+          contact_person: jon2
           contact_person_designation: Owner
-          contact_phone: '9073448330'
+          contact_phone: '9999999999'
           partner_code: TEST2
           partner_name: TEST2 partner
           partner_type: 1
@@ -127,29 +127,29 @@ components:
         - approval_status: 2
           approval_status_name: Active
           company_name: TEST company
-          contact_email: souravcristiano502@gmail.com
-          contact_person: sourav
+          contact_email: joncristiano502@gmail.com
+          contact_person: jon
           contact_person_designation: Owner
-          contact_phone: '9073448330'
+          contact_phone: '9999999999'
           partner_code: TEST
           partner_name: TEST partner
           partner_type: 1
           qc_partner_id: 9
           updated_on: null
         exception: false
-      x-response-id: b8b7107e-c86e-4ef4-a953-782011f22db9
+      x-response-id: 76b07178-c98c-4c16-8425-fb633fafd575
     exampleQubecartAdminTemplateAddbrandsPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 3ff4749b-4933-4182-933e-98e41968d03f
+      x-response-id: 3d700a19-571b-4537-8b03-2002f54102ae
     exampleQubecartAdminTemplateCheckduplicatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: fba41757-87ed-4930-8101-2d0a4c24047f
+      x-response-id: 84854787-316a-4756-8216-3be35c81b268
     exampleQubecartAdminTemplateCreatePost200:
       value:
         Errors:
@@ -161,19 +161,19 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: b3cfeb7e-0916-489b-8240-8fdf8d918d38
+      x-response-id: 01ab573a-e8c9-4a0d-810f-91bbb6e7f59b
     exampleQubecartAdminTemplateCreatesubcategoryPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: be59eb39-cf76-477d-9b5c-7fb05bd7e582
+      x-response-id: 6427457e-e416-49ca-a135-8b59c057459b
     exampleQubecartAdminTemplateDeleteitemPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 118cdb64-3d07-4462-8c4a-b8f766b15862
+      x-response-id: 64bb4bf6-dc4f-4448-9262-5486895832e9
     exampleQubecartAdminTemplateGetallGet200:
       value:
         Errors: null
@@ -189,9 +189,9 @@ components:
           template_ref_no: '1597400846'
           updated_by: 6
           updated_on: '2020-08-14T10:27:26'
-          username: msqube Technologies Corp
+          username: dummy Technologies Corp
         exception: false
-      x-response-id: 03091ab0-62e1-419a-85c6-03e3683b5d7b
+      x-response-id: 72a60bab-e4e8-4e9b-924e-953fca0eccfb
     exampleQubecartAdminTemplateGetbrandsPost200:
       value:
         Errors: null
@@ -230,7 +230,7 @@ components:
           updated_by_role: null
           updated_on: '2020-08-18T12:49:43'
         exception: false
-      x-response-id: 275427ab-7367-46ea-b254-2cd33980bde4
+      x-response-id: 37599260-857d-4ccf-9ff8-12de63ceccd7
     exampleQubecartAdminTemplateGetbycategoryPost200:
       value:
         Errors: null
@@ -253,7 +253,23 @@ components:
           updated_by: 6
           updated_on: '2020-08-12T12:22:57'
         exception: false
-      x-response-id: 91b7fec5-30b8-452f-bb13-b21a033dc0db
+      x-response-id: 671fd34f-95b6-4adb-84db-aafc6ff6ce3c
+    exampleQubecartAdminTemplateGetcategoryPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - product_category_name: Rice
+          template_id: 29
+          template_item_id: 10
+        - product_category_name: Wheat
+          template_id: 29
+          template_item_id: 11
+        - product_category_name: Edible Oils & Ghee
+          template_id: 29
+          template_item_id: 12
+        exception: false
+      x-response-id: b4ab4c08-af5c-4f0e-9110-73fb179e5cae
     exampleQubecartAdminTemplateGetsubcategoryPost200:
       value:
         Errors: null
@@ -263,7 +279,7 @@ components:
           product_subcategory_id: 1
           subcategory_name: Basmati Rice
         exception: false
-      x-response-id: e88625dc-53ca-41fe-b28c-cb576c3b137e
+      x-response-id: 7047fe1e-5e84-4ccf-b7ba-a629a5c240c1
     exampleQubecartAdminUpdatePost200:
       value:
         Errors:
@@ -275,7 +291,7 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 5f0ddfeb-a8a3-475d-b8a7-31c2314cfd28
+      x-response-id: 5d7776ba-0ba3-4dca-994d-d226b02d3ab8
     exampleQubecartSharedDomainPost200:
       value:
         Errors: null
@@ -306,7 +322,7 @@ components:
           domain_type: partner_status
           domain_value: Not Approved
         exception: false
-      x-response-id: eb7738d6-eb5c-4abd-b70d-c1c5201caf93
+      x-response-id: d8eaa540-cbb1-42ac-965f-5ffd3ca692b8
     exampleQubecartSharedErrorframeworkGet200:
       value:
       - error_code: SE001
@@ -333,7 +349,7 @@ components:
         error_id: 6
         error_message: Email or phone already exists
         level_of_severity: 3
-      x-response-id: 101ebb5e-686c-4478-8300-5cd1c6439753
+      x-response-id: ae6c7661-f868-4b43-ab6b-0aa229b303a4
     exampleQubecartSharedGetCityGet200:
       value:
         Errors: null
@@ -343,7 +359,7 @@ components:
           city_id: 1
           city_name: Kolkata
         exception: false
-      x-response-id: 2b6f1e84-1087-42dd-bd9b-89b754ce296f
+      x-response-id: 0082fd72-b291-4e1c-83fe-b172fbce957f
     exampleQubecartSharedGetCitystatecountryGet200:
       value:
         Errors: null
@@ -362,7 +378,7 @@ components:
             states_id: 1
             states_name: West Bengal
         exception: false
-      x-response-id: bb59ea96-a6ab-430b-aeb1-97926e644ece
+      x-response-id: 738807dd-d2a3-499a-acdd-a525371546f2
     exampleQubecartSharedGetCountriesGet200:
       value:
         Errors: null
@@ -372,7 +388,7 @@ components:
           countries_id: 1
           countries_name: India
         exception: false
-      x-response-id: fc13a77d-322c-446f-9534-3809847348a2
+      x-response-id: a03c58d1-37ec-4dbc-8d8a-cf72d2f8af53
     exampleQubecartSharedGetStatesGet200:
       value:
         Errors: null
@@ -382,7 +398,7 @@ components:
           states_id: 1
           states_name: West Bengal
         exception: false
-      x-response-id: 128874d9-f3f8-41b3-ada7-2ac97964cfa1
+      x-response-id: 00708b20-658d-4d53-a344-bb7dec12f7bd
   schemas:
     schemaQubecartAdminGetbyidPost200:
       properties:
@@ -1085,6 +1101,37 @@ components:
       - Errors
       - data
       type: object
+    schemaQubecartAdminTemplateGetcategoryPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              product_category_name:
+                type: string
+              template_id:
+                format: int32
+                type: integer
+              template_item_id:
+                format: int32
+                type: integer
+            required:
+            - template_item_id
+            - product_category_name
+            - template_id
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
     schemaQubecartAdminTemplateGetsubcategoryPost200:
       properties:
         Errors: {}
@@ -1393,9 +1440,9 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"requested\" : true\n}"
-              x-response-id: 5c7c19ae-3900-4b66-9d66-d76b8efeb8d5
+              x-response-id: 14d41c63-344a-4dc6-8152-ad3855185c44
             - value: "{\n    \"requested\" : false\n}"
-              x-response-id: b8b7107e-c86e-4ef4-a953-782011f22db9
+              x-response-id: 76b07178-c98c-4c16-8425-fb633fafd575
       responses:
         '200':
           content:
@@ -1422,7 +1469,7 @@ paths:
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
                 }"
-              x-response-id: dc2fae43-d2ef-443e-9f34-3f9c8e34cd58
+              x-response-id: 4703aa32-05d3-4992-9223-5a492ed0db95
       responses:
         '200':
           content:
@@ -1446,13 +1493,13 @@ paths:
                 ,\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\"\
                 ,\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n\
                 \    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"\
+                \ : \"9999999999\",\n    \"contact_person\" : \"jon\",\n    \"\
                 billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\"\
-                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\"\
+                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"jon.doe@dummy.com\"\
                 ,\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\"\
                 \ : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\"\
-                \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
-                country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
+                \ : \"dummy main road kolkata\",\n    \"state_id\" : 1,\n    \"\
+                country_id\" : 1,\n    \"pin\" : \"700000\",\n    \"city_id\" : 1\n\
                 }"
             schema:
               type: string
@@ -1461,15 +1508,15 @@ paths:
                 ,\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\"\
                 ,\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n\
                 \    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"\
+                \ : \"9999999999\",\n    \"contact_person\" : \"jon\",\n    \"\
                 billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\"\
-                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\"\
+                ,\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"jon.doe@dummy.com\"\
                 ,\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\"\
                 \ : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\"\
-                \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
-                country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
+                \ : \"dummy main road kolkata\",\n    \"state_id\" : 1,\n    \"\
+                country_id\" : 1,\n    \"pin\" : \"700000\",\n    \"city_id\" : 1\n\
                 }"
-              x-response-id: a565dbd1-22a0-44d6-8cbb-28103e9de6ff
+              x-response-id: 24985759-b0f4-4b78-bd79-b0c0589c7d51
       responses:
         '200':
           content:
@@ -1509,7 +1556,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"domain_type\" : \"partner_status\"\n}"
-              x-response-id: eb7738d6-eb5c-4abd-b70d-c1c5201caf93
+              x-response-id: d8eaa540-cbb1-42ac-965f-5ffd3ca692b8
       responses:
         '200':
           content:
@@ -1529,14 +1576,14 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
+              value: "{\n    \"username\" : \"jon\",\n    \"password\" : \"1234\"\
                 \n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
+            - value: "{\n    \"username\" : \"jon\",\n    \"password\" : \"1234\"\
                 \n}"
-              x-response-id: 78644c55-2248-4c69-b71a-445c59cbe9a3
+              x-response-id: 11c632e3-c411-4a35-b7bb-26b9b35a8aec
       responses:
         '200':
           content:
@@ -1620,7 +1667,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10\n}"
-              x-response-id: 33c9017a-8ed5-4712-9ed7-f6b68d48126a
+              x-response-id: 24b40c97-2854-4541-b8cf-49c974630b60
       responses:
         '200':
           content:
@@ -1645,7 +1692,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 6\n}"
-              x-response-id: 382da546-53c9-408d-979e-edc7b8c59a73
+              x-response-id: e0f18466-9cb2-4734-8d70-4f6ae397dcc9
       responses:
         '200':
           content:
@@ -1666,9 +1713,9 @@ paths:
           '*/*':
             example:
               value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
-                \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
-                ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n\
+                \    \"firstname\" : \"dummy\",\n    \"lastname\" : \"Technologies\"\
+                ,\n    \"email_id\" : \"contact@dummy.com\",\n    \"contact_phone\"\
+                \ : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n\
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
@@ -1676,29 +1723,29 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
-                \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
-                ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n\
+                \    \"firstname\" : \"dummy\",\n    \"lastname\" : \"Technologies\"\
+                ,\n    \"email_id\" : \"contact@dummy.com\",\n    \"contact_phone\"\
+                \ : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n\
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 44a3c096-c777-43bd-b4c8-9cc801acdcbe
+              x-response-id: 93033eb7-2a65-4135-a3ed-b8c4f27998c3
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
-                \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
-                ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n\
+                \    \"firstname\" : \"dummy\",\n    \"lastname\" : \"Technologies\"\
+                ,\n    \"email_id\" : \"contact@dummy.com\",\n    \"contact_phone\"\
+                \ : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n\
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\"\
                 \ : 1\n}"
-              x-response-id: 5498dfcf-708e-4f5b-98b2-93b959193233
+              x-response-id: 4b0abebb-618e-496c-9fa8-c450a6ed721b
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n\
-                \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
-                ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
-                \ : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n\
+                \    \"firstname\" : \"dummy\",\n    \"lastname\" : \"Technologies\"\
+                ,\n    \"email_id\" : \"contact@dummy.com\",\n    \"contact_phone\"\
+                \ : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n\
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 5f0ddfeb-a8a3-475d-b8a7-31c2314cfd28
+              x-response-id: 5d7776ba-0ba3-4dca-994d-d226b02d3ab8
       responses:
         '200':
           content:
@@ -1722,7 +1769,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"category\" : 1\n}"
-              x-response-id: 91b7fec5-30b8-452f-bb13-b21a033dc0db
+              x-response-id: 671fd34f-95b6-4adb-84db-aafc6ff6ce3c
       responses:
         '200':
           content:
@@ -1763,10 +1810,10 @@ paths:
             x-link-response:
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : [\"T-shirt\", \"Shirt\"]\n}"
-              x-response-id: 713c4687-c553-412c-bc4f-76623bc4090e
+              x-response-id: ed5d57a4-4a06-4cf6-90d1-301728f720f4
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : []\n}"
-              x-response-id: b3cfeb7e-0916-489b-8240-8fdf8d918d38
+              x-response-id: 01ab573a-e8c9-4a0d-810f-91bbb6e7f59b
       responses:
         '200':
           content:
@@ -1791,7 +1838,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_name\" : \"Temp_g_002\"\n}"
-              x-response-id: fba41757-87ed-4930-8101-2d0a4c24047f
+              x-response-id: 84854787-316a-4756-8216-3be35c81b268
       responses:
         '200':
           content:
@@ -1816,7 +1863,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 15\n}"
-              x-response-id: 118cdb64-3d07-4462-8c4a-b8f766b15862
+              x-response-id: 64bb4bf6-dc4f-4448-9262-5486895832e9
       responses:
         '200':
           content:
@@ -1857,7 +1904,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_item_id\" : 10\n}"
-              x-response-id: e88625dc-53ca-41fe-b28c-cb576c3b137e
+              x-response-id: 7047fe1e-5e84-4ccf-b7ba-a629a5c240c1
       responses:
         '200':
           content:
@@ -1882,7 +1929,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 1\n}"
-              x-response-id: 275427ab-7367-46ea-b254-2cd33980bde4
+              x-response-id: 37599260-857d-4ccf-9ff8-12de63ceccd7
       responses:
         '200':
           content:
@@ -1914,7 +1961,7 @@ paths:
                 \ : \"T-shirt\",\n    \"brands\" : [{\"name\" : \"Lee\", \"description\"\
                 \ : \"\"}, {\"name\" : \"Levi's\", \"description\" : \"\"}],\n   \
                 \ \"admn_user_id\" : 6\n}"
-              x-response-id: be59eb39-cf76-477d-9b5c-7fb05bd7e582
+              x-response-id: 6427457e-e416-49ca-a135-8b59c057459b
       responses:
         '200':
           content:
@@ -1943,7 +1990,7 @@ paths:
             - value: "{\n    \"subcategory_id\" : 2,\n    \"loggedin_user\" : 6,\n\
                 \    \"brands\" : [{\"name\" : \"Wrangler\"}, {\"name\" : \"Peter\
                 \ England\"}]\n}"
-              x-response-id: 3ff4749b-4933-4182-933e-98e41968d03f
+              x-response-id: 3d700a19-571b-4537-8b03-2002f54102ae
       responses:
         '200':
           content:
@@ -1955,3 +2002,28 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartAdminTemplateAddbrandsPost200'
           description: ADD BRANDS
       summary: ADD BRANDS
+  /qubecart/admin/template/getcategory/:
+    post:
+      description: '## Returns a list of product category by template id'
+      operationId: QubecartAdminTemplateGetcategoryPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"template_id\" : 29\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"template_id\" : 29\n}"
+              x-response-id: b4ab4c08-af5c-4f0e-9110-73fb179e5cae
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetCategory:
+                  $ref: '#/components/examples/exampleQubecartAdminTemplateGetcategoryPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminTemplateGetcategoryPost200'
+          description: GET CATEGORY
+      summary: GET CATEGORY
