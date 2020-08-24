@@ -5,7 +5,7 @@ components:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 55b5f7f5-6b3a-4677-8727-40b857b5cd2c
+      x-response-id: 7c9f677b-6e3d-4159-a2aa-8ccdf4f94bd7
     exampleQubecartPartnerStoreGetPost200:
       value:
         Errors: null
@@ -29,7 +29,7 @@ components:
           store_location: null
           store_name: wonderland
         exception: false
-      x-response-id: ee9078f7-7000-4dfc-9bcd-dc333aae2ca3
+      x-response-id: 6e53d3f3-bec3-47a5-9590-0adc9ed24a84
     exampleQubecartPartnerStoreGetbyidPost200:
       value:
         Errors: null
@@ -53,7 +53,7 @@ components:
           store_name: HighwaytoHell Store
           store_type_name: Grocery
         exception: false
-      x-response-id: ff62ea6b-d4a0-4733-b67b-2c35c6c63e91
+      x-response-id: 2147a674-f9f2-4aad-94cf-b1b96b1061f8
     exampleQubecartPartnerStoreGetproductsPost200:
       value:
         Errors: null
@@ -97,13 +97,19 @@ components:
             updated_by: 9
             updated_on: '2020-08-19T07:33:31'
         exception: false
-      x-response-id: 0ab545fe-dfcf-4e06-be3b-ca782a694287
+      x-response-id: 61e54977-f150-4b71-8082-5bbe9287e810
     exampleQubecartPartnerStoreUpdatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: f755a5c9-c40f-4a81-88a4-7b329067ba56
+      x-response-id: f7282f8e-711c-466e-99bc-264ab4dc0b33
+    exampleQubecartPartnerStoreUpdatestockPost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 7b52ecb1-63da-4e7f-913e-25c6a2423080
   schemas:
     schemaQubecartPartnerStoreCreateproductPost200:
       properties:
@@ -372,6 +378,19 @@ components:
       - exception
       - Errors
       type: object
+    schemaQubecartPartnerStoreUpdatestockPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
 info:
   title: Qubeacart_partner
   version: 1.0.0
@@ -483,7 +502,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: ee9078f7-7000-4dfc-9bcd-dc333aae2ca3
+              x-response-id: 6e53d3f3-bec3-47a5-9590-0adc9ed24a84
       responses:
         '200':
           content:
@@ -508,7 +527,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: 0ab545fe-dfcf-4e06-be3b-ca782a694287
+              x-response-id: 61e54977-f150-4b71-8082-5bbe9287e810
       responses:
         '200':
           content:
@@ -547,7 +566,7 @@ paths:
                 \ : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"\
                 images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n   \
                 \ \"stock_amount\" : 6\n}"
-              x-response-id: 55b5f7f5-6b3a-4677-8727-40b857b5cd2c
+              x-response-id: 7c9f677b-6e3d-4159-a2aa-8ccdf4f94bd7
       responses:
         '200':
           content:
@@ -570,8 +589,8 @@ paths:
               value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
                 ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
-                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
-                \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
+                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store ps AC/DC\"\
+                ,\n    \"store_category\" : 1\n}"
             schema:
               type: string
             x-link-response:
@@ -580,7 +599,7 @@ paths:
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
                 \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
                 \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: f755a5c9-c40f-4a81-88a4-7b329067ba56
+              x-response-id: f7282f8e-711c-466e-99bc-264ab4dc0b33
       responses:
         '200':
           content:
@@ -605,7 +624,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: ff62ea6b-d4a0-4733-b67b-2c35c6c63e91
+              x-response-id: 2147a674-f9f2-4aad-94cf-b1b96b1061f8
       responses:
         '200':
           content:
@@ -617,3 +636,31 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbyidPost200'
           description: GET STORE BY ID
       summary: GET STORE BY ID
+  /qubecart/partner/store/updatestock/:
+    post:
+      description: "## Updates a stock using store_id and product_id \n### txn_type\
+        \ = 1 IN\n### txn_type = 2 OUT"
+      operationId: QubecartPartnerStoreUpdatestockPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
+                \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
+                \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
+              x-response-id: 7b52ecb1-63da-4e7f-913e-25c6a2423080
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                UpdateStock:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatestockPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatestockPost200'
+          description: UPDATE STOCK
+      summary: UPDATE STOCK

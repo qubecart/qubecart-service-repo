@@ -486,7 +486,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\",\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" : 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n    \"store_category\" : 1,\n    \"store_image\" : null\n}",
+					"raw": "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\",\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" : 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"999999\",\n    \"store_name\" : \"HighwaytoHell Store ps AC/DC\",\n    \"store_category\" : 1\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -688,6 +688,112 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"store_id\": 16,\n        \"store_address_id\": 50,\n        \"store_name\": \"HighwaytoHell Store\",\n        \"store_location\": null,\n        \"store_category\": 1,\n        \"store_image\": null,\n        \"qc_partner_id\": 25,\n        \"addressline1\": \"111/1\",\n        \"addressline2\": \"highway to hell\",\n        \"pin\": 999999,\n        \"state\": 1,\n        \"country\": 1,\n        \"city\": 1,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"store_type_name\": \"Grocery\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE STOCK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/updatestock/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"updatestock",
+						""
+					]
+				},
+				"description": "## Updates a stock using store_id and product_id \n### txn_type = 1 IN\n### txn_type = 2 OUT"
+			},
+			"response": [
+				{
+					"name": "UPDATE STOCK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/updatestock/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"updatestock",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 24 Aug 2020 07:50:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
 		}
