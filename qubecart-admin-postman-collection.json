@@ -104,7 +104,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9999999999\",\n            \"contact_email\": \"joncristiano502@gmail.com\",\n            \"contact_person\": \"jon2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        }\n    ]\n}"
 				},
 				{
 					"name": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
@@ -173,7 +173,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        },\n        {\n            \"qc_partner_id\": 9,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST\",\n            \"partner_name\": \"TEST partner\",\n            \"approval_status\": 2,\n            \"approval_status_name\": \"Active\",\n            \"company_name\": \"TEST company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": null\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9999999999\",\n            \"contact_email\": \"joncristiano502@gmail.com\",\n            \"contact_person\": \"jon2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        },\n        {\n            \"qc_partner_id\": 9,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST\",\n            \"partner_name\": \"TEST partner\",\n            \"approval_status\": 2,\n            \"approval_status_name\": \"Active\",\n            \"company_name\": \"TEST company\",\n            \"contact_phone\": \"9999999999\",\n            \"contact_email\": \"joncristiano502@gmail.com\",\n            \"contact_person\": \"jon\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": null\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -286,7 +286,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\",\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\",\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\" : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\",\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\",\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\" : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n}",
+					"raw": "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\",\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\",\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\" : \"9999999999\",\n    \"contact_person\" : \"jon\",\n    \"billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\",\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"jon.doe@dummuy.com\",\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\" : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"dummuy main road kolkata\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -317,7 +317,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\",\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\",\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\" : \"8335968075\",\n    \"contact_person\" : \"sourav\",\n    \"billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\",\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"sourav.mondal@msqube.com\",\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\" : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n}",
+							"raw": "{\n    \"partner_type\" : 1,\n    \"partner_code\" : \"DUMMYCODE\",\n    \"partner_name\" : \"DUMMY NAME\",\n    \"username\" : \"dummyuser\",\n    \"password\" : \"12345\",\n    \"partner_category\" : 1,\n    \"company_name\" : \"SHOP FOR DUMMIES\",\n    \"contact_phone\" : \"9999999999\",\n    \"contact_person\" : \"jon\",\n    \"billing_name\" : \"DUMMY SHOP\",\n    \"gst_numbers\" : \"qwer1234567890\",\n    \"pan\" : \"123qwer45\",\n    \"contact_email\" : \"jon.doe@dummuy.com\",\n    \"contact_person_designation\" : \"Owner\",\n    \"partner_bank_id\" : \"1234569870\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"dummuy main road kolkata\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -590,7 +590,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\n}",
+					"raw": "{\n    \"username\" : \"jon\",\n    \"password\" : \"1234\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -623,7 +623,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\n}",
+							"raw": "{\n    \"username\" : \"jon\",\n    \"password\" : \"1234\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -689,7 +689,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"username\": \"sourav\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"sourav.mondal@msqube.com\",\n        \"firstname\": \"sourav\",\n        \"lastname\": \"mondal\",\n        \"user_type_name\": \"Super Admin\",\n        \"address_id\": 6,\n        \"addressline1\": \"112/4\",\n        \"addressline2\": \"Beleghata main road\",\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"pin\": 700010\n    }\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"username\": \"jon\",\n        \"contact_phone\": \"9999999999\",\n        \"email_id\": \"jon.doe@dummuy.com\",\n        \"firstname\": \"jon\",\n        \"lastname\": \"doe\",\n        \"user_type_name\": \"Super Admin\",\n        \"address_id\": 6,\n        \"addressline1\": \"112/4\",\n        \"addressline2\": \"dummuy main road\",\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"pin\": 700010\n    }\n}"
 				}
 			]
 		},
@@ -1146,7 +1146,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"qc_partner_id\": 10,\n        \"partner_category\": 1,\n        \"partner_code\": \"TEST2\",\n        \"approval_status\": 2,\n        \"approval_status_name\": \"Active\",\n        \"company_name\": \"TEST2 company\",\n        \"contact_phone\": \"9073448330\",\n        \"contact_email\": \"souravcristiano502@gmail.com\",\n        \"contact_person\": null,\n        \"contact_person_designation\": \"Owner\",\n        \"updated_on\": \"2020-08-03T09:10:11\",\n        \"pan\": \"DHA1234\",\n        \"gst_numbers\": \"ADF12456\",\n        \"partner_bank_id\": 2147483647,\n        \"partner_address_id\": 18,\n        \"partner_address\": {\n            \"address_id\": 18,\n            \"addressline1\": \"112/4\",\n            \"addressline2\": \"beleghata main road\",\n            \"pin\": 700010,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\"\n        },\n        \"stores\": [\n            {\n                \"store_id\": 1,\n                \"store_address_id\": 6,\n                \"store_name\": \"Adi Mohini Mohon Kanjilal\",\n                \"store_location\": null,\n                \"store_category\": 2,\n                \"store_image\": \"store4.jpg\",\n                \"qc_partner_id\": 10,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"Beleghata main road\",\n                \"pin\": 700010,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"store_type_name\": \"Garments\"\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"qc_partner_id\": 10,\n        \"partner_category\": 1,\n        \"partner_code\": \"TEST2\",\n        \"approval_status\": 2,\n        \"approval_status_name\": \"Active\",\n        \"company_name\": \"TEST2 company\",\n        \"contact_phone\": \"9999999999\",\n        \"contact_email\": \"joncristiano502@gmail.com\",\n        \"contact_person\": null,\n        \"contact_person_designation\": \"Owner\",\n        \"updated_on\": \"2020-08-03T09:10:11\",\n        \"pan\": \"DHA1234\",\n        \"gst_numbers\": \"ADF12456\",\n        \"partner_bank_id\": 2147483647,\n        \"partner_address_id\": 18,\n        \"partner_address\": {\n            \"address_id\": 18,\n            \"addressline1\": \"112/4\",\n            \"addressline2\": \"dummuy main road\",\n            \"pin\": 700010,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\"\n        },\n        \"stores\": [\n            {\n                \"store_id\": 1,\n                \"store_address_id\": 6,\n                \"store_name\": \"Adi Mohini Mohon Kanjilal\",\n                \"store_location\": null,\n                \"store_category\": 2,\n                \"store_image\": \"store4.jpg\",\n                \"qc_partner_id\": 10,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"dummuy main road\",\n                \"pin\": 700010,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"store_type_name\": \"Garments\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -1252,7 +1252,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"user_type\": 1,\n        \"user_status\": 1,\n        \"username\": \"sourav\",\n        \"firstname\": \"msqube\",\n        \"lastname\": \"Technologies\",\n        \"contact_phone\": \"8335968075\",\n        \"email_id\": \"contact@msqube.com\",\n        \"addressline1\": \"pinnacle tower\",\n        \"addressline2\": \"chinar park\",\n        \"pin\": 700135,\n        \"city_id\": 1,\n        \"state_id\": 1,\n        \"country_id\": 1,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"user_type_name\": \"Super Admin\"\n    }\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 6,\n        \"user_type\": 1,\n        \"user_status\": 1,\n        \"username\": \"jon\",\n        \"firstname\": \"dummuy\",\n        \"lastname\": \"Technologies\",\n        \"contact_phone\": \"9999999999\",\n        \"email_id\": \"contact@dummuy.com\",\n        \"addressline1\": \"pinnacle tower\",\n        \"addressline2\": \"chinar park\",\n        \"pin\": 700135,\n        \"city_id\": 1,\n        \"state_id\": 1,\n        \"country_id\": 1,\n        \"city_name\": \"Kolkata\",\n        \"states_name\": \"West Bengal\",\n        \"countries_name\": \"India\",\n        \"user_type_name\": \"Super Admin\"\n    }\n}"
 				}
 			]
 		},
@@ -1263,7 +1263,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
+					"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"dummuy\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@dummuy.com\",\n    \"contact_phone\" : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1293,7 +1293,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"dummuy\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@dummuy.com\",\n    \"contact_phone\" : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1365,7 +1365,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\" : 1\n}",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"dummuy\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@dummuy.com\",\n    \"contact_phone\" : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\" : 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1437,7 +1437,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n    \"firstname\" : \"dummuy\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@dummuy.com\",\n    \"contact_phone\" : \"9999999999\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1692,7 +1692,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 25,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-14T10:27:26\",\n            \"template_name\": \"Temp_g_001\",\n            \"template_description\": null,\n            \"template_ref_no\": \"1597400846\",\n            \"status\": 1,\n            \"username\": \"msqube Technologies Corp\",\n            \"category_name\": \"Grocery\",\n            \"status_name\": \"Active\"\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 25,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-14T10:27:26\",\n            \"template_name\": \"Temp_g_001\",\n            \"template_description\": null,\n            \"template_ref_no\": \"1597400846\",\n            \"status\": 1,\n            \"username\": \"dummuy Technologies Corp\",\n            \"category_name\": \"Grocery\",\n            \"status_name\": \"Active\"\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -2230,7 +2230,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"subcategory_id\" : 2\n}",
+					"raw": "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2251,7 +2251,7 @@
 						""
 					]
 				},
-				"description": "## Get brands by subcategory"
+				"description": "## Get brands by subcategory\n### Here qc_partner_id is optional, if given the result will also include brands specified by the partner for the given subcategory"
 			},
 			"response": [
 				{
@@ -2261,7 +2261,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"subcategory_id\" : 1\n}",
+							"raw": "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2289,7 +2289,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Wed, 19 Aug 2020 07:06:54 GMT"
+							"value": "Tue, 25 Aug 2020 12:02:45 GMT"
 						},
 						{
 							"key": "Server",
@@ -2305,7 +2305,7 @@
 						},
 						{
 							"key": "Allow",
-							"value": "POST, OPTIONS"
+							"value": "OPTIONS, POST"
 						},
 						{
 							"key": "X-Frame-Options",
@@ -2313,7 +2313,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "797"
+							"value": "1002"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -2325,7 +2325,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_product_brand_id\": 1,\n            \"product_brand_name\": \"India Gate\",\n            \"product_brand_description\": \"\",\n            \"subcategory_id\": 1,\n            \"updated_on\": null,\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        },\n        {\n            \"admn_product_brand_id\": 2,\n            \"product_brand_name\": \"Daawat\",\n            \"product_brand_description\": \"\",\n            \"subcategory_id\": 1,\n            \"updated_on\": null,\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        },\n        {\n            \"admn_product_brand_id\": 3,\n            \"product_brand_name\": \"Fortune\",\n            \"product_brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-18T12:49:43\",\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        },\n        {\n            \"admn_product_brand_id\": 4,\n            \"product_brand_name\": \"Elina\",\n            \"product_brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-18T12:49:43\",\n            \"updated_by\": 6,\n            \"updated_by_role\": null,\n            \"status\": 1\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"brand_id\": 1,\n            \"brand_name\": \"India Gate\",\n            \"brand_description\": \"\",\n            \"subcategory_id\": 1,\n            \"updated_on\": null,\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1\n        },\n        {\n            \"brand_id\": 2,\n            \"brand_name\": \"Daawat\",\n            \"brand_description\": \"\",\n            \"subcategory_id\": 1,\n            \"updated_on\": null,\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1\n        },\n        {\n            \"brand_id\": 3,\n            \"brand_name\": \"Fortune\",\n            \"brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-18T12:49:43\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1\n        },\n        {\n            \"brand_id\": 4,\n            \"brand_name\": \"Elina\",\n            \"brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-18T12:49:43\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1\n        },\n        {\n            \"brand_id\": 1,\n            \"brand_name\": \"KaloBaba\",\n            \"brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-25T08:57:24\",\n            \"updated_by\": 9,\n            \"created_by_role\": 2,\n            \"status\": 1\n        },\n        {\n            \"brand_id\": 3,\n            \"brand_name\": \"Generic/Loose\",\n            \"brand_description\": null,\n            \"subcategory_id\": 1,\n            \"updated_on\": \"2020-08-25T11:10:28\",\n            \"updated_by\": 9,\n            \"created_by_role\": 2,\n            \"status\": 1\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -2754,12 +2754,12 @@
 	],
 	"variable": [
 		{
-			"id": "71cb5841-c98d-4b90-b77d-6d6df1cb7b8d",
+			"id": "a6503c3d-fa70-4996-b64a-4dad7d0bb19c",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "c56b781e-cd76-4c12-823b-d096503ddd82",
+			"id": "4e529859-0daa-4f27-9f92-857ea71339ca",
 			"key": "port",
 			"value": "8001"
 		}
