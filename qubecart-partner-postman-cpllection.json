@@ -168,7 +168,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"qc_partner_id\" : 13\n}",
+					"raw": "{\n    \"qc_partner_id\" : 9\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -380,7 +380,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\" : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n    \"stock_amount\" : 6\n}",
+					"raw": "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" : \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\" : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\" : 2\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -411,7 +411,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\" : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n    \"stock_amount\" : 6\n}",
+							"raw": "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" : \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\" : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\" : 2\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -439,7 +439,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Thu, 20 Aug 2020 12:06:25 GMT"
+							"value": "Tue, 25 Aug 2020 12:30:04 GMT"
 						},
 						{
 							"key": "Server",
@@ -794,6 +794,324 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE BRAND ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n    \"brand_name\" : \"Generic/Loose\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/brand/create/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"brand",
+						"create",
+						""
+					]
+				},
+				"description": "## Creates partner specific brand for a given subcategory"
+			},
+			"response": [
+				{
+					"name": "CREATE BRAND ",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n    \"brand_name\" : \"Generic/Loose\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/brand/create/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"brand",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 25 Aug 2020 11:10:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "INACTIVATE BRAND",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/brand/inactivate/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"brand",
+						"inactivate",
+						""
+					]
+				},
+				"description": "## Inactivates a partner brand "
+			},
+			"response": [
+				{
+					"name": "INACTIVATE BRAND",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/brand/inactivate/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"brand",
+								"inactivate",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 25 Aug 2020 11:12:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL BRANDS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/brand/get/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"brand",
+						"get",
+						""
+					]
+				},
+				"description": "## Returns all brands defined by partner"
+			},
+			"response": [
+				{
+					"name": "GET ALL BRANDS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/brand/get/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"brand",
+								"get",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 25 Aug 2020 11:14:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "599"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"partner_product_brand_id\": 1,\n            \"partner_id\": 9,\n            \"subcategory_id\": 1,\n            \"brand_name\": \"KaloBaba\",\n            \"brand_description\": null,\n            \"updated_on\": \"2020-08-25T08:57:24\",\n            \"status\": 1,\n            \"created_by_role\": 2\n        },\n        {\n            \"partner_product_brand_id\": 2,\n            \"partner_id\": 9,\n            \"subcategory_id\": 1,\n            \"brand_name\": \"Lalbaba\",\n            \"brand_description\": null,\n            \"updated_on\": \"2020-08-25T11:12:51\",\n            \"status\": 0,\n            \"created_by_role\": 2\n        },\n        {\n            \"partner_product_brand_id\": 3,\n            \"partner_id\": 9,\n            \"subcategory_id\": 1,\n            \"brand_name\": \"Generic/Loose\",\n            \"brand_description\": null,\n            \"updated_on\": \"2020-08-25T11:10:28\",\n            \"status\": 1,\n            \"created_by_role\": 2\n        }\n    ]\n}"
 				}
 			]
 		}

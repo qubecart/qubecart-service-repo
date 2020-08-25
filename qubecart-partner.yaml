@@ -1,11 +1,54 @@
 components:
   examples:
+    exampleQubecartPartnerBrandCreatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 0eb977e4-b6d0-4cad-8349-5a69da9f7bd3
+    exampleQubecartPartnerBrandGetPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - brand_description: null
+          brand_name: KaloBaba
+          created_by_role: 2
+          partner_id: 9
+          partner_product_brand_id: 1
+          status: 1
+          subcategory_id: 1
+          updated_on: '2020-08-25T08:57:24'
+        - brand_description: null
+          brand_name: Lalbaba
+          created_by_role: 2
+          partner_id: 9
+          partner_product_brand_id: 2
+          status: 0
+          subcategory_id: 1
+          updated_on: '2020-08-25T11:12:51'
+        - brand_description: null
+          brand_name: Generic/Loose
+          created_by_role: 2
+          partner_id: 9
+          partner_product_brand_id: 3
+          status: 1
+          subcategory_id: 1
+          updated_on: '2020-08-25T11:10:28'
+        exception: false
+      x-response-id: 088d7965-c27f-428b-8b21-48897754383b
+    exampleQubecartPartnerBrandInactivatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: a00f917d-45cb-459d-89e6-b04f8f46aee4
     exampleQubecartPartnerStoreCreateproductPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 7c9f677b-6e3d-4159-a2aa-8ccdf4f94bd7
+      x-response-id: 6dcde42a-98a1-4bef-8158-dbf0dc1f0396
     exampleQubecartPartnerStoreGetPost200:
       value:
         Errors: null
@@ -29,7 +72,7 @@ components:
           store_location: null
           store_name: wonderland
         exception: false
-      x-response-id: 6e53d3f3-bec3-47a5-9590-0adc9ed24a84
+      x-response-id: 3877138d-0e03-4c4f-9438-3be6fe00e8c8
     exampleQubecartPartnerStoreGetbyidPost200:
       value:
         Errors: null
@@ -53,7 +96,7 @@ components:
           store_name: HighwaytoHell Store
           store_type_name: Grocery
         exception: false
-      x-response-id: 2147a674-f9f2-4aad-94cf-b1b96b1061f8
+      x-response-id: 63f8a337-5803-4f07-a5c3-3098331bc491
     exampleQubecartPartnerStoreGetproductsPost200:
       value:
         Errors: null
@@ -97,20 +140,94 @@ components:
             updated_by: 9
             updated_on: '2020-08-19T07:33:31'
         exception: false
-      x-response-id: 61e54977-f150-4b71-8082-5bbe9287e810
+      x-response-id: ffd54195-0c7e-402c-9358-4263b4375966
     exampleQubecartPartnerStoreUpdatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: f7282f8e-711c-466e-99bc-264ab4dc0b33
+      x-response-id: 127ace64-b228-48bf-8765-1a2281096df5
     exampleQubecartPartnerStoreUpdatestockPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 7b52ecb1-63da-4e7f-913e-25c6a2423080
+      x-response-id: fe2b83f1-94c8-4376-ae97-76482629bb08
   schemas:
+    schemaQubecartPartnerBrandCreatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartPartnerBrandGetPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              brand_description: {}
+              brand_name:
+                type: string
+              created_by_role:
+                format: int32
+                type: integer
+              partner_id:
+                format: int32
+                type: integer
+              partner_product_brand_id:
+                format: int32
+                type: integer
+              status:
+                format: int32
+                type: integer
+              subcategory_id:
+                format: int32
+                type: integer
+              updated_on:
+                type: string
+            required:
+            - partner_product_brand_id
+            - partner_id
+            - subcategory_id
+            - brand_name
+            - brand_description
+            - updated_on
+            - status
+            - created_by_role
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerBrandInactivatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
     schemaQubecartPartnerStoreCreateproductPost200:
       properties:
         Errors: {}
@@ -497,12 +614,12 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"qc_partner_id\" : 13\n}"
+              value: "{\n    \"qc_partner_id\" : 9\n}"
             schema:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: 6e53d3f3-bec3-47a5-9590-0adc9ed24a84
+              x-response-id: 3877138d-0e03-4c4f-9438-3be6fe00e8c8
       responses:
         '200':
           content:
@@ -527,7 +644,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: 61e54977-f150-4b71-8082-5bbe9287e810
+              x-response-id: ffd54195-0c7e-402c-9358-4263b4375966
       responses:
         '200':
           content:
@@ -547,26 +664,26 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n\
-                \    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic\
-                \ Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"\
-                product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\"\
-                \ : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\"\
-                \ : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"\
-                images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n   \
-                \ \"stock_amount\" : 6\n}"
+              value: "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\"\
+                \ : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for\
+                \ everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n\
+                \    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n\
+                \    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" :\
+                \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
+                \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
+                \ : 2\n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"admn_product_brand_id\" : 6,\n    \"store_id\" : 5,\n\
-                \    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Graphic\
-                \ Print Men Round Neck White T-Shirt\",\n    \"unit\" : 3,\n    \"\
-                product_quantity\" : 1,\n    \"product_mrp\" : 999,\n    \"product_selling_price\"\
-                \ : null,\n    \"product_gst_percentage\" : 18,\n    \"product_thumbnail\"\
-                \ : \"levistshirt.jpeg\",\n    \"product_discount\" : 20,\n    \"\
-                images\" : [\"levistshirt.jpeg\", \"levistshirtside.jpeg\"],\n   \
-                \ \"stock_amount\" : 6\n}"
-              x-response-id: 7c9f677b-6e3d-4159-a2aa-8ccdf4f94bd7
+            - value: "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\"\
+                \ : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for\
+                \ everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n\
+                \    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n\
+                \    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" :\
+                \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
+                \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
+                \ : 2\n}"
+              x-response-id: 6dcde42a-98a1-4bef-8158-dbf0dc1f0396
       responses:
         '200':
           content:
@@ -599,7 +716,7 @@ paths:
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
                 \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
                 \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: f7282f8e-711c-466e-99bc-264ab4dc0b33
+              x-response-id: 127ace64-b228-48bf-8765-1a2281096df5
       responses:
         '200':
           content:
@@ -624,7 +741,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: 2147a674-f9f2-4aad-94cf-b1b96b1061f8
+              x-response-id: 63f8a337-5803-4f07-a5c3-3098331bc491
       responses:
         '200':
           content:
@@ -652,7 +769,7 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
                 \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-              x-response-id: 7b52ecb1-63da-4e7f-913e-25c6a2423080
+              x-response-id: fe2b83f1-94c8-4376-ae97-76482629bb08
       responses:
         '200':
           content:
@@ -664,3 +781,82 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatestockPost200'
           description: UPDATE STOCK
       summary: UPDATE STOCK
+  /qubecart/partner/brand/create/:
+    post:
+      description: '## Creates partner specific brand for a given subcategory'
+      operationId: QubecartPartnerBrandCreatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n\
+                \    \"brand_name\" : \"Generic/Loose\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n\
+                \    \"brand_name\" : \"Generic/Loose\"\n}"
+              x-response-id: 0eb977e4-b6d0-4cad-8349-5a69da9f7bd3
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                CreateBrand:
+                  $ref: '#/components/examples/exampleQubecartPartnerBrandCreatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandCreatePost200'
+          description: 'CREATE BRAND '
+      summary: 'CREATE BRAND '
+  /qubecart/partner/brand/inactivate/:
+    post:
+      description: '## Inactivates a partner brand '
+      operationId: QubecartPartnerBrandInactivatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\"\
+                \ : true\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\"\
+                \ : true\n}"
+              x-response-id: a00f917d-45cb-459d-89e6-b04f8f46aee4
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                InactivateBrand:
+                  $ref: '#/components/examples/exampleQubecartPartnerBrandInactivatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandInactivatePost200'
+          description: INACTIVATE BRAND
+      summary: INACTIVATE BRAND
+  /qubecart/partner/brand/get/:
+    post:
+      description: '## Returns all brands defined by partner'
+      operationId: QubecartPartnerBrandGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
+              x-response-id: 088d7965-c27f-428b-8b21-48897754383b
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAllBrands:
+                  $ref: '#/components/examples/exampleQubecartPartnerBrandGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandGetPost200'
+          description: GET ALL BRANDS
+      summary: GET ALL BRANDS
