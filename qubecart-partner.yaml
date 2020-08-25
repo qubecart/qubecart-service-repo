@@ -5,7 +5,7 @@ components:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 0eb977e4-b6d0-4cad-8349-5a69da9f7bd3
+      x-response-id: 692f772e-a305-4f38-b02b-8239daf6b5d2
     exampleQubecartPartnerBrandGetPost200:
       value:
         Errors: null
@@ -36,19 +36,19 @@ components:
           subcategory_id: 1
           updated_on: '2020-08-25T11:10:28'
         exception: false
-      x-response-id: 088d7965-c27f-428b-8b21-48897754383b
+      x-response-id: 450972fb-1298-4fc1-a7c1-00744d0e5459
     exampleQubecartPartnerBrandInactivatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: a00f917d-45cb-459d-89e6-b04f8f46aee4
+      x-response-id: 07a5450f-ca72-4d7f-994a-88b24a8ad85c
     exampleQubecartPartnerStoreCreateproductPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 6dcde42a-98a1-4bef-8158-dbf0dc1f0396
+      x-response-id: 89ef5596-7552-4878-b5c0-fa0cbde60a98
     exampleQubecartPartnerStoreGetPost200:
       value:
         Errors: null
@@ -72,7 +72,7 @@ components:
           store_location: null
           store_name: wonderland
         exception: false
-      x-response-id: 3877138d-0e03-4c4f-9438-3be6fe00e8c8
+      x-response-id: f8626c2c-36a7-4b1e-99da-aa9553ffc0ba
     exampleQubecartPartnerStoreGetbyidPost200:
       value:
         Errors: null
@@ -96,7 +96,7 @@ components:
           store_name: HighwaytoHell Store
           store_type_name: Grocery
         exception: false
-      x-response-id: 63f8a337-5803-4f07-a5c3-3098331bc491
+      x-response-id: 1072037f-eb13-424a-add6-ba016614e758
     exampleQubecartPartnerStoreGetproductsPost200:
       value:
         Errors: null
@@ -105,54 +105,77 @@ components:
           bucket_name: qubecart
           folder_name: Item_image
           items:
-          - partner_product_id: 1
+          - brand_created_by_role: 1
+            partner_product_id: 1
+            product_brand_id: 3
             product_brand_name: Fortune
             product_description: Fortune Rozana Basmati Rice offers in economi
             product_discount: 47
             product_mrp: 585
             product_quantity: 5
-            product_rating: null
+            product_rating: 0
             product_selling_price: 311
             product_thumbnail: fortunebasmatirice.jpg
             product_title: Fortune Basmati Rice,5Kg
             product_unit: 1
-            stock_amount: 10
+            stock_quantity: 15
             stock_statement: In Stock
             subcategory_name: Basmati Rice
             unit_name: Kg
             updated_by: 9
             updated_on: '2020-08-19T07:23:57'
-          - partner_product_id: 2
+          - brand_created_by_role: 1
+            partner_product_id: 2
+            product_brand_id: 1
             product_brand_name: India Gate
             product_description: 'India Gate Basmati Rice, Rozana. Used finest '
             product_discount: 28
             product_mrp: 485
             product_quantity: 5
-            product_rating: null
+            product_rating: 0
             product_selling_price: 349
             product_thumbnail: indiagatebasmatirice.jpg
             product_title: India Gate Basmati Rice,5Kg
             product_unit: 1
-            stock_amount: 10
+            stock_quantity: 15
             stock_statement: In Stock
             subcategory_name: Basmati Rice
             unit_name: Kg
             updated_by: 9
             updated_on: '2020-08-19T07:33:31'
+          - brand_created_by_role: 2
+            partner_product_id: 10
+            product_brand_id: 1
+            product_brand_name: KaloBaba
+            product_description: Kalobaba Basmati Rice for everyday use
+            product_discount: 10
+            product_mrp: 60
+            product_quantity: 2
+            product_rating: 0
+            product_selling_price: 54
+            product_thumbnail: basmati.jpg
+            product_title: KaloBaba Basmati Rice,2Kg
+            product_unit: 1
+            stock_quantity: 20
+            stock_statement: In Stock
+            subcategory_name: Basmati Rice
+            unit_name: Kg
+            updated_by: 9
+            updated_on: '2020-08-25T12:30:05'
         exception: false
-      x-response-id: ffd54195-0c7e-402c-9358-4263b4375966
+      x-response-id: 5ad13cbc-d9e1-4c46-a40a-6228f3948c2c
     exampleQubecartPartnerStoreUpdatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 127ace64-b228-48bf-8765-1a2281096df5
+      x-response-id: ff675b96-1fe9-4b4e-9719-25b9f5a55d2c
     exampleQubecartPartnerStoreUpdatestockPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: fe2b83f1-94c8-4376-ae97-76482629bb08
+      x-response-id: 7db06d36-8566-43fa-8c10-ce47792e82f4
   schemas:
     schemaQubecartPartnerBrandCreatePost200:
       properties:
@@ -407,7 +430,13 @@ components:
             items:
               items:
                 properties:
+                  brand_created_by_role:
+                    format: int32
+                    type: integer
                   partner_product_id:
+                    format: int32
+                    type: integer
+                  product_brand_id:
                     format: int32
                     type: integer
                   product_brand_name:
@@ -423,7 +452,9 @@ components:
                   product_quantity:
                     format: int32
                     type: integer
-                  product_rating: {}
+                  product_rating:
+                    format: int32
+                    type: integer
                   product_selling_price:
                     format: int32
                     type: integer
@@ -434,7 +465,7 @@ components:
                   product_unit:
                     format: int32
                     type: integer
-                  stock_amount:
+                  stock_quantity:
                     format: int32
                     type: integer
                   stock_statement:
@@ -459,13 +490,15 @@ components:
                 - product_mrp
                 - product_selling_price
                 - product_discount
-                - stock_amount
-                - product_brand_name
-                - subcategory_name
+                - stock_quantity
                 - product_thumbnail
                 - unit_name
-                - product_title
+                - brand_created_by_role
+                - product_brand_id
+                - product_brand_name
+                - subcategory_name
                 - stock_statement
+                - product_title
                 type: object
               type: array
           required:
@@ -619,7 +652,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: 3877138d-0e03-4c4f-9438-3be6fe00e8c8
+              x-response-id: f8626c2c-36a7-4b1e-99da-aa9553ffc0ba
       responses:
         '200':
           content:
@@ -644,7 +677,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: ffd54195-0c7e-402c-9358-4263b4375966
+              x-response-id: 5ad13cbc-d9e1-4c46-a40a-6228f3948c2c
       responses:
         '200':
           content:
@@ -683,7 +716,7 @@ paths:
                 \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
                 \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
                 \ : 2\n}"
-              x-response-id: 6dcde42a-98a1-4bef-8158-dbf0dc1f0396
+              x-response-id: 89ef5596-7552-4878-b5c0-fa0cbde60a98
       responses:
         '200':
           content:
@@ -716,7 +749,7 @@ paths:
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
                 \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
                 \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: 127ace64-b228-48bf-8765-1a2281096df5
+              x-response-id: ff675b96-1fe9-4b4e-9719-25b9f5a55d2c
       responses:
         '200':
           content:
@@ -741,7 +774,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: 63f8a337-5803-4f07-a5c3-3098331bc491
+              x-response-id: 1072037f-eb13-424a-add6-ba016614e758
       responses:
         '200':
           content:
@@ -769,7 +802,7 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
                 \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-              x-response-id: fe2b83f1-94c8-4376-ae97-76482629bb08
+              x-response-id: 7db06d36-8566-43fa-8c10-ce47792e82f4
       responses:
         '200':
           content:
@@ -796,7 +829,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n\
                 \    \"brand_name\" : \"Generic/Loose\"\n}"
-              x-response-id: 0eb977e4-b6d0-4cad-8349-5a69da9f7bd3
+              x-response-id: 692f772e-a305-4f38-b02b-8239daf6b5d2
       responses:
         '200':
           content:
@@ -823,7 +856,7 @@ paths:
             x-link-response:
             - value: "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\"\
                 \ : true\n}"
-              x-response-id: a00f917d-45cb-459d-89e6-b04f8f46aee4
+              x-response-id: 07a5450f-ca72-4d7f-994a-88b24a8ad85c
       responses:
         '200':
           content:
@@ -848,7 +881,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
-              x-response-id: 088d7965-c27f-428b-8b21-48897754383b
+              x-response-id: 450972fb-1298-4fc1-a7c1-00744d0e5459
       responses:
         '200':
           content:
