@@ -1432,6 +1432,112 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"partner_product_id\": 2,\n            \"product_brand_id\": 1,\n            \"updated_on\": \"2020-08-19T07:33:31\",\n            \"updated_by\": 9,\n            \"product_description\": \"India Gate Basmati Rice, Rozana. Used finest \",\n            \"store_id\": 3,\n            \"brand_created_by_role\": 1,\n            \"product_unit\": 1,\n            \"product_thumbnail\": \"indiagatebasmatirice.jpg\",\n            \"product_rating\": 0,\n            \"product_quantity\": 5,\n            \"product_stock_id\": 2,\n            \"stock_quantity\": 15,\n            \"stock_last_updated_on\": \"2020-08-24T07:50:53\",\n            \"store_name\": \"Perfect store\",\n            \"unit_short\": \"Kg\"\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "GET PRODUCTS BY STORE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"subcategory_id\" : 41,\n    \"store_id\" : 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/getproductsbybrand/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"getproductsbybrand",
+						""
+					]
+				},
+				"description": "## Get products by subcategory and store id"
+			},
+			"response": [
+				{
+					"name": "GET PRODUCTS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subcategory_id\" : 41,\n    \"store_id\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/getproductsbybrand/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"getproductsbybrand",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 27 Aug 2020 16:03:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3704"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_product_brand_id\": 153,\n            \"product_brand_name\": \"Pragati\",\n            \"product_brand_description\": \"Pragati Bashkati Rice Super Gold \",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        },\n        {\n            \"admn_product_brand_id\": 154,\n            \"product_brand_name\": \"Kohinoor\",\n            \"product_brand_description\": \"Kohinoor Dubar Basmati Rice\",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": [\n                {\n                    \"partner_product_id\": 22,\n                    \"product_brand_id\": 154,\n                    \"store_id\": 3,\n                    \"product_description\": \"Kohinoor Dubar Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 5,\n                    \"product_brand_name\": \"Kohinoor\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T12:07:07\",\n                    \"product_mrp\": 495,\n                    \"product_selling_price\": 366,\n                    \"product_discount\": 26\n                }\n            ]\n        },\n        {\n            \"admn_product_brand_id\": 155,\n            \"product_brand_name\": \"Organic Tattva\",\n            \"product_brand_description\": \"Organic Tattva Basmati Rice Brown\",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        },\n        {\n            \"admn_product_brand_id\": 156,\n            \"product_brand_name\": \"DB\",\n            \"product_brand_description\": \"Db Basmati Rice Premium Loose\",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        },\n        {\n            \"admn_product_brand_id\": 157,\n            \"product_brand_name\": \"Daawat\",\n            \"product_brand_description\": \"Daawat Rozana Mogra Basmati Rice\",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": [\n                {\n                    \"partner_product_id\": 23,\n                    \"product_brand_id\": 157,\n                    \"store_id\": 3,\n                    \"product_description\": \"Kohinoor Dubar Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 5,\n                    \"product_brand_name\": \"Daawat\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T12:07:22\",\n                    \"product_mrp\": 495,\n                    \"product_selling_price\": 366,\n                    \"product_discount\": 26\n                },\n                {\n                    \"partner_product_id\": 26,\n                    \"product_brand_id\": 157,\n                    \"store_id\": 3,\n                    \"product_description\": \"India Gate Mogra Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 2,\n                    \"product_brand_name\": \"Daawat\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T12:11:13\",\n                    \"product_mrp\": 310,\n                    \"product_selling_price\": 229,\n                    \"product_discount\": 26\n                },\n                {\n                    \"partner_product_id\": 27,\n                    \"product_brand_id\": 157,\n                    \"store_id\": 3,\n                    \"product_description\": \"India Gate Mogra Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 2,\n                    \"product_brand_name\": \"Daawat\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T12:52:49\",\n                    \"product_mrp\": 310,\n                    \"product_selling_price\": 229.4,\n                    \"product_discount\": 26\n                }\n            ]\n        },\n        {\n            \"admn_product_brand_id\": 158,\n            \"product_brand_name\": \"India Gate\",\n            \"product_brand_description\": \"India Gate Mogra Basmati Rice\",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": [\n                {\n                    \"partner_product_id\": 24,\n                    \"product_brand_id\": 158,\n                    \"store_id\": 3,\n                    \"product_description\": \"India Gate Mogra Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 5,\n                    \"product_brand_name\": \"India Gate\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T12:08:52\",\n                    \"product_mrp\": 495,\n                    \"product_selling_price\": 366.3,\n                    \"product_discount\": 26\n                },\n                {\n                    \"partner_product_id\": 25,\n                    \"product_brand_id\": 158,\n                    \"store_id\": 3,\n                    \"product_description\": \"India Gate Mogra Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 2,\n                    \"product_brand_name\": \"India Gate\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T12:11:02\",\n                    \"product_mrp\": 310,\n                    \"product_selling_price\": 229,\n                    \"product_discount\": 26\n                }\n            ]\n        },\n        {\n            \"admn_product_brand_id\": 159,\n            \"product_brand_name\": \"Fortune\",\n            \"product_brand_description\": \"Fortune Everyday Rozana\",\n            \"subcategory_id\": 41,\n            \"updated_on\": \"2020-08-27T10:22:23\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
