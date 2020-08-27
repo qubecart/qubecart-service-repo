@@ -380,7 +380,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\" : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" : \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\" : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\" : 2\n}",
+					"raw": "{\n    \"brand_id\" : 14,\n    \"store_id\" : 3,\n    \"qc_partner_id\" : 24,\n    \"product_description\" : \"Loose wheat\",\n    \"unit\" : 1,\n    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" : \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\" : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\" : 2,\n    \"packaged_product\" : false\n}",
 					"options": {
 						"raw": {
 							"language": "json"
