@@ -1,5 +1,22 @@
 components:
   examples:
+    exampleQubecartCustomerPaytmCreatechecksumPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          CALLBACK_URL: https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200902124441
+          CHANNEL_ID: WAP
+          CHECKSUMHASH: OCVrO1ItoqWzKQof9ws9DPEiCt6Wo7KiFagEQnzau+AMsEAgdGEZzB9fFon9fCpMmlPkvx3xq9Vtn3tf8/vVHb8Hwbk5pvwVqhOYCWLLA94=
+          CUST_ID: '22'
+          INDUSTRY_TYPE_ID: Retail
+          MID: AjvmhF55300080944054
+          ORDER_ID: ORDID2220200902124441
+          TXN_AMOUNT: '2.00'
+          WEBSITE: APPSTAGING
+          txnToken: a2e1ed1067b14546841d8baba9d4a2691599050681174
+        exception: false
+      x-response-id: 9e597bfd-a702-4cd2-bde2-656043cdc7f6
     exampleQubecartCustomerSearchGetallPost200:
       value:
         Errors: null
@@ -12676,8 +12693,56 @@ components:
           template_id: 51
           template_name: Masala & Spices
         exception: false
-      x-response-id: 248377a3-f8b8-452d-af50-cd70181e27ae
+      x-response-id: e80e13e1-98c3-4761-b8a2-6b517f5a3829
   schemas:
+    schemaQubecartCustomerPaytmCreatechecksumPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            CALLBACK_URL:
+              type: string
+            CHANNEL_ID:
+              type: string
+            CHECKSUMHASH:
+              type: string
+            CUST_ID:
+              type: string
+            INDUSTRY_TYPE_ID:
+              type: string
+            MID:
+              type: string
+            ORDER_ID:
+              type: string
+            TXN_AMOUNT:
+              type: string
+            WEBSITE:
+              type: string
+            txnToken:
+              type: string
+          required:
+          - MID
+          - ORDER_ID
+          - CUST_ID
+          - INDUSTRY_TYPE_ID
+          - CHANNEL_ID
+          - TXN_AMOUNT
+          - WEBSITE
+          - CALLBACK_URL
+          - CHECKSUMHASH
+          - txnToken
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
     schemaQubecartCustomerSearchGetallPost200:
       properties:
         Errors: {}
@@ -15676,7 +15741,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: 248377a3-f8b8-452d-af50-cd70181e27ae
+              x-response-id: e80e13e1-98c3-4761-b8a2-6b517f5a3829
       responses:
         '200':
           content:
@@ -15688,3 +15753,30 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartCustomerSearchGetallPost200'
           description: GET ALL INFO FOR SEARCH
       summary: GET ALL INFO FOR SEARCH
+  /qubecart/customer/paytm/createchecksum/:
+    post:
+      description: '## Generate paytm token using paytm param'
+      operationId: QubecartCustomerPaytmCreatechecksumPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"CUST_ID\" : \"22\",\n    \"TXN_AMOUNT\" : \"2.00\"\n\
+                }"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"CUST_ID\" : \"22\",\n    \"TXN_AMOUNT\" : \"2.00\"\n\
+                }"
+              x-response-id: 9e597bfd-a702-4cd2-bde2-656043cdc7f6
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GeneratePaytmToken:
+                  $ref: '#/components/examples/exampleQubecartCustomerPaytmCreatechecksumPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartCustomerPaytmCreatechecksumPost200'
+          description: GENERATE PAYTM TOKEN
+      summary: GENERATE PAYTM TOKEN
