@@ -5,7 +5,7 @@ components:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: d32c1c5c-e818-4ccc-a20f-9ad2ea3f9dbf
+      x-response-id: 3c504c94-7582-40c8-8a15-e8343358de64
     exampleQubecartPartnerBrandGetPost200:
       value:
         Errors: null
@@ -36,13 +36,13 @@ components:
           subcategory_id: 1
           updated_on: '2020-08-25T11:10:28'
         exception: false
-      x-response-id: b7240ae0-a1ef-4ca3-b27a-ebeda7b3e2cd
+      x-response-id: 5967a7c1-2e20-4ff6-b524-68d0980999cd
     exampleQubecartPartnerBrandInactivatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 13b0528e-0310-457f-9a1e-2d47671bcd44
+      x-response-id: a6edd201-736d-4ddc-8b71-41aa818bd1b5
     exampleQubecartPartnerOrdersGetactivePost200:
       value:
         Errors: null
@@ -103,7 +103,7 @@ components:
           updated_by: null
           updated_on: null
         exception: false
-      x-response-id: 9dd99cf9-038a-4083-a753-216f407d2acc
+      x-response-id: f1eba163-22fa-4ba2-8100-9a9ae469304d
     exampleQubecartPartnerStoreBycategoryPost200:
       value:
         Errors: null
@@ -345,7 +345,7 @@ components:
           updated_by: null
           updated_on: '2020-08-20T06:16:34'
         exception: false
-      x-response-id: bd747253-3748-4a35-b013-78fb10909b65
+      x-response-id: 1c782fcc-3a48-4221-9e96-8072ab674970
     exampleQubecartPartnerStoreBycategoryPost200_1:
       value:
         Errors: null
@@ -649,13 +649,13 @@ components:
             updated_by: null
             updated_on: '2020-08-20T06:16:34'
         exception: false
-      x-response-id: e84f3977-9421-489c-9280-f19ffd5f2e0e
+      x-response-id: 5062c1d5-6cca-47ae-8e4c-d16d4f4ad47f
     exampleQubecartPartnerStoreCreateproductPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 048a73f6-0d4a-43c4-a684-9c88e9500f59
+      x-response-id: adfc35f8-9ab1-42bd-8c67-44a3a98caee4
     exampleQubecartPartnerStoreGetPost200:
       value:
         Errors: null
@@ -679,7 +679,7 @@ components:
           store_location: null
           store_name: wonderland
         exception: false
-      x-response-id: 92dc7463-6b4d-41b5-94ac-695074073f7a
+      x-response-id: 1cf2ebc1-df10-482c-87b5-c73d47c8531b
     exampleQubecartPartnerStoreGetbyidPost200:
       value:
         Errors: null
@@ -703,129 +703,147 @@ components:
           store_name: HighwaytoHell Store
           store_type_name: Grocery
         exception: false
-      x-response-id: 3fa53601-3e11-4db4-a9b8-91506078c080
+      x-response-id: edb65c1b-a318-4259-a411-33d87037f4c8
     exampleQubecartPartnerStoreGetproductsPost200:
       value:
         Errors: null
         code: '001'
         data:
+          allproducts: []
           bucket_name: qubecart
           folder_name: Item_image
-          items:
+          searchedproducts:
           - brand_created_by_role: 1
-            brand_name: Daawat
-            category_name: Rice
+            brand_name: Sundrop Heart
+            category_id: 66
+            category_name: Oil& Ghee
             packaged_product: 1
-            partner_product_id: 49
-            product_brand_id: 369
-            product_description: Dawaat Rozana Super Basmati Rice
-            product_discount: 30
-            product_mrp: 435
-            product_quantity: 5
+            partner_product_id: 42
+            product_brand_id: 236
+            product_description: Sundrop Heart Oil 1L
+            product_discount: 10
+            product_mrp: 150
+            product_quantity: 1
             product_rating: 0
-            product_selling_price: 304.5
-            product_thumbnail: dawaat5kg.jpg
-            product_title: Daawat Basmati Rice,5Kg
+            product_selling_price: 135
+            product_thumbnail: sundropheart.jpeg
+            product_title: Sundrop Heart Oil,1Kg
             product_unit: 1
             stock_quantity: 10
             stock_statement: In Stock
-            subcategory_name: Basmati Rice
+            subcategory_id: 78
+            subcategory_name: Oil
             unit_short: Kg
-            updated_by: 24
-            updated_on: '2020-08-28T19:19:40'
+            updated_by: 25
+            updated_on: '2020-08-28T08:21:35'
+          - brand_created_by_role: 1
+            brand_name: Annapurna
+            category_id: 66
+            category_name: Oil& Ghee
+            packaged_product: 1
+            partner_product_id: 43
+            product_brand_id: 238
+            product_description: Annapurna Super Ghee - 250g
+            product_discount: 5
+            product_mrp: 190
+            product_quantity: 250
+            product_rating: 0
+            product_selling_price: 180.5
+            product_thumbnail: AnnapurnaGhee.jpg
+            product_title: Annapurna Ghee,250g
+            product_unit: 2
+            stock_quantity: 20
+            stock_statement: In Stock
+            subcategory_id: 79
+            subcategory_name: Ghee
+            unit_short: g
+            updated_by: 25
+            updated_on: '2020-08-28T08:23:05'
+          store:
+            addressline1: Beleghata Head Post Office
+            addressline2: Beleghata
+            city_name: Kolkata
+            countries_name: India
+            credit_flag: 1
+            latitude: null
+            longitude: null
+            pin: 700089
+            states_name: West Bengal
+            store_address_id: 60
+            store_name: Maa Annapurna Store
+            store_rating: 0
+          suggestedproducts:
+          - brand_created_by_role: 1
+            brand_name: Engine
+            category_id: 73
+            category_name: Mustard Oil
+            packaged_product: 1
+            partner_product_id: 44
+            product_brand_id: 261
+            product_description: Engine Mustered Oil - 1L
+            product_discount: 10
+            product_mrp: 249
+            product_quantity: 1
+            product_rating: 0
+            product_selling_price: 224.1
+            product_thumbnail: engineoil.jpg
+            product_title: Engine Mustard Oil,1Kg
+            product_unit: 1
+            stock_quantity: 15
+            stock_statement: In Stock
+            subcategory_id: 84
+            subcategory_name: Mustard Oil
+            unit_short: Kg
+            updated_by: 25
+            updated_on: '2020-08-28T08:58:00'
           - brand_created_by_role: 1
             brand_name: India Gate
+            category_id: 107
             category_name: Rice
             packaged_product: 1
-            partner_product_id: 50
+            partner_product_id: 45
             product_brand_id: 370
-            product_description: India Gate Basmati Rice
-            product_discount: 10
+            product_description: India Gate Basmati Rice - 1Kg
+            product_discount: 14
             product_mrp: 209
             product_quantity: 1
             product_rating: 0
-            product_selling_price: 188.1
+            product_selling_price: 179.74
             product_thumbnail: indiagate1kg.jpg
             product_title: India Gate Basmati Rice,1Kg
             product_unit: 1
-            stock_quantity: 5
+            stock_quantity: 20
             stock_statement: In Stock
+            subcategory_id: 109
             subcategory_name: Basmati Rice
             unit_short: Kg
-            updated_by: 24
-            updated_on: '2020-08-28T19:21:28'
+            updated_by: 25
+            updated_on: '2020-08-28T09:01:28'
           - brand_created_by_role: 1
             brand_name: aashirvad
+            category_id: 110
             category_name: Flour
             packaged_product: 1
-            partner_product_id: 51
+            partner_product_id: 46
             product_brand_id: 393
-            product_description: Aashirvaad Chakki Atta
-            product_discount: 10
-            product_mrp: 250
+            product_description: Aashirvaad Shudh Chakki Atta -5Kg
+            product_discount: 5
+            product_mrp: 274
             product_quantity: 5
             product_rating: 0
-            product_selling_price: 225
+            product_selling_price: 260.3
             product_thumbnail: aashirvaad5.jpg
             product_title: aashirvad Wheat Atta,5Kg
             product_unit: 1
             stock_quantity: 5
             stock_statement: In Stock
+            subcategory_id: 124
             subcategory_name: Wheat Atta
             unit_short: Kg
-            updated_by: 24
-            updated_on: '2020-08-28T19:23:57'
-          - brand_created_by_role: 2
-            brand_name: abhishap
-            category_name: Flour
-            packaged_product: 1
-            partner_product_id: 52
-            product_brand_id: 28
-            product_description: Abhishap Chakki Atta
-            product_discount: 20
-            product_mrp: 150
-            product_quantity: 10
-            product_rating: 0
-            product_selling_price: 120
-            product_thumbnail: 85f2d481-8a69-4aab-adaa-53b10ecc1f9e.jpg
-            product_title: abhishap Wheat Atta
-            product_unit: 1
-            stock_quantity: 20
-            stock_statement: In Stock
-            subcategory_name: Wheat Atta
-            unit_short: Kg
-            updated_by: 24
-            updated_on: '2020-09-03T20:02:43'
-          - brand_created_by_role: 2
-            brand_name: Generic
-            category_name: Raisins
-            packaged_product: 1
-            partner_product_id: 53
-            product_brand_id: 24
-            product_description: Generic Raisins
-            product_discount: 4
-            product_mrp: 50
-            product_quantity: 50
-            product_rating: 0
-            product_selling_price: 48
-            product_thumbnail: null
-            product_title: Generic Raisins
-            product_unit: 2
-            stock_quantity: 10
-            stock_statement: In Stock
-            subcategory_name: Raisins
-            unit_short: g
-            updated_by: 24
-            updated_on: '2020-09-03T20:07:49'
-          store:
-            credit_flag: 0
-            latitude: null
-            longitude: null
-            store_address_id: 63
-            store_name: SD Store
-            store_rating: 0
+            updated_by: 25
+            updated_on: '2020-08-28T09:04:36'
         exception: false
-      x-response-id: 8487438b-783a-4c1f-92f7-1e8e980006c0
+      x-response-id: 51486154-7a6c-425c-aabf-30da2bd46263
     exampleQubecartPartnerStoreGetproductsbybrandPost200:
       value:
         Errors: null
@@ -848,7 +866,7 @@ components:
           updated_by: 9
           updated_on: '2020-08-19T07:33:31'
         exception: false
-      x-response-id: d74b5e8b-a51e-41ba-9d36-5f6306845a5f
+      x-response-id: 7ee499cc-21ae-44eb-9468-5217e2102ba2
     exampleQubecartPartnerStoreGetproductsbybrandPost200_1:
       value:
         Errors: null
@@ -928,19 +946,19 @@ components:
           updated_by: 24
           updated_on: '2020-08-27T18:46:17'
         exception: false
-      x-response-id: f845916f-b6ae-430e-a837-5cc52b645699
+      x-response-id: fe88cff2-0489-40ab-8282-9f0e253bb7d9
     exampleQubecartPartnerStoreUpdatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: ee1266d4-7a66-404c-aba4-ce7fd1c41875
+      x-response-id: 8e50b9c3-c025-45fa-b659-1897674b77f7
     exampleQubecartPartnerStoreUpdatestockPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: bf112506-9658-4352-abb2-476189c332fc
+      x-response-id: 0ee2e7d3-eebb-4307-b0c7-3e8294918099
     exampleQubecartPartnerTemplateInfoPost200:
       value:
         Errors: null
@@ -985,7 +1003,7 @@ components:
           template_id: 29
           template_name: 'Foodgrains, Oils & Masala '
         exception: false
-      x-response-id: 4d48e3bb-88c7-4a83-8d0f-849dd5632abe
+      x-response-id: 94e5034a-07d7-48f7-becb-a49351990733
   schemas:
     schemaQubecartPartnerBrandCreatePost200:
       properties:
@@ -2132,11 +2150,14 @@ components:
           type: string
         data:
           properties:
+            allproducts:
+              items: {}
+              type: array
             bucket_name:
               type: string
             folder_name:
               type: string
-            items:
+            searchedproducts:
               items:
                 allOf:
                 - properties:
@@ -2145,6 +2166,95 @@ components:
                       type: integer
                     brand_name:
                       type: string
+                    category_id:
+                      format: int32
+                      type: integer
+                    category_name:
+                      type: string
+                    packaged_product:
+                      format: int32
+                      type: integer
+                    partner_product_id:
+                      format: int32
+                      type: integer
+                    product_brand_id:
+                      format: int32
+                      type: integer
+                    product_description:
+                      type: string
+                    product_discount:
+                      format: int32
+                      type: integer
+                    product_mrp:
+                      format: int32
+                      type: integer
+                    product_quantity:
+                      format: int32
+                      type: integer
+                    product_rating:
+                      format: int32
+                      type: integer
+                    product_selling_price:
+                      format: int32
+                      type: integer
+                    product_thumbnail:
+                      type: string
+                    product_title:
+                      type: string
+                    product_unit:
+                      format: int32
+                      type: integer
+                    stock_quantity:
+                      format: int32
+                      type: integer
+                    stock_statement:
+                      type: string
+                    subcategory_id:
+                      format: int32
+                      type: integer
+                    subcategory_name:
+                      type: string
+                    unit_short:
+                      type: string
+                    updated_by:
+                      format: int32
+                      type: integer
+                    updated_on:
+                      type: string
+                  required:
+                  - partner_product_id
+                  - updated_on
+                  - updated_by
+                  - product_description
+                  - product_unit
+                  - product_quantity
+                  - product_rating
+                  - packaged_product
+                  - product_mrp
+                  - product_selling_price
+                  - product_discount
+                  - stock_quantity
+                  - product_thumbnail
+                  - unit_short
+                  - brand_created_by_role
+                  - product_brand_id
+                  - subcategory_id
+                  - category_id
+                  - brand_name
+                  - subcategory_name
+                  - stock_statement
+                  - product_title
+                  - category_name
+                  type: object
+                - properties:
+                    brand_created_by_role:
+                      format: int32
+                      type: integer
+                    brand_name:
+                      type: string
+                    category_id:
+                      format: int32
+                      type: integer
                     category_name:
                       type: string
                     packaged_product:
@@ -2184,6 +2294,9 @@ components:
                       type: integer
                     stock_statement:
                       type: string
+                    subcategory_id:
+                      format: int32
+                      type: integer
                     subcategory_name:
                       type: string
                     unit_short:
@@ -2210,161 +2323,8 @@ components:
                   - unit_short
                   - brand_created_by_role
                   - product_brand_id
-                  - brand_name
-                  - subcategory_name
-                  - stock_statement
-                  - product_title
-                  - category_name
-                  type: object
-                - properties:
-                    brand_created_by_role:
-                      format: int32
-                      type: integer
-                    brand_name:
-                      type: string
-                    category_name:
-                      type: string
-                    packaged_product:
-                      format: int32
-                      type: integer
-                    partner_product_id:
-                      format: int32
-                      type: integer
-                    product_brand_id:
-                      format: int32
-                      type: integer
-                    product_description:
-                      type: string
-                    product_discount:
-                      format: int32
-                      type: integer
-                    product_mrp:
-                      format: int32
-                      type: integer
-                    product_quantity:
-                      format: int32
-                      type: integer
-                    product_rating:
-                      format: int32
-                      type: integer
-                    product_selling_price:
-                      format: int32
-                      type: integer
-                    product_thumbnail:
-                      type: string
-                    product_title:
-                      type: string
-                    product_unit:
-                      format: int32
-                      type: integer
-                    stock_quantity:
-                      format: int32
-                      type: integer
-                    stock_statement:
-                      type: string
-                    subcategory_name:
-                      type: string
-                    unit_short:
-                      type: string
-                    updated_by:
-                      format: int32
-                      type: integer
-                    updated_on:
-                      type: string
-                  required:
-                  - partner_product_id
-                  - updated_on
-                  - updated_by
-                  - product_description
-                  - product_unit
-                  - product_quantity
-                  - product_rating
-                  - packaged_product
-                  - product_mrp
-                  - product_selling_price
-                  - product_discount
-                  - stock_quantity
-                  - product_thumbnail
-                  - unit_short
-                  - brand_created_by_role
-                  - product_brand_id
-                  - brand_name
-                  - subcategory_name
-                  - stock_statement
-                  - product_title
-                  - category_name
-                  type: object
-                - properties:
-                    brand_created_by_role:
-                      format: int32
-                      type: integer
-                    brand_name:
-                      type: string
-                    category_name:
-                      type: string
-                    packaged_product:
-                      format: int32
-                      type: integer
-                    partner_product_id:
-                      format: int32
-                      type: integer
-                    product_brand_id:
-                      format: int32
-                      type: integer
-                    product_description:
-                      type: string
-                    product_discount:
-                      format: int32
-                      type: integer
-                    product_mrp:
-                      format: int32
-                      type: integer
-                    product_quantity:
-                      format: int32
-                      type: integer
-                    product_rating:
-                      format: int32
-                      type: integer
-                    product_selling_price:
-                      format: int32
-                      type: integer
-                    product_thumbnail: {}
-                    product_title:
-                      type: string
-                    product_unit:
-                      format: int32
-                      type: integer
-                    stock_quantity:
-                      format: int32
-                      type: integer
-                    stock_statement:
-                      type: string
-                    subcategory_name:
-                      type: string
-                    unit_short:
-                      type: string
-                    updated_by:
-                      format: int32
-                      type: integer
-                    updated_on:
-                      type: string
-                  required:
-                  - partner_product_id
-                  - updated_on
-                  - updated_by
-                  - product_description
-                  - product_unit
-                  - product_quantity
-                  - product_rating
-                  - packaged_product
-                  - product_mrp
-                  - product_selling_price
-                  - product_discount
-                  - stock_quantity
-                  - product_thumbnail
-                  - unit_short
-                  - brand_created_by_role
-                  - product_brand_id
+                  - subcategory_id
+                  - category_id
                   - brand_name
                   - subcategory_name
                   - stock_statement
@@ -2374,11 +2334,24 @@ components:
               type: array
             store:
               properties:
+                addressline1:
+                  type: string
+                addressline2:
+                  type: string
+                city_name:
+                  type: string
+                countries_name:
+                  type: string
                 credit_flag:
                   format: int32
                   type: integer
                 latitude: {}
                 longitude: {}
+                pin:
+                  format: int32
+                  type: integer
+                states_name:
+                  type: string
                 store_address_id:
                   format: int32
                   type: integer
@@ -2394,12 +2367,108 @@ components:
               - store_address_id
               - store_rating
               - credit_flag
+              - addressline1
+              - addressline2
+              - pin
+              - city_name
+              - states_name
+              - countries_name
               type: object
+            suggestedproducts:
+              items:
+                properties:
+                  brand_created_by_role:
+                    format: int32
+                    type: integer
+                  brand_name:
+                    type: string
+                  category_id:
+                    format: int32
+                    type: integer
+                  category_name:
+                    type: string
+                  packaged_product:
+                    format: int32
+                    type: integer
+                  partner_product_id:
+                    format: int32
+                    type: integer
+                  product_brand_id:
+                    format: int32
+                    type: integer
+                  product_description:
+                    type: string
+                  product_discount:
+                    format: int32
+                    type: integer
+                  product_mrp:
+                    format: int32
+                    type: integer
+                  product_quantity:
+                    format: int32
+                    type: integer
+                  product_rating:
+                    format: int32
+                    type: integer
+                  product_selling_price:
+                    type: float
+                  product_thumbnail:
+                    type: string
+                  product_title:
+                    type: string
+                  product_unit:
+                    format: int32
+                    type: integer
+                  stock_quantity:
+                    format: int32
+                    type: integer
+                  stock_statement:
+                    type: string
+                  subcategory_id:
+                    format: int32
+                    type: integer
+                  subcategory_name:
+                    type: string
+                  unit_short:
+                    type: string
+                  updated_by:
+                    format: int32
+                    type: integer
+                  updated_on:
+                    type: string
+                required:
+                - partner_product_id
+                - updated_on
+                - updated_by
+                - product_description
+                - product_unit
+                - product_quantity
+                - product_rating
+                - packaged_product
+                - product_mrp
+                - product_selling_price
+                - product_discount
+                - stock_quantity
+                - product_thumbnail
+                - unit_short
+                - brand_created_by_role
+                - product_brand_id
+                - subcategory_id
+                - category_id
+                - brand_name
+                - subcategory_name
+                - stock_statement
+                - product_title
+                - category_name
+                type: object
+              type: array
           required:
+          - allproducts
+          - searchedproducts
+          - suggestedproducts
           - bucket_name
           - folder_name
           - store
-          - items
           type: object
         exception:
           format: 'null'
@@ -2981,7 +3050,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: 92dc7463-6b4d-41b5-94ac-695074073f7a
+              x-response-id: 1cf2ebc1-df10-482c-87b5-c73d47c8531b
       responses:
         '200':
           content:
@@ -3001,12 +3070,14 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"store_id\" : 28\n}"
+              value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
+                context_value\" : 66\n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"store_id\" : 28\n}"
-              x-response-id: 8487438b-783a-4c1f-92f7-1e8e980006c0
+            - value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
+                context_value\" : 66\n}"
+              x-response-id: 51486154-7a6c-425c-aabf-30da2bd46263
       responses:
         '200':
           content:
@@ -3044,7 +3115,7 @@ paths:
                 \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
                 \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
                 \ : 2\n}"
-              x-response-id: 048a73f6-0d4a-43c4-a684-9c88e9500f59
+              x-response-id: adfc35f8-9ab1-42bd-8c67-44a3a98caee4
       responses:
         '200':
           content:
@@ -3077,7 +3148,7 @@ paths:
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
                 \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
                 \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: ee1266d4-7a66-404c-aba4-ce7fd1c41875
+              x-response-id: 8e50b9c3-c025-45fa-b659-1897674b77f7
       responses:
         '200':
           content:
@@ -3102,7 +3173,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: 3fa53601-3e11-4db4-a9b8-91506078c080
+              x-response-id: edb65c1b-a318-4259-a411-33d87037f4c8
       responses:
         '200':
           content:
@@ -3130,7 +3201,7 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
                 \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-              x-response-id: bf112506-9658-4352-abb2-476189c332fc
+              x-response-id: 0ee2e7d3-eebb-4307-b0c7-3e8294918099
       responses:
         '200':
           content:
@@ -3157,7 +3228,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n\
                 \    \"brand_name\" : \"Generic/Loose\"\n}"
-              x-response-id: d32c1c5c-e818-4ccc-a20f-9ad2ea3f9dbf
+              x-response-id: 3c504c94-7582-40c8-8a15-e8343358de64
       responses:
         '200':
           content:
@@ -3184,7 +3255,7 @@ paths:
             x-link-response:
             - value: "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\"\
                 \ : true\n}"
-              x-response-id: 13b0528e-0310-457f-9a1e-2d47671bcd44
+              x-response-id: a6edd201-736d-4ddc-8b71-41aa818bd1b5
       responses:
         '200':
           content:
@@ -3209,7 +3280,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
-              x-response-id: b7240ae0-a1ef-4ca3-b27a-ebeda7b3e2cd
+              x-response-id: 5967a7c1-2e20-4ff6-b524-68d0980999cd
       responses:
         '200':
           content:
@@ -3234,7 +3305,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: 9dd99cf9-038a-4083-a753-216f407d2acc
+              x-response-id: f1eba163-22fa-4ba2-8100-9a9ae469304d
       responses:
         '200':
           content:
@@ -3259,7 +3330,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: 4d48e3bb-88c7-4a83-8d0f-849dd5632abe
+              x-response-id: 94e5034a-07d7-48f7-becb-a49351990733
       responses:
         '200':
           content:
@@ -3286,7 +3357,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
                 \ \"qc_partner_id\" : 24\n}"
-              x-response-id: f845916f-b6ae-430e-a837-5cc52b645699
+              x-response-id: fe88cff2-0489-40ab-8282-9f0e253bb7d9
       responses:
         '200':
           content:
@@ -3314,7 +3385,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: e84f3977-9421-489c-9280-f19ffd5f2e0e
+              x-response-id: 5062c1d5-6cca-47ae-8e4c-d16d4f4ad47f
       responses:
         '200':
           content:
