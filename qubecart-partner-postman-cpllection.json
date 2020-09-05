@@ -274,7 +274,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"store_id\" : 3\n}",
+					"raw": "{\n    \"store_id\" : 28\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -305,7 +305,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"store_id\" : 3\n}",
+							"raw": "{\n    \"store_id\" : 28\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -333,7 +333,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 25 Aug 2020 13:13:36 GMT"
+							"value": "Sat, 05 Sep 2020 04:55:52 GMT"
 						},
 						{
 							"key": "Server",
@@ -349,7 +349,7 @@
 						},
 						{
 							"key": "Allow",
-							"value": "OPTIONS, POST"
+							"value": "POST, OPTIONS"
 						},
 						{
 							"key": "X-Frame-Options",
@@ -357,7 +357,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "1740"
+							"value": "3012"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -369,7 +369,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"bucket_name\": \"qubecart\",\n        \"folder_name\": \"Item_image\",\n        \"items\": [\n            {\n                \"partner_product_id\": 1,\n                \"updated_on\": \"2020-08-19T07:23:57\",\n                \"updated_by\": 9,\n                \"product_description\": \"Fortune Rozana Basmati Rice offers in economi\",\n                \"product_unit\": 1,\n                \"product_quantity\": 5,\n                \"product_rating\": 0,\n                \"product_mrp\": 585,\n                \"product_selling_price\": 311,\n                \"product_discount\": 47,\n                \"stock_quantity\": 15,\n                \"product_thumbnail\": \"fortunebasmatirice.jpg\",\n                \"unit_name\": \"Kg\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 3,\n                \"product_brand_name\": \"Fortune\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Fortune Basmati Rice,5Kg\"\n            },\n            {\n                \"partner_product_id\": 2,\n                \"updated_on\": \"2020-08-19T07:33:31\",\n                \"updated_by\": 9,\n                \"product_description\": \"India Gate Basmati Rice, Rozana. Used finest \",\n                \"product_unit\": 1,\n                \"product_quantity\": 5,\n                \"product_rating\": 0,\n                \"product_mrp\": 485,\n                \"product_selling_price\": 349,\n                \"product_discount\": 28,\n                \"stock_quantity\": 15,\n                \"product_thumbnail\": \"indiagatebasmatirice.jpg\",\n                \"unit_name\": \"Kg\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 1,\n                \"product_brand_name\": \"India Gate\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"India Gate Basmati Rice,5Kg\"\n            },\n            {\n                \"partner_product_id\": 10,\n                \"updated_on\": \"2020-08-25T12:30:05\",\n                \"updated_by\": 9,\n                \"product_description\": \"Kalobaba Basmati Rice for everyday use\",\n                \"product_unit\": 1,\n                \"product_quantity\": 2,\n                \"product_rating\": 0,\n                \"product_mrp\": 60,\n                \"product_selling_price\": 54,\n                \"product_discount\": 10,\n                \"stock_quantity\": 20,\n                \"product_thumbnail\": \"basmati.jpg\",\n                \"unit_name\": \"Kg\",\n                \"brand_created_by_role\": 2,\n                \"product_brand_id\": 1,\n                \"product_brand_name\": \"KaloBaba\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"KaloBaba Basmati Rice,2Kg\"\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"bucket_name\": \"qubecart\",\n        \"folder_name\": \"Item_image\",\n        \"store\": {\n            \"store_name\": \"SD Store\",\n            \"latitude\": null,\n            \"longitude\": null,\n            \"store_address_id\": 63,\n            \"store_rating\": 0,\n            \"credit_flag\": 0\n        },\n        \"items\": [\n            {\n                \"partner_product_id\": 49,\n                \"updated_on\": \"2020-08-28T19:19:40\",\n                \"updated_by\": 24,\n                \"product_description\": \"Dawaat Rozana Super Basmati Rice\",\n                \"product_unit\": 1,\n                \"product_quantity\": 5,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 435,\n                \"product_selling_price\": 304.5,\n                \"product_discount\": 30,\n                \"stock_quantity\": 10,\n                \"product_thumbnail\": \"dawaat5kg.jpg\",\n                \"unit_short\": \"Kg\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 369,\n                \"brand_name\": \"Daawat\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Daawat Basmati Rice,5Kg\",\n                \"category_name\": \"Rice\"\n            },\n            {\n                \"partner_product_id\": 50,\n                \"updated_on\": \"2020-08-28T19:21:28\",\n                \"updated_by\": 24,\n                \"product_description\": \"India Gate Basmati Rice\",\n                \"product_unit\": 1,\n                \"product_quantity\": 1,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 209,\n                \"product_selling_price\": 188.1,\n                \"product_discount\": 10,\n                \"stock_quantity\": 5,\n                \"product_thumbnail\": \"indiagate1kg.jpg\",\n                \"unit_short\": \"Kg\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 370,\n                \"brand_name\": \"India Gate\",\n                \"subcategory_name\": \"Basmati Rice\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"India Gate Basmati Rice,1Kg\",\n                \"category_name\": \"Rice\"\n            },\n            {\n                \"partner_product_id\": 51,\n                \"updated_on\": \"2020-08-28T19:23:57\",\n                \"updated_by\": 24,\n                \"product_description\": \"Aashirvaad Chakki Atta\",\n                \"product_unit\": 1,\n                \"product_quantity\": 5,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 250,\n                \"product_selling_price\": 225,\n                \"product_discount\": 10,\n                \"stock_quantity\": 5,\n                \"product_thumbnail\": \"aashirvaad5.jpg\",\n                \"unit_short\": \"Kg\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 393,\n                \"brand_name\": \"aashirvad\",\n                \"subcategory_name\": \"Wheat Atta\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"aashirvad Wheat Atta,5Kg\",\n                \"category_name\": \"Flour\"\n            },\n            {\n                \"partner_product_id\": 52,\n                \"updated_on\": \"2020-09-03T20:02:43\",\n                \"updated_by\": 24,\n                \"product_description\": \"Abhishap Chakki Atta\",\n                \"product_unit\": 1,\n                \"product_quantity\": 10,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 150,\n                \"product_selling_price\": 120,\n                \"product_discount\": 20,\n                \"stock_quantity\": 20,\n                \"product_thumbnail\": \"85f2d481-8a69-4aab-adaa-53b10ecc1f9e.jpg\",\n                \"unit_short\": \"Kg\",\n                \"brand_created_by_role\": 2,\n                \"product_brand_id\": 28,\n                \"brand_name\": \"abhishap\",\n                \"subcategory_name\": \"Wheat Atta\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"abhishap Wheat Atta\",\n                \"category_name\": \"Flour\"\n            },\n            {\n                \"partner_product_id\": 53,\n                \"updated_on\": \"2020-09-03T20:07:49\",\n                \"updated_by\": 24,\n                \"product_description\": \"Generic Raisins\",\n                \"product_unit\": 2,\n                \"product_quantity\": 50,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 50,\n                \"product_selling_price\": 48,\n                \"product_discount\": 4,\n                \"stock_quantity\": 10,\n                \"product_thumbnail\": null,\n                \"unit_short\": \"g\",\n                \"brand_created_by_role\": 2,\n                \"product_brand_id\": 24,\n                \"brand_name\": \"Generic\",\n                \"subcategory_name\": \"Raisins\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Generic Raisins\",\n                \"category_name\": \"Raisins\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -1536,6 +1536,216 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"brand_id\": 126,\n            \"brand_name\": \"Organic Tattva\",\n            \"brand_description\": \"Organic Tattva Maida\",\n            \"subcategory_id\": 28,\n            \"updated_on\": \"2020-08-27T07:21:16\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        },\n        {\n            \"brand_id\": 127,\n            \"brand_name\": \"Smart Choice\",\n            \"brand_description\": \"Smart Choice Sattu\",\n            \"subcategory_id\": 28,\n            \"updated_on\": \"2020-08-27T07:21:16\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        },\n        {\n            \"brand_id\": 128,\n            \"brand_name\": \"Weikfield\",\n            \"brand_description\": \"Weikfield Corn Flour\",\n            \"subcategory_id\": 28,\n            \"updated_on\": \"2020-08-27T07:21:16\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": []\n        },\n        {\n            \"brand_id\": 129,\n            \"brand_name\": \"Brown & Polson\",\n            \"brand_description\": \"Brown & Polson Corn Flour\",\n            \"subcategory_id\": 28,\n            \"updated_on\": \"2020-08-27T07:21:16\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1,\n            \"products\": [\n                {\n                    \"partner_product_id\": 21,\n                    \"product_brand_id\": 129,\n                    \"store_id\": 3,\n                    \"product_description\": \"Kalobaba Basmati Rice for everyday use\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 2,\n                    \"brand_name\": \"Brown & Polson\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T09:20:29\",\n                    \"product_mrp\": 60,\n                    \"product_selling_price\": 54,\n                    \"product_discount\": 10,\n                    \"brand_created_by_role\": 1\n                }\n            ]\n        },\n        {\n            \"brand_id\": 14,\n            \"brand_name\": \"Generic/Loose\",\n            \"brand_description\": null,\n            \"subcategory_id\": 28,\n            \"updated_on\": \"2020-08-27T18:46:17\",\n            \"updated_by\": 24,\n            \"created_by_role\": 2,\n            \"status\": 1,\n            \"products\": [\n                {\n                    \"partner_product_id\": 29,\n                    \"product_brand_id\": 14,\n                    \"store_id\": 3,\n                    \"product_description\": \"Generic/loose other flower\",\n                    \"product_unit\": 1,\n                    \"unit_short\": \"Kg\",\n                    \"product_quantity\": 2,\n                    \"brand_name\": \"Generic/Loose\",\n                    \"stock_quantity\": 20,\n                    \"updated_on\": \"2020-08-27T18:54:57\",\n                    \"product_mrp\": 72,\n                    \"product_selling_price\": 64.8,\n                    \"product_discount\": 10,\n                    \"brand_created_by_role\": 2\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET STORE BY CATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_category\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"bycategory",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET STORE BY CATEGORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_category\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"bycategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 03 Sep 2020 06:51:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5684"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"store_id\": 30,\n            \"store_address_id\": 71,\n            \"store_name\": \"Everyday Grocery\",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 9,\n            \"latitude\": 22.563293,\n            \"longitude\": 88.39328,\n            \"store_category_name\": \"Grocery\",\n            \"kmDistanceFromCostomer\": 2,\n            \"address_id\": 71,\n            \"addressline1\": \"20\",\n            \"addressline2\": \"Beleghata main road\",\n            \"pin\": 700010,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"partner_category\": 1,\n            \"partner_code\": \"TEST\",\n            \"partner_status\": 2,\n            \"login_flag\": null,\n            \"created_on\": null,\n            \"partner_status_name\": \"Active\",\n            \"partner_detail_id\": 1,\n            \"company_name\": \"TEST company\",\n            \"contact_phone\": \"9073448330\",\n            \"billing_name\": \"sourav\",\n            \"gst_numbers\": \"ADF12456\",\n            \"corporate_size\": null,\n            \"payment_term\": null,\n            \"updated_on\": null,\n            \"updated_by\": null,\n            \"partner_address_id\": 17,\n            \"pan\": \"DHA1234\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person_firstname\": null,\n            \"contact_person_lastname\": null,\n            \"contact_person_designation\": \"Owner\",\n            \"partner_bank_id\": 2147483647,\n            \"status\": 1,\n            \"password\": \"\",\n            \"bucket_name\": \"qubecart\",\n            \"storeImageFolder\": \"qubecart_partner\"\n        },\n        {\n            \"store_id\": 3,\n            \"store_address_id\": 22,\n            \"store_name\": \"Perfect store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 24,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"store_category_name\": \"Grocery\",\n            \"kmDistanceFromCostomer\": 2,\n            \"address_id\": 22,\n            \"addressline1\": \"112/4\",\n            \"addressline2\": \"beleghata main road\",\n            \"pin\": 700010,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"partner_category\": 1,\n            \"partner_code\": \"LEmIxE\",\n            \"partner_status\": 2,\n            \"login_flag\": null,\n            \"created_on\": \"2020-08-20T05:22:58\",\n            \"partner_status_name\": \"Active\",\n            \"partner_detail_id\": 11,\n            \"company_name\": \"Msqube\",\n            \"contact_phone\": \"8981497361\",\n            \"billing_name\": \"Snehasish\",\n            \"gst_numbers\": \"1234qwer\",\n            \"corporate_size\": null,\n            \"payment_term\": null,\n            \"updated_on\": \"2020-08-20T05:22:58\",\n            \"updated_by\": null,\n            \"partner_address_id\": 40,\n            \"pan\": \"asdf\",\n            \"contact_email\": \"snehasishjames007@gmail.com\",\n            \"contact_person_firstname\": \"Snehasish\",\n            \"contact_person_lastname\": \"Das\",\n            \"contact_person_designation\": \"SDE\",\n            \"partner_bank_id\": null,\n            \"status\": 1,\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n            \"bucket_name\": \"qubecart\",\n            \"storeImageFolder\": \"qubecart_partner\"\n        },\n        {\n            \"store_id\": 28,\n            \"store_address_id\": 63,\n            \"store_name\": \"SD Store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 24,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"store_category_name\": \"Grocery\",\n            \"kmDistanceFromCostomer\": 2,\n            \"address_id\": 63,\n            \"addressline1\": \"Kestopur\",\n            \"addressline2\": \"Kolkata\",\n            \"pin\": 700012,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"partner_category\": 1,\n            \"partner_code\": \"LEmIxE\",\n            \"partner_status\": 2,\n            \"login_flag\": null,\n            \"created_on\": \"2020-08-20T05:22:58\",\n            \"partner_status_name\": \"Active\",\n            \"partner_detail_id\": 11,\n            \"company_name\": \"Msqube\",\n            \"contact_phone\": \"8981497361\",\n            \"billing_name\": \"Snehasish\",\n            \"gst_numbers\": \"1234qwer\",\n            \"corporate_size\": null,\n            \"payment_term\": null,\n            \"updated_on\": \"2020-08-20T05:22:58\",\n            \"updated_by\": null,\n            \"partner_address_id\": 40,\n            \"pan\": \"asdf\",\n            \"contact_email\": \"snehasishjames007@gmail.com\",\n            \"contact_person_firstname\": \"Snehasish\",\n            \"contact_person_lastname\": \"Das\",\n            \"contact_person_designation\": \"SDE\",\n            \"partner_bank_id\": null,\n            \"status\": 1,\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n            \"bucket_name\": \"qubecart\",\n            \"storeImageFolder\": \"qubecart_partner\"\n        },\n        {\n            \"store_id\": 16,\n            \"store_address_id\": 50,\n            \"store_name\": \"HighwaytoHell Store ps AC/DC\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 25,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"store_category_name\": \"Grocery\",\n            \"kmDistanceFromCostomer\": 2,\n            \"address_id\": 50,\n            \"addressline1\": \"111/1\",\n            \"addressline2\": \"highway to hell\",\n            \"pin\": 999999,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"partner_category\": 2,\n            \"partner_code\": \"cz3CNu\",\n            \"partner_status\": 2,\n            \"login_flag\": null,\n            \"created_on\": \"2020-08-20T06:16:34\",\n            \"partner_status_name\": \"Active\",\n            \"partner_detail_id\": 12,\n            \"company_name\": \"msqube\",\n            \"contact_phone\": \"9038772775\",\n            \"billing_name\": \"msqube\",\n            \"gst_numbers\": \"abcd\",\n            \"corporate_size\": null,\n            \"payment_term\": null,\n            \"updated_on\": \"2020-08-20T06:16:34\",\n            \"updated_by\": null,\n            \"partner_address_id\": 41,\n            \"pan\": \"12345\",\n            \"contact_email\": \"soumik.roy.80@hmail.com\",\n            \"contact_person_firstname\": \"soumik\",\n            \"contact_person_lastname\": \"roy\",\n            \"contact_person_designation\": \"blabla\",\n            \"partner_bank_id\": null,\n            \"status\": 1,\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n            \"bucket_name\": \"qubecart\",\n            \"storeImageFolder\": \"qubecart_partner\"\n        },\n        {\n            \"store_id\": 26,\n            \"store_address_id\": 60,\n            \"store_name\": \"Maa Annapurna Store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 25,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"store_category_name\": \"Grocery\",\n            \"kmDistanceFromCostomer\": 2,\n            \"address_id\": 60,\n            \"addressline1\": \"Beleghata Head Post Office\",\n            \"addressline2\": \"Beleghata\",\n            \"pin\": 700089,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"partner_category\": 2,\n            \"partner_code\": \"cz3CNu\",\n            \"partner_status\": 2,\n            \"login_flag\": null,\n            \"created_on\": \"2020-08-20T06:16:34\",\n            \"partner_status_name\": \"Active\",\n            \"partner_detail_id\": 12,\n            \"company_name\": \"msqube\",\n            \"contact_phone\": \"9038772775\",\n            \"billing_name\": \"msqube\",\n            \"gst_numbers\": \"abcd\",\n            \"corporate_size\": null,\n            \"payment_term\": null,\n            \"updated_on\": \"2020-08-20T06:16:34\",\n            \"updated_by\": null,\n            \"partner_address_id\": 41,\n            \"pan\": \"12345\",\n            \"contact_email\": \"soumik.roy.80@hmail.com\",\n            \"contact_person_firstname\": \"soumik\",\n            \"contact_person_lastname\": \"roy\",\n            \"contact_person_designation\": \"blabla\",\n            \"partner_bank_id\": null,\n            \"status\": 1,\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n            \"bucket_name\": \"qubecart\",\n            \"storeImageFolder\": \"qubecart_partner\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET STORE BY CATEGORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_category\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"bycategory",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET STORE BY CATEGORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_category\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"bycategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 05 Sep 2020 04:59:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7185"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"category\": {\n            \"category_name\": \"Grocery\"\n        },\n        \"stores\": [\n            {\n                \"store_id\": 30,\n                \"store_address_id\": 71,\n                \"store_name\": \"Everyday Grocery\",\n                \"store_category\": 1,\n                \"store_image\": null,\n                \"qc_partner_id\": 9,\n                \"latitude\": 22.563293,\n                \"longitude\": 88.39328,\n                \"credit_flag\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 71,\n                \"addressline1\": \"20\",\n                \"addressline2\": \"Beleghata main road\",\n                \"pin\": 700010,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"TEST\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": null,\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Accept\",\n                \"partner_detail_id\": 1,\n                \"company_name\": \"TEST company\",\n                \"contact_phone\": \"9073448330\",\n                \"billing_name\": \"sourav\",\n                \"gst_numbers\": \"ADF12456\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": null,\n                \"updated_by\": null,\n                \"partner_address_id\": 17,\n                \"pan\": \"DHA1234\",\n                \"contact_email\": \"souravcristiano502@gmail.com\",\n                \"contact_person_firstname\": null,\n                \"contact_person_lastname\": null,\n                \"contact_person_designation\": \"Owner\",\n                \"partner_bank_id\": 2147483647,\n                \"status\": 1,\n                \"password\": \"\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 34,\n                \"store_address_id\": 75,\n                \"store_name\": \"Das Store \",\n                \"store_category\": 1,\n                \"store_image\": null,\n                \"qc_partner_id\": 24,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 75,\n                \"addressline1\": \"krishnanagar \",\n                \"addressline2\": \"krishnanagar \",\n                \"pin\": 741102,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"LEmIxE\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T05:22:58\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Accept\",\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"8981497361\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 26,\n                \"store_address_id\": 60,\n                \"store_name\": \"Maa Annapurna Store\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 25,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 60,\n                \"addressline1\": \"Beleghata Head Post Office\",\n                \"addressline2\": \"Beleghata\",\n                \"pin\": 700089,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 2,\n                \"partner_code\": \"cz3CNu\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T06:16:34\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Accept\",\n                \"partner_detail_id\": 12,\n                \"company_name\": \"msqube\",\n                \"contact_phone\": \"9038772775\",\n                \"billing_name\": \"msqube\",\n                \"gst_numbers\": \"abcd\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T06:16:34\",\n                \"updated_by\": null,\n                \"partner_address_id\": 41,\n                \"pan\": \"12345\",\n                \"contact_email\": \"soumik.roy.80@hmail.com\",\n                \"contact_person_firstname\": \"soumik\",\n                \"contact_person_lastname\": \"roy\",\n                \"contact_person_designation\": \"blabla\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 3,\n                \"store_address_id\": 22,\n                \"store_name\": \"Perfect store\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 24,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 0,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 22,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"beleghata main road\",\n                \"pin\": 700010,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"LEmIxE\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T05:22:58\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Not Accept\",\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"8981497361\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 28,\n                \"store_address_id\": 63,\n                \"store_name\": \"SD Store\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 24,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 0,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 63,\n                \"addressline1\": \"Kestopur\",\n                \"addressline2\": \"Kolkata\",\n                \"pin\": 700012,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"LEmIxE\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T05:22:58\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Not Accept\",\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"8981497361\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 16,\n                \"store_address_id\": 50,\n                \"store_name\": \"HighwaytoHell Store ps AC/DC\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 25,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 0,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 50,\n                \"addressline1\": \"111/1\",\n                \"addressline2\": \"highway to hell\",\n                \"pin\": 999999,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 2,\n                \"partner_code\": \"cz3CNu\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T06:16:34\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Not Accept\",\n                \"partner_detail_id\": 12,\n                \"company_name\": \"msqube\",\n                \"contact_phone\": \"9038772775\",\n                \"billing_name\": \"msqube\",\n                \"gst_numbers\": \"abcd\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T06:16:34\",\n                \"updated_by\": null,\n                \"partner_address_id\": 41,\n                \"pan\": \"12345\",\n                \"contact_email\": \"soumik.roy.80@hmail.com\",\n                \"contact_person_firstname\": \"soumik\",\n                \"contact_person_lastname\": \"roy\",\n                \"contact_person_designation\": \"blabla\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		}

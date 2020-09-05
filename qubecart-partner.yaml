@@ -5,7 +5,7 @@ components:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 40297a2d-6d1f-48fc-8dc1-3fd3425e5b79
+      x-response-id: d32c1c5c-e818-4ccc-a20f-9ad2ea3f9dbf
     exampleQubecartPartnerBrandGetPost200:
       value:
         Errors: null
@@ -36,13 +36,13 @@ components:
           subcategory_id: 1
           updated_on: '2020-08-25T11:10:28'
         exception: false
-      x-response-id: cf4bf697-6692-4951-a668-5a2d22ac54a4
+      x-response-id: b7240ae0-a1ef-4ca3-b27a-ebeda7b3e2cd
     exampleQubecartPartnerBrandInactivatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: ec8de00f-5303-4c06-84e3-311c3846b013
+      x-response-id: 13b0528e-0310-457f-9a1e-2d47671bcd44
     exampleQubecartPartnerOrdersGetactivePost200:
       value:
         Errors: null
@@ -103,13 +103,559 @@ components:
           updated_by: null
           updated_on: null
         exception: false
-      x-response-id: 2270279e-ac60-4461-8a23-4652724d67af
+      x-response-id: 9dd99cf9-038a-4083-a753-216f407d2acc
+    exampleQubecartPartnerStoreBycategoryPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - address_id: 71
+          address_type: null
+          addressline1: '20'
+          addressline2: Beleghata main road
+          billing_name: sourav
+          bucket_name: qubecart
+          city: 1
+          city_name: Kolkata
+          company_name: TEST company
+          contact_email: souravcristiano502@gmail.com
+          contact_person_designation: Owner
+          contact_person_firstname: null
+          contact_person_lastname: null
+          contact_phone: '9073448330'
+          corporate_size: null
+          countries_name: India
+          country: 1
+          created_on: null
+          gst_numbers: ADF12456
+          kmDistanceFromCostomer: 2
+          latitude: 22.563293
+          login_flag: null
+          longitude: 88.39328
+          pan: DHA1234
+          partner_address_id: 17
+          partner_bank_id: 2147483647
+          partner_category: 1
+          partner_code: TEST
+          partner_detail_id: 1
+          partner_status: 2
+          partner_status_name: Active
+          password: ''
+          payment_term: null
+          pin: 700010
+          qc_partner_id: 9
+          state: 1
+          states_name: West Bengal
+          status: 1
+          storeImageFolder: qubecart_partner
+          store_address_id: 71
+          store_category: 1
+          store_category_name: Grocery
+          store_id: 30
+          store_image: null
+          store_name: Everyday Grocery
+          updated_by: null
+          updated_on: null
+        - address_id: 22
+          address_type: null
+          addressline1: 112/4
+          addressline2: beleghata main road
+          billing_name: Snehasish
+          bucket_name: qubecart
+          city: 1
+          city_name: Kolkata
+          company_name: Msqube
+          contact_email: snehasishjames007@gmail.com
+          contact_person_designation: SDE
+          contact_person_firstname: Snehasish
+          contact_person_lastname: Das
+          contact_phone: '8981497361'
+          corporate_size: null
+          countries_name: India
+          country: 1
+          created_on: '2020-08-20T05:22:58'
+          gst_numbers: 1234qwer
+          kmDistanceFromCostomer: 2
+          latitude: null
+          login_flag: null
+          longitude: null
+          pan: asdf
+          partner_address_id: 40
+          partner_bank_id: null
+          partner_category: 1
+          partner_code: LEmIxE
+          partner_detail_id: 11
+          partner_status: 2
+          partner_status_name: Active
+          password: 81dc9bdb52d04dc20036dbd8313ed055
+          payment_term: null
+          pin: 700010
+          qc_partner_id: 24
+          state: 1
+          states_name: West Bengal
+          status: 1
+          storeImageFolder: qubecart_partner
+          store_address_id: 22
+          store_category: 1
+          store_category_name: Grocery
+          store_id: 3
+          store_image: MAS.jpg
+          store_name: Perfect store
+          updated_by: null
+          updated_on: '2020-08-20T05:22:58'
+        - address_id: 63
+          address_type: null
+          addressline1: Kestopur
+          addressline2: Kolkata
+          billing_name: Snehasish
+          bucket_name: qubecart
+          city: 1
+          city_name: Kolkata
+          company_name: Msqube
+          contact_email: snehasishjames007@gmail.com
+          contact_person_designation: SDE
+          contact_person_firstname: Snehasish
+          contact_person_lastname: Das
+          contact_phone: '8981497361'
+          corporate_size: null
+          countries_name: India
+          country: 1
+          created_on: '2020-08-20T05:22:58'
+          gst_numbers: 1234qwer
+          kmDistanceFromCostomer: 2
+          latitude: null
+          login_flag: null
+          longitude: null
+          pan: asdf
+          partner_address_id: 40
+          partner_bank_id: null
+          partner_category: 1
+          partner_code: LEmIxE
+          partner_detail_id: 11
+          partner_status: 2
+          partner_status_name: Active
+          password: 81dc9bdb52d04dc20036dbd8313ed055
+          payment_term: null
+          pin: 700012
+          qc_partner_id: 24
+          state: 1
+          states_name: West Bengal
+          status: 1
+          storeImageFolder: qubecart_partner
+          store_address_id: 63
+          store_category: 1
+          store_category_name: Grocery
+          store_id: 28
+          store_image: MAS.jpg
+          store_name: SD Store
+          updated_by: null
+          updated_on: '2020-08-20T05:22:58'
+        - address_id: 50
+          address_type: null
+          addressline1: 111/1
+          addressline2: highway to hell
+          billing_name: msqube
+          bucket_name: qubecart
+          city: 1
+          city_name: Kolkata
+          company_name: msqube
+          contact_email: soumik.roy.80@hmail.com
+          contact_person_designation: blabla
+          contact_person_firstname: soumik
+          contact_person_lastname: roy
+          contact_phone: '9038772775'
+          corporate_size: null
+          countries_name: India
+          country: 1
+          created_on: '2020-08-20T06:16:34'
+          gst_numbers: abcd
+          kmDistanceFromCostomer: 2
+          latitude: null
+          login_flag: null
+          longitude: null
+          pan: '12345'
+          partner_address_id: 41
+          partner_bank_id: null
+          partner_category: 2
+          partner_code: cz3CNu
+          partner_detail_id: 12
+          partner_status: 2
+          partner_status_name: Active
+          password: 81dc9bdb52d04dc20036dbd8313ed055
+          payment_term: null
+          pin: 999999
+          qc_partner_id: 25
+          state: 1
+          states_name: West Bengal
+          status: 1
+          storeImageFolder: qubecart_partner
+          store_address_id: 50
+          store_category: 1
+          store_category_name: Grocery
+          store_id: 16
+          store_image: MAS.jpg
+          store_name: HighwaytoHell Store ps AC/DC
+          updated_by: null
+          updated_on: '2020-08-20T06:16:34'
+        - address_id: 60
+          address_type: null
+          addressline1: Beleghata Head Post Office
+          addressline2: Beleghata
+          billing_name: msqube
+          bucket_name: qubecart
+          city: 1
+          city_name: Kolkata
+          company_name: msqube
+          contact_email: soumik.roy.80@hmail.com
+          contact_person_designation: blabla
+          contact_person_firstname: soumik
+          contact_person_lastname: roy
+          contact_phone: '9038772775'
+          corporate_size: null
+          countries_name: India
+          country: 1
+          created_on: '2020-08-20T06:16:34'
+          gst_numbers: abcd
+          kmDistanceFromCostomer: 2
+          latitude: null
+          login_flag: null
+          longitude: null
+          pan: '12345'
+          partner_address_id: 41
+          partner_bank_id: null
+          partner_category: 2
+          partner_code: cz3CNu
+          partner_detail_id: 12
+          partner_status: 2
+          partner_status_name: Active
+          password: 81dc9bdb52d04dc20036dbd8313ed055
+          payment_term: null
+          pin: 700089
+          qc_partner_id: 25
+          state: 1
+          states_name: West Bengal
+          status: 1
+          storeImageFolder: qubecart_partner
+          store_address_id: 60
+          store_category: 1
+          store_category_name: Grocery
+          store_id: 26
+          store_image: MAS.jpg
+          store_name: Maa Annapurna Store
+          updated_by: null
+          updated_on: '2020-08-20T06:16:34'
+        exception: false
+      x-response-id: bd747253-3748-4a35-b013-78fb10909b65
+    exampleQubecartPartnerStoreBycategoryPost200_1:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          category:
+            category_name: Grocery
+          stores:
+          - address_id: 71
+            address_type: null
+            addressline1: '20'
+            addressline2: Beleghata main road
+            billing_name: sourav
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            company_name: TEST company
+            contact_email: souravcristiano502@gmail.com
+            contact_person_designation: Owner
+            contact_person_firstname: null
+            contact_person_lastname: null
+            contact_phone: '9073448330'
+            corporate_size: null
+            countries_name: India
+            country: 1
+            created_on: null
+            credit_flag: 1
+            credit_flag_name: Credit Accept
+            gst_numbers: ADF12456
+            kmDistanceFromCostomer: 2
+            latitude: 22.563293
+            login_flag: null
+            longitude: 88.39328
+            pan: DHA1234
+            partner_address_id: 17
+            partner_bank_id: 2147483647
+            partner_category: 1
+            partner_code: TEST
+            partner_detail_id: 1
+            partner_status: 2
+            partner_status_name: Active
+            password: ''
+            payment_term: null
+            pin: 700010
+            qc_partner_id: 9
+            state: 1
+            states_name: West Bengal
+            status: 1
+            storeImageFolder: qubecart_partner
+            store_address_id: 71
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 30
+            store_image: null
+            store_name: Everyday Grocery
+            updated_by: null
+            updated_on: null
+          - address_id: 75
+            address_type: null
+            addressline1: 'krishnanagar '
+            addressline2: 'krishnanagar '
+            billing_name: Snehasish
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            company_name: Msqube
+            contact_email: snehasishjames007@gmail.com
+            contact_person_designation: SDE
+            contact_person_firstname: Snehasish
+            contact_person_lastname: Das
+            contact_phone: '8981497361'
+            corporate_size: null
+            countries_name: India
+            country: 1
+            created_on: '2020-08-20T05:22:58'
+            credit_flag: 1
+            credit_flag_name: Credit Accept
+            gst_numbers: 1234qwer
+            kmDistanceFromCostomer: 2
+            latitude: null
+            login_flag: null
+            longitude: null
+            pan: asdf
+            partner_address_id: 40
+            partner_bank_id: null
+            partner_category: 1
+            partner_code: LEmIxE
+            partner_detail_id: 11
+            partner_status: 2
+            partner_status_name: Active
+            password: 81dc9bdb52d04dc20036dbd8313ed055
+            payment_term: null
+            pin: 741102
+            qc_partner_id: 24
+            state: 1
+            states_name: West Bengal
+            status: 1
+            storeImageFolder: qubecart_partner
+            store_address_id: 75
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 34
+            store_image: null
+            store_name: 'Das Store '
+            updated_by: null
+            updated_on: '2020-08-20T05:22:58'
+          - address_id: 60
+            address_type: null
+            addressline1: Beleghata Head Post Office
+            addressline2: Beleghata
+            billing_name: msqube
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            company_name: msqube
+            contact_email: soumik.roy.80@hmail.com
+            contact_person_designation: blabla
+            contact_person_firstname: soumik
+            contact_person_lastname: roy
+            contact_phone: '9038772775'
+            corporate_size: null
+            countries_name: India
+            country: 1
+            created_on: '2020-08-20T06:16:34'
+            credit_flag: 1
+            credit_flag_name: Credit Accept
+            gst_numbers: abcd
+            kmDistanceFromCostomer: 2
+            latitude: null
+            login_flag: null
+            longitude: null
+            pan: '12345'
+            partner_address_id: 41
+            partner_bank_id: null
+            partner_category: 2
+            partner_code: cz3CNu
+            partner_detail_id: 12
+            partner_status: 2
+            partner_status_name: Active
+            password: 81dc9bdb52d04dc20036dbd8313ed055
+            payment_term: null
+            pin: 700089
+            qc_partner_id: 25
+            state: 1
+            states_name: West Bengal
+            status: 1
+            storeImageFolder: qubecart_partner
+            store_address_id: 60
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 26
+            store_image: MAS.jpg
+            store_name: Maa Annapurna Store
+            updated_by: null
+            updated_on: '2020-08-20T06:16:34'
+          - address_id: 22
+            address_type: null
+            addressline1: 112/4
+            addressline2: beleghata main road
+            billing_name: Snehasish
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            company_name: Msqube
+            contact_email: snehasishjames007@gmail.com
+            contact_person_designation: SDE
+            contact_person_firstname: Snehasish
+            contact_person_lastname: Das
+            contact_phone: '8981497361'
+            corporate_size: null
+            countries_name: India
+            country: 1
+            created_on: '2020-08-20T05:22:58'
+            credit_flag: 0
+            credit_flag_name: Credit Not Accept
+            gst_numbers: 1234qwer
+            kmDistanceFromCostomer: 2
+            latitude: null
+            login_flag: null
+            longitude: null
+            pan: asdf
+            partner_address_id: 40
+            partner_bank_id: null
+            partner_category: 1
+            partner_code: LEmIxE
+            partner_detail_id: 11
+            partner_status: 2
+            partner_status_name: Active
+            password: 81dc9bdb52d04dc20036dbd8313ed055
+            payment_term: null
+            pin: 700010
+            qc_partner_id: 24
+            state: 1
+            states_name: West Bengal
+            status: 1
+            storeImageFolder: qubecart_partner
+            store_address_id: 22
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 3
+            store_image: MAS.jpg
+            store_name: Perfect store
+            updated_by: null
+            updated_on: '2020-08-20T05:22:58'
+          - address_id: 63
+            address_type: null
+            addressline1: Kestopur
+            addressline2: Kolkata
+            billing_name: Snehasish
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            company_name: Msqube
+            contact_email: snehasishjames007@gmail.com
+            contact_person_designation: SDE
+            contact_person_firstname: Snehasish
+            contact_person_lastname: Das
+            contact_phone: '8981497361'
+            corporate_size: null
+            countries_name: India
+            country: 1
+            created_on: '2020-08-20T05:22:58'
+            credit_flag: 0
+            credit_flag_name: Credit Not Accept
+            gst_numbers: 1234qwer
+            kmDistanceFromCostomer: 2
+            latitude: null
+            login_flag: null
+            longitude: null
+            pan: asdf
+            partner_address_id: 40
+            partner_bank_id: null
+            partner_category: 1
+            partner_code: LEmIxE
+            partner_detail_id: 11
+            partner_status: 2
+            partner_status_name: Active
+            password: 81dc9bdb52d04dc20036dbd8313ed055
+            payment_term: null
+            pin: 700012
+            qc_partner_id: 24
+            state: 1
+            states_name: West Bengal
+            status: 1
+            storeImageFolder: qubecart_partner
+            store_address_id: 63
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 28
+            store_image: MAS.jpg
+            store_name: SD Store
+            updated_by: null
+            updated_on: '2020-08-20T05:22:58'
+          - address_id: 50
+            address_type: null
+            addressline1: 111/1
+            addressline2: highway to hell
+            billing_name: msqube
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            company_name: msqube
+            contact_email: soumik.roy.80@hmail.com
+            contact_person_designation: blabla
+            contact_person_firstname: soumik
+            contact_person_lastname: roy
+            contact_phone: '9038772775'
+            corporate_size: null
+            countries_name: India
+            country: 1
+            created_on: '2020-08-20T06:16:34'
+            credit_flag: 0
+            credit_flag_name: Credit Not Accept
+            gst_numbers: abcd
+            kmDistanceFromCostomer: 2
+            latitude: null
+            login_flag: null
+            longitude: null
+            pan: '12345'
+            partner_address_id: 41
+            partner_bank_id: null
+            partner_category: 2
+            partner_code: cz3CNu
+            partner_detail_id: 12
+            partner_status: 2
+            partner_status_name: Active
+            password: 81dc9bdb52d04dc20036dbd8313ed055
+            payment_term: null
+            pin: 999999
+            qc_partner_id: 25
+            state: 1
+            states_name: West Bengal
+            status: 1
+            storeImageFolder: qubecart_partner
+            store_address_id: 50
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 16
+            store_image: MAS.jpg
+            store_name: HighwaytoHell Store ps AC/DC
+            updated_by: null
+            updated_on: '2020-08-20T06:16:34'
+        exception: false
+      x-response-id: e84f3977-9421-489c-9280-f19ffd5f2e0e
     exampleQubecartPartnerStoreCreateproductPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 95f804a6-7a23-4a44-9397-fd0aff01ed14
+      x-response-id: 048a73f6-0d4a-43c4-a684-9c88e9500f59
     exampleQubecartPartnerStoreGetPost200:
       value:
         Errors: null
@@ -133,7 +679,7 @@ components:
           store_location: null
           store_name: wonderland
         exception: false
-      x-response-id: f334bb57-ff53-4dce-8559-7ae757a9f342
+      x-response-id: 92dc7463-6b4d-41b5-94ac-695074073f7a
     exampleQubecartPartnerStoreGetbyidPost200:
       value:
         Errors: null
@@ -157,7 +703,7 @@ components:
           store_name: HighwaytoHell Store
           store_type_name: Grocery
         exception: false
-      x-response-id: 89883b26-663d-4d2b-9c9f-0c0c32013555
+      x-response-id: 3fa53601-3e11-4db4-a9b8-91506078c080
     exampleQubecartPartnerStoreGetproductsPost200:
       value:
         Errors: null
@@ -167,64 +713,119 @@ components:
           folder_name: Item_image
           items:
           - brand_created_by_role: 1
-            partner_product_id: 1
-            product_brand_id: 3
-            product_brand_name: Fortune
-            product_description: Fortune Rozana Basmati Rice offers in economi
-            product_discount: 47
-            product_mrp: 585
+            brand_name: Daawat
+            category_name: Rice
+            packaged_product: 1
+            partner_product_id: 49
+            product_brand_id: 369
+            product_description: Dawaat Rozana Super Basmati Rice
+            product_discount: 30
+            product_mrp: 435
             product_quantity: 5
             product_rating: 0
-            product_selling_price: 311
-            product_thumbnail: fortunebasmatirice.jpg
-            product_title: Fortune Basmati Rice,5Kg
+            product_selling_price: 304.5
+            product_thumbnail: dawaat5kg.jpg
+            product_title: Daawat Basmati Rice,5Kg
             product_unit: 1
-            stock_quantity: 15
+            stock_quantity: 10
             stock_statement: In Stock
             subcategory_name: Basmati Rice
-            unit_name: Kg
-            updated_by: 9
-            updated_on: '2020-08-19T07:23:57'
+            unit_short: Kg
+            updated_by: 24
+            updated_on: '2020-08-28T19:19:40'
           - brand_created_by_role: 1
-            partner_product_id: 2
-            product_brand_id: 1
-            product_brand_name: India Gate
-            product_description: 'India Gate Basmati Rice, Rozana. Used finest '
-            product_discount: 28
-            product_mrp: 485
-            product_quantity: 5
+            brand_name: India Gate
+            category_name: Rice
+            packaged_product: 1
+            partner_product_id: 50
+            product_brand_id: 370
+            product_description: India Gate Basmati Rice
+            product_discount: 10
+            product_mrp: 209
+            product_quantity: 1
             product_rating: 0
-            product_selling_price: 349
-            product_thumbnail: indiagatebasmatirice.jpg
-            product_title: India Gate Basmati Rice,5Kg
+            product_selling_price: 188.1
+            product_thumbnail: indiagate1kg.jpg
+            product_title: India Gate Basmati Rice,1Kg
             product_unit: 1
-            stock_quantity: 15
+            stock_quantity: 5
             stock_statement: In Stock
             subcategory_name: Basmati Rice
-            unit_name: Kg
-            updated_by: 9
-            updated_on: '2020-08-19T07:33:31'
-          - brand_created_by_role: 2
-            partner_product_id: 10
-            product_brand_id: 1
-            product_brand_name: KaloBaba
-            product_description: Kalobaba Basmati Rice for everyday use
+            unit_short: Kg
+            updated_by: 24
+            updated_on: '2020-08-28T19:21:28'
+          - brand_created_by_role: 1
+            brand_name: aashirvad
+            category_name: Flour
+            packaged_product: 1
+            partner_product_id: 51
+            product_brand_id: 393
+            product_description: Aashirvaad Chakki Atta
             product_discount: 10
-            product_mrp: 60
-            product_quantity: 2
+            product_mrp: 250
+            product_quantity: 5
             product_rating: 0
-            product_selling_price: 54
-            product_thumbnail: basmati.jpg
-            product_title: KaloBaba Basmati Rice,2Kg
+            product_selling_price: 225
+            product_thumbnail: aashirvaad5.jpg
+            product_title: aashirvad Wheat Atta,5Kg
+            product_unit: 1
+            stock_quantity: 5
+            stock_statement: In Stock
+            subcategory_name: Wheat Atta
+            unit_short: Kg
+            updated_by: 24
+            updated_on: '2020-08-28T19:23:57'
+          - brand_created_by_role: 2
+            brand_name: abhishap
+            category_name: Flour
+            packaged_product: 1
+            partner_product_id: 52
+            product_brand_id: 28
+            product_description: Abhishap Chakki Atta
+            product_discount: 20
+            product_mrp: 150
+            product_quantity: 10
+            product_rating: 0
+            product_selling_price: 120
+            product_thumbnail: 85f2d481-8a69-4aab-adaa-53b10ecc1f9e.jpg
+            product_title: abhishap Wheat Atta
             product_unit: 1
             stock_quantity: 20
             stock_statement: In Stock
-            subcategory_name: Basmati Rice
-            unit_name: Kg
-            updated_by: 9
-            updated_on: '2020-08-25T12:30:05'
+            subcategory_name: Wheat Atta
+            unit_short: Kg
+            updated_by: 24
+            updated_on: '2020-09-03T20:02:43'
+          - brand_created_by_role: 2
+            brand_name: Generic
+            category_name: Raisins
+            packaged_product: 1
+            partner_product_id: 53
+            product_brand_id: 24
+            product_description: Generic Raisins
+            product_discount: 4
+            product_mrp: 50
+            product_quantity: 50
+            product_rating: 0
+            product_selling_price: 48
+            product_thumbnail: null
+            product_title: Generic Raisins
+            product_unit: 2
+            stock_quantity: 10
+            stock_statement: In Stock
+            subcategory_name: Raisins
+            unit_short: g
+            updated_by: 24
+            updated_on: '2020-09-03T20:07:49'
+          store:
+            credit_flag: 0
+            latitude: null
+            longitude: null
+            store_address_id: 63
+            store_name: SD Store
+            store_rating: 0
         exception: false
-      x-response-id: cdfe362f-9186-45fb-b7e3-48a49b0360ac
+      x-response-id: 8487438b-783a-4c1f-92f7-1e8e980006c0
     exampleQubecartPartnerStoreGetproductsbybrandPost200:
       value:
         Errors: null
@@ -247,7 +848,7 @@ components:
           updated_by: 9
           updated_on: '2020-08-19T07:33:31'
         exception: false
-      x-response-id: 9afef736-a4b9-41fd-8c90-5fb470519884
+      x-response-id: d74b5e8b-a51e-41ba-9d36-5f6306845a5f
     exampleQubecartPartnerStoreGetproductsbybrandPost200_1:
       value:
         Errors: null
@@ -327,19 +928,19 @@ components:
           updated_by: 24
           updated_on: '2020-08-27T18:46:17'
         exception: false
-      x-response-id: 3095f902-fffa-4220-b4e5-628647914c19
+      x-response-id: f845916f-b6ae-430e-a837-5cc52b645699
     exampleQubecartPartnerStoreUpdatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 8918ca6a-edf0-4ff9-b04d-8ca3a5cd5edf
+      x-response-id: ee1266d4-7a66-404c-aba4-ce7fd1c41875
     exampleQubecartPartnerStoreUpdatestockPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: eb8f813e-cb02-42e9-9ee9-4fc2071a4414
+      x-response-id: bf112506-9658-4352-abb2-476189c332fc
     exampleQubecartPartnerTemplateInfoPost200:
       value:
         Errors: null
@@ -384,7 +985,7 @@ components:
           template_id: 29
           template_name: 'Foodgrains, Oils & Masala '
         exception: false
-      x-response-id: 5333581e-7be4-4614-b684-198fba57d7fe
+      x-response-id: 4d48e3bb-88c7-4a83-8d0f-849dd5632abe
   schemas:
     schemaQubecartPartnerBrandCreatePost200:
       properties:
@@ -528,6 +1129,828 @@ components:
             - states_name
             type: object
           type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerStoreBycategoryPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            allOf:
+            - properties:
+                address_id:
+                  format: int32
+                  type: integer
+                address_type: {}
+                addressline1:
+                  type: string
+                addressline2:
+                  type: string
+                billing_name:
+                  type: string
+                bucket_name:
+                  type: string
+                city:
+                  format: int32
+                  type: integer
+                city_name:
+                  type: string
+                company_name:
+                  type: string
+                contact_email:
+                  type: string
+                contact_person_designation:
+                  type: string
+                contact_person_firstname: {}
+                contact_person_lastname: {}
+                contact_phone:
+                  type: string
+                corporate_size: {}
+                countries_name:
+                  type: string
+                country:
+                  format: int32
+                  type: integer
+                created_on: {}
+                gst_numbers:
+                  type: string
+                kmDistanceFromCostomer:
+                  format: int32
+                  type: integer
+                latitude:
+                  type: float
+                login_flag: {}
+                longitude:
+                  type: float
+                pan:
+                  type: string
+                partner_address_id:
+                  format: int32
+                  type: integer
+                partner_bank_id:
+                  format: int32
+                  type: integer
+                partner_category:
+                  format: int32
+                  type: integer
+                partner_code:
+                  type: string
+                partner_detail_id:
+                  format: int32
+                  type: integer
+                partner_status:
+                  format: int32
+                  type: integer
+                partner_status_name:
+                  type: string
+                password:
+                  type: string
+                payment_term: {}
+                pin:
+                  format: int32
+                  type: integer
+                qc_partner_id:
+                  format: int32
+                  type: integer
+                state:
+                  format: int32
+                  type: integer
+                states_name:
+                  type: string
+                status:
+                  format: int32
+                  type: integer
+                storeImageFolder:
+                  type: string
+                store_address_id:
+                  format: int32
+                  type: integer
+                store_category:
+                  format: int32
+                  type: integer
+                store_category_name:
+                  type: string
+                store_id:
+                  format: int32
+                  type: integer
+                store_image: {}
+                store_name:
+                  type: string
+                updated_by: {}
+                updated_on: {}
+              required:
+              - store_id
+              - store_address_id
+              - store_name
+              - store_category
+              - store_image
+              - qc_partner_id
+              - latitude
+              - longitude
+              - store_category_name
+              - kmDistanceFromCostomer
+              - address_id
+              - addressline1
+              - addressline2
+              - pin
+              - city
+              - state
+              - country
+              - address_type
+              - city_name
+              - states_name
+              - countries_name
+              - partner_category
+              - partner_code
+              - partner_status
+              - login_flag
+              - created_on
+              - partner_status_name
+              - partner_detail_id
+              - company_name
+              - contact_phone
+              - billing_name
+              - gst_numbers
+              - corporate_size
+              - payment_term
+              - updated_on
+              - updated_by
+              - partner_address_id
+              - pan
+              - contact_email
+              - contact_person_firstname
+              - contact_person_lastname
+              - contact_person_designation
+              - partner_bank_id
+              - status
+              - password
+              - bucket_name
+              - storeImageFolder
+              type: object
+            - properties:
+                address_id:
+                  format: int32
+                  type: integer
+                address_type: {}
+                addressline1:
+                  type: string
+                addressline2:
+                  type: string
+                billing_name:
+                  type: string
+                bucket_name:
+                  type: string
+                city:
+                  format: int32
+                  type: integer
+                city_name:
+                  type: string
+                company_name:
+                  type: string
+                contact_email:
+                  type: string
+                contact_person_designation:
+                  type: string
+                contact_person_firstname:
+                  type: string
+                contact_person_lastname:
+                  type: string
+                contact_phone:
+                  type: string
+                corporate_size: {}
+                countries_name:
+                  type: string
+                country:
+                  format: int32
+                  type: integer
+                created_on:
+                  type: string
+                gst_numbers:
+                  type: string
+                kmDistanceFromCostomer:
+                  format: int32
+                  type: integer
+                latitude: {}
+                login_flag: {}
+                longitude: {}
+                pan:
+                  type: string
+                partner_address_id:
+                  format: int32
+                  type: integer
+                partner_bank_id: {}
+                partner_category:
+                  format: int32
+                  type: integer
+                partner_code:
+                  type: string
+                partner_detail_id:
+                  format: int32
+                  type: integer
+                partner_status:
+                  format: int32
+                  type: integer
+                partner_status_name:
+                  type: string
+                password:
+                  type: string
+                payment_term: {}
+                pin:
+                  format: int32
+                  type: integer
+                qc_partner_id:
+                  format: int32
+                  type: integer
+                state:
+                  format: int32
+                  type: integer
+                states_name:
+                  type: string
+                status:
+                  format: int32
+                  type: integer
+                storeImageFolder:
+                  type: string
+                store_address_id:
+                  format: int32
+                  type: integer
+                store_category:
+                  format: int32
+                  type: integer
+                store_category_name:
+                  type: string
+                store_id:
+                  format: int32
+                  type: integer
+                store_image:
+                  type: string
+                store_name:
+                  type: string
+                updated_by: {}
+                updated_on:
+                  type: string
+              required:
+              - store_id
+              - store_address_id
+              - store_name
+              - store_category
+              - store_image
+              - qc_partner_id
+              - latitude
+              - longitude
+              - store_category_name
+              - kmDistanceFromCostomer
+              - address_id
+              - addressline1
+              - addressline2
+              - pin
+              - city
+              - state
+              - country
+              - address_type
+              - city_name
+              - states_name
+              - countries_name
+              - partner_category
+              - partner_code
+              - partner_status
+              - login_flag
+              - created_on
+              - partner_status_name
+              - partner_detail_id
+              - company_name
+              - contact_phone
+              - billing_name
+              - gst_numbers
+              - corporate_size
+              - payment_term
+              - updated_on
+              - updated_by
+              - partner_address_id
+              - pan
+              - contact_email
+              - contact_person_firstname
+              - contact_person_lastname
+              - contact_person_designation
+              - partner_bank_id
+              - status
+              - password
+              - bucket_name
+              - storeImageFolder
+              type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerStoreBycategoryPost200_1:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            category:
+              properties:
+                category_name:
+                  type: string
+              required:
+              - category_name
+              type: object
+            stores:
+              items:
+                allOf:
+                - properties:
+                    address_id:
+                      format: int32
+                      type: integer
+                    address_type: {}
+                    addressline1:
+                      type: string
+                    addressline2:
+                      type: string
+                    billing_name:
+                      type: string
+                    bucket_name:
+                      type: string
+                    city:
+                      format: int32
+                      type: integer
+                    city_name:
+                      type: string
+                    company_name:
+                      type: string
+                    contact_email:
+                      type: string
+                    contact_person_designation:
+                      type: string
+                    contact_person_firstname: {}
+                    contact_person_lastname: {}
+                    contact_phone:
+                      type: string
+                    corporate_size: {}
+                    countries_name:
+                      type: string
+                    country:
+                      format: int32
+                      type: integer
+                    created_on: {}
+                    credit_flag:
+                      format: int32
+                      type: integer
+                    credit_flag_name:
+                      type: string
+                    gst_numbers:
+                      type: string
+                    kmDistanceFromCostomer:
+                      format: int32
+                      type: integer
+                    latitude:
+                      type: float
+                    login_flag: {}
+                    longitude:
+                      type: float
+                    pan:
+                      type: string
+                    partner_address_id:
+                      format: int32
+                      type: integer
+                    partner_bank_id:
+                      format: int32
+                      type: integer
+                    partner_category:
+                      format: int32
+                      type: integer
+                    partner_code:
+                      type: string
+                    partner_detail_id:
+                      format: int32
+                      type: integer
+                    partner_status:
+                      format: int32
+                      type: integer
+                    partner_status_name:
+                      type: string
+                    password:
+                      type: string
+                    payment_term: {}
+                    pin:
+                      format: int32
+                      type: integer
+                    qc_partner_id:
+                      format: int32
+                      type: integer
+                    state:
+                      format: int32
+                      type: integer
+                    states_name:
+                      type: string
+                    status:
+                      format: int32
+                      type: integer
+                    storeImageFolder:
+                      type: string
+                    store_address_id:
+                      format: int32
+                      type: integer
+                    store_category:
+                      format: int32
+                      type: integer
+                    store_category_name:
+                      type: string
+                    store_id:
+                      format: int32
+                      type: integer
+                    store_image: {}
+                    store_name:
+                      type: string
+                    updated_by: {}
+                    updated_on: {}
+                  required:
+                  - store_id
+                  - store_address_id
+                  - store_name
+                  - store_category
+                  - store_image
+                  - qc_partner_id
+                  - latitude
+                  - longitude
+                  - credit_flag
+                  - store_category_name
+                  - kmDistanceFromCostomer
+                  - address_id
+                  - addressline1
+                  - addressline2
+                  - pin
+                  - city
+                  - state
+                  - country
+                  - address_type
+                  - city_name
+                  - states_name
+                  - countries_name
+                  - partner_category
+                  - partner_code
+                  - partner_status
+                  - login_flag
+                  - created_on
+                  - partner_status_name
+                  - credit_flag_name
+                  - partner_detail_id
+                  - company_name
+                  - contact_phone
+                  - billing_name
+                  - gst_numbers
+                  - corporate_size
+                  - payment_term
+                  - updated_on
+                  - updated_by
+                  - partner_address_id
+                  - pan
+                  - contact_email
+                  - contact_person_firstname
+                  - contact_person_lastname
+                  - contact_person_designation
+                  - partner_bank_id
+                  - status
+                  - password
+                  - bucket_name
+                  - storeImageFolder
+                  type: object
+                - properties:
+                    address_id:
+                      format: int32
+                      type: integer
+                    address_type: {}
+                    addressline1:
+                      type: string
+                    addressline2:
+                      type: string
+                    billing_name:
+                      type: string
+                    bucket_name:
+                      type: string
+                    city:
+                      format: int32
+                      type: integer
+                    city_name:
+                      type: string
+                    company_name:
+                      type: string
+                    contact_email:
+                      type: string
+                    contact_person_designation:
+                      type: string
+                    contact_person_firstname:
+                      type: string
+                    contact_person_lastname:
+                      type: string
+                    contact_phone:
+                      type: string
+                    corporate_size: {}
+                    countries_name:
+                      type: string
+                    country:
+                      format: int32
+                      type: integer
+                    created_on:
+                      type: string
+                    credit_flag:
+                      format: int32
+                      type: integer
+                    credit_flag_name:
+                      type: string
+                    gst_numbers:
+                      type: string
+                    kmDistanceFromCostomer:
+                      format: int32
+                      type: integer
+                    latitude: {}
+                    login_flag: {}
+                    longitude: {}
+                    pan:
+                      type: string
+                    partner_address_id:
+                      format: int32
+                      type: integer
+                    partner_bank_id: {}
+                    partner_category:
+                      format: int32
+                      type: integer
+                    partner_code:
+                      type: string
+                    partner_detail_id:
+                      format: int32
+                      type: integer
+                    partner_status:
+                      format: int32
+                      type: integer
+                    partner_status_name:
+                      type: string
+                    password:
+                      type: string
+                    payment_term: {}
+                    pin:
+                      format: int32
+                      type: integer
+                    qc_partner_id:
+                      format: int32
+                      type: integer
+                    state:
+                      format: int32
+                      type: integer
+                    states_name:
+                      type: string
+                    status:
+                      format: int32
+                      type: integer
+                    storeImageFolder:
+                      type: string
+                    store_address_id:
+                      format: int32
+                      type: integer
+                    store_category:
+                      format: int32
+                      type: integer
+                    store_category_name:
+                      type: string
+                    store_id:
+                      format: int32
+                      type: integer
+                    store_image: {}
+                    store_name:
+                      type: string
+                    updated_by: {}
+                    updated_on:
+                      type: string
+                  required:
+                  - store_id
+                  - store_address_id
+                  - store_name
+                  - store_category
+                  - store_image
+                  - qc_partner_id
+                  - latitude
+                  - longitude
+                  - credit_flag
+                  - store_category_name
+                  - kmDistanceFromCostomer
+                  - address_id
+                  - addressline1
+                  - addressline2
+                  - pin
+                  - city
+                  - state
+                  - country
+                  - address_type
+                  - city_name
+                  - states_name
+                  - countries_name
+                  - partner_category
+                  - partner_code
+                  - partner_status
+                  - login_flag
+                  - created_on
+                  - partner_status_name
+                  - credit_flag_name
+                  - partner_detail_id
+                  - company_name
+                  - contact_phone
+                  - billing_name
+                  - gst_numbers
+                  - corporate_size
+                  - payment_term
+                  - updated_on
+                  - updated_by
+                  - partner_address_id
+                  - pan
+                  - contact_email
+                  - contact_person_firstname
+                  - contact_person_lastname
+                  - contact_person_designation
+                  - partner_bank_id
+                  - status
+                  - password
+                  - bucket_name
+                  - storeImageFolder
+                  type: object
+                - properties:
+                    address_id:
+                      format: int32
+                      type: integer
+                    address_type: {}
+                    addressline1:
+                      type: string
+                    addressline2:
+                      type: string
+                    billing_name:
+                      type: string
+                    bucket_name:
+                      type: string
+                    city:
+                      format: int32
+                      type: integer
+                    city_name:
+                      type: string
+                    company_name:
+                      type: string
+                    contact_email:
+                      type: string
+                    contact_person_designation:
+                      type: string
+                    contact_person_firstname:
+                      type: string
+                    contact_person_lastname:
+                      type: string
+                    contact_phone:
+                      type: string
+                    corporate_size: {}
+                    countries_name:
+                      type: string
+                    country:
+                      format: int32
+                      type: integer
+                    created_on:
+                      type: string
+                    credit_flag:
+                      format: int32
+                      type: integer
+                    credit_flag_name:
+                      type: string
+                    gst_numbers:
+                      type: string
+                    kmDistanceFromCostomer:
+                      format: int32
+                      type: integer
+                    latitude: {}
+                    login_flag: {}
+                    longitude: {}
+                    pan:
+                      type: string
+                    partner_address_id:
+                      format: int32
+                      type: integer
+                    partner_bank_id: {}
+                    partner_category:
+                      format: int32
+                      type: integer
+                    partner_code:
+                      type: string
+                    partner_detail_id:
+                      format: int32
+                      type: integer
+                    partner_status:
+                      format: int32
+                      type: integer
+                    partner_status_name:
+                      type: string
+                    password:
+                      type: string
+                    payment_term: {}
+                    pin:
+                      format: int32
+                      type: integer
+                    qc_partner_id:
+                      format: int32
+                      type: integer
+                    state:
+                      format: int32
+                      type: integer
+                    states_name:
+                      type: string
+                    status:
+                      format: int32
+                      type: integer
+                    storeImageFolder:
+                      type: string
+                    store_address_id:
+                      format: int32
+                      type: integer
+                    store_category:
+                      format: int32
+                      type: integer
+                    store_category_name:
+                      type: string
+                    store_id:
+                      format: int32
+                      type: integer
+                    store_image:
+                      type: string
+                    store_name:
+                      type: string
+                    updated_by: {}
+                    updated_on:
+                      type: string
+                  required:
+                  - store_id
+                  - store_address_id
+                  - store_name
+                  - store_category
+                  - store_image
+                  - qc_partner_id
+                  - latitude
+                  - longitude
+                  - credit_flag
+                  - store_category_name
+                  - kmDistanceFromCostomer
+                  - address_id
+                  - addressline1
+                  - addressline2
+                  - pin
+                  - city
+                  - state
+                  - country
+                  - address_type
+                  - city_name
+                  - states_name
+                  - countries_name
+                  - partner_category
+                  - partner_code
+                  - partner_status
+                  - login_flag
+                  - created_on
+                  - partner_status_name
+                  - credit_flag_name
+                  - partner_detail_id
+                  - company_name
+                  - contact_phone
+                  - billing_name
+                  - gst_numbers
+                  - corporate_size
+                  - payment_term
+                  - updated_on
+                  - updated_by
+                  - partner_address_id
+                  - pan
+                  - contact_email
+                  - contact_person_firstname
+                  - contact_person_lastname
+                  - contact_person_designation
+                  - partner_bank_id
+                  - status
+                  - password
+                  - bucket_name
+                  - storeImageFolder
+                  type: object
+              type: array
+          required:
+          - category
+          - stores
+          type: object
         exception:
           format: 'null'
           type: boolean
@@ -715,81 +2138,267 @@ components:
               type: string
             items:
               items:
-                properties:
-                  brand_created_by_role:
-                    format: int32
-                    type: integer
-                  partner_product_id:
-                    format: int32
-                    type: integer
-                  product_brand_id:
-                    format: int32
-                    type: integer
-                  product_brand_name:
-                    type: string
-                  product_description:
-                    type: string
-                  product_discount:
-                    format: int32
-                    type: integer
-                  product_mrp:
-                    format: int32
-                    type: integer
-                  product_quantity:
-                    format: int32
-                    type: integer
-                  product_rating:
-                    format: int32
-                    type: integer
-                  product_selling_price:
-                    format: int32
-                    type: integer
-                  product_thumbnail:
-                    type: string
-                  product_title:
-                    type: string
-                  product_unit:
-                    format: int32
-                    type: integer
-                  stock_quantity:
-                    format: int32
-                    type: integer
-                  stock_statement:
-                    type: string
-                  subcategory_name:
-                    type: string
-                  unit_name:
-                    type: string
-                  updated_by:
-                    format: int32
-                    type: integer
-                  updated_on:
-                    type: string
-                required:
-                - partner_product_id
-                - updated_on
-                - updated_by
-                - product_description
-                - product_unit
-                - product_quantity
-                - product_rating
-                - product_mrp
-                - product_selling_price
-                - product_discount
-                - stock_quantity
-                - product_thumbnail
-                - unit_name
-                - brand_created_by_role
-                - product_brand_id
-                - product_brand_name
-                - subcategory_name
-                - stock_statement
-                - product_title
-                type: object
+                allOf:
+                - properties:
+                    brand_created_by_role:
+                      format: int32
+                      type: integer
+                    brand_name:
+                      type: string
+                    category_name:
+                      type: string
+                    packaged_product:
+                      format: int32
+                      type: integer
+                    partner_product_id:
+                      format: int32
+                      type: integer
+                    product_brand_id:
+                      format: int32
+                      type: integer
+                    product_description:
+                      type: string
+                    product_discount:
+                      format: int32
+                      type: integer
+                    product_mrp:
+                      format: int32
+                      type: integer
+                    product_quantity:
+                      format: int32
+                      type: integer
+                    product_rating:
+                      format: int32
+                      type: integer
+                    product_selling_price:
+                      type: float
+                    product_thumbnail:
+                      type: string
+                    product_title:
+                      type: string
+                    product_unit:
+                      format: int32
+                      type: integer
+                    stock_quantity:
+                      format: int32
+                      type: integer
+                    stock_statement:
+                      type: string
+                    subcategory_name:
+                      type: string
+                    unit_short:
+                      type: string
+                    updated_by:
+                      format: int32
+                      type: integer
+                    updated_on:
+                      type: string
+                  required:
+                  - partner_product_id
+                  - updated_on
+                  - updated_by
+                  - product_description
+                  - product_unit
+                  - product_quantity
+                  - product_rating
+                  - packaged_product
+                  - product_mrp
+                  - product_selling_price
+                  - product_discount
+                  - stock_quantity
+                  - product_thumbnail
+                  - unit_short
+                  - brand_created_by_role
+                  - product_brand_id
+                  - brand_name
+                  - subcategory_name
+                  - stock_statement
+                  - product_title
+                  - category_name
+                  type: object
+                - properties:
+                    brand_created_by_role:
+                      format: int32
+                      type: integer
+                    brand_name:
+                      type: string
+                    category_name:
+                      type: string
+                    packaged_product:
+                      format: int32
+                      type: integer
+                    partner_product_id:
+                      format: int32
+                      type: integer
+                    product_brand_id:
+                      format: int32
+                      type: integer
+                    product_description:
+                      type: string
+                    product_discount:
+                      format: int32
+                      type: integer
+                    product_mrp:
+                      format: int32
+                      type: integer
+                    product_quantity:
+                      format: int32
+                      type: integer
+                    product_rating:
+                      format: int32
+                      type: integer
+                    product_selling_price:
+                      format: int32
+                      type: integer
+                    product_thumbnail:
+                      type: string
+                    product_title:
+                      type: string
+                    product_unit:
+                      format: int32
+                      type: integer
+                    stock_quantity:
+                      format: int32
+                      type: integer
+                    stock_statement:
+                      type: string
+                    subcategory_name:
+                      type: string
+                    unit_short:
+                      type: string
+                    updated_by:
+                      format: int32
+                      type: integer
+                    updated_on:
+                      type: string
+                  required:
+                  - partner_product_id
+                  - updated_on
+                  - updated_by
+                  - product_description
+                  - product_unit
+                  - product_quantity
+                  - product_rating
+                  - packaged_product
+                  - product_mrp
+                  - product_selling_price
+                  - product_discount
+                  - stock_quantity
+                  - product_thumbnail
+                  - unit_short
+                  - brand_created_by_role
+                  - product_brand_id
+                  - brand_name
+                  - subcategory_name
+                  - stock_statement
+                  - product_title
+                  - category_name
+                  type: object
+                - properties:
+                    brand_created_by_role:
+                      format: int32
+                      type: integer
+                    brand_name:
+                      type: string
+                    category_name:
+                      type: string
+                    packaged_product:
+                      format: int32
+                      type: integer
+                    partner_product_id:
+                      format: int32
+                      type: integer
+                    product_brand_id:
+                      format: int32
+                      type: integer
+                    product_description:
+                      type: string
+                    product_discount:
+                      format: int32
+                      type: integer
+                    product_mrp:
+                      format: int32
+                      type: integer
+                    product_quantity:
+                      format: int32
+                      type: integer
+                    product_rating:
+                      format: int32
+                      type: integer
+                    product_selling_price:
+                      format: int32
+                      type: integer
+                    product_thumbnail: {}
+                    product_title:
+                      type: string
+                    product_unit:
+                      format: int32
+                      type: integer
+                    stock_quantity:
+                      format: int32
+                      type: integer
+                    stock_statement:
+                      type: string
+                    subcategory_name:
+                      type: string
+                    unit_short:
+                      type: string
+                    updated_by:
+                      format: int32
+                      type: integer
+                    updated_on:
+                      type: string
+                  required:
+                  - partner_product_id
+                  - updated_on
+                  - updated_by
+                  - product_description
+                  - product_unit
+                  - product_quantity
+                  - product_rating
+                  - packaged_product
+                  - product_mrp
+                  - product_selling_price
+                  - product_discount
+                  - stock_quantity
+                  - product_thumbnail
+                  - unit_short
+                  - brand_created_by_role
+                  - product_brand_id
+                  - brand_name
+                  - subcategory_name
+                  - stock_statement
+                  - product_title
+                  - category_name
+                  type: object
               type: array
+            store:
+              properties:
+                credit_flag:
+                  format: int32
+                  type: integer
+                latitude: {}
+                longitude: {}
+                store_address_id:
+                  format: int32
+                  type: integer
+                store_name:
+                  type: string
+                store_rating:
+                  format: int32
+                  type: integer
+              required:
+              - store_name
+              - latitude
+              - longitude
+              - store_address_id
+              - store_rating
+              - credit_flag
+              type: object
           required:
           - bucket_name
           - folder_name
+          - store
           - items
           type: object
         exception:
@@ -1372,7 +2981,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: f334bb57-ff53-4dce-8559-7ae757a9f342
+              x-response-id: 92dc7463-6b4d-41b5-94ac-695074073f7a
       responses:
         '200':
           content:
@@ -1392,12 +3001,12 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"store_id\" : 3\n}"
+              value: "{\n    \"store_id\" : 28\n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: cdfe362f-9186-45fb-b7e3-48a49b0360ac
+            - value: "{\n    \"store_id\" : 28\n}"
+              x-response-id: 8487438b-783a-4c1f-92f7-1e8e980006c0
       responses:
         '200':
           content:
@@ -1435,7 +3044,7 @@ paths:
                 \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
                 \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
                 \ : 2\n}"
-              x-response-id: 95f804a6-7a23-4a44-9397-fd0aff01ed14
+              x-response-id: 048a73f6-0d4a-43c4-a684-9c88e9500f59
       responses:
         '200':
           content:
@@ -1468,7 +3077,7 @@ paths:
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
                 \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
                 \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: 8918ca6a-edf0-4ff9-b04d-8ca3a5cd5edf
+              x-response-id: ee1266d4-7a66-404c-aba4-ce7fd1c41875
       responses:
         '200':
           content:
@@ -1493,7 +3102,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: 89883b26-663d-4d2b-9c9f-0c0c32013555
+              x-response-id: 3fa53601-3e11-4db4-a9b8-91506078c080
       responses:
         '200':
           content:
@@ -1521,7 +3130,7 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
                 \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-              x-response-id: eb8f813e-cb02-42e9-9ee9-4fc2071a4414
+              x-response-id: bf112506-9658-4352-abb2-476189c332fc
       responses:
         '200':
           content:
@@ -1548,7 +3157,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n\
                 \    \"brand_name\" : \"Generic/Loose\"\n}"
-              x-response-id: 40297a2d-6d1f-48fc-8dc1-3fd3425e5b79
+              x-response-id: d32c1c5c-e818-4ccc-a20f-9ad2ea3f9dbf
       responses:
         '200':
           content:
@@ -1575,7 +3184,7 @@ paths:
             x-link-response:
             - value: "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\"\
                 \ : true\n}"
-              x-response-id: ec8de00f-5303-4c06-84e3-311c3846b013
+              x-response-id: 13b0528e-0310-457f-9a1e-2d47671bcd44
       responses:
         '200':
           content:
@@ -1600,7 +3209,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
-              x-response-id: cf4bf697-6692-4951-a668-5a2d22ac54a4
+              x-response-id: b7240ae0-a1ef-4ca3-b27a-ebeda7b3e2cd
       responses:
         '200':
           content:
@@ -1625,7 +3234,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: 2270279e-ac60-4461-8a23-4652724d67af
+              x-response-id: 9dd99cf9-038a-4083-a753-216f407d2acc
       responses:
         '200':
           content:
@@ -1650,7 +3259,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: 5333581e-7be4-4614-b684-198fba57d7fe
+              x-response-id: 4d48e3bb-88c7-4a83-8d0f-849dd5632abe
       responses:
         '200':
           content:
@@ -1677,7 +3286,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
                 \ \"qc_partner_id\" : 24\n}"
-              x-response-id: 3095f902-fffa-4220-b4e5-628647914c19
+              x-response-id: f845916f-b6ae-430e-a837-5cc52b645699
       responses:
         '200':
           content:
@@ -1693,3 +3302,29 @@ paths:
                 - $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200_1'
           description: GET PRODUCTS
       summary: GET PRODUCTS
+  /qubecart/partner/store/bycategory/:
+    post:
+      operationId: QubecartPartnerStoreBycategoryPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_category\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_category\" : 1\n}"
+              x-response-id: e84f3977-9421-489c-9280-f19ffd5f2e0e
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetStoreByCategory:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreBycategoryPost200'
+              schema:
+                oneOf:
+                - $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200'
+                - $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200_1'
+          description: GET STORE BY CATEGORY
+      summary: GET STORE BY CATEGORY
