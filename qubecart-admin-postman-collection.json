@@ -3240,16 +3240,333 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 8,\n        \"user_type\": 2,\n        \"username\": \"JonWick\",\n        \"user_status\": 1,\n        \"firstname\": \"Jon\",\n        \"lastname\": \"Wick\",\n        \"contact_phone\": \"9999999999\",\n        \"email_id\": \"jon.wick@continental.com\",\n        \"pan_url\": \"https://qubecart.s3.ap-south-1.amazonaws.com/fsq/pan/pan.jpg\",\n        \"adhaar_voter_url\": \"https://qubecart.s3.ap-south-1.amazonaws.com/fsq/aadhaar/aadhar.jpg\",\n        \"photo_url\": \"https://qubecart.s3.ap-south-1.amazonaws.com/fsq/profileimage/selfie.jpg\",\n        \"dob\": \"1995-06-13T00:00:00\",\n        \"gender\": \"M\",\n        \"current_address_id\": 77,\n        \"permanent_address_id\": 77,\n        \"userr_type_name\": \"Delivery Person\",\n        \"user_status_name\": \"Active\",\n        \"current_addressline1\": \"112/4\",\n        \"current_addressline2\": \"Dummy road\",\n        \"current_address_pin\": 700010,\n        \"current_address_city\": \"Kolkata\",\n        \"current_address_statename\": \"West Bengal\",\n        \"permanent_addressline1\": \"112/4\",\n        \"permanent_addressline2\": \"Dummy road\",\n        \"permanent_address_pin\": 700010,\n        \"permanent_address_city\": \"Kolkata\",\n        \"permanent_address_statename\": \"West Bengal\"\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "GET ALL ORDERS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status_filter\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/order/getall/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"getall",
+						""
+					]
+				},
+				"description": "* status_filter is optional, if it's not present in the request body API will return all orders\n* possible values for status_filter canbe found from domain lookup API where domain_type order status\n* if status_filter is present in request body response will be filtered"
+			},
+			"response": [
+				{
+					"name": "GET ALL ORDERS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_filter\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/order/getall/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 21:21:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2974"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"order_id\": 31,\n            \"order_ref_no\": \"OD113603\",\n            \"order_created_at\": \"2020-08-28T09:26:23\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 31,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 660.54,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        },\n        {\n            \"order_id\": 32,\n            \"order_ref_no\": \"OD314062\",\n            \"order_created_at\": \"2020-08-28T16:52:10\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 32,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 115,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        },\n        {\n            \"order_id\": 33,\n            \"order_ref_no\": \"OD866516\",\n            \"order_created_at\": \"2020-08-28T17:26:16\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 33,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 249,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        },\n        {\n            \"order_id\": 34,\n            \"order_ref_no\": \"OD611429\",\n            \"order_created_at\": \"2020-08-28T17:35:10\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 34,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 140,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        },\n        {\n            \"order_id\": 35,\n            \"order_ref_no\": \"OD830942\",\n            \"order_created_at\": \"2020-08-29T08:36:45\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 35,\n            \"order_status\": 1,\n            \"billing_address_id\": 27,\n            \"customer_id\": 22,\n            \"price\": 1324.14,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"HARANATH BASAK\"\n        },\n        {\n            \"order_id\": 38,\n            \"order_ref_no\": \"QCO281611\",\n            \"order_created_at\": \"2020-09-02T04:33:39\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 38,\n            \"order_status\": 1,\n            \"billing_address_id\": 27,\n            \"customer_id\": 22,\n            \"price\": 355.5,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"HARANATH BASAK\"\n        },\n        {\n            \"order_id\": 39,\n            \"order_ref_no\": \"QCO138667\",\n            \"order_created_at\": \"2020-09-04T04:18:27\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 39,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 557.85,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        },\n        {\n            \"order_id\": 40,\n            \"order_ref_no\": \"QCO251245\",\n            \"order_created_at\": \"2020-09-04T05:54:32\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 40,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 569.5,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        },\n        {\n            \"order_id\": 41,\n            \"order_ref_no\": \"QCO572967\",\n            \"order_created_at\": \"2020-09-07T18:19:02\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 41,\n            \"order_status\": 1,\n            \"billing_address_id\": 14,\n            \"customer_id\": 18,\n            \"price\": 483.85,\n            \"payment_type\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"SUDIPTA \"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ORDER DETAILS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\" : 35\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/order/details/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"details",
+						""
+					]
+				},
+				"description": "## Returns order details and bags associated with order"
+			},
+			"response": [
+				{
+					"name": "GET ORDER DETAILS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_id\" : 35\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/order/details/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"details",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 21:26:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1339"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"order\": {\n            \"order_id\": 35,\n            \"order_ref_no\": \"OD830942\",\n            \"order_created_at\": \"2020-08-29T08:36:45\",\n            \"order_delivery_date\": null,\n            \"order_detail_id\": 35,\n            \"billing_address_id\": 27,\n            \"price\": 1324.14,\n            \"customer_id\": 22,\n            \"payment_type\": 1,\n            \"order_status\": 1,\n            \"order_status_name\": \" Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"customer_name\": \"HARANATH BASAK\",\n            \"email_id\": \"basak.haranath@gmail.com\",\n            \"phone_no\": \"9932047263\",\n            \"billing_name\": \"Haranath Basak\",\n            \"billing_phone\": \"9932047263\",\n            \"addressline1\": \"House No. 09\",\n            \"addressline2\": \"Changrabandha\",\n            \"pin\": 735301,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"bags\": [\n                {\n                    \"bag_id\": 41,\n                    \"store_id\": 26,\n                    \"bag_ref_no\": \"BAG579394\",\n                    \"updated_on\": null,\n                    \"updated_by\": null,\n                    \"order_id\": 35,\n                    \"bag_status\": 1,\n                    \"store_name\": \"Maa Annapurna Store\",\n                    \"store_address_id\": 60,\n                    \"qc_partner_id\": 25,\n                    \"partner\": \"soumik roy,blabla\",\n                    \"store_address\": \"Beleghata Head Post Office,Beleghata,Kolkata-700089\",\n                    \"bag_status_name\": \"Order Placed\",\n                    \"bag_price\": 979.6399993896484\n                },\n                {\n                    \"bag_id\": 42,\n                    \"store_id\": 28,\n                    \"bag_ref_no\": \"BAG416579\",\n                    \"updated_on\": \"2020-09-04T05:48:14\",\n                    \"updated_by\": null,\n                    \"order_id\": 35,\n                    \"bag_status\": 2,\n                    \"store_name\": \"SD Store\",\n                    \"store_address_id\": 63,\n                    \"qc_partner_id\": 24,\n                    \"partner\": \"Snehasish Das,SDE\",\n                    \"store_address\": \"Kestopur,Kolkata,Kolkata-700012\",\n                    \"bag_status_name\": \"Order Accepted\",\n                    \"bag_price\": 304.5\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET BAG DETAILS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bag_id\" : 41\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/order/bagdetails/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"bagdetails",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET BAG DETAILS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bag_id\" : 41\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/order/bagdetails/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"bagdetails",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 21:33:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1725"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"bag_item_id\": 43,\n            \"product_id\": 42,\n            \"required_quantity\": 1,\n            \"total_price\": 135,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 42,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 236,\n            \"product_brand_name\": \"Sundrop Heart\",\n            \"product_brand_description\": \"Sundrop Heart Jar\",\n            \"subcategory_name\": \"Oil\",\n            \"product_title\": \"Sundrop Heart Oil, 1Kg\"\n        },\n        {\n            \"bag_item_id\": 44,\n            \"product_id\": 44,\n            \"required_quantity\": 1,\n            \"total_price\": 224.1,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 44,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 261,\n            \"product_brand_name\": \"Engine\",\n            \"product_brand_description\": \"Engine Mustard Oil\",\n            \"subcategory_name\": \"Mustard Oil\",\n            \"product_title\": \"Engine Mustard Oil, 1Kg\"\n        },\n        {\n            \"bag_item_id\": 45,\n            \"product_id\": 45,\n            \"required_quantity\": 1,\n            \"total_price\": 179.74,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 45,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 370,\n            \"product_brand_name\": \"India Gate\",\n            \"product_brand_description\": \"India Gate\",\n            \"subcategory_name\": \"Basmati Rice\",\n            \"product_title\": \"India Gate Basmati Rice, 1Kg\"\n        },\n        {\n            \"bag_item_id\": 46,\n            \"product_id\": 46,\n            \"required_quantity\": 1,\n            \"total_price\": 260.3,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 46,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 393,\n            \"product_brand_name\": \"aashirvad\",\n            \"product_brand_description\": \"aashirvad\",\n            \"subcategory_name\": \"Wheat Atta\",\n            \"product_title\": \"aashirvad Wheat Atta, 5Kg\"\n        },\n        {\n            \"bag_item_id\": 47,\n            \"product_id\": 43,\n            \"required_quantity\": 1,\n            \"total_price\": 180.5,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 43,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 238,\n            \"product_brand_name\": \"Annapurna\",\n            \"product_brand_description\": \"Annapurna Brown Ghee\",\n            \"subcategory_name\": \"Ghee\",\n            \"product_title\": \"Annapurna Ghee, 250g\"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "9c903b65-0716-4d0c-9aeb-d1ce07560f56",
+			"id": "1c191f92-08a0-4789-92e9-ab2747648aec",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "c412c456-2afb-4521-b12f-3f6c64ca643c",
+			"id": "8b2018d7-b1a9-4e1c-8202-ed5e39c5fed5",
 			"key": "port",
 			"value": "8001"
 		}
