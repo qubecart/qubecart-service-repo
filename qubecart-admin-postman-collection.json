@@ -2942,16 +2942,314 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "GET ALL DELIVERY PEROSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getall/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"personnel",
+						"getall",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL DELIVERY PEROSON",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getall/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"personnel",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 09:18:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "799"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exceptiopn\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_user_id\": 7,\n            \"username\": \"JonDoe\",\n            \"user_status\": 1,\n            \"user_type\": 2,\n            \"firstname\": \"Jon\",\n            \"lastname\": \"Doe\",\n            \"contact_phone\": \"9999999999\",\n            \"email_id\": \"jon.doe@doee.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Delivery Person\",\n            \"user_status_name\": \"Active\"\n        },\n        {\n            \"admn_user_id\": 8,\n            \"username\": \"JonWick\",\n            \"user_status\": 2,\n            \"user_type\": 2,\n            \"firstname\": \"Jon\",\n            \"lastname\": \"Wick\",\n            \"contact_phone\": \"9999999999\",\n            \"email_id\": \"jon.wick@continental.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Delivery Person\",\n            \"user_status_name\": \"requested\"\n        },\n        {\n            \"admn_user_id\": 9,\n            \"username\": \"JonWick\",\n            \"user_status\": 2,\n            \"user_type\": 2,\n            \"firstname\": \"Jon\",\n            \"lastname\": \"Wick\",\n            \"contact_phone\": \"9999999999\",\n            \"email_id\": \"jon.wick@continental.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Delivery Person\",\n            \"user_status_name\": \"requested\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "APPROVE FSQ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admn_user_id\" : 8,\n    \"approve_flag\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/personnel/approve/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"personnel",
+						"approve",
+						""
+					]
+				},
+				"description": "* approve_flag -> true | approve delivery person\n* approve_flag -> false | opposite"
+			},
+			"response": [
+				{
+					"name": "APPROVE FSQ",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 8,\n    \"approve_flag\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/personnel/approve/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"personnel",
+								"approve",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 09:25:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": true,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET DELIVERY PERSONNEL DETAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admn_user_id\" : 8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getdetail/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"personnel",
+						"getdetail",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET DELIVERY PERSONNEL DETAIL",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getdetail/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"personnel",
+								"getdetail",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 09:27:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "982"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"admn_user_id\": 8,\n        \"user_type\": 2,\n        \"username\": \"JonWick\",\n        \"user_status\": 1,\n        \"firstname\": \"Jon\",\n        \"lastname\": \"Wick\",\n        \"contact_phone\": \"9999999999\",\n        \"email_id\": \"jon.wick@continental.com\",\n        \"pan_url\": \"https://qubecart.s3.ap-south-1.amazonaws.com/fsq/pan/pan.jpg\",\n        \"adhaar_voter_url\": \"https://qubecart.s3.ap-south-1.amazonaws.com/fsq/aadhaar/aadhar.jpg\",\n        \"photo_url\": \"https://qubecart.s3.ap-south-1.amazonaws.com/fsq/profileimage/selfie.jpg\",\n        \"dob\": \"1995-06-13T00:00:00\",\n        \"gender\": \"M\",\n        \"current_address_id\": 77,\n        \"permanent_address_id\": 77,\n        \"userr_type_name\": \"Delivery Person\",\n        \"user_status_name\": \"Active\",\n        \"current_addressline1\": \"112/4\",\n        \"current_addressline2\": \"Dummy road\",\n        \"current_address_pin\": 700010,\n        \"current_address_city\": \"Kolkata\",\n        \"current_address_statename\": \"West Bengal\",\n        \"permanent_addressline1\": \"112/4\",\n        \"permanent_addressline2\": \"Dummy road\",\n        \"permanent_address_pin\": 700010,\n        \"permanent_address_city\": \"Kolkata\",\n        \"permanent_address_statename\": \"West Bengal\"\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "9e715948-3cd7-49ec-bddd-e89f31363345",
+			"id": "9c903b65-0716-4d0c-9aeb-d1ce07560f56",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "cc54c43d-5716-4af7-9dfc-4219a503d9e5",
+			"id": "c412c456-2afb-4521-b12f-3f6c64ca643c",
 			"key": "port",
 			"value": "8001"
 		}
