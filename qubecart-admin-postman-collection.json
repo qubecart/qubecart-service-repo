@@ -2750,16 +2750,208 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"unit_id\": 1,\n            \"store_category\": 1,\n            \"unit_short\": \"Kg\",\n            \"unit_long\": \"Kilogram\"\n        },\n        {\n            \"unit_id\": 2,\n            \"store_category\": 1,\n            \"unit_short\": \"g\",\n            \"unit_long\": \"Gram\"\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "GET ALL REGION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}:8001/qubecart/admin/region/getall/",
+					"host": [
+						"{{endpoint}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"region",
+						"getall",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL REGION",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}:8001/qubecart/admin/region/getall/",
+							"host": [
+								"{{endpoint}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"region",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 08:12:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "244"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"region_id\": 1,\n            \"region_code\": \"QCR001\",\n            \"region_name\": \"BELEGHATA\",\n            \"country_id\": 1,\n            \"state_id\": 1,\n            \"created_by_id\": 6,\n            \"created_on\": \"2020-09-07T08:09:10\",\n            \"city_id\": 1,\n            \"region_phone_no\": \"9999999999\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE REGION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"region_code\" : \"QCR002\",\n    \"region_name\" : \"CHINAR PARK\",\n    \"country_id\" : 1,\n    \"state_id\" : 1,\n    \"city_id\" : 1,\n    \"region_phone_no\" : \"9999999999\",\n    \"admn_user_id\" : 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/region/create/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"region",
+						"create",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE REGION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"region_code\" : \"QCR002\",\n    \"region_name\" : \"CHINAR PARK\",\n    \"country_id\" : 1,\n    \"state_id\" : 1,\n    \"city_id\" : 1,\n    \"region_phone_no\" : \"9999999999\",\n    \"admn_user_id\" : 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/region/create/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"region",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 08:13:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "fc17a14e-593d-4d5a-98e3-cc6cb2597810",
+			"id": "9e715948-3cd7-49ec-bddd-e89f31363345",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "37cc4070-b700-493c-9d0f-0084d02d31e3",
+			"id": "cc54c43d-5716-4af7-9dfc-4219a503d9e5",
 			"key": "port",
 			"value": "8001"
 		}

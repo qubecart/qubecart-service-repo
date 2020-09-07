@@ -24,7 +24,7 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: ee3134d4-6ae1-4a8e-b958-a6487124cce2
+      x-response-id: b1c60e49-05a3-49c3-988e-6fe0e5700d37
     exampleQubecartAdminLoginPost200:
       value:
         Errors: null
@@ -45,19 +45,19 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: 5a965083-74b1-4a15-9154-5ef2f5fa7408
+      x-response-id: 2c24dd9d-c698-4e88-8470-ac1d364a5236
     exampleQubecartAdminPartnerApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 2358c97e-3d35-46c6-ae37-c34f5ed925f7
+      x-response-id: d966f75a-5955-4d6a-8c9b-4f0aa8b80348
     exampleQubecartAdminPartnerCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 451ffb75-4cbd-4389-860a-af3d4cd864ae
+      x-response-id: 051cdc52-f826-4856-9fa0-7cf1c2fb0051
     exampleQubecartAdminPartnerDetailsbyidPost200:
       value:
         Errors: null
@@ -106,7 +106,7 @@ components:
             store_type_name: Garments
           updated_on: '2020-08-03T09:10:11'
         exception: false
-      x-response-id: 7b7340f7-88f8-4389-a37f-27acd980ceea
+      x-response-id: a5168a57-7e2a-48f2-b5a8-3f29333e2ae1
     exampleQubecartAdminPartnerGetallPost200:
       value:
         Errors: null
@@ -137,19 +137,41 @@ components:
           qc_partner_id: 9
           updated_on: null
         exception: false
-      x-response-id: 7c69f515-57b2-42d4-ad47-56b454ad0bf7
+      x-response-id: 37e7907c-4c6c-4e9b-85fb-62f764653130
+    exampleQubecartAdminRegionCreatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: f4966892-6c1d-4d17-bc43-92996dfda315
+    exampleQubecartAdminRegionGetallGet200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - city_id: 1
+          country_id: 1
+          created_by_id: 6
+          created_on: '2020-09-07T08:09:10'
+          region_code: QCR001
+          region_id: 1
+          region_name: BELEGHATA
+          region_phone_no: '9999999999'
+          state_id: 1
+        exception: false
+      x-response-id: b59dcbaf-8c2e-424f-9d94-960166679199
     exampleQubecartAdminTemplateAddbrandsPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: dae84760-2081-48d1-b271-7e86e6224cc3
+      x-response-id: 9ef433ea-16f6-4e70-afaa-b1012b67c68a
     exampleQubecartAdminTemplateCheckduplicatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 15b3aa69-f3d0-4679-bd3d-06351bad3ada
+      x-response-id: 35f0d0fa-290f-42ec-83f4-da7f3ab1c7b9
     exampleQubecartAdminTemplateCreatePost200:
       value:
         Errors:
@@ -161,19 +183,19 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 0729e145-dd0c-409f-a434-110a5c5cf32f
+      x-response-id: 4b635e11-a8e6-499f-aa03-11c151bf936a
     exampleQubecartAdminTemplateCreatesubcategoryPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: adaff82a-2a8d-4159-b163-e2916ae251fc
+      x-response-id: 7f73554b-e4fe-44d2-b514-b7a2852cf95d
     exampleQubecartAdminTemplateDeleteitemPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: b05731ff-3ed0-4162-a020-87e2bb91d02e
+      x-response-id: f84b18f4-f251-43ee-b55f-49037885c94b
     exampleQubecartAdminTemplateGetallGet200:
       value:
         Errors: null
@@ -191,7 +213,7 @@ components:
           updated_on: '2020-08-14T10:27:26'
           username: msqube Technologies Corp
         exception: false
-      x-response-id: 3974b66d-05a7-4d3a-aefa-631175a1dc81
+      x-response-id: 56bcf214-f0c0-4a16-b2ab-f280a3c3fcd3
     exampleQubecartAdminTemplateGetbrandsPost200:
       value:
         Errors: null
@@ -238,7 +260,7 @@ components:
           updated_by: 24
           updated_on: '2020-08-27T18:46:17'
         exception: false
-      x-response-id: 4af2a784-3b94-47e2-8a8a-1d957285d656
+      x-response-id: dc5ce859-8494-4238-bcf9-b61c67a1d586
     exampleQubecartAdminTemplateGetbycategoryPost200:
       value:
         Errors: null
@@ -261,7 +283,7 @@ components:
           updated_by: 6
           updated_on: '2020-08-12T12:22:57'
         exception: false
-      x-response-id: dd473512-5712-4cbe-97e5-eebd1b3c2dac
+      x-response-id: 6ad6f280-21e3-4d2c-8c4f-fa0db51f1aa5
     exampleQubecartAdminTemplateGetcategoryPost200:
       value:
         Errors: null
@@ -277,7 +299,7 @@ components:
           template_id: 29
           template_item_id: 12
         exception: false
-      x-response-id: 590af6a8-27b5-47b9-b1bf-34427ccf1839
+      x-response-id: aaeaf433-1da0-474f-a7d6-a343f1733f81
     exampleQubecartAdminTemplateGetsubcategoryPost200:
       value:
         Errors: null
@@ -287,7 +309,7 @@ components:
           product_subcategory_id: 1
           subcategory_name: Basmati Rice
         exception: false
-      x-response-id: 8a3dded8-3459-4174-ad33-e690f1026386
+      x-response-id: edb3b4ad-1fe5-47a3-8d81-584b69856810
     exampleQubecartAdminUpdatePost200:
       value:
         Errors:
@@ -299,7 +321,7 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 5f700020-f803-4f7b-a03b-b69c574fa7e2
+      x-response-id: f854fa95-db99-4f41-816c-b28a7215aa52
     exampleQubecartSharedDomainPost200:
       value:
         Errors: null
@@ -330,7 +352,7 @@ components:
           domain_type: partner_status
           domain_value: Not Approved
         exception: false
-      x-response-id: 9fedb387-d824-457b-af65-a7eccd613603
+      x-response-id: d8ea5994-2bd9-4bfa-9453-028e9990ad32
     exampleQubecartSharedErrorframeworkGet200:
       value:
       - error_code: SE001
@@ -357,7 +379,7 @@ components:
         error_id: 6
         error_message: Email or phone already exists
         level_of_severity: 3
-      x-response-id: 7bc61e0e-3549-42d4-90bb-97d14220146c
+      x-response-id: 8119ae45-25fb-4e64-92e1-f4fc1d638aaf
     exampleQubecartSharedGetCityGet200:
       value:
         Errors: null
@@ -367,7 +389,7 @@ components:
           city_id: 1
           city_name: Kolkata
         exception: false
-      x-response-id: e7d91f46-add3-4732-a826-f21559d0730b
+      x-response-id: cb9eac88-8f1d-4f42-9c95-af8713d16fd8
     exampleQubecartSharedGetCitystatecountryGet200:
       value:
         Errors: null
@@ -386,7 +408,7 @@ components:
             states_id: 1
             states_name: West Bengal
         exception: false
-      x-response-id: 1a1c922d-196f-4e95-8593-fb0650514ac5
+      x-response-id: 954deb2c-5cb5-4b0a-b3da-82cdda4500fb
     exampleQubecartSharedGetCountriesGet200:
       value:
         Errors: null
@@ -396,7 +418,7 @@ components:
           countries_id: 1
           countries_name: India
         exception: false
-      x-response-id: 621ae5ee-b573-43ad-83d3-0f18a8d0fab9
+      x-response-id: e44dcf89-f3dc-4665-87b8-f9942e2236c8
     exampleQubecartSharedGetStatesGet200:
       value:
         Errors: null
@@ -406,7 +428,7 @@ components:
           states_id: 1
           states_name: West Bengal
         exception: false
-      x-response-id: 8082e3c4-49fe-4afe-adce-7b9ad54731a3
+      x-response-id: fb619cb1-11f3-4911-bc35-e303c6a39d68
     exampleQubecartSharedGetunitsPost200:
       value:
         Errors: null
@@ -421,7 +443,7 @@ components:
           unit_long: Gram
           unit_short: g
         exception: false
-      x-response-id: bfd4ab3f-91c8-4346-872b-87f03bb23d2b
+      x-response-id: 5b6dfc80-fc4d-40ca-a054-42d1d67a6e16
   schemas:
     schemaQubecartAdminGetbyidPost200:
       properties:
@@ -844,6 +866,71 @@ components:
               - contact_person_designation
               - updated_on
               type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartAdminRegionCreatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartAdminRegionGetallGet200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              city_id:
+                format: int32
+                type: integer
+              country_id:
+                format: int32
+                type: integer
+              created_by_id:
+                format: int32
+                type: integer
+              created_on:
+                type: string
+              region_code:
+                type: string
+              region_id:
+                format: int32
+                type: integer
+              region_name:
+                type: string
+              region_phone_no:
+                type: string
+              state_id:
+                format: int32
+                type: integer
+            required:
+            - region_id
+            - region_code
+            - region_name
+            - country_id
+            - state_id
+            - created_by_id
+            - created_on
+            - city_id
+            - region_phone_no
+            type: object
           type: array
         exception:
           format: 'null'
@@ -1502,9 +1589,9 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"requested\" : true\n}"
-              x-response-id: 8bb6b8dc-8ab0-441a-af4d-fb77524f3fa7
+              x-response-id: 58114e8b-9604-481b-8a1d-91a747a686a3
             - value: "{\n    \"requested\" : false\n}"
-              x-response-id: 7c69f515-57b2-42d4-ad47-56b454ad0bf7
+              x-response-id: 37e7907c-4c6c-4e9b-85fb-62f764653130
       responses:
         '200':
           content:
@@ -1531,7 +1618,7 @@ paths:
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
                 }"
-              x-response-id: 2358c97e-3d35-46c6-ae37-c34f5ed925f7
+              x-response-id: d966f75a-5955-4d6a-8c9b-4f0aa8b80348
       responses:
         '200':
           content:
@@ -1578,7 +1665,7 @@ paths:
                 \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
                 country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
                 }"
-              x-response-id: 451ffb75-4cbd-4389-860a-af3d4cd864ae
+              x-response-id: 051cdc52-f826-4856-9fa0-7cf1c2fb0051
       responses:
         '200':
           content:
@@ -1618,7 +1705,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"domain_type\" : \"partner_status\"\n}"
-              x-response-id: 9fedb387-d824-457b-af65-a7eccd613603
+              x-response-id: d8ea5994-2bd9-4bfa-9453-028e9990ad32
       responses:
         '200':
           content:
@@ -1645,7 +1732,7 @@ paths:
             x-link-response:
             - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
                 \n}"
-              x-response-id: 5a965083-74b1-4a15-9154-5ef2f5fa7408
+              x-response-id: 2c24dd9d-c698-4e88-8470-ac1d364a5236
       responses:
         '200':
           content:
@@ -1729,7 +1816,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10\n}"
-              x-response-id: 7b7340f7-88f8-4389-a37f-27acd980ceea
+              x-response-id: a5168a57-7e2a-48f2-b5a8-3f29333e2ae1
       responses:
         '200':
           content:
@@ -1754,7 +1841,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 6\n}"
-              x-response-id: ee3134d4-6ae1-4a8e-b958-a6487124cce2
+              x-response-id: b1c60e49-05a3-49c3-988e-6fe0e5700d37
       responses:
         '200':
           content:
@@ -1791,7 +1878,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: ca633dd8-b1e5-4934-ab8f-a5be7e21a8e8
+              x-response-id: 3fef200e-68ef-44de-b4d8-44647259c292
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -1799,7 +1886,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\"\
                 \ : 1\n}"
-              x-response-id: aaf79aea-89e6-410c-a5c4-037a87edc923
+              x-response-id: 99de59f1-0f7a-4d96-9aad-63ed7f3ce0f2
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -1807,7 +1894,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 5f700020-f803-4f7b-a03b-b69c574fa7e2
+              x-response-id: f854fa95-db99-4f41-816c-b28a7215aa52
       responses:
         '200':
           content:
@@ -1831,7 +1918,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"category\" : 1\n}"
-              x-response-id: dd473512-5712-4cbe-97e5-eebd1b3c2dac
+              x-response-id: 6ad6f280-21e3-4d2c-8c4f-fa0db51f1aa5
       responses:
         '200':
           content:
@@ -1872,10 +1959,10 @@ paths:
             x-link-response:
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : [\"T-shirt\", \"Shirt\"]\n}"
-              x-response-id: 39334f59-b7ef-48c5-8db2-9071789b26a8
+              x-response-id: 216ee868-0ab2-46af-b6e8-42f521899a0b
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : []\n}"
-              x-response-id: 0729e145-dd0c-409f-a434-110a5c5cf32f
+              x-response-id: 4b635e11-a8e6-499f-aa03-11c151bf936a
       responses:
         '200':
           content:
@@ -1900,7 +1987,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_name\" : \"Temp_g_002\"\n}"
-              x-response-id: 15b3aa69-f3d0-4679-bd3d-06351bad3ada
+              x-response-id: 35f0d0fa-290f-42ec-83f4-da7f3ab1c7b9
       responses:
         '200':
           content:
@@ -1925,7 +2012,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 15\n}"
-              x-response-id: b05731ff-3ed0-4162-a020-87e2bb91d02e
+              x-response-id: f84b18f4-f251-43ee-b55f-49037885c94b
       responses:
         '200':
           content:
@@ -1966,7 +2053,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_item_id\" : 10\n}"
-              x-response-id: 8a3dded8-3459-4174-ad33-e690f1026386
+              x-response-id: edb3b4ad-1fe5-47a3-8d81-584b69856810
       responses:
         '200':
           content:
@@ -1996,7 +2083,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 28,\n    \"qc_partner_id\" : 24\n\
                 }"
-              x-response-id: 4af2a784-3b94-47e2-8a8a-1d957285d656
+              x-response-id: dc5ce859-8494-4238-bcf9-b61c67a1d586
       responses:
         '200':
           content:
@@ -2028,7 +2115,7 @@ paths:
                 \ : \"T-shirt\",\n    \"brands\" : [{\"name\" : \"Lee\", \"description\"\
                 \ : \"\"}, {\"name\" : \"Levi's\", \"description\" : \"\"}],\n   \
                 \ \"admn_user_id\" : 6\n}"
-              x-response-id: adaff82a-2a8d-4159-b163-e2916ae251fc
+              x-response-id: 7f73554b-e4fe-44d2-b514-b7a2852cf95d
       responses:
         '200':
           content:
@@ -2057,7 +2144,7 @@ paths:
             - value: "{\n    \"subcategory_id\" : 2,\n    \"loggedin_user\" : 6,\n\
                 \    \"brands\" : [{\"name\" : \"Wrangler\"}, {\"name\" : \"Peter\
                 \ England\"}]\n}"
-              x-response-id: dae84760-2081-48d1-b271-7e86e6224cc3
+              x-response-id: 9ef433ea-16f6-4e70-afaa-b1012b67c68a
       responses:
         '200':
           content:
@@ -2082,7 +2169,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: 590af6a8-27b5-47b9-b1bf-34427ccf1839
+              x-response-id: aaeaf433-1da0-474f-a7d6-a343f1733f81
       responses:
         '200':
           content:
@@ -2107,7 +2194,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: bfd4ab3f-91c8-4346-872b-87f03bb23d2b
+              x-response-id: 5b6dfc80-fc4d-40ca-a054-42d1d67a6e16
       responses:
         '200':
           content:
@@ -2119,3 +2206,47 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartSharedGetunitsPost200'
           description: GET UNTIS
       summary: GET UNTIS
+  /qubecart/admin/region/getall/:
+    get:
+      operationId: QubecartAdminRegionGetallGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAllRegion:
+                  $ref: '#/components/examples/exampleQubecartAdminRegionGetallGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminRegionGetallGet200'
+          description: GET ALL REGION
+      summary: GET ALL REGION
+  /qubecart/admin/region/create/:
+    post:
+      operationId: QubecartAdminRegionCreatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"region_code\" : \"QCR002\",\n    \"region_name\" :\
+                \ \"CHINAR PARK\",\n    \"country_id\" : 1,\n    \"state_id\" : 1,\n\
+                \    \"city_id\" : 1,\n    \"region_phone_no\" : \"9999999999\",\n\
+                \    \"admn_user_id\" : 6\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"region_code\" : \"QCR002\",\n    \"region_name\" :\
+                \ \"CHINAR PARK\",\n    \"country_id\" : 1,\n    \"state_id\" : 1,\n\
+                \    \"city_id\" : 1,\n    \"region_phone_no\" : \"9999999999\",\n\
+                \    \"admn_user_id\" : 6\n}"
+              x-response-id: f4966892-6c1d-4d17-bc43-92996dfda315
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                CreateRegion:
+                  $ref: '#/components/examples/exampleQubecartAdminRegionCreatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminRegionCreatePost200'
+          description: CREATE REGION
+      summary: CREATE REGION
