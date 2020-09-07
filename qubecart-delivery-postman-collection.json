@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "764eb956-4c30-4289-af0c-7f5825d20536",
+		"name": "Qubecart_delivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELIVERY PERSON REGISTRATION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\" : \"Jon\",\n    \"last_name\" : \"Wick\",\n    \"email\" : \"jon.wick@continental.com\",\n    \"phone\" : \"9999999999\",\n    \"alternate_phone\" : \"8888888888\",\n    \"region_id\" : 1,\n    \"password\" : \"1234\",\n    \"gender\" : \"M\",\n    \"same_address_flag\" : true,\n    \"date_of_birth\" : \"1995-06-13 00:0:00\",\n    \"currentaddressline1\" : \"112/4\",\n    \"currentaddressline2\" : \"Dummy road\",\n    \"currentpin\" : \"700010\",\n    \"currentstate\" : 1,\n    \"currentcountry\" : 1,\n    \"currentcity\" : 1,\n    \"pan\" : \"pan.jpg\",\n    \"aadhar\" : \"aadhar.jpg\",\n    \"selfie\" : \"selfie.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8005/qubecart/delivery/registration/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8005",
+					"path": [
+						"qubecart",
+						"delivery",
+						"registration",
+						""
+					]
+				},
+				"description": "* email is not mandetory\n* phone and alternate_phone are mandetory\n* We had current address and permanent address in FSQ and thats why same_address_flag is user\n* we can create different permanent address prefixxed with permanent word and same_address_flag is false\n* provide any documemt between pan, aadhaar.\n* selfie is not mandetory\n* get region from drop down"
+			},
+			"response": [
+				{
+					"name": "DELIVERY PERSON REGISTRATION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\" : \"Jon\",\n    \"last_name\" : \"Wick\",\n    \"email\" : \"jon.wick@continental.com\",\n    \"phone\" : \"9999999999\",\n    \"alternate_phone\" : \"8888888888\",\n    \"region_id\" : 1,\n    \"password\" : \"1234\",\n    \"gender\" : \"M\",\n    \"same_address_flag\" : true,\n    \"date_of_birth\" : \"1995-06-13 00:0:00\",\n    \"currentaddressline1\" : \"112/4\",\n    \"currentaddressline2\" : \"Dummy road\",\n    \"currentpin\" : \"700010\",\n    \"currentstate\" : 1,\n    \"currentcountry\" : 1,\n    \"currentcity\" : 1,\n    \"pan\" : \"pan.jpg\",\n    \"aadhar\" : \"aadhar.jpg\",\n    \"selfie\" : \"selfie.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "192.168.0.105:8000/qubecart/delivery/registration/",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"105"
+							],
+							"port": "8000",
+							"path": [
+								"qubecart",
+								"delivery",
+								"registration",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Sep 2020 07:29:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
