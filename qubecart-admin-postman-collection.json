@@ -3557,16 +3557,121 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"bag_item_id\": 43,\n            \"product_id\": 42,\n            \"required_quantity\": 1,\n            \"total_price\": 135,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 42,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 236,\n            \"product_brand_name\": \"Sundrop Heart\",\n            \"product_brand_description\": \"Sundrop Heart Jar\",\n            \"subcategory_name\": \"Oil\",\n            \"product_title\": \"Sundrop Heart Oil, 1Kg\"\n        },\n        {\n            \"bag_item_id\": 44,\n            \"product_id\": 44,\n            \"required_quantity\": 1,\n            \"total_price\": 224.1,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 44,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 261,\n            \"product_brand_name\": \"Engine\",\n            \"product_brand_description\": \"Engine Mustard Oil\",\n            \"subcategory_name\": \"Mustard Oil\",\n            \"product_title\": \"Engine Mustard Oil, 1Kg\"\n        },\n        {\n            \"bag_item_id\": 45,\n            \"product_id\": 45,\n            \"required_quantity\": 1,\n            \"total_price\": 179.74,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 45,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 370,\n            \"product_brand_name\": \"India Gate\",\n            \"product_brand_description\": \"India Gate\",\n            \"subcategory_name\": \"Basmati Rice\",\n            \"product_title\": \"India Gate Basmati Rice, 1Kg\"\n        },\n        {\n            \"bag_item_id\": 46,\n            \"product_id\": 46,\n            \"required_quantity\": 1,\n            \"total_price\": 260.3,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 46,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 393,\n            \"product_brand_name\": \"aashirvad\",\n            \"product_brand_description\": \"aashirvad\",\n            \"subcategory_name\": \"Wheat Atta\",\n            \"product_title\": \"aashirvad Wheat Atta, 5Kg\"\n        },\n        {\n            \"bag_item_id\": 47,\n            \"product_id\": 43,\n            \"required_quantity\": 1,\n            \"total_price\": 180.5,\n            \"bag_id\": 41,\n            \"bag_item_status\": 1,\n            \"partner_product_id\": 43,\n            \"brand_created_by_role\": 1,\n            \"product_brand_id\": 238,\n            \"product_brand_name\": \"Annapurna\",\n            \"product_brand_description\": \"Annapurna Brown Ghee\",\n            \"subcategory_name\": \"Ghee\",\n            \"product_title\": \"Annapurna Ghee, 250g\"\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "ASSIGN BAG FOR DELIVERY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bag_id\" : 48,\n    \"admn_user_id\" : 10,\n    \"eta\" : 2.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/order/assignbag/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"assignbag",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ASSIGN BAG FOR DELIVERY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bag_id\" : 48,\n    \"admn_user_id\" : 10,\n    \"eta\" : 2.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/order/assignbag/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"assignbag",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 08 Sep 2020 18:53:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "584"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"temp\": {\n            \"store_id\": 3,\n            \"bag_ref_no\": \"QCB942211\",\n            \"qc_partner_id\": 24,\n            \"store_name\": \"Perfect store\",\n            \"order_id\": 41,\n            \"customer_id\": 18,\n            \"customer_name\": \"SUDIPTA \",\n            \"customer_phone_no\": \"8013320216\",\n            \"customer_address\": \"04, Khudiram Basu Roa Kolkata-741102\",\n            \"billing_address_id\": 14,\n            \"work_item_id\": 3,\n            \"partner_name\": \"Snehasish Das\",\n            \"partner_phone_no\": \"8981497361\",\n            \"store_address\": \"112/4, beleghata main road Kolkata-700010\"\n        },\n        \"delivery_person\": {\n            \"delivery_person_name\": \"Subhadeep Shome\",\n            \"contact_phone\": \"9123810564\",\n            \"alternate_phone\": \"9123810564\"\n        }\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "1c191f92-08a0-4789-92e9-ab2747648aec",
+			"id": "6040c70a-2126-438c-8d8c-974bce549521",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "8b2018d7-b1a9-4e1c-8202-ed5e39c5fed5",
+			"id": "8bea4be3-fae6-4503-8beb-c56f2e01cfd1",
 			"key": "port",
 			"value": "8001"
 		}
