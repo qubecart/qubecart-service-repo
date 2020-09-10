@@ -3662,16 +3662,329 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"temp\": {\n            \"store_id\": 3,\n            \"bag_ref_no\": \"QCB942211\",\n            \"qc_partner_id\": 24,\n            \"store_name\": \"Perfect store\",\n            \"order_id\": 41,\n            \"customer_id\": 18,\n            \"customer_name\": \"SUDIPTA \",\n            \"customer_phone_no\": \"8013320216\",\n            \"customer_address\": \"04, Khudiram Basu Roa Kolkata-741102\",\n            \"billing_address_id\": 14,\n            \"work_item_id\": 3,\n            \"partner_name\": \"Snehasish Das\",\n            \"partner_phone_no\": \"8981497361\",\n            \"store_address\": \"112/4, beleghata main road Kolkata-700010\"\n        },\n        \"delivery_person\": {\n            \"delivery_person_name\": \"Subhadeep Shome\",\n            \"contact_phone\": \"9123810564\",\n            \"alternate_phone\": \"9123810564\"\n        }\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "UPDATE ORDER STATUS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\" : 41,\n    \"order_status\" : 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001qubecart/admin/order/updatestatus/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001qubecart",
+					"path": [
+						"admin",
+						"order",
+						"updatestatus",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE ORDER STATUS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_id\" : 41,\n    \"order_status\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001qubecart/admin/order/updatestatus/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001qubecart",
+							"path": [
+								"admin",
+								"order",
+								"updatestatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 08 Sep 2020 20:35:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "165"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE017\",\n                \"Message\": \"One or more bags is not settled\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE ORDER PAYMENT STATUS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\" : 59\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/order/updatepayment/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"updatepayment",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE ORDER PAYMENT STATUS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_id\" : 59\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/order/updatepayment/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"updatepayment",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 10 Sep 2020 10:07:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE ORDER STATUS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\" : 58,\n    \"order_status\" : 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/order/updatestatus/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"updatestatus",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE ORDER STATUS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_id\" : 58,\n    \"order_status\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/order/updatestatus/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"updatestatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 10 Sep 2020 11:33:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "163"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE023\",\n                \"Message\": \"Payment is due for this order\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "6040c70a-2126-438c-8d8c-974bce549521",
+			"id": "67c04c90-9406-4107-b855-6f66e143baac",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "8bea4be3-fae6-4503-8beb-c56f2e01cfd1",
+			"id": "51298876-156e-4bbd-8d43-802039bd2d2c",
 			"key": "port",
 			"value": "8001"
 		}
