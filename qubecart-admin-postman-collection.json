@@ -4186,16 +4186,113 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "STORE LIST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"partner_id\" : 24\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/store/list/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"store",
+						"list",
+						""
+					]
+				},
+				"description": "* partner_id is optional, if not present list will contain all stores, if present list will contain store of given partner "
+			},
+			"response": [
+				{
+					"name": "STORE LIST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/store/list/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"store",
+								"list",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 12 Sep 2020 09:26:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3385"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"store_id\": 3,\n            \"store_address_id\": 22,\n            \"store_name\": \"Perfect store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 24,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"112/4\",\n            \"addressline2\": \"beleghata main road\",\n            \"pin\": 700010,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 16,\n            \"store_address_id\": 50,\n            \"store_name\": \"HighwaytoHell Store ps AC/DC\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 25,\n            \"store_rating\": 0,\n            \"credit_flag\": 0,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"111/1\",\n            \"addressline2\": \"highway to hell\",\n            \"pin\": 999999,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 26,\n            \"store_address_id\": 60,\n            \"store_name\": \"Maa Annapurna Store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 25,\n            \"store_rating\": 0,\n            \"credit_flag\": 0,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"Beleghata Head Post Office\",\n            \"addressline2\": \"Beleghata\",\n            \"pin\": 700089,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 28,\n            \"store_address_id\": 63,\n            \"store_name\": \"SD Store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 24,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"Kestopur\",\n            \"addressline2\": \"Kolkata\",\n            \"pin\": 700012,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 30,\n            \"store_address_id\": 71,\n            \"store_name\": \"Everyday Grocery\",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 9,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": 22.563293,\n            \"longitude\": 88.39328,\n            \"addressline1\": \"20\",\n            \"addressline2\": \"Beleghata main road\",\n            \"pin\": 700010,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 34,\n            \"store_address_id\": 75,\n            \"store_name\": \"Das Store \",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 24,\n            \"store_rating\": null,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"krishnanagar \",\n            \"addressline2\": \"krishnanagar \",\n            \"pin\": 741102,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 35,\n            \"store_address_id\": 81,\n            \"store_name\": \"Groceries 101\",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 24,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": \"2020-09-12T07:58:36\",\n            \"updated_on\": \"2020-09-12T08:35:13\",\n            \"latitude\": 22.610069,\n            \"longitude\": 88.429198,\n            \"addressline1\": \"110\",\n            \"addressline2\": \"Baguiati main road\",\n            \"pin\": 700115,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "1b0c0402-2b57-43d6-b7d6-2bc459cd6057",
+			"id": "c079ac50-3e7d-4405-97a6-8325287a2212",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "b6820d10-51c7-4a66-b9df-03344cefdea2",
+			"id": "378ddf0c-e7f0-4999-bb28-f2611e8601b5",
 			"key": "port",
 			"value": "8001"
 		}
