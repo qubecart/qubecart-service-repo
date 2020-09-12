@@ -4283,16 +4283,122 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"store_id\": 3,\n            \"store_address_id\": 22,\n            \"store_name\": \"Perfect store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 24,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"112/4\",\n            \"addressline2\": \"beleghata main road\",\n            \"pin\": 700010,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 16,\n            \"store_address_id\": 50,\n            \"store_name\": \"HighwaytoHell Store ps AC/DC\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 25,\n            \"store_rating\": 0,\n            \"credit_flag\": 0,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"111/1\",\n            \"addressline2\": \"highway to hell\",\n            \"pin\": 999999,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 26,\n            \"store_address_id\": 60,\n            \"store_name\": \"Maa Annapurna Store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 25,\n            \"store_rating\": 0,\n            \"credit_flag\": 0,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"Beleghata Head Post Office\",\n            \"addressline2\": \"Beleghata\",\n            \"pin\": 700089,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 28,\n            \"store_address_id\": 63,\n            \"store_name\": \"SD Store\",\n            \"store_category\": 1,\n            \"store_image\": \"MAS.jpg\",\n            \"qc_partner_id\": 24,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"Kestopur\",\n            \"addressline2\": \"Kolkata\",\n            \"pin\": 700012,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 30,\n            \"store_address_id\": 71,\n            \"store_name\": \"Everyday Grocery\",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 9,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": 22.563293,\n            \"longitude\": 88.39328,\n            \"addressline1\": \"20\",\n            \"addressline2\": \"Beleghata main road\",\n            \"pin\": 700010,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 34,\n            \"store_address_id\": 75,\n            \"store_name\": \"Das Store \",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 24,\n            \"store_rating\": null,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": null,\n            \"updated_on\": null,\n            \"latitude\": null,\n            \"longitude\": null,\n            \"addressline1\": \"krishnanagar \",\n            \"addressline2\": \"krishnanagar \",\n            \"pin\": 741102,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        },\n        {\n            \"store_id\": 35,\n            \"store_address_id\": 81,\n            \"store_name\": \"Groceries 101\",\n            \"store_category\": 1,\n            \"store_image\": null,\n            \"qc_partner_id\": 24,\n            \"store_rating\": 0,\n            \"credit_flag\": 1,\n            \"region_id\": 2,\n            \"store_status\": 2,\n            \"created_on\": \"2020-09-12T07:58:36\",\n            \"updated_on\": \"2020-09-12T08:35:13\",\n            \"latitude\": 22.610069,\n            \"longitude\": 88.429198,\n            \"addressline1\": \"110\",\n            \"addressline2\": \"Baguiati main road\",\n            \"pin\": 700115,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"store_type_name\": \"Grocery\",\n            \"store_status_name\": \"Active\"\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "ORDER LIST by STORE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 26\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/store/orderlist/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"store",
+						"orderlist",
+						""
+					]
+				},
+				"description": "* start_date and end_date are option, if provided result will contain only order in between start and end date. Otherwise result will contain all orders"
+			},
+			"response": [
+				{
+					"name": "ORDER LIST by STORE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 26\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/store/orderlist/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"store",
+								"orderlist",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 12 Sep 2020 12:01:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2437"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"order_id\": 31,\n            \"order_created_at\": \"2020-08-28T09:26:23\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 37,\n            \"bag_ref_no\": \"BAG540108\",\n            \"updated_on\": \"2020-08-29T10:13:44\",\n            \"bag_status\": 4,\n            \"bag_price\": 620.54,\n            \"bag_status_name\": \"Packaging In Progress\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 35,\n            \"order_created_at\": \"2020-08-29T08:36:45\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 41,\n            \"bag_ref_no\": \"BAG579394\",\n            \"updated_on\": null,\n            \"bag_status\": 1,\n            \"bag_price\": 979.64,\n            \"bag_status_name\": \"Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 38,\n            \"order_created_at\": \"2020-09-02T04:33:39\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 45,\n            \"bag_ref_no\": \"QCB726936\",\n            \"updated_on\": \"2020-09-12T02:25:11\",\n            \"bag_status\": 9,\n            \"bag_price\": 315.5,\n            \"bag_status_name\": \"Rejected\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 41,\n            \"order_created_at\": \"2020-09-07T18:19:02\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 49,\n            \"bag_ref_no\": \"QCB471876\",\n            \"updated_on\": \"2020-09-08T10:58:35\",\n            \"bag_status\": 6,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Picked Up\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 57,\n            \"order_created_at\": \"2020-09-09T17:09:47\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 2,\n            \"payment_status\": 1,\n            \"bag_id\": 65,\n            \"bag_ref_no\": \"QCB679545\",\n            \"updated_on\": null,\n            \"bag_status\": 1,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Order Placed\",\n            \"payment_type_name\": \"Qubecart Wallet\",\n            \"payment_status_name\": \"Settled\"\n        },\n        {\n            \"order_id\": 64,\n            \"order_created_at\": \"2020-09-11T20:53:49\",\n            \"customer_id\": 25,\n            \"billing_address_id\": 29,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 73,\n            \"bag_ref_no\": \"QCB711836\",\n            \"updated_on\": \"2020-09-12T02:25:36\",\n            \"bag_status\": 5,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Ready To Dispatch\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 65,\n            \"order_created_at\": \"2020-09-11T21:01:44\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 29,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 76,\n            \"bag_ref_no\": \"QCB867624\",\n            \"updated_on\": null,\n            \"bag_status\": 1,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "c079ac50-3e7d-4405-97a6-8325287a2212",
+			"id": "c28ca754-bd92-43d5-a4c0-616805792c5e",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "378ddf0c-e7f0-4999-bb28-f2611e8601b5",
+			"id": "0ee988ed-5777-483e-8caa-cd6910049596",
 			"key": "port",
 			"value": "8001"
 		}

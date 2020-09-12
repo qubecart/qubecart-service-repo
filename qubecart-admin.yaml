@@ -11,7 +11,7 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: deade6f5-f2af-439a-8f97-358e41c7e229
+      x-response-id: 19980f3a-7ae6-42cb-bf03-6fb3692514f5
     exampleQubecartAdminGetbyidPost200:
       value:
         Errors: null
@@ -36,7 +36,7 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: c7cb0962-d786-4718-b82d-6f063fefe3b5
+      x-response-id: dba12958-6369-4a54-9af2-7665ac1639c3
     exampleQubecartAdminLoginPost200:
       value:
         Errors: null
@@ -57,7 +57,7 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: 8094ae18-df71-4bc0-8c62-c20ac247e618
+      x-response-id: 1449cb77-2e55-4cc2-a281-972389f38033
     exampleQubecartAdminOrderAssignbagPost200:
       value:
         Errors: null
@@ -83,7 +83,7 @@ components:
             store_name: Perfect store
             work_item_id: 3
         exception: false
-      x-response-id: 090b9881-035f-4c85-aee5-695e6658f28c
+      x-response-id: a44d73fc-f6e2-4ebf-b9f6-7b47fe6fec2e
     exampleQubecartAdminOrderBagdetailsPost200:
       value:
         Errors: null
@@ -155,7 +155,7 @@ components:
           subcategory_name: Ghee
           total_price: 180.5
         exception: false
-      x-response-id: a0a721b5-1f1c-4a7d-be38-682649eaf5d7
+      x-response-id: 375b2f0d-fe29-474f-b1a6-925637690f97
     exampleQubecartAdminOrderDetailsPost200:
       value:
         Errors: null
@@ -214,7 +214,7 @@ components:
             price: 1324.14
             states_name: West Bengal
         exception: false
-      x-response-id: 0fb27827-5938-4b4e-a22e-d3e301b66803
+      x-response-id: cb488de9-0c18-4ce3-acf1-bcae81173c96
     exampleQubecartAdminOrderGetallPost200:
       value:
         Errors: null
@@ -338,13 +338,13 @@ components:
           payment_type_name: Cash On Delivery
           price: 483.85
         exception: false
-      x-response-id: 214b0077-c2a7-4686-a67c-f0312573a8bc
+      x-response-id: 447b71b9-5b37-4ba0-a2c7-f7a3ddc6ae5f
     exampleQubecartAdminOrderUpdatepaymentPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 22df3cb1-1339-4282-bf14-f4959b71a8e7
+      x-response-id: 24e62665-e8df-4ad4-89ce-3b3b36816533
     exampleQubecartAdminOrderUpdatestatusPost200:
       value:
         Errors:
@@ -356,19 +356,19 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 480871c3-0595-4e0c-a12f-5782c21c2eed
+      x-response-id: 2edf3005-59b2-4973-b41b-a946cdbbcebf
     exampleQubecartAdminPartnerApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: feb3a982-9b91-45bc-857e-674d786869b7
+      x-response-id: e107eae4-dfd2-4421-bf6d-5d7a454f0c1d
     exampleQubecartAdminPartnerCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: d9bb102e-ab14-4a0f-aad8-bd6cabc42d4d
+      x-response-id: 617c0a79-7e82-4cb3-9ed9-748979ba5f0c
     exampleQubecartAdminPartnerDetailsbyidPost200:
       value:
         Errors: null
@@ -417,7 +417,7 @@ components:
             store_type_name: Garments
           updated_on: '2020-08-03T09:10:11'
         exception: false
-      x-response-id: 222b7259-229b-45b7-8a01-d3db9dc4f4a9
+      x-response-id: 9c7c27fe-d70a-41a2-9cbb-2a27f21a44c4
     exampleQubecartAdminPartnerGetallPost200:
       value:
         Errors: null
@@ -448,13 +448,13 @@ components:
           qc_partner_id: 9
           updated_on: null
         exception: false
-      x-response-id: f544ffa8-6a33-4477-b088-587d118a7461
+      x-response-id: e6f7883a-ea57-4b39-aa9f-4b1b53c4c1d0
     exampleQubecartAdminPersonnelApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: true
-      x-response-id: f057cc05-1663-433e-bb64-d6428b2b83dc
+      x-response-id: 2c0dad85-308d-4ab7-82e3-8e1c575477ca
     exampleQubecartAdminPersonnelGetallGet200:
       value:
         Errors: null
@@ -494,7 +494,7 @@ components:
           user_type_name: Delivery Person
           username: JonWick
         exceptiopn: false
-      x-response-id: dff0593c-5a68-48b7-b478-8d271dfa8e21
+      x-response-id: c15a3604-5dda-4b3f-8774-60c03068650f
     exampleQubecartAdminPersonnelGetdetailPost200:
       value:
         Errors: null
@@ -528,13 +528,13 @@ components:
           username: JonWick
           userr_type_name: Delivery Person
         exception: false
-      x-response-id: 7127c3ce-ef76-4188-b7cb-9675f4963806
+      x-response-id: fec2952f-b5e1-4533-9ee3-f37b6aea2bf1
     exampleQubecartAdminRegionCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 14586b11-9ae0-4c72-98f3-6312368c13b5
+      x-response-id: b2864f1f-b35b-476b-bf3d-7d17b1742ef7
     exampleQubecartAdminRegionGetallGet200:
       value:
         Errors: null
@@ -550,13 +550,13 @@ components:
           region_phone_no: '9999999999'
           state_id: 1
         exception: false
-      x-response-id: 1c5736c7-5348-492a-ba5d-7f842353a2df
+      x-response-id: 3f990834-d32c-4cb4-91ad-7e92abbeedeb
     exampleQubecartAdminStoreAddregionPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 64827890-5473-4e64-87ac-a23dd850f86b
+      x-response-id: f727d9cc-178b-4988-9c3f-b46a130dc398
     exampleQubecartAdminStoreListPost200:
       value:
         Errors: null
@@ -717,25 +717,130 @@ components:
           store_type_name: Grocery
           updated_on: '2020-09-12T08:35:13'
         exception: false
-      x-response-id: c37b0647-5d24-4fbd-96b2-2aaf85736fee
+      x-response-id: bd943e3e-ac3f-4e54-be23-b960077e1f6e
+    exampleQubecartAdminStoreOrderlistPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - bag_id: 37
+          bag_price: 620.54
+          bag_ref_no: BAG540108
+          bag_status: 4
+          bag_status_name: Packaging In Progress
+          billing_address_id: 14
+          customer_id: 18
+          order_created_at: '2020-08-28T09:26:23'
+          order_id: 31
+          payment_status: 0
+          payment_status_name: Not Settled
+          payment_type: 1
+          payment_type_name: Cash On Delivery
+          updated_on: '2020-08-29T10:13:44'
+        - bag_id: 41
+          bag_price: 979.64
+          bag_ref_no: BAG579394
+          bag_status: 1
+          bag_status_name: Order Placed
+          billing_address_id: 27
+          customer_id: 22
+          order_created_at: '2020-08-29T08:36:45'
+          order_id: 35
+          payment_status: 0
+          payment_status_name: Not Settled
+          payment_type: 1
+          payment_type_name: Cash On Delivery
+          updated_on: null
+        - bag_id: 45
+          bag_price: 315.5
+          bag_ref_no: QCB726936
+          bag_status: 9
+          bag_status_name: Rejected
+          billing_address_id: 27
+          customer_id: 22
+          order_created_at: '2020-09-02T04:33:39'
+          order_id: 38
+          payment_status: 0
+          payment_status_name: Not Settled
+          payment_type: 1
+          payment_type_name: Cash On Delivery
+          updated_on: '2020-09-12T02:25:11'
+        - bag_id: 49
+          bag_price: 135
+          bag_ref_no: QCB471876
+          bag_status: 6
+          bag_status_name: Picked Up
+          billing_address_id: 14
+          customer_id: 18
+          order_created_at: '2020-09-07T18:19:02'
+          order_id: 41
+          payment_status: 0
+          payment_status_name: Not Settled
+          payment_type: 1
+          payment_type_name: Cash On Delivery
+          updated_on: '2020-09-08T10:58:35'
+        - bag_id: 65
+          bag_price: 135
+          bag_ref_no: QCB679545
+          bag_status: 1
+          bag_status_name: Order Placed
+          billing_address_id: 27
+          customer_id: 22
+          order_created_at: '2020-09-09T17:09:47'
+          order_id: 57
+          payment_status: 1
+          payment_status_name: Settled
+          payment_type: 2
+          payment_type_name: Qubecart Wallet
+          updated_on: null
+        - bag_id: 73
+          bag_price: 135
+          bag_ref_no: QCB711836
+          bag_status: 5
+          bag_status_name: Ready To Dispatch
+          billing_address_id: 29
+          customer_id: 25
+          order_created_at: '2020-09-11T20:53:49'
+          order_id: 64
+          payment_status: 0
+          payment_status_name: Not Settled
+          payment_type: 1
+          payment_type_name: Cash On Delivery
+          updated_on: '2020-09-12T02:25:36'
+        - bag_id: 76
+          bag_price: 135
+          bag_ref_no: QCB867624
+          bag_status: 1
+          bag_status_name: Order Placed
+          billing_address_id: 29
+          customer_id: 22
+          order_created_at: '2020-09-11T21:01:44'
+          order_id: 65
+          payment_status: 0
+          payment_status_name: Not Settled
+          payment_type: 1
+          payment_type_name: Cash On Delivery
+          updated_on: null
+        exception: false
+      x-response-id: accf20e3-5eed-446f-952c-1836f102eec8
     exampleQubecartAdminStoreUpdatestatusPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: c2ef0142-6d67-4c75-ada9-8f8eb273b7c9
+      x-response-id: 516aa4ed-15a7-474a-8290-2bbd46cbce35
     exampleQubecartAdminTemplateAddbrandsPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 17e66824-f394-4052-8771-390c9e88bd00
+      x-response-id: 502644df-8abc-41a0-841f-187056f7c8f3
     exampleQubecartAdminTemplateCheckduplicatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: eb4b51e8-f202-40a2-8547-ae2f25d58944
+      x-response-id: 2ea4e2c3-b5dc-4813-9c9d-e5e154e77cf2
     exampleQubecartAdminTemplateCreatePost200:
       value:
         Errors:
@@ -747,19 +852,19 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: c1d0bcac-9460-4c06-acf7-88b357b1bbf0
+      x-response-id: 3880c2a1-94a3-450a-b97e-f575c8f133ca
     exampleQubecartAdminTemplateCreatesubcategoryPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 4835c133-42bb-4e1e-849a-f71cf806ffe5
+      x-response-id: d627a187-bc9b-4ffb-8c2c-dd29e2228072
     exampleQubecartAdminTemplateDeleteitemPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 7a566781-f8eb-43d5-909d-c85cf47c1526
+      x-response-id: 6e0367c8-f879-484b-8fda-300ecbda688a
     exampleQubecartAdminTemplateGetallGet200:
       value:
         Errors: null
@@ -777,7 +882,7 @@ components:
           updated_on: '2020-08-14T10:27:26'
           username: msqube Technologies Corp
         exception: false
-      x-response-id: 781cbe01-1be1-438c-abb5-709b547cce0d
+      x-response-id: 78e66a34-6301-4eca-8f31-9b39c5b8103f
     exampleQubecartAdminTemplateGetbrandsPost200:
       value:
         Errors: null
@@ -824,7 +929,7 @@ components:
           updated_by: 24
           updated_on: '2020-08-27T18:46:17'
         exception: false
-      x-response-id: 5e93f1c4-7ade-4dc6-87f7-7299b30085ae
+      x-response-id: 87bc7e34-d164-486f-86cc-8a67d4094a81
     exampleQubecartAdminTemplateGetbycategoryPost200:
       value:
         Errors: null
@@ -847,7 +952,7 @@ components:
           updated_by: 6
           updated_on: '2020-08-12T12:22:57'
         exception: false
-      x-response-id: 1d066af6-c3a2-4376-8448-2584fb86077b
+      x-response-id: 7cf2858c-4a50-4b18-88ee-12dbcfbf6fa8
     exampleQubecartAdminTemplateGetcategoryPost200:
       value:
         Errors: null
@@ -863,7 +968,7 @@ components:
           template_id: 29
           template_item_id: 12
         exception: false
-      x-response-id: 04220232-4734-4f0c-b0f7-f56de01e28d8
+      x-response-id: f1e8485e-c8b1-4efd-9d90-2e1d7f963c8b
     exampleQubecartAdminTemplateGetsubcategoryPost200:
       value:
         Errors: null
@@ -873,7 +978,7 @@ components:
           product_subcategory_id: 1
           subcategory_name: Basmati Rice
         exception: false
-      x-response-id: 3c2e24d9-2d78-40b4-84fc-21f2b4507900
+      x-response-id: 1958d2b1-d92e-4ec5-b9b2-06cf7fa2b91f
     exampleQubecartAdminUpdatePost200:
       value:
         Errors:
@@ -885,7 +990,7 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: ef601b76-3d0a-4efc-a32b-20826e4ca0b7
+      x-response-id: 9c35c8d9-b7ee-4aee-a79d-2a71dc8f1f55
     exampleQubecartSharedDomainPost200:
       value:
         Errors: null
@@ -916,7 +1021,7 @@ components:
           domain_type: partner_status
           domain_value: Not Approved
         exception: false
-      x-response-id: f0afe5af-75ca-4561-8185-8ce512602926
+      x-response-id: 3b5aa0bb-57ec-421f-b3be-ab535780e018
     exampleQubecartSharedErrorframeworkGet200:
       value:
       - error_code: SE001
@@ -943,7 +1048,7 @@ components:
         error_id: 6
         error_message: Email or phone already exists
         level_of_severity: 3
-      x-response-id: 4fdcbf5d-4e86-49fa-91b4-1cc4963c033a
+      x-response-id: 368fc377-d9b6-443a-bc47-a27736288ced
     exampleQubecartSharedGetCityGet200:
       value:
         Errors: null
@@ -953,7 +1058,7 @@ components:
           city_id: 1
           city_name: Kolkata
         exception: false
-      x-response-id: 1281a599-209b-4f29-b117-6a4d551aca03
+      x-response-id: 60f47341-b81b-4e9f-b33e-18a70ab66c8d
     exampleQubecartSharedGetCitystatecountryGet200:
       value:
         Errors: null
@@ -972,7 +1077,7 @@ components:
             states_id: 1
             states_name: West Bengal
         exception: false
-      x-response-id: c83f25cb-fdce-4939-96c3-77b78012d4c1
+      x-response-id: a8f84f9b-02f6-4185-a770-7809663fabc1
     exampleQubecartSharedGetCountriesGet200:
       value:
         Errors: null
@@ -982,7 +1087,7 @@ components:
           countries_id: 1
           countries_name: India
         exception: false
-      x-response-id: 82282754-2458-4eb5-b709-1cf870b29217
+      x-response-id: 9ffd1712-1c2c-4c78-9e54-b208fb1eef93
     exampleQubecartSharedGetStatesGet200:
       value:
         Errors: null
@@ -992,7 +1097,7 @@ components:
           states_id: 1
           states_name: West Bengal
         exception: false
-      x-response-id: 52050d52-18b3-4393-836f-82111e2a5372
+      x-response-id: 66858897-e588-498d-8b99-39a2890a4570
     exampleQubecartSharedGetunitsPost200:
       value:
         Errors: null
@@ -1007,7 +1112,7 @@ components:
           unit_long: Gram
           unit_short: g
         exception: false
-      x-response-id: 5cfa7bba-eadd-4aa9-ba36-d72889ea6c41
+      x-response-id: c99e7f8a-ecfe-4c0f-aa41-ceb6d946bce9
   schemas:
     schemaAdminOrderUpdatestatusPost200:
       properties:
@@ -2664,6 +2769,389 @@ components:
       - Errors
       - data
       type: object
+    schemaQubecartAdminStoreOrderlistPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            allOf:
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  type: float
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on:
+                  type: string
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  type: float
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on: {}
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  type: float
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on:
+                  type: string
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  format: int32
+                  type: integer
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on:
+                  type: string
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  format: int32
+                  type: integer
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on: {}
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  format: int32
+                  type: integer
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on:
+                  type: string
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+            - properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_price:
+                  format: int32
+                  type: integer
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                billing_address_id:
+                  format: int32
+                  type: integer
+                customer_id:
+                  format: int32
+                  type: integer
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                payment_status:
+                  format: int32
+                  type: integer
+                payment_status_name:
+                  type: string
+                payment_type:
+                  format: int32
+                  type: integer
+                payment_type_name:
+                  type: string
+                updated_on: {}
+              required:
+              - order_id
+              - order_created_at
+              - customer_id
+              - billing_address_id
+              - payment_type
+              - payment_status
+              - bag_id
+              - bag_ref_no
+              - updated_on
+              - bag_status
+              - bag_price
+              - bag_status_name
+              - payment_type_name
+              - payment_status_name
+              type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
     schemaQubecartAdminStoreUpdatestatusPost200:
       properties:
         Errors: {}
@@ -3325,9 +3813,9 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"requested\" : true\n}"
-              x-response-id: 4cd6807a-d980-4a26-ba7a-803a707f9428
+              x-response-id: b0420381-5451-44b7-bfa7-b90b1be039ac
             - value: "{\n    \"requested\" : false\n}"
-              x-response-id: f544ffa8-6a33-4477-b088-587d118a7461
+              x-response-id: e6f7883a-ea57-4b39-aa9f-4b1b53c4c1d0
       responses:
         '200':
           content:
@@ -3354,7 +3842,7 @@ paths:
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
                 }"
-              x-response-id: feb3a982-9b91-45bc-857e-674d786869b7
+              x-response-id: e107eae4-dfd2-4421-bf6d-5d7a454f0c1d
       responses:
         '200':
           content:
@@ -3401,7 +3889,7 @@ paths:
                 \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
                 country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
                 }"
-              x-response-id: d9bb102e-ab14-4a0f-aad8-bd6cabc42d4d
+              x-response-id: 617c0a79-7e82-4cb3-9ed9-748979ba5f0c
       responses:
         '200':
           content:
@@ -3441,7 +3929,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"domain_type\" : \"partner_status\"\n}"
-              x-response-id: f0afe5af-75ca-4561-8185-8ce512602926
+              x-response-id: 3b5aa0bb-57ec-421f-b3be-ab535780e018
       responses:
         '200':
           content:
@@ -3468,7 +3956,7 @@ paths:
             x-link-response:
             - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
                 \n}"
-              x-response-id: 8094ae18-df71-4bc0-8c62-c20ac247e618
+              x-response-id: 1449cb77-2e55-4cc2-a281-972389f38033
       responses:
         '200':
           content:
@@ -3552,7 +4040,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10\n}"
-              x-response-id: 222b7259-229b-45b7-8a01-d3db9dc4f4a9
+              x-response-id: 9c7c27fe-d70a-41a2-9cbb-2a27f21a44c4
       responses:
         '200':
           content:
@@ -3577,7 +4065,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 6\n}"
-              x-response-id: c7cb0962-d786-4718-b82d-6f063fefe3b5
+              x-response-id: dba12958-6369-4a54-9af2-7665ac1639c3
       responses:
         '200':
           content:
@@ -3614,7 +4102,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 5bf42280-c738-4172-8d96-1db999d64b16
+              x-response-id: 16c5fd2f-eb37-4f11-844c-7bc5a096752e
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -3622,7 +4110,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\"\
                 \ : 1\n}"
-              x-response-id: 61c76c61-5b6e-40fa-88d2-51d67dff97d0
+              x-response-id: 94bc57b0-b008-48c0-8e94-65b1803935c0
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -3630,7 +4118,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: ef601b76-3d0a-4efc-a32b-20826e4ca0b7
+              x-response-id: 9c35c8d9-b7ee-4aee-a79d-2a71dc8f1f55
       responses:
         '200':
           content:
@@ -3654,7 +4142,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"category\" : 1\n}"
-              x-response-id: 1d066af6-c3a2-4376-8448-2584fb86077b
+              x-response-id: 7cf2858c-4a50-4b18-88ee-12dbcfbf6fa8
       responses:
         '200':
           content:
@@ -3695,10 +4183,10 @@ paths:
             x-link-response:
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : [\"T-shirt\", \"Shirt\"]\n}"
-              x-response-id: bfbbba03-def1-405f-a508-f0241f30a355
+              x-response-id: 62df9c63-30ce-4f2f-a71f-14ae6751d76b
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : []\n}"
-              x-response-id: c1d0bcac-9460-4c06-acf7-88b357b1bbf0
+              x-response-id: 3880c2a1-94a3-450a-b97e-f575c8f133ca
       responses:
         '200':
           content:
@@ -3723,7 +4211,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_name\" : \"Temp_g_002\"\n}"
-              x-response-id: eb4b51e8-f202-40a2-8547-ae2f25d58944
+              x-response-id: 2ea4e2c3-b5dc-4813-9c9d-e5e154e77cf2
       responses:
         '200':
           content:
@@ -3748,7 +4236,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 15\n}"
-              x-response-id: 7a566781-f8eb-43d5-909d-c85cf47c1526
+              x-response-id: 6e0367c8-f879-484b-8fda-300ecbda688a
       responses:
         '200':
           content:
@@ -3789,7 +4277,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_item_id\" : 10\n}"
-              x-response-id: 3c2e24d9-2d78-40b4-84fc-21f2b4507900
+              x-response-id: 1958d2b1-d92e-4ec5-b9b2-06cf7fa2b91f
       responses:
         '200':
           content:
@@ -3819,7 +4307,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 28,\n    \"qc_partner_id\" : 24\n\
                 }"
-              x-response-id: 5e93f1c4-7ade-4dc6-87f7-7299b30085ae
+              x-response-id: 87bc7e34-d164-486f-86cc-8a67d4094a81
       responses:
         '200':
           content:
@@ -3851,7 +4339,7 @@ paths:
                 \ : \"T-shirt\",\n    \"brands\" : [{\"name\" : \"Lee\", \"description\"\
                 \ : \"\"}, {\"name\" : \"Levi's\", \"description\" : \"\"}],\n   \
                 \ \"admn_user_id\" : 6\n}"
-              x-response-id: 4835c133-42bb-4e1e-849a-f71cf806ffe5
+              x-response-id: d627a187-bc9b-4ffb-8c2c-dd29e2228072
       responses:
         '200':
           content:
@@ -3880,7 +4368,7 @@ paths:
             - value: "{\n    \"subcategory_id\" : 2,\n    \"loggedin_user\" : 6,\n\
                 \    \"brands\" : [{\"name\" : \"Wrangler\"}, {\"name\" : \"Peter\
                 \ England\"}]\n}"
-              x-response-id: 17e66824-f394-4052-8771-390c9e88bd00
+              x-response-id: 502644df-8abc-41a0-841f-187056f7c8f3
       responses:
         '200':
           content:
@@ -3905,7 +4393,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: 04220232-4734-4f0c-b0f7-f56de01e28d8
+              x-response-id: f1e8485e-c8b1-4efd-9d90-2e1d7f963c8b
       responses:
         '200':
           content:
@@ -3930,7 +4418,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: 5cfa7bba-eadd-4aa9-ba36-d72889ea6c41
+              x-response-id: c99e7f8a-ecfe-4c0f-aa41-ceb6d946bce9
       responses:
         '200':
           content:
@@ -3974,7 +4462,7 @@ paths:
                 \ \"CHINAR PARK\",\n    \"country_id\" : 1,\n    \"state_id\" : 1,\n\
                 \    \"city_id\" : 1,\n    \"region_phone_no\" : \"9999999999\",\n\
                 \    \"admn_user_id\" : 6\n}"
-              x-response-id: 14586b11-9ae0-4c72-98f3-6312368c13b5
+              x-response-id: b2864f1f-b35b-476b-bf3d-7d17b1742ef7
       responses:
         '200':
           content:
@@ -4015,7 +4503,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 8,\n    \"approve_flag\" : true\n}"
-              x-response-id: f057cc05-1663-433e-bb64-d6428b2b83dc
+              x-response-id: 2c0dad85-308d-4ab7-82e3-8e1c575477ca
       responses:
         '200':
           content:
@@ -4039,7 +4527,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 8\n}"
-              x-response-id: 7127c3ce-ef76-4188-b7cb-9675f4963806
+              x-response-id: fec2952f-b5e1-4533-9ee3-f37b6aea2bf1
       responses:
         '200':
           content:
@@ -4070,7 +4558,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"status_filter\" : 1\n}"
-              x-response-id: 214b0077-c2a7-4686-a67c-f0312573a8bc
+              x-response-id: 447b71b9-5b37-4ba0-a2c7-f7a3ddc6ae5f
       responses:
         '200':
           content:
@@ -4095,7 +4583,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 35\n}"
-              x-response-id: 0fb27827-5938-4b4e-a22e-d3e301b66803
+              x-response-id: cb488de9-0c18-4ce3-acf1-bcae81173c96
       responses:
         '200':
           content:
@@ -4119,7 +4607,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"bag_id\" : 41\n}"
-              x-response-id: a0a721b5-1f1c-4a7d-be38-682649eaf5d7
+              x-response-id: 375b2f0d-fe29-474f-b1a6-925637690f97
       responses:
         '200':
           content:
@@ -4145,7 +4633,7 @@ paths:
             x-link-response:
             - value: "{\n    \"bag_id\" : 48,\n    \"admn_user_id\" : 10,\n    \"\
                 eta\" : 2.0\n}"
-              x-response-id: 090b9881-035f-4c85-aee5-695e6658f28c
+              x-response-id: a44d73fc-f6e2-4ebf-b9f6-7b47fe6fec2e
       responses:
         '200':
           content:
@@ -4169,7 +4657,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 41,\n    \"order_status\" : 3\n}"
-              x-response-id: deade6f5-f2af-439a-8f97-358e41c7e229
+              x-response-id: 19980f3a-7ae6-42cb-bf03-6fb3692514f5
       responses:
         '200':
           content:
@@ -4193,7 +4681,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 59\n}"
-              x-response-id: 22df3cb1-1339-4282-bf14-f4959b71a8e7
+              x-response-id: 24e62665-e8df-4ad4-89ce-3b3b36816533
       responses:
         '200':
           content:
@@ -4217,7 +4705,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 58,\n    \"order_status\" : 3\n}"
-              x-response-id: 480871c3-0595-4e0c-a12f-5782c21c2eed
+              x-response-id: 2edf3005-59b2-4973-b41b-a946cdbbcebf
       responses:
         '200':
           content:
@@ -4247,7 +4735,7 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 35,\n    \"region_id\" : 2,\n    \"action_type\"\
                 \ : 2\n}"
-              x-response-id: c2ef0142-6d67-4c75-ada9-8f8eb273b7c9
+              x-response-id: 516aa4ed-15a7-474a-8290-2bbd46cbce35
       responses:
         '200':
           content:
@@ -4271,7 +4759,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 35,\n    \"region_id\" : 2\n}"
-              x-response-id: 64827890-5473-4e64-87ac-a23dd850f86b
+              x-response-id: f727d9cc-178b-4988-9c3f-b46a130dc398
       responses:
         '200':
           content:
@@ -4307,3 +4795,30 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartAdminStoreListPost200'
           description: STORE LIST
       summary: STORE LIST
+  /qubecart/admin/store/orderlist/:
+    post:
+      description: '* start_date and end_date are option, if provided result will
+        contain only order in between start and end date. Otherwise result will contain
+        all orders'
+      operationId: QubecartAdminStoreOrderlistPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 26\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 26\n}"
+              x-response-id: accf20e3-5eed-446f-952c-1836f102eec8
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                OrderListByStore:
+                  $ref: '#/components/examples/exampleQubecartAdminStoreOrderlistPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminStoreOrderlistPost200'
+          description: ORDER LIST by STORE
+      summary: ORDER LIST by STORE
