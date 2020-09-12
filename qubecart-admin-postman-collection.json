@@ -3975,16 +3975,227 @@
 					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE023\",\n                \"Message\": \"Payment is due for this order\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "UPDATE STORE STATUS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 35,\n    \"region_id\" : 2,\n    \"action_type\" : 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/store/updatestatus/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"store",
+						"updatestatus",
+						""
+					]
+				},
+				"description": "* when store status 1/ requested possible action type 2 / active or 3 reject\n* region_id is optional but we have let admin set a region to a store"
+			},
+			"response": [
+				{
+					"name": "UPDATE STORE STATUS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 35,\n    \"region_id\" : 2,\n    \"action_type\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/store/updatestatus/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"store",
+								"updatestatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 12 Sep 2020 08:31:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "SET REGION TO STORE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 35,\n    \"region_id\" : 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/store/addregion/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"store",
+						"addregion",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SET REGION TO STORE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 35,\n    \"region_id\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/store/addregion/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"store",
+								"addregion",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 12 Sep 2020 08:35:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "67c04c90-9406-4107-b855-6f66e143baac",
+			"id": "1b0c0402-2b57-43d6-b7d6-2bc459cd6057",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "51298876-156e-4bbd-8d43-802039bd2d2c",
+			"id": "b6820d10-51c7-4a66-b9df-03344cefdea2",
 			"key": "port",
 			"value": "8001"
 		}
