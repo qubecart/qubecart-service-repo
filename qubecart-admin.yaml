@@ -11,7 +11,34 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 19980f3a-7ae6-42cb-bf03-6fb3692514f5
+      x-response-id: 03d43510-f321-4e1f-ba77-0e82d9fc5c59
+    exampleQubecartAdminCommissionCreatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: d71823eb-93d6-4d2e-bdb0-7ad1fca3eace
+    exampleQubecartAdminCommissionGetallGet200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - commission_description: Default commission for all partner
+          commission_master_id: 1
+          commission_name: Default commission
+          commission_percentage: 2
+          created_on: '2020-09-14T08:31:37'
+          partner_income: 999999
+          updated_on: '2020-09-14T08:31:37'
+        - commission_description: TEst commission
+          commission_master_id: 2
+          commission_name: test
+          commission_percentage: 10
+          created_on: '2020-09-14T14:02:33'
+          partner_income: 99
+          updated_on: '2020-09-14T14:02:33'
+        exception: false
+      x-response-id: 6147b317-a30b-41ec-8d51-4b1cec872fbd
     exampleQubecartAdminGetbyidPost200:
       value:
         Errors: null
@@ -36,7 +63,7 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: dba12958-6369-4a54-9af2-7665ac1639c3
+      x-response-id: d25edd70-343d-4d5c-a4fd-947f7f5ceb86
     exampleQubecartAdminLoginPost200:
       value:
         Errors: null
@@ -57,7 +84,7 @@ components:
           user_type_name: Super Admin
           username: sourav
         exception: false
-      x-response-id: 1449cb77-2e55-4cc2-a281-972389f38033
+      x-response-id: 2a97e05f-ce85-49c6-b169-df9f7ae04648
     exampleQubecartAdminOrderAssignbagPost200:
       value:
         Errors: null
@@ -83,7 +110,7 @@ components:
             store_name: Perfect store
             work_item_id: 3
         exception: false
-      x-response-id: a44d73fc-f6e2-4ebf-b9f6-7b47fe6fec2e
+      x-response-id: 023c49df-9332-4a30-9f14-a005b56427cf
     exampleQubecartAdminOrderBagdetailsPost200:
       value:
         Errors: null
@@ -155,7 +182,7 @@ components:
           subcategory_name: Ghee
           total_price: 180.5
         exception: false
-      x-response-id: 375b2f0d-fe29-474f-b1a6-925637690f97
+      x-response-id: 530d51f6-693e-44b2-9046-dcba3c735e54
     exampleQubecartAdminOrderDetailsPost200:
       value:
         Errors: null
@@ -214,7 +241,7 @@ components:
             price: 1324.14
             states_name: West Bengal
         exception: false
-      x-response-id: cb488de9-0c18-4ce3-acf1-bcae81173c96
+      x-response-id: 54e0c22b-32f0-49f3-aef3-a34c5c484a58
     exampleQubecartAdminOrderGetallPost200:
       value:
         Errors: null
@@ -338,13 +365,13 @@ components:
           payment_type_name: Cash On Delivery
           price: 483.85
         exception: false
-      x-response-id: 447b71b9-5b37-4ba0-a2c7-f7a3ddc6ae5f
+      x-response-id: ae10d9b3-274f-42ad-a69e-2013f68f08d3
     exampleQubecartAdminOrderUpdatepaymentPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 24e62665-e8df-4ad4-89ce-3b3b36816533
+      x-response-id: acfdfdbb-68ff-40b5-925d-7703a2626049
     exampleQubecartAdminOrderUpdatestatusPost200:
       value:
         Errors:
@@ -356,19 +383,19 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 2edf3005-59b2-4973-b41b-a946cdbbcebf
+      x-response-id: 979d9d94-4899-4edc-9d5d-7b4c89b0ba9d
     exampleQubecartAdminPartnerApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: e107eae4-dfd2-4421-bf6d-5d7a454f0c1d
+      x-response-id: 9e258c83-6b13-476d-8f76-12614f61a6ab
     exampleQubecartAdminPartnerCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 617c0a79-7e82-4cb3-9ed9-748979ba5f0c
+      x-response-id: d2bb9b27-da61-4186-ac8c-bf8e11d7ced7
     exampleQubecartAdminPartnerDetailsbyidPost200:
       value:
         Errors: null
@@ -417,7 +444,7 @@ components:
             store_type_name: Garments
           updated_on: '2020-08-03T09:10:11'
         exception: false
-      x-response-id: 9c7c27fe-d70a-41a2-9cbb-2a27f21a44c4
+      x-response-id: cf3e16dc-6c45-4388-918d-44e244b35a58
     exampleQubecartAdminPartnerGetallPost200:
       value:
         Errors: null
@@ -448,13 +475,13 @@ components:
           qc_partner_id: 9
           updated_on: null
         exception: false
-      x-response-id: e6f7883a-ea57-4b39-aa9f-4b1b53c4c1d0
+      x-response-id: e820bf3d-8419-412a-89e5-ee9755e72037
     exampleQubecartAdminPersonnelApprovePost200:
       value:
         Errors: null
         code: '001'
         exception: true
-      x-response-id: 2c0dad85-308d-4ab7-82e3-8e1c575477ca
+      x-response-id: bbdcb739-8cf9-45c8-83a4-d79b96408a80
     exampleQubecartAdminPersonnelGetallGet200:
       value:
         Errors: null
@@ -494,7 +521,7 @@ components:
           user_type_name: Delivery Person
           username: JonWick
         exceptiopn: false
-      x-response-id: c15a3604-5dda-4b3f-8774-60c03068650f
+      x-response-id: 03da5ca1-c263-4bbc-9d37-32640afe8b0c
     exampleQubecartAdminPersonnelGetdetailPost200:
       value:
         Errors: null
@@ -528,13 +555,13 @@ components:
           username: JonWick
           userr_type_name: Delivery Person
         exception: false
-      x-response-id: fec2952f-b5e1-4533-9ee3-f37b6aea2bf1
+      x-response-id: b540b099-3652-4879-b09a-cfb4eb9d1f5f
     exampleQubecartAdminRegionCreatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: b2864f1f-b35b-476b-bf3d-7d17b1742ef7
+      x-response-id: 3967715a-4aaa-468e-a8fd-5bf30450c64a
     exampleQubecartAdminRegionGetallGet200:
       value:
         Errors: null
@@ -550,13 +577,13 @@ components:
           region_phone_no: '9999999999'
           state_id: 1
         exception: false
-      x-response-id: 3f990834-d32c-4cb4-91ad-7e92abbeedeb
+      x-response-id: beea9271-e639-4970-ac4e-f1c7547e1d6c
     exampleQubecartAdminStoreAddregionPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: f727d9cc-178b-4988-9c3f-b46a130dc398
+      x-response-id: ca177979-85ed-400e-ab22-631723e4d08f
     exampleQubecartAdminStoreListPost200:
       value:
         Errors: null
@@ -717,130 +744,144 @@ components:
           store_type_name: Grocery
           updated_on: '2020-09-12T08:35:13'
         exception: false
-      x-response-id: bd943e3e-ac3f-4e54-be23-b960077e1f6e
+      x-response-id: 69eca732-7cb6-4cd7-b195-70bbd2f6ccd4
     exampleQubecartAdminStoreOrderlistPost200:
       value:
         Errors: null
         code: '001'
         data:
-        - bag_id: 37
-          bag_price: 620.54
-          bag_ref_no: BAG540108
-          bag_status: 4
-          bag_status_name: Packaging In Progress
-          billing_address_id: 14
-          customer_id: 18
-          order_created_at: '2020-08-28T09:26:23'
-          order_id: 31
-          payment_status: 0
-          payment_status_name: Not Settled
-          payment_type: 1
-          payment_type_name: Cash On Delivery
-          updated_on: '2020-08-29T10:13:44'
-        - bag_id: 41
-          bag_price: 979.64
-          bag_ref_no: BAG579394
-          bag_status: 1
-          bag_status_name: Order Placed
-          billing_address_id: 27
-          customer_id: 22
-          order_created_at: '2020-08-29T08:36:45'
-          order_id: 35
-          payment_status: 0
-          payment_status_name: Not Settled
-          payment_type: 1
-          payment_type_name: Cash On Delivery
-          updated_on: null
-        - bag_id: 45
-          bag_price: 315.5
-          bag_ref_no: QCB726936
-          bag_status: 9
-          bag_status_name: Rejected
-          billing_address_id: 27
-          customer_id: 22
-          order_created_at: '2020-09-02T04:33:39'
-          order_id: 38
-          payment_status: 0
-          payment_status_name: Not Settled
-          payment_type: 1
-          payment_type_name: Cash On Delivery
-          updated_on: '2020-09-12T02:25:11'
-        - bag_id: 49
-          bag_price: 135
-          bag_ref_no: QCB471876
-          bag_status: 6
-          bag_status_name: Picked Up
-          billing_address_id: 14
-          customer_id: 18
-          order_created_at: '2020-09-07T18:19:02'
-          order_id: 41
-          payment_status: 0
-          payment_status_name: Not Settled
-          payment_type: 1
-          payment_type_name: Cash On Delivery
-          updated_on: '2020-09-08T10:58:35'
-        - bag_id: 65
-          bag_price: 135
-          bag_ref_no: QCB679545
-          bag_status: 1
-          bag_status_name: Order Placed
-          billing_address_id: 27
-          customer_id: 22
-          order_created_at: '2020-09-09T17:09:47'
-          order_id: 57
-          payment_status: 1
-          payment_status_name: Settled
-          payment_type: 2
-          payment_type_name: Qubecart Wallet
-          updated_on: null
-        - bag_id: 73
-          bag_price: 135
-          bag_ref_no: QCB711836
-          bag_status: 5
-          bag_status_name: Ready To Dispatch
-          billing_address_id: 29
-          customer_id: 25
-          order_created_at: '2020-09-11T20:53:49'
-          order_id: 64
-          payment_status: 0
-          payment_status_name: Not Settled
-          payment_type: 1
-          payment_type_name: Cash On Delivery
-          updated_on: '2020-09-12T02:25:36'
-        - bag_id: 76
-          bag_price: 135
-          bag_ref_no: QCB867624
-          bag_status: 1
-          bag_status_name: Order Placed
-          billing_address_id: 29
-          customer_id: 22
-          order_created_at: '2020-09-11T21:01:44'
-          order_id: 65
-          payment_status: 0
-          payment_status_name: Not Settled
-          payment_type: 1
-          payment_type_name: Cash On Delivery
-          updated_on: null
+          commission:
+            commission_name: Default commission
+            commission_percentage: 2
+            msqube_income: 36.7
+            partner_income: 1798.44
+            total_bag_price: 1835.14
+          orderlist:
+          - bag_id: 37
+            bag_price: 620.54
+            bag_ref_no: BAG540108
+            bag_status: 4
+            bag_status_name: Packaging In Progress
+            billing_address_id: 14
+            customer_id: 18
+            order_created_at: '2020-08-28T09:26:23'
+            order_id: 31
+            paid_to_partner: 1
+            payment_status: 0
+            payment_status_name: Not Settled
+            payment_type: 1
+            payment_type_name: Cash On Delivery
+            updated_on: '2020-08-29T10:13:44'
+          - bag_id: 41
+            bag_price: 979.64
+            bag_ref_no: BAG579394
+            bag_status: 1
+            bag_status_name: Order Placed
+            billing_address_id: 27
+            customer_id: 22
+            order_created_at: '2020-08-29T08:36:45'
+            order_id: 35
+            paid_to_partner: 0
+            payment_status: 0
+            payment_status_name: Not Settled
+            payment_type: 1
+            payment_type_name: Cash On Delivery
+            updated_on: null
+          - bag_id: 45
+            bag_price: 315.5
+            bag_ref_no: QCB726936
+            bag_status: 9
+            bag_status_name: Rejected
+            billing_address_id: 27
+            customer_id: 22
+            order_created_at: '2020-09-02T04:33:39'
+            order_id: 38
+            paid_to_partner: 0
+            payment_status: 0
+            payment_status_name: Not Settled
+            payment_type: 1
+            payment_type_name: Cash On Delivery
+            updated_on: '2020-09-12T02:25:11'
+          - bag_id: 49
+            bag_price: 135
+            bag_ref_no: QCB471876
+            bag_status: 6
+            bag_status_name: Picked Up
+            billing_address_id: 14
+            customer_id: 18
+            order_created_at: '2020-09-07T18:19:02'
+            order_id: 41
+            paid_to_partner: 0
+            payment_status: 0
+            payment_status_name: Not Settled
+            payment_type: 1
+            payment_type_name: Cash On Delivery
+            updated_on: '2020-09-08T10:58:35'
+          - bag_id: 65
+            bag_price: 135
+            bag_ref_no: QCB679545
+            bag_status: 1
+            bag_status_name: Order Placed
+            billing_address_id: 27
+            customer_id: 22
+            order_created_at: '2020-09-09T17:09:47'
+            order_id: 57
+            paid_to_partner: 0
+            payment_status: 1
+            payment_status_name: Settled
+            payment_type: 2
+            payment_type_name: Qubecart Wallet
+            updated_on: null
+          - bag_id: 73
+            bag_price: 135
+            bag_ref_no: QCB711836
+            bag_status: 5
+            bag_status_name: Ready To Dispatch
+            billing_address_id: 29
+            customer_id: 25
+            order_created_at: '2020-09-11T20:53:49'
+            order_id: 64
+            paid_to_partner: 0
+            payment_status: 0
+            payment_status_name: Not Settled
+            payment_type: 1
+            payment_type_name: Cash On Delivery
+            updated_on: '2020-09-12T02:25:36'
+          - bag_id: 76
+            bag_price: 135
+            bag_ref_no: QCB867624
+            bag_status: 1
+            bag_status_name: Order Placed
+            billing_address_id: 29
+            customer_id: 22
+            order_created_at: '2020-09-11T21:01:44'
+            order_id: 65
+            paid_to_partner: 0
+            payment_status: 0
+            payment_status_name: Not Settled
+            payment_type: 1
+            payment_type_name: Cash On Delivery
+            updated_on: null
         exception: false
-      x-response-id: accf20e3-5eed-446f-952c-1836f102eec8
+      x-response-id: 9b4dff54-e69d-40f7-99e9-7ddc761dc723
     exampleQubecartAdminStoreUpdatestatusPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 516aa4ed-15a7-474a-8290-2bbd46cbce35
+      x-response-id: bbd70395-e6b3-472f-833c-36a024369721
     exampleQubecartAdminTemplateAddbrandsPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 502644df-8abc-41a0-841f-187056f7c8f3
+      x-response-id: c061168c-2ee3-4a84-a242-4d492ed4ce24
     exampleQubecartAdminTemplateCheckduplicatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 2ea4e2c3-b5dc-4813-9c9d-e5e154e77cf2
+      x-response-id: 3528f7d9-ffce-45af-baaf-bf1a52676b8f
     exampleQubecartAdminTemplateCreatePost200:
       value:
         Errors:
@@ -852,19 +893,19 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 3880c2a1-94a3-450a-b97e-f575c8f133ca
+      x-response-id: 4ee07614-9e36-4520-bf2c-7dab76ef1da4
     exampleQubecartAdminTemplateCreatesubcategoryPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: d627a187-bc9b-4ffb-8c2c-dd29e2228072
+      x-response-id: aea843ea-6211-4f5e-9ff9-db39f29bc346
     exampleQubecartAdminTemplateDeleteitemPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 6e0367c8-f879-484b-8fda-300ecbda688a
+      x-response-id: 691942b8-1e64-4ff9-8dc9-5b02e64f7d1a
     exampleQubecartAdminTemplateGetallGet200:
       value:
         Errors: null
@@ -882,7 +923,7 @@ components:
           updated_on: '2020-08-14T10:27:26'
           username: msqube Technologies Corp
         exception: false
-      x-response-id: 78e66a34-6301-4eca-8f31-9b39c5b8103f
+      x-response-id: 657a898b-52bd-4f9c-9628-a5fb542f61c0
     exampleQubecartAdminTemplateGetbrandsPost200:
       value:
         Errors: null
@@ -929,7 +970,7 @@ components:
           updated_by: 24
           updated_on: '2020-08-27T18:46:17'
         exception: false
-      x-response-id: 87bc7e34-d164-486f-86cc-8a67d4094a81
+      x-response-id: 9c17ed2d-46d4-4626-8fc7-7b9063dd2b9a
     exampleQubecartAdminTemplateGetbycategoryPost200:
       value:
         Errors: null
@@ -952,7 +993,7 @@ components:
           updated_by: 6
           updated_on: '2020-08-12T12:22:57'
         exception: false
-      x-response-id: 7cf2858c-4a50-4b18-88ee-12dbcfbf6fa8
+      x-response-id: 98ebe85c-fbd5-4110-914e-901da52dcda4
     exampleQubecartAdminTemplateGetcategoryPost200:
       value:
         Errors: null
@@ -968,7 +1009,7 @@ components:
           template_id: 29
           template_item_id: 12
         exception: false
-      x-response-id: f1e8485e-c8b1-4efd-9d90-2e1d7f963c8b
+      x-response-id: 2cc438c5-a670-4dc3-82dc-fc2334a9b072
     exampleQubecartAdminTemplateGetsubcategoryPost200:
       value:
         Errors: null
@@ -978,7 +1019,7 @@ components:
           product_subcategory_id: 1
           subcategory_name: Basmati Rice
         exception: false
-      x-response-id: 1958d2b1-d92e-4ec5-b9b2-06cf7fa2b91f
+      x-response-id: 5fd9cc5d-dca8-490d-ac7c-76a6d1677b02
     exampleQubecartAdminUpdatePost200:
       value:
         Errors:
@@ -990,7 +1031,7 @@ components:
           Warnings: []
         code: null
         exception: true
-      x-response-id: 9c35c8d9-b7ee-4aee-a79d-2a71dc8f1f55
+      x-response-id: e9e1b26d-e84e-420c-9cf5-7315bdb6eead
     exampleQubecartSharedDomainPost200:
       value:
         Errors: null
@@ -1021,7 +1062,7 @@ components:
           domain_type: partner_status
           domain_value: Not Approved
         exception: false
-      x-response-id: 3b5aa0bb-57ec-421f-b3be-ab535780e018
+      x-response-id: 49a011b9-a45e-42d4-b8a2-b8becbd79fd1
     exampleQubecartSharedErrorframeworkGet200:
       value:
       - error_code: SE001
@@ -1048,7 +1089,7 @@ components:
         error_id: 6
         error_message: Email or phone already exists
         level_of_severity: 3
-      x-response-id: 368fc377-d9b6-443a-bc47-a27736288ced
+      x-response-id: 90161459-356a-4007-a0d6-ce2beed05971
     exampleQubecartSharedGetCityGet200:
       value:
         Errors: null
@@ -1058,7 +1099,7 @@ components:
           city_id: 1
           city_name: Kolkata
         exception: false
-      x-response-id: 60f47341-b81b-4e9f-b33e-18a70ab66c8d
+      x-response-id: 1e8cadd2-c41c-4de8-bb45-85426c7a6d54
     exampleQubecartSharedGetCitystatecountryGet200:
       value:
         Errors: null
@@ -1077,7 +1118,7 @@ components:
             states_id: 1
             states_name: West Bengal
         exception: false
-      x-response-id: a8f84f9b-02f6-4185-a770-7809663fabc1
+      x-response-id: 64cc699b-73a1-404d-9b2c-f6d9d69cbb7d
     exampleQubecartSharedGetCountriesGet200:
       value:
         Errors: null
@@ -1087,7 +1128,7 @@ components:
           countries_id: 1
           countries_name: India
         exception: false
-      x-response-id: 9ffd1712-1c2c-4c78-9e54-b208fb1eef93
+      x-response-id: 5ed24119-c635-4e40-961e-fa8970216de6
     exampleQubecartSharedGetStatesGet200:
       value:
         Errors: null
@@ -1097,7 +1138,7 @@ components:
           states_id: 1
           states_name: West Bengal
         exception: false
-      x-response-id: 66858897-e588-498d-8b99-39a2890a4570
+      x-response-id: 21e4fb71-edd5-4537-9e6e-f0cca5980c64
     exampleQubecartSharedGetunitsPost200:
       value:
         Errors: null
@@ -1112,7 +1153,7 @@ components:
           unit_long: Gram
           unit_short: g
         exception: false
-      x-response-id: c99e7f8a-ecfe-4c0f-aa41-ceb6d946bce9
+      x-response-id: 71b2767d-8f15-4894-a303-6faf939ac472
   schemas:
     schemaAdminOrderUpdatestatusPost200:
       properties:
@@ -1153,6 +1194,63 @@ components:
       - code
       - exception
       - Errors
+      type: object
+    schemaQubecartAdminCommissionCreatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartAdminCommissionGetallGet200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              commission_description:
+                type: string
+              commission_master_id:
+                format: int32
+                type: integer
+              commission_name:
+                type: string
+              commission_percentage:
+                format: int32
+                type: integer
+              created_on:
+                type: string
+              partner_income:
+                format: int32
+                type: integer
+              updated_on:
+                type: string
+            required:
+            - commission_master_id
+            - commission_name
+            - commission_description
+            - created_on
+            - updated_on
+            - partner_income
+            - commission_percentage
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
       type: object
     schemaQubecartAdminGetbyidPost200:
       properties:
@@ -2775,374 +2873,428 @@ components:
         code:
           type: string
         data:
-          items:
-            allOf:
-            - properties:
-                bag_id:
+          properties:
+            commission:
+              properties:
+                commission_name:
+                  type: string
+                commission_percentage:
                   format: int32
                   type: integer
-                bag_price:
+                msqube_income:
                   type: float
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on:
-                  type: string
-              required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
-              type: object
-            - properties:
-                bag_id:
-                  format: int32
-                  type: integer
-                bag_price:
+                partner_income:
                   type: float
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on: {}
-              required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
-              type: object
-            - properties:
-                bag_id:
-                  format: int32
-                  type: integer
-                bag_price:
+                total_bag_price:
                   type: float
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on:
-                  type: string
               required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
+              - msqube_income
+              - partner_income
+              - commission_percentage
+              - total_bag_price
+              - commission_name
               type: object
-            - properties:
-                bag_id:
-                  format: int32
-                  type: integer
-                bag_price:
-                  format: int32
-                  type: integer
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on:
-                  type: string
-              required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
-              type: object
-            - properties:
-                bag_id:
-                  format: int32
-                  type: integer
-                bag_price:
-                  format: int32
-                  type: integer
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on: {}
-              required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
-              type: object
-            - properties:
-                bag_id:
-                  format: int32
-                  type: integer
-                bag_price:
-                  format: int32
-                  type: integer
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on:
-                  type: string
-              required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
-              type: object
-            - properties:
-                bag_id:
-                  format: int32
-                  type: integer
-                bag_price:
-                  format: int32
-                  type: integer
-                bag_ref_no:
-                  type: string
-                bag_status:
-                  format: int32
-                  type: integer
-                bag_status_name:
-                  type: string
-                billing_address_id:
-                  format: int32
-                  type: integer
-                customer_id:
-                  format: int32
-                  type: integer
-                order_created_at:
-                  type: string
-                order_id:
-                  format: int32
-                  type: integer
-                payment_status:
-                  format: int32
-                  type: integer
-                payment_status_name:
-                  type: string
-                payment_type:
-                  format: int32
-                  type: integer
-                payment_type_name:
-                  type: string
-                updated_on: {}
-              required:
-              - order_id
-              - order_created_at
-              - customer_id
-              - billing_address_id
-              - payment_type
-              - payment_status
-              - bag_id
-              - bag_ref_no
-              - updated_on
-              - bag_status
-              - bag_price
-              - bag_status_name
-              - payment_type_name
-              - payment_status_name
-              type: object
-          type: array
+            orderlist:
+              items:
+                allOf:
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      type: float
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on:
+                      type: string
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      type: float
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on: {}
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      type: float
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on:
+                      type: string
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      format: int32
+                      type: integer
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on:
+                      type: string
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      format: int32
+                      type: integer
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on: {}
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      format: int32
+                      type: integer
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on:
+                      type: string
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+                - properties:
+                    bag_id:
+                      format: int32
+                      type: integer
+                    bag_price:
+                      format: int32
+                      type: integer
+                    bag_ref_no:
+                      type: string
+                    bag_status:
+                      format: int32
+                      type: integer
+                    bag_status_name:
+                      type: string
+                    billing_address_id:
+                      format: int32
+                      type: integer
+                    customer_id:
+                      format: int32
+                      type: integer
+                    order_created_at:
+                      type: string
+                    order_id:
+                      format: int32
+                      type: integer
+                    paid_to_partner:
+                      format: int32
+                      type: integer
+                    payment_status:
+                      format: int32
+                      type: integer
+                    payment_status_name:
+                      type: string
+                    payment_type:
+                      format: int32
+                      type: integer
+                    payment_type_name:
+                      type: string
+                    updated_on: {}
+                  required:
+                  - order_id
+                  - order_created_at
+                  - customer_id
+                  - billing_address_id
+                  - payment_type
+                  - payment_status
+                  - bag_id
+                  - bag_ref_no
+                  - updated_on
+                  - bag_status
+                  - paid_to_partner
+                  - bag_price
+                  - bag_status_name
+                  - payment_type_name
+                  - payment_status_name
+                  type: object
+              type: array
+          required:
+          - orderlist
+          - commission
+          type: object
         exception:
           format: 'null'
           type: boolean
@@ -3813,9 +3965,9 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"requested\" : true\n}"
-              x-response-id: b0420381-5451-44b7-bfa7-b90b1be039ac
+              x-response-id: 7893125f-9ba7-4c88-9157-739863221734
             - value: "{\n    \"requested\" : false\n}"
-              x-response-id: e6f7883a-ea57-4b39-aa9f-4b1b53c4c1d0
+              x-response-id: e820bf3d-8419-412a-89e5-ee9755e72037
       responses:
         '200':
           content:
@@ -3842,7 +3994,7 @@ paths:
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10,\n    \"approve_flag\" : true\n\
                 }"
-              x-response-id: e107eae4-dfd2-4421-bf6d-5d7a454f0c1d
+              x-response-id: 9e258c83-6b13-476d-8f76-12614f61a6ab
       responses:
         '200':
           content:
@@ -3889,7 +4041,7 @@ paths:
                 \ : \"beleghata main road kolkata\",\n    \"state_id\" : 1,\n    \"\
                 country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1\n\
                 }"
-              x-response-id: 617c0a79-7e82-4cb3-9ed9-748979ba5f0c
+              x-response-id: d2bb9b27-da61-4186-ac8c-bf8e11d7ced7
       responses:
         '200':
           content:
@@ -3929,7 +4081,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"domain_type\" : \"partner_status\"\n}"
-              x-response-id: 3b5aa0bb-57ec-421f-b3be-ab535780e018
+              x-response-id: 49a011b9-a45e-42d4-b8a2-b8becbd79fd1
       responses:
         '200':
           content:
@@ -3956,7 +4108,7 @@ paths:
             x-link-response:
             - value: "{\n    \"username\" : \"sourav\",\n    \"password\" : \"1234\"\
                 \n}"
-              x-response-id: 1449cb77-2e55-4cc2-a281-972389f38033
+              x-response-id: 2a97e05f-ce85-49c6-b169-df9f7ae04648
       responses:
         '200':
           content:
@@ -4040,7 +4192,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 10\n}"
-              x-response-id: 9c7c27fe-d70a-41a2-9cbb-2a27f21a44c4
+              x-response-id: cf3e16dc-6c45-4388-918d-44e244b35a58
       responses:
         '200':
           content:
@@ -4065,7 +4217,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 6\n}"
-              x-response-id: dba12958-6369-4a54-9af2-7665ac1639c3
+              x-response-id: d25edd70-343d-4d5c-a4fd-947f7f5ceb86
       responses:
         '200':
           content:
@@ -4102,7 +4254,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 16c5fd2f-eb37-4f11-844c-7bc5a096752e
+              x-response-id: 9599312e-bba1-49fc-91af-e794e47b07fa
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -4110,7 +4262,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\"\
                 \ : 1\n}"
-              x-response-id: 94bc57b0-b008-48c0-8e94-65b1803935c0
+              x-response-id: 44d3670e-068b-4844-93f1-2ca2870b630a
             - value: "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n\
                 \    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\"\
                 ,\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\"\
@@ -4118,7 +4270,7 @@ paths:
                 \    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n\
                 \    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\"\
                 \ : 1\n}"
-              x-response-id: 9c35c8d9-b7ee-4aee-a79d-2a71dc8f1f55
+              x-response-id: e9e1b26d-e84e-420c-9cf5-7315bdb6eead
       responses:
         '200':
           content:
@@ -4142,7 +4294,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"category\" : 1\n}"
-              x-response-id: 7cf2858c-4a50-4b18-88ee-12dbcfbf6fa8
+              x-response-id: 98ebe85c-fbd5-4110-914e-901da52dcda4
       responses:
         '200':
           content:
@@ -4183,10 +4335,10 @@ paths:
             x-link-response:
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : [\"T-shirt\", \"Shirt\"]\n}"
-              x-response-id: 62df9c63-30ce-4f2f-a71f-14ae6751d76b
+              x-response-id: 5e35da2f-c874-4550-9957-b4304f10e7eb
             - value: "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n   \
                 \ \"items\" : []\n}"
-              x-response-id: 3880c2a1-94a3-450a-b97e-f575c8f133ca
+              x-response-id: 4ee07614-9e36-4520-bf2c-7dab76ef1da4
       responses:
         '200':
           content:
@@ -4211,7 +4363,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_name\" : \"Temp_g_002\"\n}"
-              x-response-id: 2ea4e2c3-b5dc-4813-9c9d-e5e154e77cf2
+              x-response-id: 3528f7d9-ffce-45af-baaf-bf1a52676b8f
       responses:
         '200':
           content:
@@ -4236,7 +4388,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 15\n}"
-              x-response-id: 6e0367c8-f879-484b-8fda-300ecbda688a
+              x-response-id: 691942b8-1e64-4ff9-8dc9-5b02e64f7d1a
       responses:
         '200':
           content:
@@ -4277,7 +4429,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_item_id\" : 10\n}"
-              x-response-id: 1958d2b1-d92e-4ec5-b9b2-06cf7fa2b91f
+              x-response-id: 5fd9cc5d-dca8-490d-ac7c-76a6d1677b02
       responses:
         '200':
           content:
@@ -4307,7 +4459,7 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 28,\n    \"qc_partner_id\" : 24\n\
                 }"
-              x-response-id: 87bc7e34-d164-486f-86cc-8a67d4094a81
+              x-response-id: 9c17ed2d-46d4-4626-8fc7-7b9063dd2b9a
       responses:
         '200':
           content:
@@ -4339,7 +4491,7 @@ paths:
                 \ : \"T-shirt\",\n    \"brands\" : [{\"name\" : \"Lee\", \"description\"\
                 \ : \"\"}, {\"name\" : \"Levi's\", \"description\" : \"\"}],\n   \
                 \ \"admn_user_id\" : 6\n}"
-              x-response-id: d627a187-bc9b-4ffb-8c2c-dd29e2228072
+              x-response-id: aea843ea-6211-4f5e-9ff9-db39f29bc346
       responses:
         '200':
           content:
@@ -4368,7 +4520,7 @@ paths:
             - value: "{\n    \"subcategory_id\" : 2,\n    \"loggedin_user\" : 6,\n\
                 \    \"brands\" : [{\"name\" : \"Wrangler\"}, {\"name\" : \"Peter\
                 \ England\"}]\n}"
-              x-response-id: 502644df-8abc-41a0-841f-187056f7c8f3
+              x-response-id: c061168c-2ee3-4a84-a242-4d492ed4ce24
       responses:
         '200':
           content:
@@ -4393,7 +4545,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: f1e8485e-c8b1-4efd-9d90-2e1d7f963c8b
+              x-response-id: 2cc438c5-a670-4dc3-82dc-fc2334a9b072
       responses:
         '200':
           content:
@@ -4418,7 +4570,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: c99e7f8a-ecfe-4c0f-aa41-ceb6d946bce9
+              x-response-id: 71b2767d-8f15-4894-a303-6faf939ac472
       responses:
         '200':
           content:
@@ -4462,7 +4614,7 @@ paths:
                 \ \"CHINAR PARK\",\n    \"country_id\" : 1,\n    \"state_id\" : 1,\n\
                 \    \"city_id\" : 1,\n    \"region_phone_no\" : \"9999999999\",\n\
                 \    \"admn_user_id\" : 6\n}"
-              x-response-id: b2864f1f-b35b-476b-bf3d-7d17b1742ef7
+              x-response-id: 3967715a-4aaa-468e-a8fd-5bf30450c64a
       responses:
         '200':
           content:
@@ -4503,7 +4655,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 8,\n    \"approve_flag\" : true\n}"
-              x-response-id: 2c0dad85-308d-4ab7-82e3-8e1c575477ca
+              x-response-id: bbdcb739-8cf9-45c8-83a4-d79b96408a80
       responses:
         '200':
           content:
@@ -4527,7 +4679,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"admn_user_id\" : 8\n}"
-              x-response-id: fec2952f-b5e1-4533-9ee3-f37b6aea2bf1
+              x-response-id: b540b099-3652-4879-b09a-cfb4eb9d1f5f
       responses:
         '200':
           content:
@@ -4558,7 +4710,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"status_filter\" : 1\n}"
-              x-response-id: 447b71b9-5b37-4ba0-a2c7-f7a3ddc6ae5f
+              x-response-id: ae10d9b3-274f-42ad-a69e-2013f68f08d3
       responses:
         '200':
           content:
@@ -4583,7 +4735,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 35\n}"
-              x-response-id: cb488de9-0c18-4ce3-acf1-bcae81173c96
+              x-response-id: 54e0c22b-32f0-49f3-aef3-a34c5c484a58
       responses:
         '200':
           content:
@@ -4607,7 +4759,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"bag_id\" : 41\n}"
-              x-response-id: 375b2f0d-fe29-474f-b1a6-925637690f97
+              x-response-id: 530d51f6-693e-44b2-9046-dcba3c735e54
       responses:
         '200':
           content:
@@ -4633,7 +4785,7 @@ paths:
             x-link-response:
             - value: "{\n    \"bag_id\" : 48,\n    \"admn_user_id\" : 10,\n    \"\
                 eta\" : 2.0\n}"
-              x-response-id: a44d73fc-f6e2-4ebf-b9f6-7b47fe6fec2e
+              x-response-id: 023c49df-9332-4a30-9f14-a005b56427cf
       responses:
         '200':
           content:
@@ -4657,7 +4809,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 41,\n    \"order_status\" : 3\n}"
-              x-response-id: 19980f3a-7ae6-42cb-bf03-6fb3692514f5
+              x-response-id: 03d43510-f321-4e1f-ba77-0e82d9fc5c59
       responses:
         '200':
           content:
@@ -4681,7 +4833,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 59\n}"
-              x-response-id: 24e62665-e8df-4ad4-89ce-3b3b36816533
+              x-response-id: acfdfdbb-68ff-40b5-925d-7703a2626049
       responses:
         '200':
           content:
@@ -4705,7 +4857,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"order_id\" : 58,\n    \"order_status\" : 3\n}"
-              x-response-id: 2edf3005-59b2-4973-b41b-a946cdbbcebf
+              x-response-id: 979d9d94-4899-4edc-9d5d-7b4c89b0ba9d
       responses:
         '200':
           content:
@@ -4735,7 +4887,7 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 35,\n    \"region_id\" : 2,\n    \"action_type\"\
                 \ : 2\n}"
-              x-response-id: 516aa4ed-15a7-474a-8290-2bbd46cbce35
+              x-response-id: bbd70395-e6b3-472f-833c-36a024369721
       responses:
         '200':
           content:
@@ -4759,7 +4911,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 35,\n    \"region_id\" : 2\n}"
-              x-response-id: f727d9cc-178b-4988-9c3f-b46a130dc398
+              x-response-id: ca177979-85ed-400e-ab22-631723e4d08f
       responses:
         '200':
           content:
@@ -4810,7 +4962,7 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 26\n}"
-              x-response-id: accf20e3-5eed-446f-952c-1836f102eec8
+              x-response-id: 9b4dff54-e69d-40f7-99e9-7ddc761dc723
       responses:
         '200':
           content:
@@ -4822,3 +4974,45 @@ paths:
                 $ref: '#/components/schemas/schemaQubecartAdminStoreOrderlistPost200'
           description: ORDER LIST by STORE
       summary: ORDER LIST by STORE
+  /qubecart/admin/commission/create/:
+    post:
+      operationId: QubecartAdminCommissionCreatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"commission_name\" : \"test\",\n    \"commission_description\"\
+                \ : \"TEst commission\",\n    \"partner_income\" : 99,\n    \"commission_percentage\"\
+                \ : 10\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"commission_name\" : \"test\",\n    \"commission_description\"\
+                \ : \"TEst commission\",\n    \"partner_income\" : 99,\n    \"commission_percentage\"\
+                \ : 10\n}"
+              x-response-id: d71823eb-93d6-4d2e-bdb0-7ad1fca3eace
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                CreateCommission:
+                  $ref: '#/components/examples/exampleQubecartAdminCommissionCreatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminCommissionCreatePost200'
+          description: CREATE COMMISSION
+      summary: CREATE COMMISSION
+  /qubecart/admin/commission/getall/:
+    get:
+      operationId: QubecartAdminCommissionGetallGet
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                GetAllCommission:
+                  $ref: '#/components/examples/exampleQubecartAdminCommissionGetallGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartAdminCommissionGetallGet200'
+          description: GET ALL COMMISSION
+      summary: GET ALL COMMISSION

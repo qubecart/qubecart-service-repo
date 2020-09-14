@@ -4350,7 +4350,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Sat, 12 Sep 2020 12:01:56 GMT"
+							"value": "Mon, 14 Sep 2020 14:00:04 GMT"
 						},
 						{
 							"key": "Server",
@@ -4374,7 +4374,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "2437"
+							"value": "2745"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -4386,19 +4386,211 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"order_id\": 31,\n            \"order_created_at\": \"2020-08-28T09:26:23\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 37,\n            \"bag_ref_no\": \"BAG540108\",\n            \"updated_on\": \"2020-08-29T10:13:44\",\n            \"bag_status\": 4,\n            \"bag_price\": 620.54,\n            \"bag_status_name\": \"Packaging In Progress\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 35,\n            \"order_created_at\": \"2020-08-29T08:36:45\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 41,\n            \"bag_ref_no\": \"BAG579394\",\n            \"updated_on\": null,\n            \"bag_status\": 1,\n            \"bag_price\": 979.64,\n            \"bag_status_name\": \"Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 38,\n            \"order_created_at\": \"2020-09-02T04:33:39\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 45,\n            \"bag_ref_no\": \"QCB726936\",\n            \"updated_on\": \"2020-09-12T02:25:11\",\n            \"bag_status\": 9,\n            \"bag_price\": 315.5,\n            \"bag_status_name\": \"Rejected\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 41,\n            \"order_created_at\": \"2020-09-07T18:19:02\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 49,\n            \"bag_ref_no\": \"QCB471876\",\n            \"updated_on\": \"2020-09-08T10:58:35\",\n            \"bag_status\": 6,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Picked Up\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 57,\n            \"order_created_at\": \"2020-09-09T17:09:47\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 2,\n            \"payment_status\": 1,\n            \"bag_id\": 65,\n            \"bag_ref_no\": \"QCB679545\",\n            \"updated_on\": null,\n            \"bag_status\": 1,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Order Placed\",\n            \"payment_type_name\": \"Qubecart Wallet\",\n            \"payment_status_name\": \"Settled\"\n        },\n        {\n            \"order_id\": 64,\n            \"order_created_at\": \"2020-09-11T20:53:49\",\n            \"customer_id\": 25,\n            \"billing_address_id\": 29,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 73,\n            \"bag_ref_no\": \"QCB711836\",\n            \"updated_on\": \"2020-09-12T02:25:36\",\n            \"bag_status\": 5,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Ready To Dispatch\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        },\n        {\n            \"order_id\": 65,\n            \"order_created_at\": \"2020-09-11T21:01:44\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 29,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 76,\n            \"bag_ref_no\": \"QCB867624\",\n            \"updated_on\": null,\n            \"bag_status\": 1,\n            \"bag_price\": 135,\n            \"bag_status_name\": \"Order Placed\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\"\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"orderlist\": [\n            {\n                \"order_id\": 31,\n                \"order_created_at\": \"2020-08-28T09:26:23\",\n                \"customer_id\": 18,\n                \"billing_address_id\": 14,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"bag_id\": 37,\n                \"bag_ref_no\": \"BAG540108\",\n                \"updated_on\": \"2020-08-29T10:13:44\",\n                \"bag_status\": 4,\n                \"paid_to_partner\": 1,\n                \"bag_price\": 620.54,\n                \"bag_status_name\": \"Packaging In Progress\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 35,\n                \"order_created_at\": \"2020-08-29T08:36:45\",\n                \"customer_id\": 22,\n                \"billing_address_id\": 27,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"bag_id\": 41,\n                \"bag_ref_no\": \"BAG579394\",\n                \"updated_on\": null,\n                \"bag_status\": 1,\n                \"paid_to_partner\": 0,\n                \"bag_price\": 979.64,\n                \"bag_status_name\": \"Order Placed\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 38,\n                \"order_created_at\": \"2020-09-02T04:33:39\",\n                \"customer_id\": 22,\n                \"billing_address_id\": 27,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"bag_id\": 45,\n                \"bag_ref_no\": \"QCB726936\",\n                \"updated_on\": \"2020-09-12T02:25:11\",\n                \"bag_status\": 9,\n                \"paid_to_partner\": 0,\n                \"bag_price\": 315.5,\n                \"bag_status_name\": \"Rejected\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 41,\n                \"order_created_at\": \"2020-09-07T18:19:02\",\n                \"customer_id\": 18,\n                \"billing_address_id\": 14,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"bag_id\": 49,\n                \"bag_ref_no\": \"QCB471876\",\n                \"updated_on\": \"2020-09-08T10:58:35\",\n                \"bag_status\": 6,\n                \"paid_to_partner\": 0,\n                \"bag_price\": 135,\n                \"bag_status_name\": \"Picked Up\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 57,\n                \"order_created_at\": \"2020-09-09T17:09:47\",\n                \"customer_id\": 22,\n                \"billing_address_id\": 27,\n                \"payment_type\": 2,\n                \"payment_status\": 1,\n                \"bag_id\": 65,\n                \"bag_ref_no\": \"QCB679545\",\n                \"updated_on\": null,\n                \"bag_status\": 1,\n                \"paid_to_partner\": 0,\n                \"bag_price\": 135,\n                \"bag_status_name\": \"Order Placed\",\n                \"payment_type_name\": \"Qubecart Wallet\",\n                \"payment_status_name\": \"Settled\"\n            },\n            {\n                \"order_id\": 64,\n                \"order_created_at\": \"2020-09-11T20:53:49\",\n                \"customer_id\": 25,\n                \"billing_address_id\": 29,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"bag_id\": 73,\n                \"bag_ref_no\": \"QCB711836\",\n                \"updated_on\": \"2020-09-12T02:25:36\",\n                \"bag_status\": 5,\n                \"paid_to_partner\": 0,\n                \"bag_price\": 135,\n                \"bag_status_name\": \"Ready To Dispatch\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 65,\n                \"order_created_at\": \"2020-09-11T21:01:44\",\n                \"customer_id\": 22,\n                \"billing_address_id\": 29,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"bag_id\": 76,\n                \"bag_ref_no\": \"QCB867624\",\n                \"updated_on\": null,\n                \"bag_status\": 1,\n                \"paid_to_partner\": 0,\n                \"bag_price\": 135,\n                \"bag_status_name\": \"Order Placed\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            }\n        ],\n        \"commission\": {\n            \"msqube_income\": 36.7,\n            \"partner_income\": 1798.44,\n            \"commission_percentage\": 2,\n            \"total_bag_price\": 1835.14,\n            \"commission_name\": \"Default commission\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE COMMISSION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commission_name\" : \"test\",\n    \"commission_description\" : \"TEst commission\",\n    \"partner_income\" : 99,\n    \"commission_percentage\" : 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/commission/create/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"commission",
+						"create",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE COMMISSION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"commission_name\" : \"test\",\n    \"commission_description\" : \"TEst commission\",\n    \"partner_income\" : 99,\n    \"commission_percentage\" : 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/commission/create/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"commission",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 14:02:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL COMMISSION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/commission/getall/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"commission",
+						"getall",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL COMMISSION",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/commission/getall/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"commission",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 14:03:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "523"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"commission_master_id\": 1,\n            \"commission_name\": \"Default commission\",\n            \"commission_description\": \"Default commission for all partner\",\n            \"created_on\": \"2020-09-14T08:31:37\",\n            \"updated_on\": \"2020-09-14T08:31:37\",\n            \"partner_income\": 999999,\n            \"commission_percentage\": 2\n        },\n        {\n            \"commission_master_id\": 2,\n            \"commission_name\": \"test\",\n            \"commission_description\": \"TEst commission\",\n            \"created_on\": \"2020-09-14T14:02:33\",\n            \"updated_on\": \"2020-09-14T14:02:33\",\n            \"partner_income\": 99,\n            \"commission_percentage\": 10\n        }\n    ]\n}"
 				}
 			]
 		}
 	],
 	"variable": [
 		{
-			"id": "c28ca754-bd92-43d5-a4c0-616805792c5e",
+			"id": "d2804447-5ab8-4eac-ab88-0e812ddda448",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "0ee988ed-5777-483e-8caa-cd6910049596",
+			"id": "294b8238-5d94-407f-baed-04a758c432f2",
 			"key": "port",
 			"value": "8001"
 		}
