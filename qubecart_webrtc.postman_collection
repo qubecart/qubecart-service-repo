@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6fa52056-45f7-478b-af90-3a6d06dd27d7",
+		"_postman_id": "80ab1bed-a73a-4349-99c2-d9afc5d48a62",
 		"name": "qubecart_webrtc_collection",
 		"description": "WebRTC related services for QubeCart customer and partner apps",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -20,7 +20,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n    \"offer_payload\": {\n        \"type\": \"offer\"\n    },\n    \"store_id\": 1,\n    \"store_name\": \"Das Store\"\n}"
 				},
 				"url": {
 					"raw": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
@@ -265,5 +265,6 @@
 			},
 			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
