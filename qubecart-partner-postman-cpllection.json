@@ -1820,6 +1820,316 @@
 				"description": "Edits the Basic and Price Details of a Product"
 			},
 			"response": []
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_id\": 22,\r\n    \"credit_flag\" : 0,\r\n    \"store_item_list\": [\r\n        {\r\n            \"store_id\": 3,\r\n            \"item_id\": 47,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"store_id\": 3,\r\n            \"item_id\": 48,\r\n            \"quantity\": 3\r\n        },\r\n        {\r\n            \"store_id\": 28,\r\n            \"item_id\": 33,\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/cartdetails/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"cartdetails",
+						""
+					]
+				},
+				"description": "Cart Details"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_id\": 22,\r\n    \"credit_flag\" : 0,\r\n    \"store_item_list\": [\r\n        {\r\n            \"store_id\": 3,\r\n            \"item_id\": 47,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"store_id\": 3,\r\n            \"item_id\": 48,\r\n            \"quantity\": 3\r\n        },\r\n        {\r\n            \"store_id\": 28,\r\n            \"item_id\": 33,\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/cartdetails/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"cartdetails",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Sep 2020 13:46:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2385"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"store_details\": [\n            {\n                \"store_id\": 3,\n                \"store_address_id\": 22,\n                \"store_name\": \"Perfect store\",\n                \"store_location\": null,\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 24,\n                \"store_rating\": 0,\n                \"credit_flag\": 1,\n                \"region_id\": 2,\n                \"store_status\": 2,\n                \"created_on\": null,\n                \"updated_on\": null,\n                \"address_id\": 22,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"beleghata main road\",\n                \"pin\": 700010,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"store_category_name\": \"Grocery\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\",\n                \"item_details\": [\n                    {\n                        \"paroduct_details_id\": 40,\n                        \"product_id\": 47,\n                        \"product_description\": \"Dawaat Rozana Super Basmati Rice - 5Kg\",\n                        \"product_unit\": 1,\n                        \"product_quantity\": 5,\n                        \"product_variant\": null,\n                        \"product_rating\": 0,\n                        \"product_thumbnail\": \"dawaat5kg.jpg\",\n                        \"packaged_product\": 1,\n                        \"product_unit_name\": \"Kg\",\n                        \"store_id\": 3,\n                        \"product_selling_price\": 308.85,\n                        \"bucket_name\": \"qubecart\",\n                        \"itemImageFolder\": \"Item_image\",\n                        \"total_product_price\": 617.7,\n                        \"required_product_quantity\": 2\n                    },\n                    {\n                        \"paroduct_details_id\": 41,\n                        \"product_id\": 48,\n                        \"product_description\": \"Ganesh Whole Wheat Premium Atta -5kg\",\n                        \"product_unit\": 1,\n                        \"product_quantity\": 5,\n                        \"product_variant\": null,\n                        \"product_rating\": 0,\n                        \"product_thumbnail\": \"ganesh5.jpg\",\n                        \"packaged_product\": 1,\n                        \"product_unit_name\": \"Kg\",\n                        \"store_id\": 3,\n                        \"product_selling_price\": 209,\n                        \"bucket_name\": \"qubecart\",\n                        \"itemImageFolder\": \"Item_image\",\n                        \"total_product_price\": 627,\n                        \"required_product_quantity\": 3\n                    }\n                ],\n                \"bag_total_price\": 1244.7\n            },\n            {\n                \"store_id\": 28,\n                \"store_address_id\": 63,\n                \"store_name\": \"SD Store\",\n                \"store_location\": null,\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 24,\n                \"store_rating\": 0,\n                \"credit_flag\": 1,\n                \"region_id\": 2,\n                \"store_status\": 2,\n                \"created_on\": null,\n                \"updated_on\": null,\n                \"address_id\": 63,\n                \"addressline1\": \"Kestopur\",\n                \"addressline2\": \"Kolkata\",\n                \"pin\": 700012,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"store_category_name\": \"Grocery\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\",\n                \"item_details\": [],\n                \"bag_total_price\": 0\n            }\n        ],\n        \"price_breakup\": [\n            {\n                \"key\": \"Net Amount\",\n                \"value\": 2726.4,\n                \"sign_flag\": 1\n            },\n            {\n                \"key\": \"GST\",\n                \"value\": 303.6,\n                \"sign_flag\": 1\n            },\n            {\n                \"key\": \"Discount\",\n                \"value\": 315.3,\n                \"sign_flag\": 0\n            },\n            {\n                \"key\": \"Delivery Fee\",\n                \"value\": 40,\n                \"sign_flag\": 1\n            },\n            {\n                \"key\": \"Total\",\n                \"value\": 2754.7,\n                \"sign_flag\": 1\n            }\n        ],\n        \"credit_flag\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/get/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partner_id\" : 25,\r\n    \"flag\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/creditcustomer/get/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"creditcustomer",
+						"get",
+						""
+					]
+				},
+				"description": "Get all credit customer"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/get/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_id\" : 25,\r\n    \"flag\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/creditcustomer/get/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"creditcustomer",
+								"get",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Sep 2020 13:51:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "683"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"credit_association_id\": 6,\n            \"partner_id\": 25,\n            \"customer_id\": 18,\n            \"max_monthly_credit\": 100,\n            \"current_expendeture\": 0,\n            \"updated_at\": \"2020-09-04T14:09:36\",\n            \"credit_status\": 1,\n            \"store_id\": 26,\n            \"credit_status_name\": \"Credit Requested\",\n            \"remaining_expendeture\": 100,\n            \"customer_name\": \"SUDIPTA \",\n            \"email_id\": \"\",\n            \"phone_no\": \"8013320216\",\n            \"store_name\": \"Maa Annapurna Store\",\n            \"store_category\": 1,\n            \"store_category_name\": \"Grocery\",\n            \"address_id\": 60,\n            \"addressline1\": \"Beleghata Head Post Office\",\n            \"addressline2\": \"Beleghata\",\n            \"pin\": 700089,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/updaterequest/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n    \"customer_id\" : 18,\r\n    \"credit_status\" : 2,\r\n    \"max_monthly_credit\" : 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/creditcustomer/updaterequest/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"creditcustomer",
+						"updaterequest",
+						""
+					]
+				},
+				"description": "Update credit status by partner"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/updaterequest/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n    \"customer_id\" : 18,\r\n    \"credit_status\" : 2,\r\n    \"max_monthly_credit\" : 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/creditcustomer/updaterequest/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"creditcustomer",
+								"updaterequest",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Sep 2020 14:05:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
