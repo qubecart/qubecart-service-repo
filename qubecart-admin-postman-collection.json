@@ -4581,16 +4581,121 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"commission_master_id\": 1,\n            \"commission_name\": \"Default commission\",\n            \"commission_description\": \"Default commission for all partner\",\n            \"created_on\": \"2020-09-14T08:31:37\",\n            \"updated_on\": \"2020-09-14T08:31:37\",\n            \"partner_income\": 999999,\n            \"commission_percentage\": 2\n        },\n        {\n            \"commission_master_id\": 2,\n            \"commission_name\": \"test\",\n            \"commission_description\": \"TEst commission\",\n            \"created_on\": \"2020-09-14T14:02:33\",\n            \"updated_on\": \"2020-09-14T14:02:33\",\n            \"partner_income\": 99,\n            \"commission_percentage\": 10\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "COMMISSION HISTORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_id\" : 16\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}:8001/qubecart/admin/store/commissionhistory/",
+					"host": [
+						"{{endpoint}}"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"store",
+						"commissionhistory",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "COMMISSION HISTORY",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_id\" : 16\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}:8001/qubecart/admin/store/commissionhistory/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"store",
+								"commissionhistory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Sep 2020 11:27:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "390"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"store_commission_id\": 2,\n            \"store_id\": 16,\n            \"value\": null,\n            \"start_date\": \"2020-09-14T12:27:46\",\n            \"status\": 1,\n            \"commission_master_id\": 1,\n            \"end_date\": null,\n            \"commission_name\": \"Default commission\",\n            \"commission_description\": \"Default commission for all partner\",\n            \"commission_percentage\": 2,\n            \"partner_income\": 999999,\n            \"store_commission_status_name\": \"Active\"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "d2804447-5ab8-4eac-ab88-0e812ddda448",
+			"id": "551eda15-9f1b-47e2-b260-bdb5921b8ee3",
 			"key": "base_url",
 			"value": "3.7.66.177"
 		},
 		{
-			"id": "294b8238-5d94-407f-baed-04a758c432f2",
+			"id": "7c9f1c2d-4069-419b-a3bf-88798943d365",
 			"key": "port",
 			"value": "8001"
 		}
