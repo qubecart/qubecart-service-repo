@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "049863f4-ac54-4c41-8ccf-f4022da93cff",
-		"name": "Qubecart_customer",
+		"_postman_id": "823a9d3d-3326-43b9-89cb-812363d1ef02",
+		"name": "Qubecart-Customer-Services",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -2253,6 +2253,554 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 64,\n            \"subcategory_name\": \"Almond\",\n            \"brand_id\": 204,\n            \"brand_name\": \"gourmia\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 64,\n            \"subcategory_name\": \"Almond\",\n            \"brand_id\": 18,\n            \"brand_name\": \"Golden Harvest\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 64,\n            \"subcategory_name\": \"Almond\",\n            \"brand_id\": 19,\n            \"brand_name\": \"Generic\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 64,\n            \"subcategory_name\": \"Almond\",\n            \"brand_id\": 30,\n            \"brand_name\": \"battery\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 64,\n            \"subcategory_name\": \"Almond\",\n            \"brand_id\": 31,\n            \"brand_name\": \"Africa\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 64,\n            \"subcategory_name\": \"Almond\",\n            \"brand_id\": 32,\n            \"brand_name\": \"Bahrain Almond\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 65,\n            \"subcategory_name\": \"Almond (Premium)\",\n            \"brand_id\": 205,\n            \"brand_name\": \"Mark\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 65,\n            \"subcategory_name\": \"Almond (Premium)\",\n            \"brand_id\": 20,\n            \"brand_name\": \"Golden Harvest Premium\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 53,\n            \"category_name\": \"Almond\",\n            \"subcategory_id\": 65,\n            \"subcategory_name\": \"Almond (Premium)\",\n            \"brand_id\": 21,\n            \"brand_name\": \"Generic\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 54,\n            \"category_name\": \"Cahew\",\n            \"subcategory_id\": 68,\n            \"subcategory_name\": \"Cashew\",\n            \"brand_id\": 210,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 54,\n            \"category_name\": \"Cahew\",\n            \"subcategory_id\": 68,\n            \"subcategory_name\": \"Cashew\",\n            \"brand_id\": 211,\n            \"brand_name\": \"Mark\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 54,\n            \"category_name\": \"Cahew\",\n            \"subcategory_id\": 68,\n            \"subcategory_name\": \"Cashew\",\n            \"brand_id\": 22,\n            \"brand_name\": \"Golden Harvest\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 55,\n            \"category_name\": \"Walnuts\",\n            \"subcategory_id\": 66,\n            \"subcategory_name\": \"Walnuts\",\n            \"brand_id\": 206,\n            \"brand_name\": \"Regency\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 55,\n            \"category_name\": \"Walnuts\",\n            \"subcategory_id\": 66,\n            \"subcategory_name\": \"Walnuts\",\n            \"brand_id\": 207,\n            \"brand_name\": \"Mark\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 55,\n            \"category_name\": \"Walnuts\",\n            \"subcategory_id\": 66,\n            \"subcategory_name\": \"Walnuts\",\n            \"brand_id\": 208,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 55,\n            \"category_name\": \"Walnuts\",\n            \"subcategory_id\": 66,\n            \"subcategory_name\": \"Walnuts\",\n            \"brand_id\": 23,\n            \"brand_name\": \"Generic\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 57,\n            \"category_name\": \"Raisins\",\n            \"subcategory_id\": 67,\n            \"subcategory_name\": \"Raisins\",\n            \"brand_id\": 209,\n            \"brand_name\": \"Mark\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 57,\n            \"category_name\": \"Raisins\",\n            \"subcategory_id\": 67,\n            \"subcategory_name\": \"Raisins\",\n            \"brand_id\": 24,\n            \"brand_name\": \"Generic\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 212,\n            \"brand_name\": \"Carnival\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 213,\n            \"brand_name\": \"Apis\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 214,\n            \"brand_name\": \"Natures Best\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 215,\n            \"brand_name\": \"Natures Best\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 216,\n            \"brand_name\": \"Lion Dates\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 217,\n            \"brand_name\": \"Sajdah\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 218,\n            \"brand_name\": \"Emperor\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 219,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 58,\n            \"category_name\": \"Dates\",\n            \"subcategory_id\": 69,\n            \"subcategory_name\": \"Dates\",\n            \"brand_id\": 25,\n            \"brand_name\": \"Generic\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 59,\n            \"category_name\": \"Seeds\",\n            \"subcategory_id\": 70,\n            \"subcategory_name\": \"Seeds\",\n            \"brand_id\": 220,\n            \"brand_name\": \"By Nature\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 60,\n            \"category_name\": \"Roasted and Flavoured Nuts\",\n            \"subcategory_id\": 71,\n            \"subcategory_name\": \"Roasted Nuts and Flavoured Nuts\",\n            \"brand_id\": 221,\n            \"brand_name\": \"Regency\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 60,\n            \"category_name\": \"Roasted and Flavoured Nuts\",\n            \"subcategory_id\": 71,\n            \"subcategory_name\": \"Roasted Nuts and Flavoured Nuts\",\n            \"brand_id\": 222,\n            \"brand_name\": \"Mark\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 60,\n            \"category_name\": \"Roasted and Flavoured Nuts\",\n            \"subcategory_id\": 71,\n            \"subcategory_name\": \"Roasted Nuts and Flavoured Nuts\",\n            \"brand_id\": 223,\n            \"brand_name\": \"Smart Choic\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 60,\n            \"category_name\": \"Roasted and Flavoured Nuts\",\n            \"subcategory_id\": 72,\n            \"subcategory_name\": \"Almond Roasted\",\n            \"brand_id\": 224,\n            \"brand_name\": \"Mark\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 60,\n            \"category_name\": \"Roasted and Flavoured Nuts\",\n            \"subcategory_id\": 73,\n            \"subcategory_name\": \"Cashew Roasted\",\n            \"brand_id\": 225,\n            \"brand_name\": \"Mark Premium\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 60,\n            \"category_name\": \"Roasted and Flavoured Nuts\",\n            \"subcategory_id\": 73,\n            \"subcategory_name\": \"Cashew Roasted\",\n            \"brand_id\": 226,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 61,\n            \"category_name\": \"Dry fruit Gift Packs\",\n            \"subcategory_id\": 74,\n            \"subcategory_name\": \"Dry fruit Gift Packs\",\n            \"brand_id\": 227,\n            \"brand_name\": \"Mishriq Choco Dates\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 62,\n            \"category_name\": \"Mukhwas\",\n            \"subcategory_id\": 75,\n            \"subcategory_name\": \"Mukhwas\",\n            \"brand_id\": 228,\n            \"brand_name\": \"Chandan\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 63,\n            \"category_name\": \"Mouth Freshner & Churans\",\n            \"subcategory_id\": 76,\n            \"subcategory_name\": \"Mouth Freshner & Churans\",\n            \"brand_id\": 229,\n            \"brand_name\": \"Chamria\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 63,\n            \"category_name\": \"Mouth Freshner & Churans\",\n            \"subcategory_id\": 76,\n            \"subcategory_name\": \"Mouth Freshner & Churans\",\n            \"brand_id\": 230,\n            \"brand_name\": \"Sree Tulsi\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 63,\n            \"category_name\": \"Mouth Freshner & Churans\",\n            \"subcategory_id\": 76,\n            \"subcategory_name\": \"Mouth Freshner & Churans\",\n            \"brand_id\": 231,\n            \"brand_name\": \"Chamria Chhuhara\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 63,\n            \"category_name\": \"Mouth Freshner & Churans\",\n            \"subcategory_id\": 76,\n            \"subcategory_name\": \"Mouth Freshner & Churans\",\n            \"brand_id\": 232,\n            \"brand_name\": \"Rajnigandha\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 63,\n            \"category_name\": \"Mouth Freshner & Churans\",\n            \"subcategory_id\": 76,\n            \"subcategory_name\": \"Mouth Freshner & Churans\",\n            \"brand_id\": 233,\n            \"brand_name\": \"Dizzle Manchali\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 65,\n            \"category_name\": \"Poha\",\n            \"subcategory_id\": 77,\n            \"subcategory_name\": \"JK\",\n            \"brand_id\": 234,\n            \"brand_name\": \"JK\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 65,\n            \"category_name\": \"Poha\",\n            \"subcategory_id\": 77,\n            \"subcategory_name\": \"JK\",\n            \"brand_id\": 235,\n            \"brand_name\": \"Organic Tattva\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 66,\n            \"category_name\": \"Oil& Ghee\",\n            \"subcategory_id\": 78,\n            \"subcategory_name\": \"Oil\",\n            \"brand_id\": 236,\n            \"brand_name\": \"Sundrop Heart\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 66,\n            \"category_name\": \"Oil& Ghee\",\n            \"subcategory_id\": 78,\n            \"subcategory_name\": \"Oil\",\n            \"brand_id\": 237,\n            \"brand_name\": \"Sundrop Superlite\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 66,\n            \"category_name\": \"Oil& Ghee\",\n            \"subcategory_id\": 79,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 238,\n            \"brand_name\": \"Annapurna\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 66,\n            \"category_name\": \"Oil& Ghee\",\n            \"subcategory_id\": 79,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 239,\n            \"brand_name\": \"Klf Tilnad Gingelly\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 66,\n            \"category_name\": \"Oil& Ghee\",\n            \"subcategory_id\": 79,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 240,\n            \"brand_name\": \"Aashirvaad\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 66,\n            \"category_name\": \"Oil& Ghee\",\n            \"subcategory_id\": 79,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 241,\n            \"brand_name\": \"Provedic\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 67,\n            \"category_name\": \"Dry-Fruits & Nuts\",\n            \"subcategory_id\": 80,\n            \"subcategory_name\": \"Dry-Fruits & Nuts\",\n            \"brand_id\": 242,\n            \"brand_name\": \"Regency\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 67,\n            \"category_name\": \"Dry-Fruits & Nuts\",\n            \"subcategory_id\": 80,\n            \"subcategory_name\": \"Dry-Fruits & Nuts\",\n            \"brand_id\": 243,\n            \"brand_name\": \"Regency Chia Seeds\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 67,\n            \"category_name\": \"Dry-Fruits & Nuts\",\n            \"subcategory_id\": 80,\n            \"subcategory_name\": \"Dry-Fruits & Nuts\",\n            \"brand_id\": 244,\n            \"brand_name\": \"Regency Apricot\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 69,\n            \"category_name\": \"Flax Seed\",\n            \"subcategory_id\": 81,\n            \"subcategory_name\": \"Flax Seeds\",\n            \"brand_id\": 245,\n            \"brand_name\": \"Pure& Sure\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 69,\n            \"category_name\": \"Flax Seed\",\n            \"subcategory_id\": 81,\n            \"subcategory_name\": \"Flax Seeds\",\n            \"brand_id\": 246,\n            \"brand_name\": \"Organic India\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 247,\n            \"brand_name\": \"Anik\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 248,\n            \"brand_name\": \"Annapurna\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 249,\n            \"brand_name\": \"Jharna\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 250,\n            \"brand_name\": \"Shellys\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 251,\n            \"brand_name\": \"Morton\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 252,\n            \"brand_name\": \"Gold Touch\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 253,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 254,\n            \"brand_name\": \"Amul\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 255,\n            \"brand_name\": \"Patanjali\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 71,\n            \"category_name\": \"Ghee\",\n            \"subcategory_id\": 82,\n            \"subcategory_name\": \"Ghee\",\n            \"brand_id\": 256,\n            \"brand_name\": \"Gowardhan\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 72,\n            \"category_name\": \"Vanaspati\",\n            \"subcategory_id\": 83,\n            \"subcategory_name\": \"Vanaspati\",\n            \"brand_id\": 257,\n            \"brand_name\": \"Dalda\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 258,\n            \"brand_name\": \"Saloni\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 259,\n            \"brand_name\": \"Mashal\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 260,\n            \"brand_name\": \"Patanjali\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 261,\n            \"brand_name\": \"Engine\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 262,\n            \"brand_name\": \"Dhara\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 263,\n            \"brand_name\": \"Healthy & Tasty\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 264,\n            \"brand_name\": \"Fortune\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 265,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 73,\n            \"category_name\": \"Mustard Oil\",\n            \"subcategory_id\": 84,\n            \"subcategory_name\": \"Mustard Oil\",\n            \"brand_id\": 266,\n            \"brand_name\": \"Fortune\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 267,\n            \"brand_name\": \"Orino\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 268,\n            \"brand_name\": \"Oleev\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 269,\n            \"brand_name\": \"Disano\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 270,\n            \"brand_name\": \"Figaro\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 271,\n            \"brand_name\": \"Rs Pomace\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 272,\n            \"brand_name\": \"Bertolli\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 273,\n            \"brand_name\": \"Delmonte\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 74,\n            \"category_name\": \"Olive Oil\",\n            \"subcategory_id\": 85,\n            \"subcategory_name\": \"Olive Oil\",\n            \"brand_id\": 274,\n            \"brand_name\": \"Borges\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 75,\n            \"category_name\": \"Soybean OIl\",\n            \"subcategory_id\": 86,\n            \"subcategory_name\": \"Soybean OIl\",\n            \"brand_id\": 275,\n            \"brand_name\": \"Fortune\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 75,\n            \"category_name\": \"Soybean OIl\",\n            \"subcategory_id\": 86,\n            \"subcategory_name\": \"Soybean OIl\",\n            \"brand_id\": 276,\n            \"brand_name\": \"Healthy & Tasty\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 75,\n            \"category_name\": \"Soybean OIl\",\n            \"subcategory_id\": 86,\n            \"subcategory_name\": \"Soybean OIl\",\n            \"brand_id\": 277,\n            \"brand_name\": \"Sundrop\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 75,\n            \"category_name\": \"Soybean OIl\",\n            \"subcategory_id\": 86,\n            \"subcategory_name\": \"Soybean OIl\",\n            \"brand_id\": 278,\n            \"brand_name\": \"Mahakosh\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 76,\n            \"category_name\": \"SunFlower Oil\",\n            \"subcategory_id\": 87,\n            \"subcategory_name\": \"SunFlower Oil\",\n            \"brand_id\": 279,\n            \"brand_name\": \"Sundrop\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 76,\n            \"category_name\": \"SunFlower Oil\",\n            \"subcategory_id\": 87,\n            \"subcategory_name\": \"SunFlower Oil\",\n            \"brand_id\": 280,\n            \"brand_name\": \"Healthy & Tasty\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 76,\n            \"category_name\": \"SunFlower Oil\",\n            \"subcategory_id\": 87,\n            \"subcategory_name\": \"SunFlower Oil\",\n            \"brand_id\": 281,\n            \"brand_name\": \"Ruchi\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 76,\n            \"category_name\": \"SunFlower Oil\",\n            \"subcategory_id\": 87,\n            \"subcategory_name\": \"SunFlower Oil\",\n            \"brand_id\": 282,\n            \"brand_name\": \"Saffola\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 76,\n            \"category_name\": \"SunFlower Oil\",\n            \"subcategory_id\": 87,\n            \"subcategory_name\": \"SunFlower Oil\",\n            \"brand_id\": 283,\n            \"brand_name\": \"Fortune\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 77,\n            \"category_name\": \"Rice Bran Oil\",\n            \"subcategory_id\": 88,\n            \"subcategory_name\": \"Rice Bran Oil\",\n            \"brand_id\": 284,\n            \"brand_name\": \"Fortune\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 77,\n            \"category_name\": \"Rice Bran Oil\",\n            \"subcategory_id\": 88,\n            \"subcategory_name\": \"Rice Bran Oil\",\n            \"brand_id\": 285,\n            \"brand_name\": \"Healthy & Tasty\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 77,\n            \"category_name\": \"Rice Bran Oil\",\n            \"subcategory_id\": 88,\n            \"subcategory_name\": \"Rice Bran Oil\",\n            \"brand_id\": 286,\n            \"brand_name\": \"Doctors Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 78,\n            \"category_name\": \"Canola Oil\",\n            \"subcategory_id\": 89,\n            \"subcategory_name\": \"Canola Oil\",\n            \"brand_id\": 287,\n            \"brand_name\": \"Jivo\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 80,\n            \"category_name\": \"Blend Oil\",\n            \"subcategory_id\": 90,\n            \"subcategory_name\": \"Blend Oil\",\n            \"brand_id\": 288,\n            \"brand_name\": \"Saffola\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 80,\n            \"category_name\": \"Blend Oil\",\n            \"subcategory_id\": 90,\n            \"subcategory_name\": \"Blend Oil\",\n            \"brand_id\": 289,\n            \"brand_name\": \"Oleev Smart\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 80,\n            \"category_name\": \"Blend Oil\",\n            \"subcategory_id\": 90,\n            \"subcategory_name\": \"Blend Oil\",\n            \"brand_id\": 290,\n            \"brand_name\": \"Rs Healthy & Spice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 81,\n            \"category_name\": \"Coconut and Palm Oil\",\n            \"subcategory_id\": 91,\n            \"subcategory_name\": \"Coconut Oil\",\n            \"brand_id\": 291,\n            \"brand_name\": \"Klf\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 87,\n            \"category_name\": \"Salt\",\n            \"subcategory_id\": 29,\n            \"subcategory_name\": \"Rock Salt\",\n            \"brand_id\": 130,\n            \"brand_name\": \"Tata\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 87,\n            \"category_name\": \"Salt\",\n            \"subcategory_id\": 29,\n            \"subcategory_name\": \"Rock Salt\",\n            \"brand_id\": 131,\n            \"brand_name\": \"Catch\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 87,\n            \"category_name\": \"Salt\",\n            \"subcategory_id\": 29,\n            \"subcategory_name\": \"Rock Salt\",\n            \"brand_id\": 132,\n            \"brand_name\": \"Puro\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 87,\n            \"category_name\": \"Salt\",\n            \"subcategory_id\": 30,\n            \"subcategory_name\": \"Iodised Salt\",\n            \"brand_id\": 133,\n            \"brand_name\": \"Tata\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 87,\n            \"category_name\": \"Salt\",\n            \"subcategory_id\": 30,\n            \"subcategory_name\": \"Iodised Salt\",\n            \"brand_id\": 134,\n            \"brand_name\": \"Aashirvaad\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 87,\n            \"category_name\": \"Salt\",\n            \"subcategory_id\": 30,\n            \"subcategory_name\": \"Iodised Salt\",\n            \"brand_id\": 27,\n            \"brand_name\": \"loose\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 31,\n            \"subcategory_name\": \"Brown Sugar\",\n            \"brand_id\": 135,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 32,\n            \"subcategory_name\": \"Classic Sugar\",\n            \"brand_id\": 136,\n            \"brand_name\": \"Sugar Loose\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 32,\n            \"subcategory_name\": \"Classic Sugar\",\n            \"brand_id\": 137,\n            \"brand_name\": \"Double Tick-TV\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 32,\n            \"subcategory_name\": \"Classic Sugar\",\n            \"brand_id\": 138,\n            \"brand_name\": \"Trust\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 32,\n            \"subcategory_name\": \"Classic Sugar\",\n            \"brand_id\": 139,\n            \"brand_name\": \"Mawana\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 32,\n            \"subcategory_name\": \"Classic Sugar\",\n            \"brand_id\": 140,\n            \"brand_name\": \"Dhampure\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 88,\n            \"category_name\": \"Sugar\",\n            \"subcategory_id\": 33,\n            \"subcategory_name\": \"Sugar Cubes\",\n            \"brand_id\": 141,\n            \"brand_name\": \"Trust\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 89,\n            \"category_name\": \"Jaggery\",\n            \"subcategory_id\": 34,\n            \"subcategory_name\": \"Sugar Cube (Jaggery)\",\n            \"brand_id\": 142,\n            \"brand_name\": \"Dhampure\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 89,\n            \"category_name\": \"Jaggery\",\n            \"subcategory_id\": 35,\n            \"subcategory_name\": \"Green Gur Chana\",\n            \"brand_id\": 143,\n            \"brand_name\": \"Dhampure\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 89,\n            \"category_name\": \"Jaggery\",\n            \"subcategory_id\": 36,\n            \"subcategory_name\": \"Green Candy Sugar\",\n            \"brand_id\": 144,\n            \"brand_name\": \"Dhampure\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 90,\n            \"category_name\": \"Specialty Sweetener\",\n            \"subcategory_id\": 37,\n            \"subcategory_name\": \"Mishri\",\n            \"brand_id\": 145,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 90,\n            \"category_name\": \"Specialty Sweetener\",\n            \"subcategory_id\": 37,\n            \"subcategory_name\": \"Mishri\",\n            \"brand_id\": 146,\n            \"brand_name\": \"Mark Premium\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 90,\n            \"category_name\": \"Specialty Sweetener\",\n            \"subcategory_id\": 37,\n            \"subcategory_name\": \"Mishri\",\n            \"brand_id\": 147,\n            \"brand_name\": \"Trust\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 90,\n            \"category_name\": \"Specialty Sweetener\",\n            \"subcategory_id\": 38,\n            \"subcategory_name\": \"Nakul Dana\",\n            \"brand_id\": 148,\n            \"brand_name\": \"Mark Premium\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 90,\n            \"category_name\": \"Specialty Sweetener\",\n            \"subcategory_id\": 38,\n            \"subcategory_name\": \"Nakul Dana\",\n            \"brand_id\": 149,\n            \"brand_name\": \"Zydus\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 90,\n            \"category_name\": \"Specialty Sweetener\",\n            \"subcategory_id\": 39,\n            \"subcategory_name\": \"Green Demerara Sugar\",\n            \"brand_id\": 150,\n            \"brand_name\": \"Dhampure Green Demerara Sugar\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 91,\n            \"category_name\": \"Sugar Substitute\",\n            \"subcategory_id\": 40,\n            \"subcategory_name\": \"Sugar Substitute\",\n            \"brand_id\": 151,\n            \"brand_name\": \"Gaia\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 91,\n            \"category_name\": \"Sugar Substitute\",\n            \"subcategory_id\": 40,\n            \"subcategory_name\": \"Sugar Substitute\",\n            \"brand_id\": 152,\n            \"brand_name\": \"Sugar Free\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 365,\n            \"brand_name\": \"Pragati\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 366,\n            \"brand_name\": \"Kohinoor\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 367,\n            \"brand_name\": \"Organic Tattva\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 368,\n            \"brand_name\": \"DB\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 369,\n            \"brand_name\": \"Daawat\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 370,\n            \"brand_name\": \"India Gate\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 371,\n            \"brand_name\": \"Fortune\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 26,\n            \"brand_name\": \"Soumik's Basmati\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 109,\n            \"subcategory_name\": \"Basmati Rice\",\n            \"brand_id\": 29,\n            \"brand_name\": \"New Basmati Rice\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 110,\n            \"subcategory_name\": \"Boiled Rice\",\n            \"brand_id\": 372,\n            \"brand_name\": \"Boiled Rice \",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 111,\n            \"subcategory_name\": \"Jeerakati Rice\",\n            \"brand_id\": 373,\n            \"brand_name\": \"Jeerakati Rice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 112,\n            \"subcategory_name\": \"Ratna\",\n            \"brand_id\": 374,\n            \"brand_name\": \"Ratna\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 113,\n            \"subcategory_name\": \"Miniket\",\n            \"brand_id\": 375,\n            \"brand_name\": \"Miniket\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 114,\n            \"subcategory_name\": \"Masoori\",\n            \"brand_id\": 376,\n            \"brand_name\": \"Masoori\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 115,\n            \"subcategory_name\": \"Tulsibhog Rice\",\n            \"brand_id\": 377,\n            \"brand_name\": \"Tulsibhog Rice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 116,\n            \"subcategory_name\": \"Lakkhibhog\",\n            \"brand_id\": 378,\n            \"brand_name\": \"Lakkhibhog\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 107,\n            \"category_name\": \"Rice\",\n            \"subcategory_id\": 117,\n            \"subcategory_name\": \"Gobindo Bhog Rice\",\n            \"brand_id\": 379,\n            \"brand_name\": \"Gobindo Bhog Rice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 118,\n            \"subcategory_name\": \"Poha\",\n            \"brand_id\": 380,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 119,\n            \"subcategory_name\": \"Murmura\",\n            \"brand_id\": 381,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 119,\n            \"subcategory_name\": \"Murmura\",\n            \"brand_id\": 382,\n            \"brand_name\": \"Gopal Puffed\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 120,\n            \"subcategory_name\": \"Sabudana\",\n            \"brand_id\": 383,\n            \"brand_name\": \"Jk\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 120,\n            \"subcategory_name\": \"Sabudana\",\n            \"brand_id\": 384,\n            \"brand_name\": \"DNV\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 120,\n            \"subcategory_name\": \"Sabudana\",\n            \"brand_id\": 385,\n            \"brand_name\": \"Swatch\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 121,\n            \"subcategory_name\": \"Sabudana\",\n            \"brand_id\": 386,\n            \"brand_name\": \"Jk\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 121,\n            \"subcategory_name\": \"Sabudana\",\n            \"brand_id\": 387,\n            \"brand_name\": \"DNV\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 121,\n            \"subcategory_name\": \"Sabudana\",\n            \"brand_id\": 388,\n            \"brand_name\": \"Swatch\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 122,\n            \"subcategory_name\": \"Dallia\",\n            \"brand_id\": 389,\n            \"brand_name\": \"Ganesh\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 122,\n            \"subcategory_name\": \"Dallia\",\n            \"brand_id\": 390,\n            \"brand_name\": \"Patanjali\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 122,\n            \"subcategory_name\": \"Dallia\",\n            \"brand_id\": 391,\n            \"brand_name\": \"Smart Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 108,\n            \"category_name\": \"Cereals\",\n            \"subcategory_id\": 123,\n            \"subcategory_name\": \"Oats & Wheat\",\n            \"brand_id\": 392,\n            \"brand_name\": \"Kellogs\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 110,\n            \"category_name\": \"Flour\",\n            \"subcategory_id\": 124,\n            \"subcategory_name\": \"Wheat Atta\",\n            \"brand_id\": 393,\n            \"brand_name\": \"aashirvad\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 110,\n            \"category_name\": \"Flour\",\n            \"subcategory_id\": 124,\n            \"subcategory_name\": \"Wheat Atta\",\n            \"brand_id\": 28,\n            \"brand_name\": \"abhishap\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 110,\n            \"category_name\": \"Flour\",\n            \"subcategory_id\": 125,\n            \"subcategory_name\": \"Multigrain Atta\",\n            \"brand_id\": 394,\n            \"brand_name\": \"Ganesh\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 111,\n            \"category_name\": \"Maida\",\n            \"subcategory_id\": 127,\n            \"subcategory_name\": \"Maida\",\n            \"brand_id\": 396,\n            \"brand_name\": \"Ganesh\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 112,\n            \"category_name\": \"Besan\",\n            \"subcategory_id\": 128,\n            \"subcategory_name\": \"Besan\",\n            \"brand_id\": 397,\n            \"brand_name\": \"Smart choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 113,\n            \"category_name\": \"Sooji\",\n            \"subcategory_id\": 129,\n            \"subcategory_name\": \"Sooji\",\n            \"brand_id\": 398,\n            \"brand_name\": \"Healthy Choice\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 114,\n            \"category_name\": \"Others\",\n            \"subcategory_id\": 126,\n            \"subcategory_name\": \"Corn Flour\",\n            \"brand_id\": 395,\n            \"brand_name\": \"Weikfield\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 130,\n            \"subcategory_name\": \"Toor Dal\",\n            \"brand_id\": 399,\n            \"brand_name\": \"Toor Dal\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 131,\n            \"subcategory_name\": \"Moong Dal\",\n            \"brand_id\": 400,\n            \"brand_name\": \"Moong Dal\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 132,\n            \"subcategory_name\": \"Chana Dal\",\n            \"brand_id\": 401,\n            \"brand_name\": \"Chana Dal\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 132,\n            \"subcategory_name\": \"Chana Dal\",\n            \"brand_id\": 17,\n            \"brand_name\": \"Channa Meyera Mereya\",\n            \"created_by_role\": 2\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 133,\n            \"subcategory_name\": \"Urad Dal\",\n            \"brand_id\": 402,\n            \"brand_name\": \"Urad Dal\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 134,\n            \"subcategory_name\": \"Masoor Dal\",\n            \"brand_id\": 403,\n            \"brand_name\": \"Masoor Dal\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 135,\n            \"subcategory_name\": \"Rajma\",\n            \"brand_id\": 404,\n            \"brand_name\": \"Rajma\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 136,\n            \"subcategory_name\": \"Chana\",\n            \"brand_id\": 405,\n            \"brand_name\": \"Chana\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 115,\n            \"category_name\": \"Dal\",\n            \"subcategory_id\": 137,\n            \"subcategory_name\": \"Chole\",\n            \"brand_id\": 406,\n            \"brand_name\": \"Chole\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 116,\n            \"category_name\": \"Peas & Peanuts\",\n            \"subcategory_id\": 138,\n            \"subcategory_name\": \"Peas\",\n            \"brand_id\": 407,\n            \"brand_name\": \"Peas\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 116,\n            \"category_name\": \"Peas & Peanuts\",\n            \"subcategory_id\": 139,\n            \"subcategory_name\": \"Peanuts\",\n            \"brand_id\": 408,\n            \"brand_name\": \"Peanuts\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 117,\n            \"category_name\": \"Soya Nuggets & Flakes\",\n            \"subcategory_id\": 140,\n            \"subcategory_name\": \"Soyabeans\",\n            \"brand_id\": 409,\n            \"brand_name\": \"Soyabeans\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 124,\n            \"category_name\": \"Whole Spices\",\n            \"subcategory_id\": 144,\n            \"subcategory_name\": \"Chilly Whole\",\n            \"brand_id\": 414,\n            \"brand_name\": \"Organic Tattva Chilly Whole\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 124,\n            \"category_name\": \"Whole Spices\",\n            \"subcategory_id\": 145,\n            \"subcategory_name\": \"Mustard Red\",\n            \"brand_id\": 415,\n            \"brand_name\": \"Smart Choice Mustard Red\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 124,\n            \"category_name\": \"Whole Spices\",\n            \"subcategory_id\": 146,\n            \"subcategory_name\": \"Jeera Whole\",\n            \"brand_id\": 416,\n            \"brand_name\": \"Mark Premium Jeera Whole\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 124,\n            \"category_name\": \"Whole Spices\",\n            \"subcategory_id\": 147,\n            \"subcategory_name\": \"Panchphoran\",\n            \"brand_id\": 417,\n            \"brand_name\": \"Mark Premium\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 124,\n            \"category_name\": \"Whole Spices\",\n            \"subcategory_id\": 148,\n            \"subcategory_name\": \"Tejpatta - Bay Leaf \",\n            \"brand_id\": 418,\n            \"brand_name\": \"DNV\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 124,\n            \"category_name\": \"Whole Spices\",\n            \"subcategory_id\": 149,\n            \"subcategory_name\": \"Pepper Black\",\n            \"brand_id\": 419,\n            \"brand_name\": \"DNV\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 125,\n            \"category_name\": \"Powdered Spices\",\n            \"subcategory_id\": 150,\n            \"subcategory_name\": \"Chilli Powder\",\n            \"brand_id\": 420,\n            \"brand_name\": \"Tata Sampann\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 125,\n            \"category_name\": \"Powdered Spices\",\n            \"subcategory_id\": 151,\n            \"subcategory_name\": \"Turmeric Powder\",\n            \"brand_id\": 421,\n            \"brand_name\": \"Tata Sampann\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 125,\n            \"category_name\": \"Powdered Spices\",\n            \"subcategory_id\": 152,\n            \"subcategory_name\": \"Jeera Powder\",\n            \"brand_id\": 422,\n            \"brand_name\": \"Aashirvaad\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 125,\n            \"category_name\": \"Powdered Spices\",\n            \"subcategory_id\": 153,\n            \"subcategory_name\": \"Coriander Powder\",\n            \"brand_id\": 423,\n            \"brand_name\": \"Everest\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 125,\n            \"category_name\": \"Powdered Spices\",\n            \"subcategory_id\": 154,\n            \"subcategory_name\": \"Black Pepper Powder\",\n            \"brand_id\": 424,\n            \"brand_name\": \"Catch\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 126,\n            \"category_name\": \"Ready Masala\",\n            \"subcategory_id\": 155,\n            \"subcategory_name\": \"Fish Jhol Masala\",\n            \"brand_id\": 425,\n            \"brand_name\": \"Shellys\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 126,\n            \"category_name\": \"Ready Masala\",\n            \"subcategory_id\": 156,\n            \"subcategory_name\": \"Meat Masala\",\n            \"brand_id\": 426,\n            \"brand_name\": \"Shellys\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 127,\n            \"category_name\": \"Cooking Paste\",\n            \"subcategory_id\": 157,\n            \"subcategory_name\": \"Tamarind Paste\",\n            \"brand_id\": 427,\n            \"brand_name\": \"Organic Tattva\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 127,\n            \"category_name\": \"Cooking Paste\",\n            \"subcategory_id\": 158,\n            \"subcategory_name\": \"ginger garlic Paste\",\n            \"brand_id\": 428,\n            \"brand_name\": \"gngr grl Pst\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 128,\n            \"category_name\": \"Herbs & Seasoning\",\n            \"subcategory_id\": 159,\n            \"subcategory_name\": \"Herbs\",\n            \"brand_id\": 429,\n            \"brand_name\": \"On1Y\",\n            \"created_by_role\": 1\n        },\n        {\n            \"category_id\": 128,\n            \"category_name\": \"Herbs & Seasoning\",\n            \"subcategory_id\": 160,\n            \"subcategory_name\": \"Seasoning\",\n            \"brand_id\": 430,\n            \"brand_name\": \"Keya\",\n            \"created_by_role\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/search/getstoresbycontext/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"store_category\" : 1,\r\n    \"context_type\" : 1,\r\n    \"context_value\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/search/getstoresbycontext/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"search",
+						"getstoresbycontext",
+						""
+					]
+				},
+				"description": "Get stores by context"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/search/getstoresbycontext/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_category\" : 1,\r\n    \"context_type\" : 1,\r\n    \"context_value\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/search/getstoresbycontext/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"search",
+								"getstoresbycontext",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 06:35:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search_contexts\" : \"\",\r\n    \"query\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8002",
+					"path": [
+						"qubecart",
+						"customer",
+						"search",
+						"nearestmatches",
+						""
+					]
+				},
+				"description": "Search nearest match"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search_contexts\" : \"\",\r\n    \"query\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8002",
+							"path": [
+								"qubecart",
+								"customer",
+								"search",
+								"nearestmatches",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 06:38:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MID\": \"AjvmhF55300080944054\",\r\n    \"ORDER_ID\": \"ORDID2220200913210142\",\r\n    \"CUST_ID\": 22,\r\n    \"INDUSTRY_TYPE_ID\": \"Retail\",\r\n    \"CHANNEL_ID\": \"WAP\",\r\n    \"TXN_AMOUNT\": 500,\r\n    \"WEBSITE\": \"APPSTAGING\",\r\n    \"CALLBACK_URL\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n    \"CHECKSUMHASH\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\",\r\n    \"txnToken\": \"24dfabfd933c4d24814f7e682ee85a9d1600030903028\",\r\n    \"paytmdata\": {\r\n        \"body\": {\r\n            \"requestType\": \"Payment\",\r\n            \"mid\": \"AjvmhF55300080944054\",\r\n            \"websiteName\": \"APPSTAGING\",\r\n            \"orderId\": \"ORDID2220200913210142\",\r\n            \"callbackUrl\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n            \"txnAmount\": {\r\n                \"value\": \"500\",\r\n                \"currency\": \"INR\"\r\n            },\r\n            \"userInfo\": {\r\n                \"custId\": 22\r\n            }\r\n        },\r\n        \"head\": {\r\n            \"signature\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8002",
+					"path": [
+						"qubecart",
+						"customer",
+						"paytm",
+						"verifychecksum",
+						""
+					]
+				},
+				"description": "Varify paytm checksum"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MID\": \"AjvmhF55300080944054\",\r\n    \"ORDER_ID\": \"ORDID2220200913210142\",\r\n    \"CUST_ID\": 22,\r\n    \"INDUSTRY_TYPE_ID\": \"Retail\",\r\n    \"CHANNEL_ID\": \"WAP\",\r\n    \"TXN_AMOUNT\": 500,\r\n    \"WEBSITE\": \"APPSTAGING\",\r\n    \"CALLBACK_URL\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n    \"CHECKSUMHASH\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\",\r\n    \"txnToken\": \"24dfabfd933c4d24814f7e682ee85a9d1600030903028\",\r\n    \"paytmdata\": {\r\n        \"body\": {\r\n            \"requestType\": \"Payment\",\r\n            \"mid\": \"AjvmhF55300080944054\",\r\n            \"websiteName\": \"APPSTAGING\",\r\n            \"orderId\": \"ORDID2220200913210142\",\r\n            \"callbackUrl\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n            \"txnAmount\": {\r\n                \"value\": \"500\",\r\n                \"currency\": \"INR\"\r\n            },\r\n            \"userInfo\": {\r\n                \"custId\": 22\r\n            }\r\n        },\r\n        \"head\": {\r\n            \"signature\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8002",
+							"path": [
+								"qubecart",
+								"customer",
+								"paytm",
+								"verifychecksum",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 06:39:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\"\n            }\n        ]\n    },\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Status\": \"SUCCESS\",\r\n\"esponseCode\": \"UP00\",\r\n\"txnId\": \"SBI888fd563ef7741ff919f2021b2251f25\",\r\n\"txnRef\": \"aasf-332-aoei-fn\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8002",
+					"path": [
+						"qubecart",
+						"customer",
+						"upi",
+						"validatepayment",
+						""
+					]
+				},
+				"description": "Validate UPI payment"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Status\": \"SUCCESS\",\r\n\"esponseCode\": \"UP00\",\r\n\"txnId\": \"SBI888fd563ef7741ff919f2021b2251f25\",\r\n\"txnRef\": \"aasf-332-aoei-fn\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8002",
+							"path": [
+								"qubecart",
+								"customer",
+								"upi",
+								"validatepayment",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 06:42:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\"\n            }\n        ]\n    },\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/creditpay/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_id\" : 22,\r\n    \"store_id\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/creditpay/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"creditpay",
+						""
+					]
+				},
+				"description": "Pay credit amount by customer"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/creditpay/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_id\" : 22,\r\n    \"store_id\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/creditpay/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"creditpay",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Sep 2020 16:55:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
 				}
 			]
 		}
