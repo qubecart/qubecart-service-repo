@@ -2615,6 +2615,214 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/orders/bagdetails/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bag_id\" : 52\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/orders/bagdetails/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"orders",
+						"bagdetails",
+						""
+					]
+				},
+				"description": "Order bag details"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/orders/bagdetails/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bag_id\" : 52\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/orders/bagdetails/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"orders",
+								"bagdetails",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:14:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1390"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"bag_details\": {\n            \"bag_id\": 52,\n            \"store_id\": 28,\n            \"bag_ref_no\": \"QCB218145\",\n            \"updated_on\": null,\n            \"updated_by\": null,\n            \"order_id\": 44,\n            \"bag_status\": 1,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"total_price\": 304.5,\n            \"order_ref_no\": \"QCO559168\",\n            \"order_created_at\": \"2020-09-08T22:01:03\",\n            \"bag_status_name\": \"Order Placed\",\n            \"bag_items\": [\n                {\n                    \"bag_item_id\": 63,\n                    \"product_id\": 49,\n                    \"required_quantity\": 1,\n                    \"total_price\": 304.5,\n                    \"bag_id\": 52,\n                    \"bag_item_status\": 1,\n                    \"partner_product_id\": 49,\n                    \"updated_on\": \"2020-08-28T19:19:40\",\n                    \"updated_by\": 24,\n                    \"product_description\": \"Dawaat Rozana Super Basmati Rice\",\n                    \"product_unit\": 1,\n                    \"product_quantity\": 5,\n                    \"product_rating\": 0,\n                    \"product_mrp\": 435,\n                    \"product_selling_price\": 304.5,\n                    \"product_discount\": 30,\n                    \"stock_quantity\": 10,\n                    \"product_thumbnail\": \"dawaat5kg.jpg\",\n                    \"unit_name\": \"Kg\",\n                    \"brand_created_by_role\": 1,\n                    \"product_brand_id\": 369,\n                    \"product_brand_name\": \"Daawat\",\n                    \"subcategory_name\": \"Basmati Rice\",\n                    \"stock_statement\": \"In Stock\",\n                    \"product_title\": \"Daawat Basmati Rice,5Kg\"\n                }\n            ]\n        },\n        \"delivery_address\": [\n            {\n                \"customer_address_id\": 27,\n                \"name\": \"Haranath Basak\",\n                \"contact_no\": \"9932047263\",\n                \"optional_contact_no\": null,\n                \"addressline1\": \"House No. 09\",\n                \"addressline2\": \"Changrabandha\",\n                \"city\": 1,\n                \"state\": 1,\n                \"pin\": 735301,\n                \"customer_id\": 22,\n                \"address_type\": 1,\n                \"default_flag\": 1,\n                \"address_status\": 1,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"address_type_name\": \"Home\",\n                \"address_status_name\": \"Active\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/orders/updatebagstatus/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/orders/updatebagstatus/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"orders",
+						"updatebagstatus",
+						""
+					]
+				},
+				"description": "Update bag status by partner"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/orders/updatebagstatus/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/orders/updatebagstatus/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"orders",
+								"updatebagstatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:18:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {}\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
