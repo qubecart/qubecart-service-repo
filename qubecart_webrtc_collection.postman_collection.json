@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "5894a77b-62c2-46da-a9d9-6d8276361e6c",
-		"name": "qubecart_webrtc_collection",
+		"_postman_id": "2e7db506-d6c9-4caf-ac90-226b8cdaf60e",
+		"name": "Qubecart-Webrtc-Services",
 		"description": "WebRTC related services for QubeCart customer and partner apps",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Create an offer",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -41,10 +41,89 @@
 				},
 				"description": "Cusstomer creates a call offer with this service"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"offercall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:50:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "90"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n    },\n    \"code\": \"001\",\n    \"exception\": false\n}"
+				}
+			]
 		},
 		{
-			"name": "Answer to an offer",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -57,7 +136,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
+					"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
 				},
 				"url": {
 					"raw": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
@@ -78,23 +157,102 @@
 				},
 				"description": "Partner uses this service to answers a call offer request by a customer."
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"answercall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:51:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false\n}"
+				}
+			]
 		},
 		{
-			"name": "Send ice candidate",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
+					"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
 				},
 				"url": {
 					"raw": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
@@ -115,18 +273,97 @@
 				},
 				"description": "Both customer and partner use this to send ice candidates to the other side"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"sendice",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:52:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false\n}"
+				}
+			]
 		},
 		{
-			"name": "Get offers",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
@@ -152,10 +389,89 @@
 				},
 				"description": "Partner polls this service to receive active call offers"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"partner_id\": 1\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"getoffers",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:53:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "229"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"offers\": [\n            {\n                \"webrtc_ttl\": 1600084488.282577,\n                \"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n                \"customer_email\": \"snehasish.das.work@gmail.com\",\n                \"partner_id\": 1,\n                \"timestamp\": 1600084248.271907\n            }\n        ]\n    },\n    \"exception\": false,\n    \"code\": \"001\"\n}"
+				}
+			]
 		},
 		{
-			"name": "Poll offer",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -168,7 +484,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\"\n}"
+					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n}"
 				},
 				"url": {
 					"raw": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
@@ -189,10 +505,89 @@
 				},
 				"description": "Partner polls this service to get offer payload with latest ice candiates"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"polloffer",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:54:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "398"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"offer_item\": null,\n        \"offer_payloads\": [\n            {\n                \"payload\": {\n                    \"type\": \"answer\"\n                },\n                \"payload_ttl\": 1600084545.094036,\n                \"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n                \"type\": \"answer\",\n                \"timestamp\": 1600084305.092479\n            },\n            {\n                \"payload\": {\n                    \"type\": \"candidate\"\n                },\n                \"payload_ttl\": 1600084599.204108,\n                \"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n                \"type\": \"offer_ice\",\n                \"timestamp\": 1600084359.204058\n            }\n        ]\n    },\n    \"exception\": false,\n    \"code\": \"001\"\n}"
+				}
+			]
 		},
 		{
-			"name": "Poll answer",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -226,18 +621,97 @@
 				},
 				"description": "Customer polls this service to get answer payload from partner and latest ice candidates"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"pollanswer",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:55:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"answer_item\": null,\n        \"answer_payloads\": []\n    },\n    \"code\": \"001\",\n    \"exception\": false\n}"
+				}
+			]
 		},
 		{
-			"name": "Hangup call",
+			"name": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
@@ -263,7 +737,86 @@
 				},
 				"description": "Customer and partner both can call this service to hangup a call."
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8004",
+							"path": [
+								"qubecart",
+								"webrtc",
+								"hangupcall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:56:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}

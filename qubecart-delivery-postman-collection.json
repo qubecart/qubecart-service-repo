@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "764eb956-4c30-4289-af0c-7f5825d20536",
-		"name": "Qubecart_delivery",
+		"_postman_id": "ec9fd567-168b-4936-bd4f-ecb9c03aed6e",
+		"name": "Qubecart-Delivery-Services",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "DELIVERY PERSON REGISTRATION",
+			"name": "http://3.7.66.177:8005/qubecart/delivery/registration/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -20,9 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8005/qubecart/delivery/registration/",
+					"raw": "http://3.7.66.177:8005/qubecart/delivery/registration/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8005",
 					"path": [
@@ -36,7 +40,7 @@
 			},
 			"response": [
 				{
-					"name": "DELIVERY PERSON REGISTRATION",
+					"name": "http://3.7.66.177:8005/qubecart/delivery/registration/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],

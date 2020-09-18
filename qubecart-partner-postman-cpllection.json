@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "4f2e6a33-6a96-4896-90c2-9dd6fec7f4ab",
-		"name": "Qubeacart_partner",
+		"_postman_id": "2231326e-dd8a-4fce-856d-f9196db5dde1",
+		"name": "Qubecart-Partner-Services",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "GENERATE PARTNER CODE",
+			"name": "http://3.7.66.177:8003/qubecart/partner/generatecode/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -20,9 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/generatecode/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/generatecode/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -32,12 +36,89 @@
 						""
 					]
 				},
-				"description": "## Generates partner code for regustration"
+				"description": "## Generate partner Code while registration"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/generatecode/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\" : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8003/qubecart/partner/generatecode/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"generatecode",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 05:58:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
 		},
 		{
-			"name": "PARTNER CREATE",
+			"name": "http://3.7.66.177:8003/qubecart/partner/signup/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -51,9 +132,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/signup/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/signup/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -65,10 +150,87 @@
 				},
 				"description": "## Creates a partner using partner code "
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/signup/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n    \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\" : \"asdf12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8003/qubecart/partner/signup/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"signup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:01:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "182"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\",\n                \"Payload\": []\n            }\n        ]\n    }\n}"
+				}
+			]
 		},
 		{
-			"name": "PARTNER LOGIN",
+			"name": "http://3.7.66.177:8003/qubecart/partner/login/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -82,9 +244,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/login/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/login/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -96,10 +262,87 @@
 				},
 				"description": "## Partner login using email/phone as username and password"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/login/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8003/qubecart/partner/login/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 10:58:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "687"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"qc_partner_id\": 13,\n        \"partner_category\": 1,\n        \"partner_code\": \"yQAYtO\",\n        \"partner_status\": 2,\n        \"login_flag\": null,\n        \"created_on\": \"2020-08-11T13:10:07\",\n        \"partner_detail_id\": 4,\n        \"company_name\": \"stationary 001\",\n        \"contact_phone\": \"9874319714\",\n        \"billing_name\": \"stationary 001\",\n        \"gst_numbers\": \"1234qwerty\",\n        \"corporate_size\": null,\n        \"payment_term\": null,\n        \"updated_on\": \"2020-08-11T13:10:07\",\n        \"updated_by\": null,\n        \"partner_address_id\": 25,\n        \"pan\": \"asdf12345\",\n        \"contact_email\": \"souravmondal@msqube.com\",\n        \"contact_person_firstname\": null,\n        \"contact_person_lastname\": null,\n        \"contact_person_designation\": null,\n        \"partner_bank_id\": null,\n        \"status\": 1,\n        \"partner_status_name\": \"Active\"\n    },\n    \"payload\": []\n}"
+				}
+			]
 		},
 		{
-			"name": "CHECK UNIQUE PARTNER",
+			"name": "http://3.7.66.177:8003/qubecart/partner/checkunique/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -113,9 +356,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/checkunique/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/checkunique/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -127,16 +374,93 @@
 				},
 				"description": "## Checks whether a partner is unique or not using phone and email"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/checkunique/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\" : \"jon.Doe@dummy.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8003/qubecart/partner/checkunique/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"checkunique",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 05:41:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"payload\": []\n}"
+				}
+			]
 		},
 		{
-			"name": "CREATE STORE",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12\",\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"city_id\" : 1,\n    \"store_name\" : \"Daily Fashion branch\",\n    \"store_category\" : 2\n}",
+					"raw": "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\",\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"store_category\" : 2\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -144,9 +468,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/create/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/create/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -159,10 +487,88 @@
 				},
 				"description": "## Creates store for partner"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\",\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"store_category\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/create/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Sep 2020 11:00:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "182"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\",\n                \"Payload\": []\n            }\n        ]\n    }\n}"
+				}
+			]
 		},
 		{
-			"name": "GET STORE",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/get/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -176,9 +582,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/get/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/get/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -193,7 +603,7 @@
 			},
 			"response": [
 				{
-					"name": "GET STORE",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/get/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -207,9 +617,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/get/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/get/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -268,7 +682,7 @@
 			]
 		},
 		{
-			"name": "GET PRODUCTS",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/getproducts/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -282,9 +696,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/getproducts/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproducts/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -299,7 +717,7 @@
 			},
 			"response": [
 				{
-					"name": "GET PRODUCTS",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/getproducts/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -313,9 +731,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/getproducts/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproducts/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -374,7 +796,7 @@
 			]
 		},
 		{
-			"name": "CREATE PRODUCT",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/createproduct/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -388,9 +810,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/createproduct/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/createproduct/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -405,7 +831,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE PRODUCT",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/createproduct/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -419,9 +845,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/createproduct/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/createproduct/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -480,7 +910,7 @@
 			]
 		},
 		{
-			"name": "UPDATE STORE",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/update/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -494,9 +924,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/update/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/update/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -511,7 +945,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE STORE",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/update/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -525,9 +959,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/update/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/update/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -586,7 +1024,7 @@
 			]
 		},
 		{
-			"name": "GET STORE BY ID",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/getbyid/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -600,9 +1038,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/getbyid/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getbyid/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -617,7 +1059,7 @@
 			},
 			"response": [
 				{
-					"name": "GET STORE BY ID",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/getbyid/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -631,9 +1073,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/getbyid/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getbyid/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -692,7 +1138,7 @@
 			]
 		},
 		{
-			"name": "UPDATE STOCK",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/updatestock/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -706,9 +1152,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/updatestock/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/updatestock/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -723,7 +1173,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE STOCK",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/updatestock/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -737,9 +1187,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/updatestock/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/updatestock/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -798,7 +1252,7 @@
 			]
 		},
 		{
-			"name": "CREATE BRAND ",
+			"name": "http://3.7.66.177:8003/qubecart/partner/brand/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -812,9 +1266,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/brand/create/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/brand/create/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -829,7 +1287,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE BRAND ",
+					"name": "http://3.7.66.177:8003/qubecart/partner/brand/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -843,9 +1301,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/brand/create/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/brand/create/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -904,7 +1366,7 @@
 			]
 		},
 		{
-			"name": "INACTIVATE BRAND",
+			"name": "http://3.7.66.177:8003/qubecart/partner/brand/inactivate/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -918,9 +1380,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/brand/inactivate/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/brand/inactivate/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -935,7 +1401,7 @@
 			},
 			"response": [
 				{
-					"name": "INACTIVATE BRAND",
+					"name": "http://3.7.66.177:8003/qubecart/partner/brand/inactivate/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -949,9 +1415,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/brand/inactivate/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/brand/inactivate/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -1010,7 +1480,7 @@
 			]
 		},
 		{
-			"name": "GET ALL BRANDS",
+			"name": "http://3.7.66.177:8003/qubecart/partner/brand/get/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1024,9 +1494,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/brand/get/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/brand/get/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -1041,7 +1515,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL BRANDS",
+					"name": "http://3.7.66.177:8003/qubecart/partner/brand/get/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1055,9 +1529,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/brand/get/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/brand/get/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -1116,7 +1594,7 @@
 			]
 		},
 		{
-			"name": "GET ACTIVE ORDERS",
+			"name": "http://3.7.66.177:8003/qubecart/partner/orders/getactive/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1130,9 +1608,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/orders/getactive/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/orders/getactive/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -1147,7 +1629,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ACTIVE ORDERS",
+					"name": "http://3.7.66.177:8003/qubecart/partner/orders/getactive/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1161,9 +1643,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/orders/getactive/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/orders/getactive/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -1222,7 +1708,7 @@
 			]
 		},
 		{
-			"name": "GET TEMPLATE INFO",
+			"name": "http://3.7.66.177:8003/qubecart/partner/template/info/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1236,9 +1722,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/template/info/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/template/info/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -1253,7 +1743,7 @@
 			},
 			"response": [
 				{
-					"name": "GET TEMPLATE INFO",
+					"name": "http://3.7.66.177:8003/qubecart/partner/template/info/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1267,9 +1757,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/template/info/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/template/info/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -1328,113 +1822,7 @@
 			]
 		},
 		{
-			"name": "GET PRODUCTS BY BRAND",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"qc_partner_id\" : 9,\n    \"brand_id\" : 1\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/getproductsbybrand/",
-					"host": [
-						"{{endpoint}}"
-					],
-					"port": "8003",
-					"path": [
-						"qubecart",
-						"partner",
-						"store",
-						"getproductsbybrand",
-						""
-					]
-				},
-				"description": "##  Get products for all stores of a partner by brands defined by admin"
-			},
-			"response": [
-				{
-					"name": "GET PRODUCTS BY BRAND",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"qc_partner_id\" : 9,\n    \"brand_id\" : 1\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/getproductsbybrand/",
-							"host": [
-								"{{endpoint}}"
-							],
-							"port": "8003",
-							"path": [
-								"qubecart",
-								"partner",
-								"store",
-								"getproductsbybrand",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Wed, 26 Aug 2020 12:48:38 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.8.5"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept, Origin, Cookie"
-						},
-						{
-							"key": "Allow",
-							"value": "POST, OPTIONS"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "DENY"
-						},
-						{
-							"key": "Content-Length",
-							"value": "500"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Referrer-Policy",
-							"value": "same-origin"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"partner_product_id\": 2,\n            \"product_brand_id\": 1,\n            \"updated_on\": \"2020-08-19T07:33:31\",\n            \"updated_by\": 9,\n            \"product_description\": \"India Gate Basmati Rice, Rozana. Used finest \",\n            \"store_id\": 3,\n            \"brand_created_by_role\": 1,\n            \"product_unit\": 1,\n            \"product_thumbnail\": \"indiagatebasmatirice.jpg\",\n            \"product_rating\": 0,\n            \"product_quantity\": 5,\n            \"product_stock_id\": 2,\n            \"stock_quantity\": 15,\n            \"stock_last_updated_on\": \"2020-08-24T07:50:53\",\n            \"store_name\": \"Perfect store\",\n            \"unit_short\": \"Kg\"\n        }\n    ]\n}"
-				}
-			]
-		},
-		{
-			"name": "GET PRODUCTS",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/getproductsbybrand/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1448,9 +1836,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/getproductsbybrand/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproductsbybrand/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -1465,7 +1857,7 @@
 			},
 			"response": [
 				{
-					"name": "GET PRODUCTS",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/getproductsbybrand/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1479,9 +1871,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/getproductsbybrand/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproductsbybrand/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -1540,7 +1936,7 @@
 			]
 		},
 		{
-			"name": "GET STORE BY CATEGORY",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/bycategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1554,9 +1950,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/bycategory/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
@@ -1570,7 +1970,7 @@
 			},
 			"response": [
 				{
-					"name": "GET STORE BY CATEGORY",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/bycategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1584,9 +1984,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/bycategory/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
@@ -1645,13 +2049,13 @@
 			]
 		},
 		{
-			"name": "GET STORE BY CATEGORY",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/getsingleproduct/",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"store_category\" : 1\n}",
+					"raw": "{\r\n    \"partner_product_id\": 54\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1659,29 +2063,34 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getsingleproduct/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8003",
 					"path": [
 						"qubecart",
 						"partner",
 						"store",
-						"bycategory",
+						"getsingleproduct",
 						""
 					]
-				}
+				},
+				"description": "Get single product of store"
 			},
 			"response": [
 				{
-					"name": "GET STORE BY CATEGORY",
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/getsingleproduct/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"store_category\" : 1\n}",
+							"raw": "{\r\n    \"partner_product_id\": 54\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1689,16 +2098,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8003/qubecart/partner/store/bycategory/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getsingleproduct/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8003",
 							"path": [
 								"qubecart",
 								"partner",
 								"store",
-								"bycategory",
+								"getsingleproduct",
 								""
 							]
 						}
@@ -1709,7 +2122,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Sat, 05 Sep 2020 04:59:07 GMT"
+							"value": "Wed, 16 Sep 2020 14:00:41 GMT"
 						},
 						{
 							"key": "Server",
@@ -1733,7 +2146,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "7185"
+							"value": "351"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -1745,18 +2158,18 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"category\": {\n            \"category_name\": \"Grocery\"\n        },\n        \"stores\": [\n            {\n                \"store_id\": 30,\n                \"store_address_id\": 71,\n                \"store_name\": \"Everyday Grocery\",\n                \"store_category\": 1,\n                \"store_image\": null,\n                \"qc_partner_id\": 9,\n                \"latitude\": 22.563293,\n                \"longitude\": 88.39328,\n                \"credit_flag\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 71,\n                \"addressline1\": \"20\",\n                \"addressline2\": \"Beleghata main road\",\n                \"pin\": 700010,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"TEST\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": null,\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Accept\",\n                \"partner_detail_id\": 1,\n                \"company_name\": \"TEST company\",\n                \"contact_phone\": \"9073448330\",\n                \"billing_name\": \"sourav\",\n                \"gst_numbers\": \"ADF12456\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": null,\n                \"updated_by\": null,\n                \"partner_address_id\": 17,\n                \"pan\": \"DHA1234\",\n                \"contact_email\": \"souravcristiano502@gmail.com\",\n                \"contact_person_firstname\": null,\n                \"contact_person_lastname\": null,\n                \"contact_person_designation\": \"Owner\",\n                \"partner_bank_id\": 2147483647,\n                \"status\": 1,\n                \"password\": \"\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 34,\n                \"store_address_id\": 75,\n                \"store_name\": \"Das Store \",\n                \"store_category\": 1,\n                \"store_image\": null,\n                \"qc_partner_id\": 24,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 75,\n                \"addressline1\": \"krishnanagar \",\n                \"addressline2\": \"krishnanagar \",\n                \"pin\": 741102,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"LEmIxE\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T05:22:58\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Accept\",\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"8981497361\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 26,\n                \"store_address_id\": 60,\n                \"store_name\": \"Maa Annapurna Store\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 25,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 60,\n                \"addressline1\": \"Beleghata Head Post Office\",\n                \"addressline2\": \"Beleghata\",\n                \"pin\": 700089,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 2,\n                \"partner_code\": \"cz3CNu\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T06:16:34\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Accept\",\n                \"partner_detail_id\": 12,\n                \"company_name\": \"msqube\",\n                \"contact_phone\": \"9038772775\",\n                \"billing_name\": \"msqube\",\n                \"gst_numbers\": \"abcd\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T06:16:34\",\n                \"updated_by\": null,\n                \"partner_address_id\": 41,\n                \"pan\": \"12345\",\n                \"contact_email\": \"soumik.roy.80@hmail.com\",\n                \"contact_person_firstname\": \"soumik\",\n                \"contact_person_lastname\": \"roy\",\n                \"contact_person_designation\": \"blabla\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 3,\n                \"store_address_id\": 22,\n                \"store_name\": \"Perfect store\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 24,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 0,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 22,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"beleghata main road\",\n                \"pin\": 700010,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"LEmIxE\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T05:22:58\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Not Accept\",\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"8981497361\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 28,\n                \"store_address_id\": 63,\n                \"store_name\": \"SD Store\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 24,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 0,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 63,\n                \"addressline1\": \"Kestopur\",\n                \"addressline2\": \"Kolkata\",\n                \"pin\": 700012,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 1,\n                \"partner_code\": \"LEmIxE\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T05:22:58\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Not Accept\",\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"8981497361\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            },\n            {\n                \"store_id\": 16,\n                \"store_address_id\": 50,\n                \"store_name\": \"HighwaytoHell Store ps AC/DC\",\n                \"store_category\": 1,\n                \"store_image\": \"MAS.jpg\",\n                \"qc_partner_id\": 25,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"credit_flag\": 0,\n                \"store_category_name\": \"Grocery\",\n                \"kmDistanceFromCostomer\": 2,\n                \"address_id\": 50,\n                \"addressline1\": \"111/1\",\n                \"addressline2\": \"highway to hell\",\n                \"pin\": 999999,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\",\n                \"partner_category\": 2,\n                \"partner_code\": \"cz3CNu\",\n                \"partner_status\": 2,\n                \"login_flag\": null,\n                \"created_on\": \"2020-08-20T06:16:34\",\n                \"partner_status_name\": \"Active\",\n                \"credit_flag_name\": \"Credit Not Accept\",\n                \"partner_detail_id\": 12,\n                \"company_name\": \"msqube\",\n                \"contact_phone\": \"9038772775\",\n                \"billing_name\": \"msqube\",\n                \"gst_numbers\": \"abcd\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T06:16:34\",\n                \"updated_by\": null,\n                \"partner_address_id\": 41,\n                \"pan\": \"12345\",\n                \"contact_email\": \"soumik.roy.80@hmail.com\",\n                \"contact_person_firstname\": \"soumik\",\n                \"contact_person_lastname\": \"roy\",\n                \"contact_person_designation\": \"blabla\",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\"\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"partner_product_id\": 54,\n        \"product_mrp\": 1800,\n        \"product_gst_percentage\": 8,\n        \"product_discount\": 6,\n        \"product_selling_price\": 1700,\n        \"product_description\": \"India Gate Basmati Rice 25Kg\",\n        \"unit\": 1,\n        \"product_quantity\": 25,\n        \"product_thumbnail\": \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\n        \"packaged_product\": 1\n    }\n}"
 				}
 			]
 		},
 		{
-			"name": "GET SINGLE PRODUCT",
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/editproduct/",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"partner_product_id\": 54\r\n}",
+					"raw": "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\": \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\": 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\": \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\": 5,\r\n    \"packaged_product\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1764,51 +2177,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.4:8001/qubecart/partner/store/getsingleproduct/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/editproduct/",
 					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"4"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
-					"port": "8001",
-					"path": [
-						"qubecart",
-						"partner",
-						"store",
-						"getsingleproduct",
-						""
-					]
-				},
-				"description": "Returns Basic and Price Details of a Product for Edit"
-			},
-			"response": []
-		},
-		{
-			"name": "EDIT PRODUCT",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\": \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\": 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\": \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\": 6,\r\n    \"packaged_product\": true\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://192.168.0.4:8001/qubecart/partner/store/editproduct/",
-					"protocol": "http",
-					"host": [
-						"192",
-						"168",
-						"0",
-						"4"
-					],
-					"port": "8001",
+					"port": "8003",
 					"path": [
 						"qubecart",
 						"partner",
@@ -1817,9 +2194,87 @@
 						""
 					]
 				},
-				"description": "Edits the Basic and Price Details of a Product"
+				"description": "Edit Store Products"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/editproduct/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\": \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\": 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\": \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\": 5,\r\n    \"packaged_product\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/editproduct/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"editproduct",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Sep 2020 14:03:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
@@ -1836,10 +2291,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{partner}}/qubecart/partner/cartdetails/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
+					"protocol": "http",
 					"host": [
-						"{{partner}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
+					"port": "8003",
 					"path": [
 						"qubecart",
 						"partner",
@@ -1865,10 +2325,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{partner}}/qubecart/partner/cartdetails/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
+							"protocol": "http",
 							"host": [
-								"{{partner}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
+							"port": "8003",
 							"path": [
 								"qubecart",
 								"partner",
@@ -1883,7 +2348,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Thu, 17 Sep 2020 13:46:40 GMT"
+							"value": "Fri, 18 Sep 2020 05:29:25 GMT"
 						},
 						{
 							"key": "Server",
@@ -1938,10 +2403,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{partner}}/qubecart/partner/creditcustomer/get/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/get/",
+					"protocol": "http",
 					"host": [
-						"{{partner}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
+					"port": "8003",
 					"path": [
 						"qubecart",
 						"partner",
@@ -1968,10 +2438,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{partner}}/qubecart/partner/creditcustomer/get/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/get/",
+							"protocol": "http",
 							"host": [
-								"{{partner}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
+							"port": "8003",
 							"path": [
 								"qubecart",
 								"partner",
@@ -1987,7 +2462,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Thu, 17 Sep 2020 13:51:05 GMT"
+							"value": "Fri, 18 Sep 2020 05:35:46 GMT"
 						},
 						{
 							"key": "Server",
@@ -2034,7 +2509,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n    \"customer_id\" : 18,\r\n    \"credit_status\" : 2,\r\n    \"max_monthly_credit\" : 1000\r\n}",
+					"raw": "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n    \"customer_id\" : 22,\r\n    \"credit_status\" : 5,\r\n    \"credit_association_id\":2,\r\n    \"max_monthly_credit\" : 1000\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2042,10 +2517,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{partner}}/qubecart/partner/creditcustomer/updaterequest/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/updaterequest/",
+					"protocol": "http",
 					"host": [
-						"{{partner}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
+					"port": "8003",
 					"path": [
 						"qubecart",
 						"partner",
@@ -2064,7 +2544,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n    \"customer_id\" : 18,\r\n    \"credit_status\" : 2,\r\n    \"max_monthly_credit\" : 1000\r\n}",
+							"raw": "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n    \"customer_id\" : 22,\r\n    \"credit_status\" : 5,\r\n    \"credit_association_id\":2,\r\n    \"max_monthly_credit\" : 1000\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2072,10 +2552,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{partner}}/qubecart/partner/creditcustomer/updaterequest/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/updaterequest/",
+							"protocol": "http",
 							"host": [
-								"{{partner}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
+							"port": "8003",
 							"path": [
 								"qubecart",
 								"partner",
@@ -2091,7 +2576,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Thu, 17 Sep 2020 14:05:22 GMT"
+							"value": "Fri, 18 Sep 2020 05:48:35 GMT"
 						},
 						{
 							"key": "Server",

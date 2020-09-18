@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "da93f8fb-934c-4e5f-8558-2aa71476b50f",
-		"name": "Qubecart_admin",
+		"_postman_id": "d86795c1-b05a-4cf9-bfd6-2eb19d435744",
+		"name": "Qubecart-Admin-Services",
 		"description": "## API collection for qubecart admin backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "GET ALL PARTNERS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -21,9 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -38,76 +42,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL PARTNERS",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"requested\" : true\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
-							"host": [
-								"{{endpoint}}"
-							],
-							"port": "8001",
-							"path": [
-								"qubecart",
-								"admin",
-								"partner",
-								"getall",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Tue, 04 Aug 2020 14:29:36 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.6.11"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept, Origin, Cookie"
-						},
-						{
-							"key": "Allow",
-							"value": "POST, OPTIONS"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "DENY"
-						},
-						{
-							"key": "Content-Length",
-							"value": "404"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 10,\n            \"partner_type\": 1,\n            \"partner_code\": \"TEST2\",\n            \"partner_name\": \"TEST2 partner\",\n            \"approval_status\": 1,\n            \"approval_status_name\": \"Added\",\n            \"company_name\": \"TEST2 company\",\n            \"contact_phone\": \"9073448330\",\n            \"contact_email\": \"souravcristiano502@gmail.com\",\n            \"contact_person\": \"sourav2\",\n            \"contact_person_designation\": \"Owner\",\n            \"updated_on\": \"2020-08-03T09:10:11\"\n        }\n    ]\n}"
-				},
-				{
-					"name": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+					"name": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -121,9 +56,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/partner/getall/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -178,7 +117,7 @@
 			]
 		},
 		{
-			"name": "APPROVE PARTNER",
+			"name": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -192,9 +131,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/partner/approve/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -209,7 +152,7 @@
 			},
 			"response": [
 				{
-					"name": "APPROVE PARTNER",
+					"name": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -223,9 +166,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/partner/approve/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -280,7 +227,7 @@
 			]
 		},
 		{
-			"name": "CREATE PARTNER",
+			"name": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -294,9 +241,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/partner/create/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -311,7 +262,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE PARTNER",
+					"name": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -325,9 +276,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/partner/create/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -382,12 +337,13 @@
 			]
 		},
 		{
-			"name": "ERROR FRAMEWORK",
+			"name": "http://3.7.66.177:8001/qubecart/shared/errorframework/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "3.7.66.177:8001/qubecart/shared/errorframework/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/errorframework/",
+					"protocol": "http",
 					"host": [
 						"3",
 						"7",
@@ -406,7 +362,7 @@
 			},
 			"response": [
 				{
-					"name": "ERROR FRAMEWORK",
+					"name": "http://3.7.66.177:8001/qubecart/shared/errorframework/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -474,7 +430,7 @@
 			]
 		},
 		{
-			"name": "DOMAIN",
+			"name": "http://3.7.66.177:8001/qubecart/shared/domain/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -488,7 +444,8 @@
 					}
 				},
 				"url": {
-					"raw": "3.7.66.177:8001/qubecart/shared/domain/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/domain/",
+					"protocol": "http",
 					"host": [
 						"3",
 						"7",
@@ -507,7 +464,7 @@
 			},
 			"response": [
 				{
-					"name": "DOMAIN",
+					"name": "http://3.7.66.177:8001/qubecart/shared/domain/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -521,7 +478,8 @@
 							}
 						},
 						"url": {
-							"raw": "3.7.66.177:8001/qubecart/shared/domain/",
+							"raw": "http://3.7.66.177:8001/qubecart/shared/domain/",
+							"protocol": "http",
 							"host": [
 								"3",
 								"7",
@@ -584,7 +542,7 @@
 			]
 		},
 		{
-			"name": "ADMIN LOGIN",
+			"name": "http://3.7.66.177:8001/qubecart/admin/login/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -598,7 +556,8 @@
 					}
 				},
 				"url": {
-					"raw": "3.7.66.177:8001/qubecart/admin/login/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/login/",
+					"protocol": "http",
 					"host": [
 						"3",
 						"7",
@@ -617,7 +576,7 @@
 			},
 			"response": [
 				{
-					"name": "ADMIN LOGIN",
+					"name": "http://3.7.66.177:8001/qubecart/admin/login/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -631,7 +590,8 @@
 							}
 						},
 						"url": {
-							"raw": "3.7.66.177:8001/qubecart/admin/login/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/login/",
+							"protocol": "http",
 							"host": [
 								"3",
 								"7",
@@ -694,14 +654,18 @@
 			]
 		},
 		{
-			"name": "GET COUNTRIES",
+			"name": "http://3.7.66.177:8001/qubecart/shared/get/countries/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/shared/get/countries/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/get/countries/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -716,7 +680,7 @@
 			},
 			"response": [
 				{
-					"name": "GET COUNTRIES",
+					"name": "http://3.7.66.177:8001/qubecart/shared/get/countries/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -782,14 +746,18 @@
 			]
 		},
 		{
-			"name": "GET ALL STATES",
+			"name": "http://3.7.66.177:8001/qubecart/shared/get/states/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/shared/get/states/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/get/states/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -804,7 +772,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL STATES",
+					"name": "http://3.7.66.177:8001/qubecart/shared/get/states/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -870,14 +838,18 @@
 			]
 		},
 		{
-			"name": "GET ALL CITIES",
+			"name": "http://3.7.66.177:8001/qubecart/shared/get/city/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/shared/get/city/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/get/city/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -892,7 +864,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL CITIES",
+					"name": "http://3.7.66.177:8001/qubecart/shared/get/city/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -958,14 +930,18 @@
 			]
 		},
 		{
-			"name": "GET ALL CITIES STATES COUNTRIES",
+			"name": "http://3.7.66.177:8001/qubecart/shared/get/citystatecountry/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/shared/get/citystatecountry/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/get/citystatecountry/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -979,7 +955,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL CITIES STATES COUNTRIES",
+					"name": "http://3.7.66.177:8001/qubecart/shared/get/citystatecountry/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -1045,7 +1021,7 @@
 			]
 		},
 		{
-			"name": "GET PARTNER DETAIL",
+			"name": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1059,9 +1035,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/partner/detailsbyid/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -1076,7 +1056,7 @@
 			},
 			"response": [
 				{
-					"name": "GET PARTNER DETAIL",
+					"name": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1090,9 +1070,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/partner/detailsbyid/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -1151,7 +1135,7 @@
 			]
 		},
 		{
-			"name": "GET ADMIN DETAIL",
+			"name": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1165,14 +1149,15 @@
 					}
 				},
 				"url": {
-					"raw": "192.168.0.105:8000/qubecart/admin/getbyid/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
+					"protocol": "http",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"105"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
-					"port": "8000",
+					"port": "8001",
 					"path": [
 						"qubecart",
 						"admin",
@@ -1184,7 +1169,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ADMIN DETAIL",
+					"name": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1198,14 +1183,15 @@
 							}
 						},
 						"url": {
-							"raw": "192.168.0.105:8000/qubecart/admin/getbyid/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
+							"protocol": "http",
 							"host": [
-								"192",
-								"168",
-								"0",
-								"105"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
-							"port": "8000",
+							"port": "8001",
 							"path": [
 								"qubecart",
 								"admin",
@@ -1257,7 +1243,7 @@
 			]
 		},
 		{
-			"name": "UPDATE ADMIN",
+			"name": "http://3.7.66.177:8001/qubecart/admin/update/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1271,9 +1257,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/update/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/update/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -1287,7 +1277,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE ADMIN SUCCESSFUL",
+					"name": "http://3.7.66.177:8001/qubecart/admin/update/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1301,9 +1291,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/update/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/update/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -1357,155 +1351,11 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
-				},
-				{
-					"name": "UPDATE ADMIN GENERIC ERROR",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"1234\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_i\" : 1\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/update/",
-							"host": [
-								"{{endpoint}}"
-							],
-							"port": "8001",
-							"path": [
-								"qubecart",
-								"admin",
-								"update",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Wed, 12 Aug 2020 07:42:46 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.6.11"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept, Origin, Cookie"
-						},
-						{
-							"key": "Allow",
-							"value": "OPTIONS, POST"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "DENY"
-						},
-						{
-							"key": "Content-Length",
-							"value": "169"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Referrer-Policy",
-							"value": "same-origin"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\"\n            }\n        ]\n    }\n}"
-				},
-				{
-					"name": "UPDATE ADMIN WRONG PASSWORD",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"admn_user_id\" : 6,\n    \"password\" : \"12345\",\n    \"firstname\" : \"msqube\",\n    \"lastname\" : \"Technologies\",\n    \"email_id\" : \"contact@msqube.com\",\n    \"contact_phone\" : \"8335968075\",\n    \"addressline1\" : \"pinnacle tower\",\n    \"addressline2\" : \"chinar park\",\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700135\",\n    \"city_id\" : 1\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/update/",
-							"host": [
-								"{{endpoint}}"
-							],
-							"port": "8001",
-							"path": [
-								"qubecart",
-								"admin",
-								"update",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Wed, 12 Aug 2020 07:41:45 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.6.11"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept, Origin, Cookie"
-						},
-						{
-							"key": "Allow",
-							"value": "OPTIONS, POST"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "DENY"
-						},
-						{
-							"key": "Content-Length",
-							"value": "162"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Referrer-Policy",
-							"value": "same-origin"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE002\",\n                \"Message\": \"Invalid Username or Password\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
 				}
 			]
 		},
 		{
-			"name": "GET TEMPLATE BY CATEGORY",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1519,9 +1369,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/getbycategory/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -1535,7 +1389,7 @@
 			},
 			"response": [
 				{
-					"name": "GET TEMPLATE BY CATEGORY",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1549,9 +1403,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/getbycategory/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -1610,14 +1468,18 @@
 			]
 		},
 		{
-			"name": "GET ALL TEMPLATE",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/getall/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getall/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -1627,11 +1489,12 @@
 						"getall",
 						""
 					]
-				}
+				},
+				"description": "Get all template"
 			},
 			"response": [
 				{
-					"name": "GET ALL TEMPLATE",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -1697,7 +1560,7 @@
 			]
 		},
 		{
-			"name": "CREATE TEMPLATE",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1711,9 +1574,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/create/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/create/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -1727,7 +1594,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE TEMPLATE SUCCESS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1741,9 +1608,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/create/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/create/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -1798,84 +1669,11 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
-				},
-				{
-					"name": "CREATE TEMPLATE EMPTY LIST",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{   \n    \"admn_user_id\" : 6,\n    \"category\" : 2,\n    \"items\" : []\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/create/",
-							"host": [
-								"{{endpoint}}"
-							],
-							"port": "8001",
-							"path": [
-								"qubecart",
-								"admin",
-								"template",
-								"create",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Wed, 12 Aug 2020 13:23:40 GMT"
-						},
-						{
-							"key": "Server",
-							"value": "WSGIServer/0.2 CPython/3.6.11"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept, Origin, Cookie"
-						},
-						{
-							"key": "Allow",
-							"value": "OPTIONS, POST"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "DENY"
-						},
-						{
-							"key": "Content-Length",
-							"value": "160"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Referrer-Policy",
-							"value": "same-origin"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [\n            {\n                \"Code\": \"BE006\",\n                \"Message\": \"Item list can not be empty\"\n            }\n        ],\n        \"Warnings\": [],\n        \"System_Errors\": []\n    }\n}"
 				}
 			]
 		},
 		{
-			"name": "CHECK DUPLICATE ITEM",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1889,9 +1687,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/checkduplicate/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -1906,7 +1708,7 @@
 			},
 			"response": [
 				{
-					"name": "CHECK DUPLICATE ITEM",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1920,9 +1722,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/checkduplicate/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -1981,7 +1787,7 @@
 			]
 		},
 		{
-			"name": "DELETE ITEM",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1995,9 +1801,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/deleteitem/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2012,7 +1822,7 @@
 			},
 			"response": [
 				{
-					"name": "DELETE ITEM",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2026,9 +1836,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/deleteitem/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2087,7 +1901,7 @@
 			]
 		},
 		{
-			"name": "INACTIVE TEMPLATE",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2101,9 +1915,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/inactive/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2115,10 +1933,88 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"template_id\" : 25,\n    \"inactive_flag\" : true \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"inactive",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 10:06:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		},
 		{
-			"name": "GET SUBCATEGORY",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2132,9 +2028,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/getsubcategory/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2149,7 +2049,7 @@
 			},
 			"response": [
 				{
-					"name": "GET SUBCATEGORY",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2163,9 +2063,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/getsubcategory/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2224,7 +2128,7 @@
 			]
 		},
 		{
-			"name": "GET BRANDS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2238,9 +2142,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/getbrands/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2255,7 +2163,7 @@
 			},
 			"response": [
 				{
-					"name": "GET BRANDS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2269,9 +2177,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/getbrands/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2330,7 +2242,7 @@
 			]
 		},
 		{
-			"name": "CREATE SUBCATEGORY",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2344,9 +2256,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/createsubcategory/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2361,7 +2277,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE SUBCATEGORY",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2375,9 +2291,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/createsubcategory/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2436,7 +2356,7 @@
 			]
 		},
 		{
-			"name": "ADD BRANDS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2450,9 +2370,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/addbrands/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2467,7 +2391,7 @@
 			},
 			"response": [
 				{
-					"name": "ADD BRANDS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2481,9 +2405,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/addbrands/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2542,7 +2470,7 @@
 			]
 		},
 		{
-			"name": "GET CATEGORY",
+			"name": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2556,9 +2484,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/template/getcategory/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2573,7 +2505,7 @@
 			},
 			"response": [
 				{
-					"name": "GET CATEGORY",
+					"name": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2587,9 +2519,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/template/getcategory/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2648,7 +2584,7 @@
 			]
 		},
 		{
-			"name": "GET UNTIS",
+			"name": "http://3.7.66.177:8001/qubecart/shared/getunits/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2662,9 +2598,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/shared/getunits/",
+					"raw": "http://3.7.66.177:8001/qubecart/shared/getunits/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2678,7 +2618,7 @@
 			},
 			"response": [
 				{
-					"name": "GET UNTIS",
+					"name": "http://3.7.66.177:8001/qubecart/shared/getunits/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2692,9 +2632,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/shared/getunits/",
+							"raw": "http://3.7.66.177:8001/qubecart/shared/getunits/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2752,14 +2696,18 @@
 			]
 		},
 		{
-			"name": "GET ALL REGION",
+			"name": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}:8001/qubecart/admin/region/getall/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2773,14 +2721,18 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL REGION",
+					"name": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{endpoint}:8001/qubecart/admin/region/getall/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2839,7 +2791,7 @@
 			]
 		},
 		{
-			"name": "CREATE REGION",
+			"name": "http://3.7.66.177:8001/qubecart/admin/region/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2853,9 +2805,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/region/create/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/region/create/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2869,7 +2825,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE REGION",
+					"name": "http://3.7.66.177:8001/qubecart/admin/region/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2883,9 +2839,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/region/create/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/region/create/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -2944,14 +2904,18 @@
 			]
 		},
 		{
-			"name": "GET ALL DELIVERY PEROSON",
+			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getall/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -2965,14 +2929,18 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL DELIVERY PEROSON",
+					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getall/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3031,7 +2999,7 @@
 			]
 		},
 		{
-			"name": "APPROVE FSQ",
+			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3045,9 +3013,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/personnel/approve/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3062,7 +3034,7 @@
 			},
 			"response": [
 				{
-					"name": "APPROVE FSQ",
+					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3076,9 +3048,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/personnel/approve/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3137,7 +3113,7 @@
 			]
 		},
 		{
-			"name": "GET DELIVERY PERSONNEL DETAIL",
+			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3151,9 +3127,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getdetail/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3167,7 +3147,7 @@
 			},
 			"response": [
 				{
-					"name": "GET DELIVERY PERSONNEL DETAIL",
+					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3181,9 +3161,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/personnel/getdetail/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3242,7 +3226,7 @@
 			]
 		},
 		{
-			"name": "GET ALL ORDERS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3256,9 +3240,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/order/getall/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3273,7 +3261,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL ORDERS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3287,9 +3275,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/order/getall/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3348,7 +3340,7 @@
 			]
 		},
 		{
-			"name": "GET ORDER DETAILS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/details/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3362,9 +3354,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/order/details/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/order/details/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3379,7 +3375,7 @@
 			},
 			"response": [
 				{
-					"name": "GET ORDER DETAILS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/details/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3393,9 +3389,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/order/details/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/order/details/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3454,7 +3454,7 @@
 			]
 		},
 		{
-			"name": "GET BAG DETAILS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3468,9 +3468,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/order/bagdetails/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3484,7 +3488,7 @@
 			},
 			"response": [
 				{
-					"name": "GET BAG DETAILS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3498,9 +3502,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/order/bagdetails/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3559,7 +3567,7 @@
 			]
 		},
 		{
-			"name": "ASSIGN BAG FOR DELIVERY",
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3573,9 +3581,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/order/assignbag/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3589,7 +3601,7 @@
 			},
 			"response": [
 				{
-					"name": "ASSIGN BAG FOR DELIVERY",
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3603,9 +3615,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/order/assignbag/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3664,7 +3680,7 @@
 			]
 		},
 		{
-			"name": "UPDATE ORDER STATUS",
+			"name": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3678,9 +3694,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001qubecart/admin/order/updatestatus/",
+					"raw": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001qubecart",
 					"path": [
@@ -3693,7 +3713,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE ORDER STATUS",
+					"name": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3707,9 +3727,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001qubecart/admin/order/updatestatus/",
+							"raw": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001qubecart",
 							"path": [
@@ -3767,7 +3791,7 @@
 			]
 		},
 		{
-			"name": "UPDATE ORDER PAYMENT STATUS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3781,9 +3805,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/order/updatepayment/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3797,7 +3825,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE ORDER PAYMENT STATUS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3811,9 +3839,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/order/updatepayment/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3872,7 +3904,7 @@
 			]
 		},
 		{
-			"name": "UPDATE ORDER STATUS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3886,9 +3918,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/order/updatestatus/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -3902,7 +3938,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE ORDER STATUS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3916,9 +3952,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/order/updatestatus/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -3977,7 +4017,7 @@
 			]
 		},
 		{
-			"name": "UPDATE STORE STATUS",
+			"name": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3991,9 +4031,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/store/updatestatus/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4008,7 +4052,7 @@
 			},
 			"response": [
 				{
-					"name": "UPDATE STORE STATUS",
+					"name": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4022,9 +4066,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/store/updatestatus/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -4083,7 +4131,7 @@
 			]
 		},
 		{
-			"name": "SET REGION TO STORE",
+			"name": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4097,9 +4145,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/store/addregion/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4113,7 +4165,7 @@
 			},
 			"response": [
 				{
-					"name": "SET REGION TO STORE",
+					"name": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4127,9 +4179,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/store/addregion/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -4188,7 +4244,7 @@
 			]
 		},
 		{
-			"name": "STORE LIST",
+			"name": "http://3.7.66.177:8001/qubecart/admin/store/list/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4202,9 +4258,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/store/list/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/store/list/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4219,14 +4279,18 @@
 			},
 			"response": [
 				{
-					"name": "STORE LIST",
+					"name": "http://3.7.66.177:8001/qubecart/admin/store/list/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/store/list/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/store/list/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -4285,7 +4349,7 @@
 			]
 		},
 		{
-			"name": "ORDER LIST by STORE",
+			"name": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4299,9 +4363,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/store/orderlist/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4316,7 +4384,7 @@
 			},
 			"response": [
 				{
-					"name": "ORDER LIST by STORE",
+					"name": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4330,9 +4398,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/store/orderlist/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -4391,7 +4463,7 @@
 			]
 		},
 		{
-			"name": "CREATE COMMISSION",
+			"name": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4405,9 +4477,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/commission/create/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4421,7 +4497,7 @@
 			},
 			"response": [
 				{
-					"name": "CREATE COMMISSION",
+					"name": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4435,9 +4511,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/commission/create/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -4496,14 +4576,18 @@
 			]
 		},
 		{
-			"name": "GET ALL COMMISSION",
+			"name": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/commission/getall/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4517,14 +4601,18 @@
 			},
 			"response": [
 				{
-					"name": "GET ALL COMMISSION",
+					"name": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/commission/getall/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [
@@ -4583,7 +4671,7 @@
 			]
 		},
 		{
-			"name": "COMMISSION HISTORY",
+			"name": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4597,9 +4685,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}:8001/qubecart/admin/store/commissionhistory/",
+					"raw": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
+					"protocol": "http",
 					"host": [
-						"{{endpoint}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
 					"port": "8001",
 					"path": [
@@ -4613,7 +4705,7 @@
 			},
 			"response": [
 				{
-					"name": "COMMISSION HISTORY",
+					"name": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4627,9 +4719,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{endpoint}}:8001/qubecart/admin/store/commissionhistory/",
+							"raw": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
+							"protocol": "http",
 							"host": [
-								"{{endpoint}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
 							"port": "8001",
 							"path": [

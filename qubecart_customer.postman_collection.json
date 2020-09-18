@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "049863f4-ac54-4c41-8ccf-f4022da93cff",
-		"name": "Qubecart_customer",
+		"_postman_id": "823a9d3d-3326-43b9-89cb-812363d1ef02",
+		"name": "Qubecart-Customer-Services",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -2375,10 +2375,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{customer}}/qubecart/customer/search/nearestmatches/",
+					"raw": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+					"protocol": "http",
 					"host": [
-						"{{customer}}"
+						"3",
+						"7",
+						"66",
+						"177"
 					],
+					"port": "8002",
 					"path": [
 						"qubecart",
 						"customer",
@@ -2389,107 +2394,15 @@
 				},
 				"description": "Search nearest match"
 			},
-			"response": []
-		},
-		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"MID\": \"AjvmhF55300080944054\",\r\n    \"ORDER_ID\": \"ORDID2220200913210142\",\r\n    \"CUST_ID\": 22,\r\n    \"INDUSTRY_TYPE_ID\": \"Retail\",\r\n    \"CHANNEL_ID\": \"WAP\",\r\n    \"TXN_AMOUNT\": 500,\r\n    \"WEBSITE\": \"APPSTAGING\",\r\n    \"CALLBACK_URL\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n    \"CHECKSUMHASH\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\",\r\n    \"txnToken\": \"24dfabfd933c4d24814f7e682ee85a9d1600030903028\",\r\n    \"paytmdata\": {\r\n        \"body\": {\r\n            \"requestType\": \"Payment\",\r\n            \"mid\": \"AjvmhF55300080944054\",\r\n            \"websiteName\": \"APPSTAGING\",\r\n            \"orderId\": \"ORDID2220200913210142\",\r\n            \"callbackUrl\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n            \"txnAmount\": {\r\n                \"value\": \"500\",\r\n                \"currency\": \"INR\"\r\n            },\r\n            \"userInfo\": {\r\n                \"custId\": 22\r\n            }\r\n        },\r\n        \"head\": {\r\n            \"signature\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\"\r\n        }\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{customer}}/qubecart/customer/paytm/verifychecksum/",
-					"host": [
-						"{{customer}}"
-					],
-					"path": [
-						"qubecart",
-						"customer",
-						"paytm",
-						"verifychecksum",
-						""
-					]
-				},
-				"description": "Varify paytm checksum"
-			},
-			"response": []
-		},
-		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"Status\": \"SUCCESS\",\r\n\"esponseCode\": \"UP00\",\r\n\"txnId\": \"SBI888fd563ef7741ff919f2021b2251f25\",\r\n\"txnRef\": \"aasf-332-aoei-fn\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{customer}}/qubecart/customer/upi/validatepayment/",
-					"host": [
-						"{{customer}}"
-					],
-					"path": [
-						"qubecart",
-						"customer",
-						"upi",
-						"validatepayment",
-						""
-					]
-				},
-				"description": "Validate UPI payment"
-			},
-			"response": []
-		},
-		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/creditpay/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"customer_id\" : 22,\r\n    \"store_id\" : 3\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{customer}}/qubecart/customer/creditpay/",
-					"host": [
-						"{{customer}}"
-					],
-					"path": [
-						"qubecart",
-						"customer",
-						"creditpay",
-						""
-					]
-				},
-				"description": "Pay credit amount by customer"
-			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/creditpay/",
+					"name": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"customer_id\" : 22,\r\n    \"store_id\" : 3\r\n}",
+							"raw": "{\r\n    \"search_contexts\" : \"\",\r\n    \"query\" : \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2497,14 +2410,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{customer}}/qubecart/customer/creditpay/",
+							"raw": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+							"protocol": "http",
 							"host": [
-								"{{customer}}"
+								"3",
+								"7",
+								"66",
+								"177"
 							],
+							"port": "8002",
 							"path": [
 								"qubecart",
 								"customer",
-								"creditpay",
+								"search",
+								"nearestmatches",
 								""
 							]
 						}
@@ -2515,7 +2434,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Thu, 17 Sep 2020 16:55:29 GMT"
+							"value": "Fri, 18 Sep 2020 06:38:36 GMT"
 						},
 						{
 							"key": "Server",
@@ -2539,7 +2458,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "58"
+							"value": "56"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -2551,7 +2470,235 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MID\": \"AjvmhF55300080944054\",\r\n    \"ORDER_ID\": \"ORDID2220200913210142\",\r\n    \"CUST_ID\": 22,\r\n    \"INDUSTRY_TYPE_ID\": \"Retail\",\r\n    \"CHANNEL_ID\": \"WAP\",\r\n    \"TXN_AMOUNT\": 500,\r\n    \"WEBSITE\": \"APPSTAGING\",\r\n    \"CALLBACK_URL\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n    \"CHECKSUMHASH\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\",\r\n    \"txnToken\": \"24dfabfd933c4d24814f7e682ee85a9d1600030903028\",\r\n    \"paytmdata\": {\r\n        \"body\": {\r\n            \"requestType\": \"Payment\",\r\n            \"mid\": \"AjvmhF55300080944054\",\r\n            \"websiteName\": \"APPSTAGING\",\r\n            \"orderId\": \"ORDID2220200913210142\",\r\n            \"callbackUrl\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n            \"txnAmount\": {\r\n                \"value\": \"500\",\r\n                \"currency\": \"INR\"\r\n            },\r\n            \"userInfo\": {\r\n                \"custId\": 22\r\n            }\r\n        },\r\n        \"head\": {\r\n            \"signature\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8002",
+					"path": [
+						"qubecart",
+						"customer",
+						"paytm",
+						"verifychecksum",
+						""
+					]
+				},
+				"description": "Varify paytm checksum"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MID\": \"AjvmhF55300080944054\",\r\n    \"ORDER_ID\": \"ORDID2220200913210142\",\r\n    \"CUST_ID\": 22,\r\n    \"INDUSTRY_TYPE_ID\": \"Retail\",\r\n    \"CHANNEL_ID\": \"WAP\",\r\n    \"TXN_AMOUNT\": 500,\r\n    \"WEBSITE\": \"APPSTAGING\",\r\n    \"CALLBACK_URL\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n    \"CHECKSUMHASH\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\",\r\n    \"txnToken\": \"24dfabfd933c4d24814f7e682ee85a9d1600030903028\",\r\n    \"paytmdata\": {\r\n        \"body\": {\r\n            \"requestType\": \"Payment\",\r\n            \"mid\": \"AjvmhF55300080944054\",\r\n            \"websiteName\": \"APPSTAGING\",\r\n            \"orderId\": \"ORDID2220200913210142\",\r\n            \"callbackUrl\": \"https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDID2220200913210142\",\r\n            \"txnAmount\": {\r\n                \"value\": \"500\",\r\n                \"currency\": \"INR\"\r\n            },\r\n            \"userInfo\": {\r\n                \"custId\": 22\r\n            }\r\n        },\r\n        \"head\": {\r\n            \"signature\": \"qcEnLM23/V6WtJ7tm+fXJIxFV2t7hCsKC++R2pNE7NklmRJOsKuKQ2kQ4MKq6/gqvsVDHfPZpdS4l5JXg5XyiA76S8A78+xxD3cz++Bz/uk=\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8002",
+							"path": [
+								"qubecart",
+								"customer",
+								"paytm",
+								"verifychecksum",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 06:39:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\"\n            }\n        ]\n    },\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Status\": \"SUCCESS\",\r\n\"esponseCode\": \"UP00\",\r\n\"txnId\": \"SBI888fd563ef7741ff919f2021b2251f25\",\r\n\"txnRef\": \"aasf-332-aoei-fn\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"7",
+						"66",
+						"177"
+					],
+					"port": "8002",
+					"path": [
+						"qubecart",
+						"customer",
+						"upi",
+						"validatepayment",
+						""
+					]
+				},
+				"description": "Validate UPI payment"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Status\": \"SUCCESS\",\r\n\"esponseCode\": \"UP00\",\r\n\"txnId\": \"SBI888fd563ef7741ff919f2021b2251f25\",\r\n\"txnRef\": \"aasf-332-aoei-fn\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"7",
+								"66",
+								"177"
+							],
+							"port": "8002",
+							"path": [
+								"qubecart",
+								"customer",
+								"upi",
+								"validatepayment",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 06:42:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Errors\": {\n        \"Info\": [],\n        \"Business_Errors\": [],\n        \"Warnings\": [],\n        \"System_Errors\": [\n            {\n                \"Code\": \"SE001\",\n                \"Message\": \"Error Encountered. Please Try Again\"\n            }\n        ]\n    },\n    \"data\": null\n}"
 				}
 			]
 		}
