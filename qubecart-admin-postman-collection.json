@@ -4782,6 +4782,610 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"store_commission_id\": 2,\n            \"store_id\": 16,\n            \"value\": null,\n            \"start_date\": \"2020-09-14T12:27:46\",\n            \"status\": 1,\n            \"commission_master_id\": 1,\n            \"end_date\": null,\n            \"commission_name\": \"Default commission\",\n            \"commission_description\": \"Default commission for all partner\",\n            \"commission_percentage\": 2,\n            \"partner_income\": 999999,\n            \"store_commission_status_name\": \"Active\"\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "http://3.7.66.177:8001/qubecart/admin/customer/getall/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/customer/getall/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"customer",
+						"getall",
+						""
+					]
+				},
+				"description": "Get all customer"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8001/qubecart/admin/customer/getall/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/customer/getall/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"customer",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:29:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1812"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"customer_id\": 22,\n            \"customer_status\": 1,\n            \"customer_name\": \"HARANATH BASAK\",\n            \"phone_no\": \"9932047263\",\n            \"email_id\": \"basak.haranath@gmail.com\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        },\n        {\n            \"customer_id\": 25,\n            \"customer_status\": 1,\n            \"customer_name\": \"Nabanita Sarkar\",\n            \"phone_no\": \"9851075512\",\n            \"email_id\": \"nabanita.sarkar@msqube.com\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        },\n        {\n            \"customer_id\": 26,\n            \"customer_status\": 1,\n            \"customer_name\": \"Nabanita Basak\",\n            \"phone_no\": \"8116092023\",\n            \"email_id\": \"hb@gmail.com\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        },\n        {\n            \"customer_id\": 24,\n            \"customer_status\": 1,\n            \"customer_name\": \"Sourav Mondal\",\n            \"phone_no\": \"8335968075\",\n            \"email_id\": \"\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        },\n        {\n            \"customer_id\": 20,\n            \"customer_status\": 1,\n            \"customer_name\": \"Srija kundu\",\n            \"phone_no\": \"9563541102\",\n            \"email_id\": \"das.chandana.ori@gmail.com\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        },\n        {\n            \"customer_id\": 23,\n            \"customer_status\": 1,\n            \"customer_name\": \"Sudip B\",\n            \"phone_no\": \"7001283856\",\n            \"email_id\": \"sudipta.das@msqube.com\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        },\n        {\n            \"customer_id\": 18,\n            \"customer_status\": 1,\n            \"customer_name\": \"SUDIPTA \",\n            \"phone_no\": \"8013320216\",\n            \"email_id\": \"\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 1,\n            \"credit_status_name\": \"Approved Credit Customer\"\n        },\n        {\n            \"customer_id\": 21,\n            \"customer_status\": 1,\n            \"customer_name\": \"Sudipta Das\",\n            \"phone_no\": \"9232669133\",\n            \"email_id\": \"das.sudipta94@gmail.com\",\n            \"customer_status_name\": \"Active\",\n            \"credit_status\": 0,\n            \"credit_status_name\": \"Not A Credit Customer\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8001/qubecart/admin/customer/details/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_id\" : 22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/customer/details/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"customer",
+						"details",
+						""
+					]
+				},
+				"description": "Customer Details"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8001/qubecart/admin/customer/details/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_id\" : 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/customer/details/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"customer",
+								"details",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:31:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3942"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"customer_details\": {\n            \"customer_id\": 22,\n            \"customer_status\": 1,\n            \"customer_name\": \"HARANATH BASAK\",\n            \"phone_no\": \"9932047263\",\n            \"email_id\": \"basak.haranath@gmail.com\",\n            \"customer_status_name\": \"Active\"\n        },\n        \"credit_store_details\": [\n            {\n                \"credit_association_id\": 2,\n                \"partner_id\": 24,\n                \"customer_id\": 22,\n                \"max_monthly_credit\": 1000,\n                \"current_expendeture\": 726.85,\n                \"updated_at\": \"2020-09-11T12:53:39\",\n                \"credit_status\": 5,\n                \"store_id\": 3,\n                \"credit_status_name\": \"Delete Request\",\n                \"remaining_expendeture\": 273.15,\n                \"store_name\": \"Perfect store\",\n                \"store_category\": 1,\n                \"store_category_name\": \"Grocery\",\n                \"address_id\": 22,\n                \"addressline1\": \"112/4\",\n                \"addressline2\": \"beleghata main road\",\n                \"pin\": 700010,\n                \"city\": 1,\n                \"state\": 1,\n                \"country\": 1,\n                \"address_type\": null,\n                \"city_name\": \"Kolkata\",\n                \"states_name\": \"West Bengal\",\n                \"countries_name\": \"India\"\n            }\n        ],\n        \"credit_order_details\": [\n            {\n                \"order_id\": 58,\n                \"order_ref_no\": \"QCO847477\",\n                \"order_created_at\": \"2020-09-09T17:26:16\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 58,\n                \"order_status\": 2,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 265,\n                \"payment_type\": 5,\n                \"payment_status\": 0,\n                \"order_status_name\": \"In Progress\",\n                \"payment_type_name\": \"Credit\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 62,\n                \"order_ref_no\": \"QCO121310\",\n                \"order_created_at\": \"2020-09-11T12:53:16\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 62,\n                \"order_status\": 2,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 557.85,\n                \"payment_type\": 5,\n                \"payment_status\": 0,\n                \"order_status_name\": \"In Progress\",\n                \"payment_type_name\": \"Credit\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 63,\n                \"order_ref_no\": \"QCO684918\",\n                \"order_created_at\": \"2020-09-11T12:53:40\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 63,\n                \"order_status\": 2,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 249,\n                \"payment_type\": 5,\n                \"payment_status\": 0,\n                \"order_status_name\": \"In Progress\",\n                \"payment_type_name\": \"Credit\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 44,\n                \"order_ref_no\": \"QCO559168\",\n                \"order_created_at\": \"2020-09-08T22:01:03\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 44,\n                \"order_status\": 2,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 344.5,\n                \"payment_type\": 5,\n                \"payment_status\": 1,\n                \"order_status_name\": \"In Progress\",\n                \"payment_type_name\": \"Credit\",\n                \"payment_status_name\": \"Settled\"\n            },\n            {\n                \"order_id\": 51,\n                \"order_ref_no\": \"QCO746420\",\n                \"order_created_at\": \"2020-09-09T11:34:34\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 51,\n                \"order_status\": 2,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 344.5,\n                \"payment_type\": 5,\n                \"payment_status\": 1,\n                \"order_status_name\": \"In Progress\",\n                \"payment_type_name\": \"Credit\",\n                \"payment_status_name\": \"Settled\"\n            }\n        ],\n        \"order_details\": [\n            {\n                \"order_id\": 35,\n                \"order_ref_no\": \"OD830942\",\n                \"order_created_at\": \"2020-08-29T08:36:45\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 35,\n                \"order_status\": 1,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 1324.14,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"order_status_name\": \" Order Placed\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 38,\n                \"order_ref_no\": \"QCO281611\",\n                \"order_created_at\": \"2020-09-02T04:33:39\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 38,\n                \"order_status\": 1,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 355.5,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"order_status_name\": \" Order Placed\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 65,\n                \"order_ref_no\": \"QCO235664\",\n                \"order_created_at\": \"2020-09-11T21:01:44\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 65,\n                \"order_status\": 2,\n                \"billing_address_id\": 29,\n                \"customer_id\": 22,\n                \"price\": 876.6,\n                \"payment_type\": 1,\n                \"payment_status\": 0,\n                \"order_status_name\": \"In Progress\",\n                \"payment_type_name\": \"Cash On Delivery\",\n                \"payment_status_name\": \"Not Settled\"\n            },\n            {\n                \"order_id\": 57,\n                \"order_ref_no\": \"QCO209545\",\n                \"order_created_at\": \"2020-09-09T17:09:47\",\n                \"order_delivery_date\": null,\n                \"order_detail_id\": 57,\n                \"order_status\": 1,\n                \"billing_address_id\": 27,\n                \"customer_id\": 22,\n                \"price\": 175,\n                \"payment_type\": 2,\n                \"payment_status\": 1,\n                \"order_status_name\": \" Order Placed\",\n                \"payment_type_name\": \"Qubecart Wallet\",\n                \"payment_status_name\": \"Settled\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8001/qubecart/shared/getfcm/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fcm_user_id\" : 22,\r\n    \"fcm_user_type\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/getfcm/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"getfcm",
+						""
+					]
+				},
+				"description": "Get fcm token of a user"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8001/qubecart/shared/getfcm/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fcm_user_id\" : 22,\r\n    \"fcm_user_type\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/getfcm/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"getfcm",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:40:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "377"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"notification_master_id\": 18,\n        \"fcm_token\": \"dNPNiW_oStevv225HhHVGi:APA91bEnN5ntUMjE0-q20iwVNiJvX-Ieg_XFgq_8EE0yidKBm003JGphMsyjsrUMqDgW6IKcKc20QEBFwJE4iCKrbB2R1cMeEe8_8a5ZChXx8TcvFec_9dju7xQeZRamqeiXipuAxrMJ\",\n        \"create_date\": \"2020-08-29T08:34:12Z\",\n        \"expiry_date\": null,\n        \"make\": null,\n        \"model\": null,\n        \"fcm_user_id\": 22,\n        \"fcm_user_type\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "fttp://3.7.66.177:8001/qubecart/shared/notificationmaster/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fcm_user_id\" : 22,\r\n    \"fcm_user_type\" : 1,\r\n    \"fcm_token\" : \"dNPNiW_oStevv225HhHVGi:APA91bEnN5ntUMjE0-q20iwVNiJvX-Ieg_XFgq_8EE0yidKBm003JGphMsyjsrUMqDgW6IKcKc20QEBFwJE4iCKrbB2R1cMeEe8_8a5ZChXx8TcvFec_9dju7xQeZRamqeiXipuAxrMJ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/notificationmaster/create/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"notificationmaster",
+						"create",
+						""
+					]
+				},
+				"description": "Update fcm token of a user"
+			},
+			"response": [
+				{
+					"name": "fttp://3.7.66.177:8001/qubecart/shared/notificationmaster/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fcm_user_id\" : 22,\r\n    \"fcm_user_type\" : 1,\r\n    \"fcm_token\" : \"dNPNiW_oStevv225HhHVGi:APA91bEnN5ntUMjE0-q20iwVNiJvX-Ieg_XFgq_8EE0yidKBm003JGphMsyjsrUMqDgW6IKcKc20QEBFwJE4iCKrbB2R1cMeEe8_8a5ZChXx8TcvFec_9dju7xQeZRamqeiXipuAxrMJ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/notificationmaster/create/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"notificationmaster",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:42:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8001/qubecart/shared/send/pushnotification/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message_title\" : \"Qubecart\",\r\n    \"message_body\" : \"Wel COme To Qubecart\",\r\n    \"fcm_user_id\" : 22,\r\n    \"fcm_user_type\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/send/pushnotification/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"send",
+						"pushnotification",
+						""
+					]
+				},
+				"description": "Send push notification"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8001/qubecart/shared/send/pushnotification/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message_title\" : \"Qubecart\",\r\n    \"message_body\" : \"Wel COme To Qubecart\",\r\n    \"fcm_user_id\" : 22,\r\n    \"fcm_user_type\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/send/pushnotification/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"send",
+								"pushnotification",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:45:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "224"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"multicast_ids\": [\n            3163111920342775957\n        ],\n        \"success\": 1,\n        \"failure\": 0,\n        \"canonical_ids\": 0,\n        \"results\": [\n            {\n                \"message_id\": \"0:1600440312730418%a48f8eb2a48f8eb2\"\n            }\n        ],\n        \"topic_message_id\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8001/qubecart/admin/order/paytopartner/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : [65,67]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/order/paytopartner/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"paytopartner",
+						""
+					]
+				},
+				"description": "Pay to partner by admin"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8001/qubecart/admin/order/paytopartner/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\" : [65,67]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/order/paytopartner/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"paytopartner",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Sep 2020 14:50:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": null,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
