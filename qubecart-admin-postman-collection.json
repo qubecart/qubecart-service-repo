@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d86795c1-b05a-4cf9-bfd6-2eb19d435744",
+		"_postman_id": "d3d950d6-b2bc-4199-b4c3-244ccda7db96",
 		"name": "Qubecart-Admin-Services",
 		"description": "## API collection for qubecart admin backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -1907,7 +1907,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"admn_user_id\" : 6,\n    \"template_id\" : 25,\n    \"inactive_flag\" : true \n}",
+					"raw": "{\n    \"admn_user_id\" : 6,\n    \"template_id\" : 39,\n    \"inactive_flag\" : true \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1941,7 +1941,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"admn_user_id\" : 6,\n    \"template_id\" : 25,\n    \"inactive_flag\" : true \n}",
+							"raw": "{\n    \"admn_user_id\" : 6,\n    \"template_id\" : 39,\n    \"inactive_flag\" : true \n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1973,7 +1973,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Fri, 18 Sep 2020 10:06:17 GMT"
+							"value": "Sat, 19 Sep 2020 13:16:49 GMT"
 						},
 						{
 							"key": "Server",
@@ -1989,7 +1989,7 @@
 						},
 						{
 							"key": "Allow",
-							"value": "OPTIONS, POST"
+							"value": "POST, OPTIONS"
 						},
 						{
 							"key": "X-Frame-Options",
