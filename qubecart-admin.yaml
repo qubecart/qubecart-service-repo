@@ -2182,11 +2182,13 @@ components:
         exception: {format: 'null', type: boolean}
       required: [code, exception, Errors, data]
       type: object
-info: {title: Qubecart-Admin-Services, version: 1.0.0}
-{openapi: 3.0.0}
+info:
+  title: Qubecart-Admin-Services,
+  version: 1.0.0
+openapi: 3.0.0
 servers:
-- url: https://execute-api.ap-south-1.amazonaws.com/{basePath}
-  variables:
+  - url: https://execute-api.ap-south-1.amazonaws.com/{basePath}
+    variables:
     basePath: {default: test}
 paths:
   /admin/order/updatestatus/:
