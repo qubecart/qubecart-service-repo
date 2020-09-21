@@ -2823,6 +2823,108 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {}\n}"
 				}
 			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/createfcm/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/createfcm/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"createfcm",
+						""
+					]
+				},
+				"description": "Create partner fcm token"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/createfcm/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/createfcm/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"createfcm",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 21 Sep 2020 16:20:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
