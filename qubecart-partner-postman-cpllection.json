@@ -2925,6 +2925,420 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/store/getstockhistory/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partner_product_id\" : 31\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/store/getstockhistory/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"getstockhistory",
+						""
+					]
+				},
+				"description": "Get stock history"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/store/getstockhistory/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_product_id\" : 31\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/store/getstockhistory/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"getstockhistory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 22 Sep 2020 06:47:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "494"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"partner_product_id\": 31,\n            \"product_brand_id\": 333,\n            \"inevntory_txn_id\": 40,\n            \"txn_date\": \"2020-08-28T04:00:29\",\n            \"txn_ref_no\": \"TXNOUT24-31-1598587229\",\n            \"quantity\": 5,\n            \"product_id\": 31,\n            \"txn_type\": 2,\n            \"store_id\": 24,\n            \"txn_type_name\": \"Out\"\n        },\n        {\n            \"partner_product_id\": 31,\n            \"product_brand_id\": 333,\n            \"inevntory_txn_id\": 27,\n            \"txn_date\": \"2020-08-28T00:15:24\",\n            \"txn_ref_no\": \"TXNIN24-31-1598573723\",\n            \"quantity\": 10,\n            \"product_id\": 31,\n            \"txn_type\": 1,\n            \"store_id\": 24,\n            \"txn_type_name\": \"In\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/template/get/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/template/get/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"template",
+						"get",
+						""
+					]
+				},
+				"description": "Get partner template "
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/template/get/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/template/get/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"template",
+								"get",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 22 Sep 2020 06:52:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "658"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"partner_template_detail_id\": 1,\n            \"template_id\": 10,\n            \"item_name\": \"Rice\",\n            \"admn_template_refno\": \"1597400846\",\n            \"status\": 1\n        },\n        {\n            \"partner_template_detail_id\": 2,\n            \"template_id\": 10,\n            \"item_name\": \"Musturd Oil\",\n            \"admn_template_refno\": \"1597400846\",\n            \"status\": 1\n        },\n        {\n            \"partner_template_detail_id\": 3,\n            \"template_id\": 10,\n            \"item_name\": \" Refine Oil\",\n            \"admn_template_refno\": \"1597400846\",\n            \"status\": 1\n        },\n        {\n            \"partner_template_detail_id\": 4,\n            \"template_id\": 10,\n            \"item_name\": \"Coffee\",\n            \"admn_template_refno\": \"1597400846\",\n            \"status\": 1\n        },\n        {\n            \"partner_template_detail_id\": 5,\n            \"template_id\": 10,\n            \"item_name\": \"Tea\",\n            \"admn_template_refno\": \"1597400846\",\n            \"status\": 1\n        }\n    ],\n    \"payload\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/brand/update/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\" : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba Generic/Loose\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/brand/update/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"brand",
+						"update",
+						""
+					]
+				},
+				"description": "Partner  brand update"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/brand/update/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\" : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba Generic/Loose\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/brand/update/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"brand",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 22 Sep 2020 08:06:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://3.7.66.177:8003/qubecart/partner/changepassword/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"4321\",\r\n    \"new_password\" : \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/changepassword/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"changepassword",
+						""
+					]
+				},
+				"description": "Partner change password"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8003/qubecart/partner/changepassword/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"4321\",\r\n    \"new_password\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/changepassword/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"changepassword",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 22 Sep 2020 11:02:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"payload\": []\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
