@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d3d950d6-b2bc-4199-b4c3-244ccda7db96",
+		"_postman_id": "4cf88559-4653-4b77-bc99-7aa96d1004b0",
 		"name": "Qubecart-Admin-Services",
 		"description": "## API collection for qubecart admin backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -6010,6 +6010,109 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 39,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-09-19T13:16:49\",\n            \"template_name\": \"Dry Fruits\",\n            \"template_description\": \"<p>Dry Fruits</p>\",\n            \"template_ref_no\": \"1598506772\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 40,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-27T05:40:13\",\n            \"template_name\": \"Organic Staple\",\n            \"template_description\": \"<p>Organic Staple</p>\",\n            \"template_ref_no\": \"1598506812\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 41,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-27T05:40:29\",\n            \"template_name\": \"Edible Oils\",\n            \"template_description\": \"<p>Edible Oils</p>\",\n            \"template_ref_no\": \"1598506829\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 43,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-27T05:42:14\",\n            \"template_name\": \"Salt & Sugar\",\n            \"template_description\": \"<p>Salt &amp; Sugar</p>\",\n            \"template_ref_no\": \"1598506933\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 47,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-27T19:53:31\",\n            \"template_name\": \"Rice & Cereals\",\n            \"template_description\": \"<p>Rice &amp; Cereals</p>\",\n            \"template_ref_no\": \"1598558010\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 48,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-27T20:10:57\",\n            \"template_name\": \"Flour & Atta\",\n            \"template_description\": \"<p>Flour &amp; Atta</p>\",\n            \"template_ref_no\": \"1598559056\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 49,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-27T20:50:56\",\n            \"template_name\": \"Dals & Beans\",\n            \"template_description\": \"<p>Dals &amp; Beans</p>\",\n            \"template_ref_no\": \"1598561456\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        },\n        {\n            \"template_id\": 51,\n            \"category\": 1,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-08-28T05:26:45\",\n            \"template_name\": \"Masala & Spices\",\n            \"template_description\": \"<p>Masala &amp; Spices</p>\",\n            \"template_ref_no\": \"1598592405\",\n            \"status\": 1,\n            \"category_name\": \"Grocery\"\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/createcategory/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"template_id\" : 51,\n    \"items\" : [{\"name\" : \"Special\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/template/createcategory/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"template",
+						"createcategory",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/createcategory/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"template_id\" : 51,\n    \"items\" : [{\"name\" : \"Special\"}]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/template/createcategory/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"template",
+								"createcategory",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 04 Oct 2020 10:16:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
@@ -6026,5 +6129,3 @@
 	],
 	"protocolProfileBehavior": {}
 }
-
-
