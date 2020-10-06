@@ -6113,6 +6113,110 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/partner/addbankdetail/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qc_partner_id\": 30,\r\n    \"account_holder_name\": \"HARANATH\",\r\n    \"account_no\": \"122344567\",\r\n    \"ifsc_code\": \"IFSC_SBINO1448\",\r\n    \"bank_name\": \"SBI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/partner/addbankdetail/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"partner",
+						"addbankdetail",
+						""
+					]
+				},
+				"description": "Add bank detail"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/partner/addbankdetail/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"qc_partner_id\": 30,\r\n    \"account_holder_name\": \"HARANATH\",\r\n    \"account_no\": \"122344567\",\r\n    \"ifsc_code\": \"IFSC_SBINO1448\",\r\n    \"bank_name\": \"SBI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/partner/addbankdetail/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"partner",
+								"addbankdetail",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 06 Oct 2020 20:27:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [

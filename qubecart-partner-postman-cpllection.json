@@ -3339,6 +3339,210 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"payload\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/detail/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qc_partner_id\" : 31\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/detail/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"detail",
+						""
+					]
+				},
+				"description": "Get Partner Detail By Partner Id"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/detail/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"qc_partner_id\" : 31\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/detail/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"detail",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 06 Oct 2020 20:34:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1059"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"qc_partner_id\": 31,\n            \"partner_category\": 1,\n            \"partner_code\": \"Z5kTv5\",\n            \"partner_status\": 2,\n            \"login_flag\": null,\n            \"created_on\": \"2020-10-01T07:57:53\",\n            \"partner_detail_id\": 17,\n            \"company_name\": \"Shome Marts\",\n            \"contact_phone\": \"9123810564\",\n            \"billing_name\": \"Shome\",\n            \"gst_numbers\": \"1234\",\n            \"corporate_size\": null,\n            \"payment_term\": null,\n            \"updated_on\": \"2020-10-01T07:57:53\",\n            \"updated_by\": null,\n            \"partner_address_id\": 95,\n            \"pan\": \"1234\",\n            \"contact_email\": null,\n            \"contact_person_firstname\": \"Subhadeep\",\n            \"contact_person_lastname\": \"Shome\",\n            \"contact_person_designation\": \"Owner\",\n            \"partner_bank_id\": 4,\n            \"status\": 1,\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n            \"partner_status_name\": \"Active\",\n            \"address_id\": 95,\n            \"addressline1\": \"Dum dum\",\n            \"addressline2\": null,\n            \"pin\": 700123,\n            \"city\": 1,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"Kolkata\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"bank_id\": 4,\n            \"account_holder_name\": \"HARANATH\",\n            \"account_no\": \"122344567\",\n            \"ifsc_code\": \"IFSC_SBINO1448\",\n            \"bank_name\": \"SBI\",\n            \"branch_name\": null,\n            \"cin_no\": null,\n            \"bank_address\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/update/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"qc_partner_id\": 31,\r\n            \"partner_category\": 1,\r\n            \"partner_code\": \"Z5kTv5\",\r\n            \"partner_status\": 2,\r\n            \"login_flag\": null,\r\n            \"created_on\": \"2020-10-01T07:57:53\",\r\n            \"partner_detail_id\": 17,\r\n            \"company_name\": \"Shome Marts PVT. LTD.\",\r\n            \"contact_phone\": \"9123810564\",\r\n            \"billing_name\": \"Shome\",\r\n            \"gst_numbers\": \"1234\",\r\n            \"corporate_size\": null,\r\n            \"payment_term\": null,\r\n            \"updated_on\": \"2020-10-01T07:57:53\",\r\n            \"updated_by\": null,\r\n            \"partner_address_id\": 95,\r\n            \"pan\": \"1234\",\r\n            \"contact_email\": null,\r\n            \"contact_person_firstname\": \"Subhadeep\",\r\n            \"contact_person_lastname\": \"Shome\",\r\n            \"contact_person_designation\": \"Owner\",\r\n            \"partner_bank_id\": 4,\r\n            \"status\": 1,\r\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\r\n            \"partner_status_name\": \"Active\",\r\n            \"address_id\": 95,\r\n            \"addressline1\": \"Dum dum\",\r\n            \"addressline2\": null,\r\n            \"pin\": 700123,\r\n            \"city_id\": 1,\r\n            \"state_id\": 1,\r\n            \"country_id\": 1,\r\n            \"address_type\": null,\r\n            \"city_name\": \"Kolkata\",\r\n            \"states_name\": \"West Bengal\",\r\n            \"countries_name\": \"India\",\r\n            \"bank_id\": 4,\r\n            \"account_holder_name\": \"HARANATH BASAK\",\r\n            \"account_no\": \"122344567\",\r\n            \"ifsc_code\": \"IFSC_SBINO1448\",\r\n            \"bank_name\": \"SBI\",\r\n            \"branch_name\": null,\r\n            \"cin_no\": null,\r\n            \"bank_address\": null\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/update/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"update",
+						""
+					]
+				},
+				"description": "Partner Update"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/update/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"qc_partner_id\": 31,\r\n            \"partner_category\": 1,\r\n            \"partner_code\": \"Z5kTv5\",\r\n            \"partner_status\": 2,\r\n            \"login_flag\": null,\r\n            \"created_on\": \"2020-10-01T07:57:53\",\r\n            \"partner_detail_id\": 17,\r\n            \"company_name\": \"Shome Marts PVT. LTD.\",\r\n            \"contact_phone\": \"9123810564\",\r\n            \"billing_name\": \"Shome\",\r\n            \"gst_numbers\": \"1234\",\r\n            \"corporate_size\": null,\r\n            \"payment_term\": null,\r\n            \"updated_on\": \"2020-10-01T07:57:53\",\r\n            \"updated_by\": null,\r\n            \"partner_address_id\": 95,\r\n            \"pan\": \"1234\",\r\n            \"contact_email\": null,\r\n            \"contact_person_firstname\": \"Subhadeep\",\r\n            \"contact_person_lastname\": \"Shome\",\r\n            \"contact_person_designation\": \"Owner\",\r\n            \"partner_bank_id\": 4,\r\n            \"status\": 1,\r\n            \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\r\n            \"partner_status_name\": \"Active\",\r\n            \"address_id\": 95,\r\n            \"addressline1\": \"Dum dum\",\r\n            \"addressline2\": null,\r\n            \"pin\": 700123,\r\n            \"city_id\": 1,\r\n            \"state_id\": 1,\r\n            \"country_id\": 1,\r\n            \"address_type\": null,\r\n            \"city_name\": \"Kolkata\",\r\n            \"states_name\": \"West Bengal\",\r\n            \"countries_name\": \"India\",\r\n            \"bank_id\": 4,\r\n            \"account_holder_name\": \"HARANATH BASAK\",\r\n            \"account_no\": \"122344567\",\r\n            \"ifsc_code\": \"IFSC_SBINO1448\",\r\n            \"bank_name\": \"SBI\",\r\n            \"branch_name\": null,\r\n            \"cin_no\": null,\r\n            \"bank_address\": null\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/update/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 06 Oct 2020 20:47:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"payload\": []\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
