@@ -6217,6 +6217,110 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/changestatus/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"store_id\" : 43,\r\n    \"status\" : 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/store/changestatus/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"store",
+						"changestatus",
+						""
+					]
+				},
+				"description": "Change store status"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/changestatus/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\" : 43,\r\n    \"status\" : 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/store/changestatus/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"store",
+								"changestatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 19 Oct 2020 06:29:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "112"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"code\": \"001\",\n        \"exception\": false,\n        \"Errors\": null,\n        \"data\": null\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
