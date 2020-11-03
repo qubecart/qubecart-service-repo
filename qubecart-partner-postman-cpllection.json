@@ -3543,6 +3543,110 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"payload\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/orders/activeordercount/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partner_id\" : 24\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{partner}}/qubecart/partner/orders/activeordercount/",
+					"host": [
+						"{{partner}}"
+					],
+					"path": [
+						"qubecart",
+						"partner",
+						"orders",
+						"activeordercount",
+						""
+					]
+				},
+				"description": "Active Order Count"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/orders/activeordercount/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_id\" : 24\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{partner}}/qubecart/partner/orders/activeordercount/",
+							"host": [
+								"{{partner}}"
+							],
+							"path": [
+								"qubecart",
+								"partner",
+								"orders",
+								"activeordercount",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 31 Oct 2020 11:04:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"order_count\": 16\n    }\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
