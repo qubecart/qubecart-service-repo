@@ -5,7 +5,7 @@ components:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 3c504c94-7582-40c8-8a15-e8343358de64
+      x-response-id: e5087705-b23d-478a-9d0a-40a045352abb
     exampleQubecartPartnerBrandGetPost200:
       value:
         Errors: null
@@ -36,13 +36,359 @@ components:
           subcategory_id: 1
           updated_on: '2020-08-25T11:10:28'
         exception: false
-      x-response-id: 5967a7c1-2e20-4ff6-b524-68d0980999cd
+      x-response-id: 7b3a7beb-bd7f-47a3-bc14-de3526df1c4f
     exampleQubecartPartnerBrandInactivatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: a6edd201-736d-4ddc-8b71-41aa818bd1b5
+      x-response-id: ae7f96ef-23d6-4a84-a1dc-d9e73e4f3b9e
+    exampleQubecartPartnerBrandUpdatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 705574c3-2efb-4735-8b0e-45a875f070c0
+    exampleQubecartPartnerCartdetailsPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          credit_flag: 0
+          price_breakup:
+          - key: Net Amount
+            sign_flag: 1
+            value: 2726.4
+          - key: GST
+            sign_flag: 1
+            value: 303.6
+          - key: Discount
+            sign_flag: 0
+            value: 315.3
+          - key: Delivery Fee
+            sign_flag: 1
+            value: 40
+          - key: Total
+            sign_flag: 1
+            value: 2754.7
+          store_details:
+          - address_id: 22
+            address_type: null
+            addressline1: 112/4
+            addressline2: beleghata main road
+            bag_total_price: 1244.7
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            countries_name: India
+            country: 1
+            created_on: null
+            credit_flag: 1
+            item_details:
+            - bucket_name: qubecart
+              itemImageFolder: Item_image
+              packaged_product: 1
+              paroduct_details_id: 40
+              product_description: Dawaat Rozana Super Basmati Rice - 5Kg
+              product_id: 47
+              product_quantity: 5
+              product_rating: 0
+              product_selling_price: 308.85
+              product_thumbnail: dawaat5kg.jpg
+              product_unit: 1
+              product_unit_name: Kg
+              product_variant: null
+              required_product_quantity: 2
+              store_id: 3
+              total_product_price: 617.7
+            - bucket_name: qubecart
+              itemImageFolder: Item_image
+              packaged_product: 1
+              paroduct_details_id: 41
+              product_description: Ganesh Whole Wheat Premium Atta -5kg
+              product_id: 48
+              product_quantity: 5
+              product_rating: 0
+              product_selling_price: 209
+              product_thumbnail: ganesh5.jpg
+              product_unit: 1
+              product_unit_name: Kg
+              product_variant: null
+              required_product_quantity: 3
+              store_id: 3
+              total_product_price: 627
+            pin: 700010
+            qc_partner_id: 24
+            region_id: 2
+            state: 1
+            states_name: West Bengal
+            storeImageFolder: qubecart_partner
+            store_address_id: 22
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 3
+            store_image: MAS.jpg
+            store_location: null
+            store_name: Perfect store
+            store_rating: 0
+            store_status: 2
+            updated_on: null
+          - address_id: 63
+            address_type: null
+            addressline1: Kestopur
+            addressline2: Kolkata
+            bag_total_price: 0
+            bucket_name: qubecart
+            city: 1
+            city_name: Kolkata
+            countries_name: India
+            country: 1
+            created_on: null
+            credit_flag: 1
+            item_details: []
+            pin: 700012
+            qc_partner_id: 24
+            region_id: 2
+            state: 1
+            states_name: West Bengal
+            storeImageFolder: qubecart_partner
+            store_address_id: 63
+            store_category: 1
+            store_category_name: Grocery
+            store_id: 28
+            store_image: MAS.jpg
+            store_location: null
+            store_name: SD Store
+            store_rating: 0
+            store_status: 2
+            updated_on: null
+        exception: false
+      x-response-id: 17f55b75-75db-44d4-a3b7-4d2164b05de7
+    exampleQubecartPartnerChangepasswordPost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+        payload: []
+      x-response-id: 6228fcc0-70bc-461b-8fae-83756e7e75b2
+    exampleQubecartPartnerCheckuniquePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+        payload: []
+      x-response-id: ef3af717-f018-4294-ba48-789259e51c4d
+    exampleQubecartPartnerCreatefcmPost200:
+      value:
+        Errors: null
+        code: '001'
+        data: null
+        exception: false
+      x-response-id: 883d1af6-dba5-4678-80ad-c19bc5ae23db
+    exampleQubecartPartnerCreditcustomerGetPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - address_id: 60
+          address_type: null
+          addressline1: Beleghata Head Post Office
+          addressline2: Beleghata
+          city: 1
+          city_name: Kolkata
+          countries_name: India
+          country: 1
+          credit_association_id: 6
+          credit_status: 1
+          credit_status_name: Credit Requested
+          current_expendeture: 0
+          customer_id: 18
+          customer_name: 'SUDIPTA '
+          email_id: ''
+          max_monthly_credit: 100
+          partner_id: 25
+          phone_no: '8013320216'
+          pin: 700089
+          remaining_expendeture: 100
+          state: 1
+          states_name: West Bengal
+          store_category: 1
+          store_category_name: Grocery
+          store_id: 26
+          store_name: Maa Annapurna Store
+          updated_at: '2020-09-04T14:09:36'
+        exception: false
+      x-response-id: 06c2b8da-909e-40b5-bbb7-d62f6cfa983b
+    exampleQubecartPartnerCreditcustomerUpdaterequestPost200:
+      value:
+        Errors: null
+        code: '001'
+        data: null
+        exception: false
+      x-response-id: 3216df82-99eb-4c8e-b64f-eec4d60470b2
+    exampleQubecartPartnerDetailPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - account_holder_name: HARANATH
+          account_no: '122344567'
+          address_id: 95
+          address_type: null
+          addressline1: Dum dum
+          addressline2: null
+          bank_address: null
+          bank_id: 4
+          bank_name: SBI
+          billing_name: Shome
+          branch_name: null
+          cin_no: null
+          city: 1
+          city_name: Kolkata
+          company_name: Shome Marts
+          contact_email: null
+          contact_person_designation: Owner
+          contact_person_firstname: Subhadeep
+          contact_person_lastname: Shome
+          contact_phone: '9123810564'
+          corporate_size: null
+          countries_name: India
+          country: 1
+          created_on: '2020-10-01T07:57:53'
+          gst_numbers: '1234'
+          ifsc_code: IFSC_SBINO1448
+          login_flag: null
+          pan: '1234'
+          partner_address_id: 95
+          partner_bank_id: 4
+          partner_category: 1
+          partner_code: Z5kTv5
+          partner_detail_id: 17
+          partner_status: 2
+          partner_status_name: Active
+          password: 81dc9bdb52d04dc20036dbd8313ed055
+          payment_term: null
+          pin: 700123
+          qc_partner_id: 31
+          state: 1
+          states_name: West Bengal
+          status: 1
+          updated_by: null
+          updated_on: '2020-10-01T07:57:53'
+        exception: false
+      x-response-id: dd4d2fe0-f9f3-4e1a-b8ac-cdfbcbe6a28f
+    exampleQubecartPartnerGeneratecodePost200:
+      value:
+        Errors: null
+        code: '001'
+        data: null
+        exception: false
+      x-response-id: bf2aad9e-d3be-48bc-996a-841c2f89799c
+    exampleQubecartPartnerLoginPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          billing_name: stationary 001
+          company_name: stationary 001
+          contact_email: souravmondal@msqube.com
+          contact_person_designation: null
+          contact_person_firstname: null
+          contact_person_lastname: null
+          contact_phone: '9874319714'
+          corporate_size: null
+          created_on: '2020-08-11T13:10:07'
+          gst_numbers: 1234qwerty
+          login_flag: null
+          pan: asdf12345
+          partner_address_id: 25
+          partner_bank_id: null
+          partner_category: 1
+          partner_code: yQAYtO
+          partner_detail_id: 4
+          partner_status: 2
+          partner_status_name: Active
+          payment_term: null
+          qc_partner_id: 13
+          status: 1
+          updated_by: null
+          updated_on: '2020-08-11T13:10:07'
+        exception: false
+        payload: []
+      x-response-id: 5fbcb38c-628a-4bb3-8dc2-8281286b5463
+    exampleQubecartPartnerOrdersActiveordercountPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          order_count: 16
+        exception: false
+      x-response-id: adc1e955-3ee1-474b-892d-adf24df161ee
+    exampleQubecartPartnerOrdersBagdetailsPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          bag_details:
+            bag_id: 52
+            bag_items:
+            - bag_id: 52
+              bag_item_id: 63
+              bag_item_status: 1
+              brand_created_by_role: 1
+              partner_product_id: 49
+              product_brand_id: 369
+              product_brand_name: Daawat
+              product_description: Dawaat Rozana Super Basmati Rice
+              product_discount: 30
+              product_id: 49
+              product_mrp: 435
+              product_quantity: 5
+              product_rating: 0
+              product_selling_price: 304.5
+              product_thumbnail: dawaat5kg.jpg
+              product_title: Daawat Basmati Rice,5Kg
+              product_unit: 1
+              required_quantity: 1
+              stock_quantity: 10
+              stock_statement: In Stock
+              subcategory_name: Basmati Rice
+              total_price: 304.5
+              unit_name: Kg
+              updated_by: 24
+              updated_on: '2020-08-28T19:19:40'
+            bag_ref_no: QCB218145
+            bag_status: 1
+            bag_status_name: Order Placed
+            order_created_at: '2020-09-08T22:01:03'
+            order_id: 44
+            order_ref_no: QCO559168
+            paid_to_partner: 0
+            paid_to_qubecart: 0
+            store_id: 28
+            total_price: 304.5
+            updated_by: null
+            updated_on: null
+          delivery_address:
+          - address_status: 1
+            address_status_name: Active
+            address_type: 1
+            address_type_name: Home
+            addressline1: House No. 09
+            addressline2: Changrabandha
+            city: 1
+            city_name: Kolkata
+            contact_no: '9932047263'
+            customer_address_id: 27
+            customer_id: 22
+            default_flag: 1
+            name: Haranath Basak
+            optional_contact_no: null
+            pin: 735301
+            state: 1
+            states_name: West Bengal
+        exception: false
+      x-response-id: 2da25068-0d94-498e-ac5d-6250c17b512f
     exampleQubecartPartnerOrdersGetactivePost200:
       value:
         Errors: null
@@ -103,7 +449,27 @@ components:
           updated_by: null
           updated_on: null
         exception: false
-      x-response-id: f1eba163-22fa-4ba2-8100-9a9ae469304d
+      x-response-id: bf3cb3bd-26aa-4b46-bf1c-ef5fbdbd3d43
+    exampleQubecartPartnerOrdersUpdatebagstatusPost200:
+      value:
+        Errors: null
+        code: '001'
+        data: {}
+        exception: false
+      x-response-id: 9b49fb1c-aed9-4e88-849b-4465a31f8292
+    exampleQubecartPartnerSignupPost200:
+      value:
+        Errors:
+          Business_Errors: []
+          Info: []
+          System_Errors:
+          - Code: SE001
+            Message: Error Encountered. Please Try Again
+            Payload: []
+          Warnings: []
+        code: null
+        exception: true
+      x-response-id: 6fff9d02-1477-4e0f-a612-9196b24b8508
     exampleQubecartPartnerStoreBycategoryPost200:
       value:
         Errors: null
@@ -345,317 +711,32 @@ components:
           updated_by: null
           updated_on: '2020-08-20T06:16:34'
         exception: false
-      x-response-id: 1c782fcc-3a48-4221-9e96-8072ab674970
-    exampleQubecartPartnerStoreBycategoryPost200_1:
+      x-response-id: f950769d-c2c8-4c4f-a306-c23de5cfec3d
+    exampleQubecartPartnerStoreCreatePost200:
       value:
-        Errors: null
-        code: '001'
-        data:
-          category:
-            category_name: Grocery
-          stores:
-          - address_id: 71
-            address_type: null
-            addressline1: '20'
-            addressline2: Beleghata main road
-            billing_name: sourav
-            bucket_name: qubecart
-            city: 1
-            city_name: Kolkata
-            company_name: TEST company
-            contact_email: souravcristiano502@gmail.com
-            contact_person_designation: Owner
-            contact_person_firstname: null
-            contact_person_lastname: null
-            contact_phone: '9073448330'
-            corporate_size: null
-            countries_name: India
-            country: 1
-            created_on: null
-            credit_flag: 1
-            credit_flag_name: Credit Accept
-            gst_numbers: ADF12456
-            kmDistanceFromCostomer: 2
-            latitude: 22.563293
-            login_flag: null
-            longitude: 88.39328
-            pan: DHA1234
-            partner_address_id: 17
-            partner_bank_id: 2147483647
-            partner_category: 1
-            partner_code: TEST
-            partner_detail_id: 1
-            partner_status: 2
-            partner_status_name: Active
-            password: ''
-            payment_term: null
-            pin: 700010
-            qc_partner_id: 9
-            state: 1
-            states_name: West Bengal
-            status: 1
-            storeImageFolder: qubecart_partner
-            store_address_id: 71
-            store_category: 1
-            store_category_name: Grocery
-            store_id: 30
-            store_image: null
-            store_name: Everyday Grocery
-            updated_by: null
-            updated_on: null
-          - address_id: 75
-            address_type: null
-            addressline1: 'krishnanagar '
-            addressline2: 'krishnanagar '
-            billing_name: Snehasish
-            bucket_name: qubecart
-            city: 1
-            city_name: Kolkata
-            company_name: Msqube
-            contact_email: snehasishjames007@gmail.com
-            contact_person_designation: SDE
-            contact_person_firstname: Snehasish
-            contact_person_lastname: Das
-            contact_phone: '8981497361'
-            corporate_size: null
-            countries_name: India
-            country: 1
-            created_on: '2020-08-20T05:22:58'
-            credit_flag: 1
-            credit_flag_name: Credit Accept
-            gst_numbers: 1234qwer
-            kmDistanceFromCostomer: 2
-            latitude: null
-            login_flag: null
-            longitude: null
-            pan: asdf
-            partner_address_id: 40
-            partner_bank_id: null
-            partner_category: 1
-            partner_code: LEmIxE
-            partner_detail_id: 11
-            partner_status: 2
-            partner_status_name: Active
-            password: 81dc9bdb52d04dc20036dbd8313ed055
-            payment_term: null
-            pin: 741102
-            qc_partner_id: 24
-            state: 1
-            states_name: West Bengal
-            status: 1
-            storeImageFolder: qubecart_partner
-            store_address_id: 75
-            store_category: 1
-            store_category_name: Grocery
-            store_id: 34
-            store_image: null
-            store_name: 'Das Store '
-            updated_by: null
-            updated_on: '2020-08-20T05:22:58'
-          - address_id: 60
-            address_type: null
-            addressline1: Beleghata Head Post Office
-            addressline2: Beleghata
-            billing_name: msqube
-            bucket_name: qubecart
-            city: 1
-            city_name: Kolkata
-            company_name: msqube
-            contact_email: soumik.roy.80@hmail.com
-            contact_person_designation: blabla
-            contact_person_firstname: soumik
-            contact_person_lastname: roy
-            contact_phone: '9038772775'
-            corporate_size: null
-            countries_name: India
-            country: 1
-            created_on: '2020-08-20T06:16:34'
-            credit_flag: 1
-            credit_flag_name: Credit Accept
-            gst_numbers: abcd
-            kmDistanceFromCostomer: 2
-            latitude: null
-            login_flag: null
-            longitude: null
-            pan: '12345'
-            partner_address_id: 41
-            partner_bank_id: null
-            partner_category: 2
-            partner_code: cz3CNu
-            partner_detail_id: 12
-            partner_status: 2
-            partner_status_name: Active
-            password: 81dc9bdb52d04dc20036dbd8313ed055
-            payment_term: null
-            pin: 700089
-            qc_partner_id: 25
-            state: 1
-            states_name: West Bengal
-            status: 1
-            storeImageFolder: qubecart_partner
-            store_address_id: 60
-            store_category: 1
-            store_category_name: Grocery
-            store_id: 26
-            store_image: MAS.jpg
-            store_name: Maa Annapurna Store
-            updated_by: null
-            updated_on: '2020-08-20T06:16:34'
-          - address_id: 22
-            address_type: null
-            addressline1: 112/4
-            addressline2: beleghata main road
-            billing_name: Snehasish
-            bucket_name: qubecart
-            city: 1
-            city_name: Kolkata
-            company_name: Msqube
-            contact_email: snehasishjames007@gmail.com
-            contact_person_designation: SDE
-            contact_person_firstname: Snehasish
-            contact_person_lastname: Das
-            contact_phone: '8981497361'
-            corporate_size: null
-            countries_name: India
-            country: 1
-            created_on: '2020-08-20T05:22:58'
-            credit_flag: 0
-            credit_flag_name: Credit Not Accept
-            gst_numbers: 1234qwer
-            kmDistanceFromCostomer: 2
-            latitude: null
-            login_flag: null
-            longitude: null
-            pan: asdf
-            partner_address_id: 40
-            partner_bank_id: null
-            partner_category: 1
-            partner_code: LEmIxE
-            partner_detail_id: 11
-            partner_status: 2
-            partner_status_name: Active
-            password: 81dc9bdb52d04dc20036dbd8313ed055
-            payment_term: null
-            pin: 700010
-            qc_partner_id: 24
-            state: 1
-            states_name: West Bengal
-            status: 1
-            storeImageFolder: qubecart_partner
-            store_address_id: 22
-            store_category: 1
-            store_category_name: Grocery
-            store_id: 3
-            store_image: MAS.jpg
-            store_name: Perfect store
-            updated_by: null
-            updated_on: '2020-08-20T05:22:58'
-          - address_id: 63
-            address_type: null
-            addressline1: Kestopur
-            addressline2: Kolkata
-            billing_name: Snehasish
-            bucket_name: qubecart
-            city: 1
-            city_name: Kolkata
-            company_name: Msqube
-            contact_email: snehasishjames007@gmail.com
-            contact_person_designation: SDE
-            contact_person_firstname: Snehasish
-            contact_person_lastname: Das
-            contact_phone: '8981497361'
-            corporate_size: null
-            countries_name: India
-            country: 1
-            created_on: '2020-08-20T05:22:58'
-            credit_flag: 0
-            credit_flag_name: Credit Not Accept
-            gst_numbers: 1234qwer
-            kmDistanceFromCostomer: 2
-            latitude: null
-            login_flag: null
-            longitude: null
-            pan: asdf
-            partner_address_id: 40
-            partner_bank_id: null
-            partner_category: 1
-            partner_code: LEmIxE
-            partner_detail_id: 11
-            partner_status: 2
-            partner_status_name: Active
-            password: 81dc9bdb52d04dc20036dbd8313ed055
-            payment_term: null
-            pin: 700012
-            qc_partner_id: 24
-            state: 1
-            states_name: West Bengal
-            status: 1
-            storeImageFolder: qubecart_partner
-            store_address_id: 63
-            store_category: 1
-            store_category_name: Grocery
-            store_id: 28
-            store_image: MAS.jpg
-            store_name: SD Store
-            updated_by: null
-            updated_on: '2020-08-20T05:22:58'
-          - address_id: 50
-            address_type: null
-            addressline1: 111/1
-            addressline2: highway to hell
-            billing_name: msqube
-            bucket_name: qubecart
-            city: 1
-            city_name: Kolkata
-            company_name: msqube
-            contact_email: soumik.roy.80@hmail.com
-            contact_person_designation: blabla
-            contact_person_firstname: soumik
-            contact_person_lastname: roy
-            contact_phone: '9038772775'
-            corporate_size: null
-            countries_name: India
-            country: 1
-            created_on: '2020-08-20T06:16:34'
-            credit_flag: 0
-            credit_flag_name: Credit Not Accept
-            gst_numbers: abcd
-            kmDistanceFromCostomer: 2
-            latitude: null
-            login_flag: null
-            longitude: null
-            pan: '12345'
-            partner_address_id: 41
-            partner_bank_id: null
-            partner_category: 2
-            partner_code: cz3CNu
-            partner_detail_id: 12
-            partner_status: 2
-            partner_status_name: Active
-            password: 81dc9bdb52d04dc20036dbd8313ed055
-            payment_term: null
-            pin: 999999
-            qc_partner_id: 25
-            state: 1
-            states_name: West Bengal
-            status: 1
-            storeImageFolder: qubecart_partner
-            store_address_id: 50
-            store_category: 1
-            store_category_name: Grocery
-            store_id: 16
-            store_image: MAS.jpg
-            store_name: HighwaytoHell Store ps AC/DC
-            updated_by: null
-            updated_on: '2020-08-20T06:16:34'
-        exception: false
-      x-response-id: 5062c1d5-6cca-47ae-8e4c-d16d4f4ad47f
+        Errors:
+          Business_Errors: []
+          Info: []
+          System_Errors:
+          - Code: SE001
+            Message: Error Encountered. Please Try Again
+            Payload: []
+          Warnings: []
+        code: null
+        exception: true
+      x-response-id: e515f7e3-7996-4969-93de-02a9777dd6cb
     exampleQubecartPartnerStoreCreateproductPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: adfc35f8-9ab1-42bd-8c67-44a3a98caee4
+      x-response-id: b74dbe9b-6131-4211-9250-f32aaa090f76
+    exampleQubecartPartnerStoreEditproductPost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: 4f6d022f-d7a9-4f58-ae7a-a226f70e6617
     exampleQubecartPartnerStoreGetPost200:
       value:
         Errors: null
@@ -679,7 +760,7 @@ components:
           store_location: null
           store_name: wonderland
         exception: false
-      x-response-id: 1cf2ebc1-df10-482c-87b5-c73d47c8531b
+      x-response-id: ee2149e2-ff2d-4715-9553-26ae4f7808cc
     exampleQubecartPartnerStoreGetbyidPost200:
       value:
         Errors: null
@@ -703,7 +784,7 @@ components:
           store_name: HighwaytoHell Store
           store_type_name: Grocery
         exception: false
-      x-response-id: edb65c1b-a318-4259-a411-33d87037f4c8
+      x-response-id: b6b40ec9-68f3-4998-bea8-9622e15e4ec5
     exampleQubecartPartnerStoreGetproductsPost200:
       value:
         Errors: null
@@ -843,31 +924,8 @@ components:
             updated_by: 25
             updated_on: '2020-08-28T09:04:36'
         exception: false
-      x-response-id: 51486154-7a6c-425c-aabf-30da2bd46263
+      x-response-id: 93ea2de1-ff11-4f63-8245-fddae3f56239
     exampleQubecartPartnerStoreGetproductsbybrandPost200:
-      value:
-        Errors: null
-        code: '001'
-        data:
-        - brand_created_by_role: 1
-          partner_product_id: 2
-          product_brand_id: 1
-          product_description: 'India Gate Basmati Rice, Rozana. Used finest '
-          product_quantity: 5
-          product_rating: 0
-          product_stock_id: 2
-          product_thumbnail: indiagatebasmatirice.jpg
-          product_unit: 1
-          stock_last_updated_on: '2020-08-24T07:50:53'
-          stock_quantity: 15
-          store_id: 3
-          store_name: Perfect store
-          unit_short: Kg
-          updated_by: 9
-          updated_on: '2020-08-19T07:33:31'
-        exception: false
-      x-response-id: 7ee499cc-21ae-44eb-9468-5217e2102ba2
-    exampleQubecartPartnerStoreGetproductsbybrandPost200_1:
       value:
         Errors: null
         code: '001'
@@ -946,19 +1004,96 @@ components:
           updated_by: 24
           updated_on: '2020-08-27T18:46:17'
         exception: false
-      x-response-id: fe88cff2-0489-40ab-8282-9f0e253bb7d9
+      x-response-id: c1c467c3-68e5-486d-992a-25569116d48d
+    exampleQubecartPartnerStoreGetsingleproductPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+          packaged_product: 1
+          partner_product_id: 54
+          product_description: India Gate Basmati Rice 25Kg
+          product_discount: 6
+          product_gst_percentage: 8
+          product_mrp: 1800
+          product_quantity: 25
+          product_selling_price: 1700
+          product_thumbnail: d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg
+          unit: 1
+        exception: false
+      x-response-id: 49593411-c1b3-4368-a990-88bf6d407835
+    exampleQubecartPartnerStoreGetstockhistoryPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - inevntory_txn_id: 40
+          partner_product_id: 31
+          product_brand_id: 333
+          product_id: 31
+          quantity: 5
+          store_id: 24
+          txn_date: '2020-08-28T04:00:29'
+          txn_ref_no: TXNOUT24-31-1598587229
+          txn_type: 2
+          txn_type_name: Out
+        - inevntory_txn_id: 27
+          partner_product_id: 31
+          product_brand_id: 333
+          product_id: 31
+          quantity: 10
+          store_id: 24
+          txn_date: '2020-08-28T00:15:24'
+          txn_ref_no: TXNIN24-31-1598573723
+          txn_type: 1
+          txn_type_name: In
+        exception: false
+      x-response-id: 8675dd52-0968-4e17-9b60-8cb1a5fd84f4
     exampleQubecartPartnerStoreUpdatePost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 8e50b9c3-c025-45fa-b659-1897674b77f7
+      x-response-id: 8c2ca1cb-9f62-4a85-977a-b87f896323d3
     exampleQubecartPartnerStoreUpdatestockPost200:
       value:
         Errors: null
         code: '001'
         exception: false
-      x-response-id: 0ee2e7d3-eebb-4307-b0c7-3e8294918099
+      x-response-id: efc28509-3997-453c-9dd2-057f210a67dc
+    exampleQubecartPartnerTemplateGetPost200:
+      value:
+        Errors: null
+        code: '001'
+        data:
+        - admn_template_refno: '1597400846'
+          item_name: Rice
+          partner_template_detail_id: 1
+          status: 1
+          template_id: 10
+        - admn_template_refno: '1597400846'
+          item_name: Musturd Oil
+          partner_template_detail_id: 2
+          status: 1
+          template_id: 10
+        - admn_template_refno: '1597400846'
+          item_name: ' Refine Oil'
+          partner_template_detail_id: 3
+          status: 1
+          template_id: 10
+        - admn_template_refno: '1597400846'
+          item_name: Coffee
+          partner_template_detail_id: 4
+          status: 1
+          template_id: 10
+        - admn_template_refno: '1597400846'
+          item_name: Tea
+          partner_template_detail_id: 5
+          status: 1
+          template_id: 10
+        exception: false
+        payload: []
+      x-response-id: d5476acf-0596-415f-96e7-9ac3e81e7d00
     exampleQubecartPartnerTemplateInfoPost200:
       value:
         Errors: null
@@ -1003,7 +1138,14 @@ components:
           template_id: 29
           template_name: 'Foodgrains, Oils & Masala '
         exception: false
-      x-response-id: 94e5034a-07d7-48f7-becb-a49351990733
+      x-response-id: d2269876-b6af-4a6b-a1d5-f9dd78280450
+    exampleQubecartPartnerUpdatePost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+        payload: []
+      x-response-id: 3202bd8d-0ae8-4485-ae25-f897011f3072
   schemas:
     schemaQubecartPartnerBrandCreatePost200:
       properties:
@@ -1078,6 +1220,1101 @@ components:
       - code
       - exception
       - Errors
+      type: object
+    schemaQubecartPartnerBrandUpdatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartPartnerCartdetailsPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            credit_flag:
+              format: int32
+              type: integer
+            price_breakup:
+              items:
+                allOf:
+                - properties:
+                    key:
+                      type: string
+                    sign_flag:
+                      format: int32
+                      type: integer
+                    value:
+                      type: number
+                  required:
+                  - key
+                  - value
+                  - sign_flag
+                  type: object
+                - properties:
+                    key:
+                      type: string
+                    sign_flag:
+                      format: int32
+                      type: integer
+                    value:
+                      format: int32
+                      type: integer
+                  required:
+                  - key
+                  - value
+                  - sign_flag
+                  type: object
+                - properties:
+                    key:
+                      type: string
+                    sign_flag:
+                      format: int32
+                      type: integer
+                    value:
+                      type: number
+                  required:
+                  - key
+                  - value
+                  - sign_flag
+                  type: object
+              type: array
+            store_details:
+              items:
+                allOf:
+                - properties:
+                    address_id:
+                      format: int32
+                      type: integer
+                    address_type: {}
+                    addressline1:
+                      type: string
+                    addressline2:
+                      type: string
+                    bag_total_price:
+                      type: number
+                    bucket_name:
+                      type: string
+                    city:
+                      format: int32
+                      type: integer
+                    city_name:
+                      type: string
+                    countries_name:
+                      type: string
+                    country:
+                      format: int32
+                      type: integer
+                    created_on: {}
+                    credit_flag:
+                      format: int32
+                      type: integer
+                    item_details:
+                      items:
+                        allOf:
+                        - properties:
+                            bucket_name:
+                              type: string
+                            itemImageFolder:
+                              type: string
+                            packaged_product:
+                              format: int32
+                              type: integer
+                            paroduct_details_id:
+                              format: int32
+                              type: integer
+                            product_description:
+                              type: string
+                            product_id:
+                              format: int32
+                              type: integer
+                            product_quantity:
+                              format: int32
+                              type: integer
+                            product_rating:
+                              format: int32
+                              type: integer
+                            product_selling_price:
+                              type: number
+                            product_thumbnail:
+                              type: string
+                            product_unit:
+                              format: int32
+                              type: integer
+                            product_unit_name:
+                              type: string
+                            product_variant: {}
+                            required_product_quantity:
+                              format: int32
+                              type: integer
+                            store_id:
+                              format: int32
+                              type: integer
+                            total_product_price:
+                              type: number
+                          required:
+                          - paroduct_details_id
+                          - product_id
+                          - product_description
+                          - product_unit
+                          - product_quantity
+                          - product_variant
+                          - product_rating
+                          - product_thumbnail
+                          - packaged_product
+                          - product_unit_name
+                          - store_id
+                          - product_selling_price
+                          - bucket_name
+                          - itemImageFolder
+                          - total_product_price
+                          - required_product_quantity
+                          type: object
+                        - properties:
+                            bucket_name:
+                              type: string
+                            itemImageFolder:
+                              type: string
+                            packaged_product:
+                              format: int32
+                              type: integer
+                            paroduct_details_id:
+                              format: int32
+                              type: integer
+                            product_description:
+                              type: string
+                            product_id:
+                              format: int32
+                              type: integer
+                            product_quantity:
+                              format: int32
+                              type: integer
+                            product_rating:
+                              format: int32
+                              type: integer
+                            product_selling_price:
+                              format: int32
+                              type: integer
+                            product_thumbnail:
+                              type: string
+                            product_unit:
+                              format: int32
+                              type: integer
+                            product_unit_name:
+                              type: string
+                            product_variant: {}
+                            required_product_quantity:
+                              format: int32
+                              type: integer
+                            store_id:
+                              format: int32
+                              type: integer
+                            total_product_price:
+                              format: int32
+                              type: integer
+                          required:
+                          - paroduct_details_id
+                          - product_id
+                          - product_description
+                          - product_unit
+                          - product_quantity
+                          - product_variant
+                          - product_rating
+                          - product_thumbnail
+                          - packaged_product
+                          - product_unit_name
+                          - store_id
+                          - product_selling_price
+                          - bucket_name
+                          - itemImageFolder
+                          - total_product_price
+                          - required_product_quantity
+                          type: object
+                      type: array
+                    pin:
+                      format: int32
+                      type: integer
+                    qc_partner_id:
+                      format: int32
+                      type: integer
+                    region_id:
+                      format: int32
+                      type: integer
+                    state:
+                      format: int32
+                      type: integer
+                    states_name:
+                      type: string
+                    storeImageFolder:
+                      type: string
+                    store_address_id:
+                      format: int32
+                      type: integer
+                    store_category:
+                      format: int32
+                      type: integer
+                    store_category_name:
+                      type: string
+                    store_id:
+                      format: int32
+                      type: integer
+                    store_image:
+                      type: string
+                    store_location: {}
+                    store_name:
+                      type: string
+                    store_rating:
+                      format: int32
+                      type: integer
+                    store_status:
+                      format: int32
+                      type: integer
+                    updated_on: {}
+                  required:
+                  - store_id
+                  - store_address_id
+                  - store_name
+                  - store_location
+                  - store_category
+                  - store_image
+                  - qc_partner_id
+                  - store_rating
+                  - credit_flag
+                  - region_id
+                  - store_status
+                  - created_on
+                  - updated_on
+                  - address_id
+                  - addressline1
+                  - addressline2
+                  - pin
+                  - city
+                  - state
+                  - country
+                  - address_type
+                  - city_name
+                  - states_name
+                  - countries_name
+                  - store_category_name
+                  - bucket_name
+                  - storeImageFolder
+                  - item_details
+                  - bag_total_price
+                  type: object
+                - properties:
+                    address_id:
+                      format: int32
+                      type: integer
+                    address_type: {}
+                    addressline1:
+                      type: string
+                    addressline2:
+                      type: string
+                    bag_total_price:
+                      format: int32
+                      type: integer
+                    bucket_name:
+                      type: string
+                    city:
+                      format: int32
+                      type: integer
+                    city_name:
+                      type: string
+                    countries_name:
+                      type: string
+                    country:
+                      format: int32
+                      type: integer
+                    created_on: {}
+                    credit_flag:
+                      format: int32
+                      type: integer
+                    item_details:
+                      items: {}
+                      type: array
+                    pin:
+                      format: int32
+                      type: integer
+                    qc_partner_id:
+                      format: int32
+                      type: integer
+                    region_id:
+                      format: int32
+                      type: integer
+                    state:
+                      format: int32
+                      type: integer
+                    states_name:
+                      type: string
+                    storeImageFolder:
+                      type: string
+                    store_address_id:
+                      format: int32
+                      type: integer
+                    store_category:
+                      format: int32
+                      type: integer
+                    store_category_name:
+                      type: string
+                    store_id:
+                      format: int32
+                      type: integer
+                    store_image:
+                      type: string
+                    store_location: {}
+                    store_name:
+                      type: string
+                    store_rating:
+                      format: int32
+                      type: integer
+                    store_status:
+                      format: int32
+                      type: integer
+                    updated_on: {}
+                  required:
+                  - store_id
+                  - store_address_id
+                  - store_name
+                  - store_location
+                  - store_category
+                  - store_image
+                  - qc_partner_id
+                  - store_rating
+                  - credit_flag
+                  - region_id
+                  - store_status
+                  - created_on
+                  - updated_on
+                  - address_id
+                  - addressline1
+                  - addressline2
+                  - pin
+                  - city
+                  - state
+                  - country
+                  - address_type
+                  - city_name
+                  - states_name
+                  - countries_name
+                  - store_category_name
+                  - bucket_name
+                  - storeImageFolder
+                  - item_details
+                  - bag_total_price
+                  type: object
+              type: array
+          required:
+          - store_details
+          - price_breakup
+          - credit_flag
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerChangepasswordPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+        payload:
+          items: {}
+          type: array
+      required:
+      - code
+      - exception
+      - Errors
+      - payload
+      type: object
+    schemaQubecartPartnerCheckuniquePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+        payload:
+          items: {}
+          type: array
+      required:
+      - code
+      - exception
+      - Errors
+      - payload
+      type: object
+    schemaQubecartPartnerCreatefcmPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data: {}
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerCreditcustomerGetPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              address_id:
+                format: int32
+                type: integer
+              address_type: {}
+              addressline1:
+                type: string
+              addressline2:
+                type: string
+              city:
+                format: int32
+                type: integer
+              city_name:
+                type: string
+              countries_name:
+                type: string
+              country:
+                format: int32
+                type: integer
+              credit_association_id:
+                format: int32
+                type: integer
+              credit_status:
+                format: int32
+                type: integer
+              credit_status_name:
+                type: string
+              current_expendeture:
+                format: int32
+                type: integer
+              customer_id:
+                format: int32
+                type: integer
+              customer_name:
+                type: string
+              email_id:
+                type: string
+              max_monthly_credit:
+                format: int32
+                type: integer
+              partner_id:
+                format: int32
+                type: integer
+              phone_no:
+                type: string
+              pin:
+                format: int32
+                type: integer
+              remaining_expendeture:
+                format: int32
+                type: integer
+              state:
+                format: int32
+                type: integer
+              states_name:
+                type: string
+              store_category:
+                format: int32
+                type: integer
+              store_category_name:
+                type: string
+              store_id:
+                format: int32
+                type: integer
+              store_name:
+                type: string
+              updated_at:
+                type: string
+            required:
+            - credit_association_id
+            - partner_id
+            - customer_id
+            - max_monthly_credit
+            - current_expendeture
+            - updated_at
+            - credit_status
+            - store_id
+            - credit_status_name
+            - remaining_expendeture
+            - customer_name
+            - email_id
+            - phone_no
+            - store_name
+            - store_category
+            - store_category_name
+            - address_id
+            - addressline1
+            - addressline2
+            - pin
+            - city
+            - state
+            - country
+            - address_type
+            - city_name
+            - states_name
+            - countries_name
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerCreditcustomerUpdaterequestPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data: {}
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerDetailPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              account_holder_name:
+                type: string
+              account_no:
+                type: string
+              address_id:
+                format: int32
+                type: integer
+              address_type: {}
+              addressline1:
+                type: string
+              addressline2: {}
+              bank_address: {}
+              bank_id:
+                format: int32
+                type: integer
+              bank_name:
+                type: string
+              billing_name:
+                type: string
+              branch_name: {}
+              cin_no: {}
+              city:
+                format: int32
+                type: integer
+              city_name:
+                type: string
+              company_name:
+                type: string
+              contact_email: {}
+              contact_person_designation:
+                type: string
+              contact_person_firstname:
+                type: string
+              contact_person_lastname:
+                type: string
+              contact_phone:
+                type: string
+              corporate_size: {}
+              countries_name:
+                type: string
+              country:
+                format: int32
+                type: integer
+              created_on:
+                type: string
+              gst_numbers:
+                type: string
+              ifsc_code:
+                type: string
+              login_flag: {}
+              pan:
+                type: string
+              partner_address_id:
+                format: int32
+                type: integer
+              partner_bank_id:
+                format: int32
+                type: integer
+              partner_category:
+                format: int32
+                type: integer
+              partner_code:
+                type: string
+              partner_detail_id:
+                format: int32
+                type: integer
+              partner_status:
+                format: int32
+                type: integer
+              partner_status_name:
+                type: string
+              password:
+                type: string
+              payment_term: {}
+              pin:
+                format: int32
+                type: integer
+              qc_partner_id:
+                format: int32
+                type: integer
+              state:
+                format: int32
+                type: integer
+              states_name:
+                type: string
+              status:
+                format: int32
+                type: integer
+              updated_by: {}
+              updated_on:
+                type: string
+            required:
+            - qc_partner_id
+            - partner_category
+            - partner_code
+            - partner_status
+            - login_flag
+            - created_on
+            - partner_detail_id
+            - company_name
+            - contact_phone
+            - billing_name
+            - gst_numbers
+            - corporate_size
+            - payment_term
+            - updated_on
+            - updated_by
+            - partner_address_id
+            - pan
+            - contact_email
+            - contact_person_firstname
+            - contact_person_lastname
+            - contact_person_designation
+            - partner_bank_id
+            - status
+            - password
+            - partner_status_name
+            - address_id
+            - addressline1
+            - addressline2
+            - pin
+            - city
+            - state
+            - country
+            - address_type
+            - city_name
+            - states_name
+            - countries_name
+            - bank_id
+            - account_holder_name
+            - account_no
+            - ifsc_code
+            - bank_name
+            - branch_name
+            - cin_no
+            - bank_address
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerGeneratecodePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data: {}
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerLoginPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            billing_name:
+              type: string
+            company_name:
+              type: string
+            contact_email:
+              type: string
+            contact_person_designation: {}
+            contact_person_firstname: {}
+            contact_person_lastname: {}
+            contact_phone:
+              type: string
+            corporate_size: {}
+            created_on:
+              type: string
+            gst_numbers:
+              type: string
+            login_flag: {}
+            pan:
+              type: string
+            partner_address_id:
+              format: int32
+              type: integer
+            partner_bank_id: {}
+            partner_category:
+              format: int32
+              type: integer
+            partner_code:
+              type: string
+            partner_detail_id:
+              format: int32
+              type: integer
+            partner_status:
+              format: int32
+              type: integer
+            partner_status_name:
+              type: string
+            payment_term: {}
+            qc_partner_id:
+              format: int32
+              type: integer
+            status:
+              format: int32
+              type: integer
+            updated_by: {}
+            updated_on:
+              type: string
+          required:
+          - qc_partner_id
+          - partner_category
+          - partner_code
+          - partner_status
+          - login_flag
+          - created_on
+          - partner_detail_id
+          - company_name
+          - contact_phone
+          - billing_name
+          - gst_numbers
+          - corporate_size
+          - payment_term
+          - updated_on
+          - updated_by
+          - partner_address_id
+          - pan
+          - contact_email
+          - contact_person_firstname
+          - contact_person_lastname
+          - contact_person_designation
+          - partner_bank_id
+          - status
+          - partner_status_name
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+        payload:
+          items: {}
+          type: array
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      - payload
+      type: object
+    schemaQubecartPartnerOrdersActiveordercountPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            order_count:
+              format: int32
+              type: integer
+          required:
+          - order_count
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerOrdersBagdetailsPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            bag_details:
+              properties:
+                bag_id:
+                  format: int32
+                  type: integer
+                bag_items:
+                  items:
+                    properties:
+                      bag_id:
+                        format: int32
+                        type: integer
+                      bag_item_id:
+                        format: int32
+                        type: integer
+                      bag_item_status:
+                        format: int32
+                        type: integer
+                      brand_created_by_role:
+                        format: int32
+                        type: integer
+                      partner_product_id:
+                        format: int32
+                        type: integer
+                      product_brand_id:
+                        format: int32
+                        type: integer
+                      product_brand_name:
+                        type: string
+                      product_description:
+                        type: string
+                      product_discount:
+                        format: int32
+                        type: integer
+                      product_id:
+                        format: int32
+                        type: integer
+                      product_mrp:
+                        format: int32
+                        type: integer
+                      product_quantity:
+                        format: int32
+                        type: integer
+                      product_rating:
+                        format: int32
+                        type: integer
+                      product_selling_price:
+                        type: number
+                      product_thumbnail:
+                        type: string
+                      product_title:
+                        type: string
+                      product_unit:
+                        format: int32
+                        type: integer
+                      required_quantity:
+                        format: int32
+                        type: integer
+                      stock_quantity:
+                        format: int32
+                        type: integer
+                      stock_statement:
+                        type: string
+                      subcategory_name:
+                        type: string
+                      total_price:
+                        type: number
+                      unit_name:
+                        type: string
+                      updated_by:
+                        format: int32
+                        type: integer
+                      updated_on:
+                        type: string
+                    required:
+                    - bag_item_id
+                    - product_id
+                    - required_quantity
+                    - total_price
+                    - bag_id
+                    - bag_item_status
+                    - partner_product_id
+                    - updated_on
+                    - updated_by
+                    - product_description
+                    - product_unit
+                    - product_quantity
+                    - product_rating
+                    - product_mrp
+                    - product_selling_price
+                    - product_discount
+                    - stock_quantity
+                    - product_thumbnail
+                    - unit_name
+                    - brand_created_by_role
+                    - product_brand_id
+                    - product_brand_name
+                    - subcategory_name
+                    - stock_statement
+                    - product_title
+                    type: object
+                  type: array
+                bag_ref_no:
+                  type: string
+                bag_status:
+                  format: int32
+                  type: integer
+                bag_status_name:
+                  type: string
+                order_created_at:
+                  type: string
+                order_id:
+                  format: int32
+                  type: integer
+                order_ref_no:
+                  type: string
+                paid_to_partner:
+                  format: int32
+                  type: integer
+                paid_to_qubecart:
+                  format: int32
+                  type: integer
+                store_id:
+                  format: int32
+                  type: integer
+                total_price:
+                  type: number
+                updated_by: {}
+                updated_on: {}
+              required:
+              - bag_id
+              - store_id
+              - bag_ref_no
+              - updated_on
+              - updated_by
+              - order_id
+              - bag_status
+              - paid_to_partner
+              - paid_to_qubecart
+              - total_price
+              - order_ref_no
+              - order_created_at
+              - bag_status_name
+              - bag_items
+              type: object
+            delivery_address:
+              items:
+                properties:
+                  address_status:
+                    format: int32
+                    type: integer
+                  address_status_name:
+                    type: string
+                  address_type:
+                    format: int32
+                    type: integer
+                  address_type_name:
+                    type: string
+                  addressline1:
+                    type: string
+                  addressline2:
+                    type: string
+                  city:
+                    format: int32
+                    type: integer
+                  city_name:
+                    type: string
+                  contact_no:
+                    type: string
+                  customer_address_id:
+                    format: int32
+                    type: integer
+                  customer_id:
+                    format: int32
+                    type: integer
+                  default_flag:
+                    format: int32
+                    type: integer
+                  name:
+                    type: string
+                  optional_contact_no: {}
+                  pin:
+                    format: int32
+                    type: integer
+                  state:
+                    format: int32
+                    type: integer
+                  states_name:
+                    type: string
+                required:
+                - customer_address_id
+                - name
+                - contact_no
+                - optional_contact_no
+                - addressline1
+                - addressline2
+                - city
+                - state
+                - pin
+                - customer_id
+                - address_type
+                - default_flag
+                - address_status
+                - city_name
+                - states_name
+                - address_type_name
+                - address_status_name
+                type: object
+              type: array
+          required:
+          - bag_details
+          - delivery_address
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
       type: object
     schemaQubecartPartnerOrdersGetactivePost200:
       properties:
@@ -1156,6 +2393,67 @@ components:
       - Errors
       - data
       type: object
+    schemaQubecartPartnerOrdersUpdatebagstatusPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties: {}
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerSignupPost200:
+      properties:
+        Errors:
+          properties:
+            Business_Errors:
+              items: {}
+              type: array
+            Info:
+              items: {}
+              type: array
+            System_Errors:
+              items:
+                properties:
+                  Code:
+                    type: string
+                  Message:
+                    type: string
+                  Payload:
+                    items: {}
+                    type: array
+                required:
+                - Code
+                - Message
+                - Payload
+                type: object
+              type: array
+            Warnings:
+              items: {}
+              type: array
+          required:
+          - Info
+          - Business_Errors
+          - Warnings
+          - System_Errors
+          type: object
+        code: {}
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
     schemaQubecartPartnerStoreBycategoryPost200:
       properties:
         Errors: {}
@@ -1205,10 +2503,10 @@ components:
                   format: int32
                   type: integer
                 latitude:
-                  type: float
+                  type: number
                 login_flag: {}
                 longitude:
-                  type: float
+                  type: number
                 pan:
                   type: string
                 partner_address_id:
@@ -1475,500 +2773,42 @@ components:
       - Errors
       - data
       type: object
-    schemaQubecartPartnerStoreBycategoryPost200_1:
+    schemaQubecartPartnerStoreCreatePost200:
       properties:
-        Errors: {}
-        code:
-          type: string
-        data:
+        Errors:
           properties:
-            category:
-              properties:
-                category_name:
-                  type: string
-              required:
-              - category_name
-              type: object
-            stores:
+            Business_Errors:
+              items: {}
+              type: array
+            Info:
+              items: {}
+              type: array
+            System_Errors:
               items:
-                allOf:
-                - properties:
-                    address_id:
-                      format: int32
-                      type: integer
-                    address_type: {}
-                    addressline1:
-                      type: string
-                    addressline2:
-                      type: string
-                    billing_name:
-                      type: string
-                    bucket_name:
-                      type: string
-                    city:
-                      format: int32
-                      type: integer
-                    city_name:
-                      type: string
-                    company_name:
-                      type: string
-                    contact_email:
-                      type: string
-                    contact_person_designation:
-                      type: string
-                    contact_person_firstname: {}
-                    contact_person_lastname: {}
-                    contact_phone:
-                      type: string
-                    corporate_size: {}
-                    countries_name:
-                      type: string
-                    country:
-                      format: int32
-                      type: integer
-                    created_on: {}
-                    credit_flag:
-                      format: int32
-                      type: integer
-                    credit_flag_name:
-                      type: string
-                    gst_numbers:
-                      type: string
-                    kmDistanceFromCostomer:
-                      format: int32
-                      type: integer
-                    latitude:
-                      type: float
-                    login_flag: {}
-                    longitude:
-                      type: float
-                    pan:
-                      type: string
-                    partner_address_id:
-                      format: int32
-                      type: integer
-                    partner_bank_id:
-                      format: int32
-                      type: integer
-                    partner_category:
-                      format: int32
-                      type: integer
-                    partner_code:
-                      type: string
-                    partner_detail_id:
-                      format: int32
-                      type: integer
-                    partner_status:
-                      format: int32
-                      type: integer
-                    partner_status_name:
-                      type: string
-                    password:
-                      type: string
-                    payment_term: {}
-                    pin:
-                      format: int32
-                      type: integer
-                    qc_partner_id:
-                      format: int32
-                      type: integer
-                    state:
-                      format: int32
-                      type: integer
-                    states_name:
-                      type: string
-                    status:
-                      format: int32
-                      type: integer
-                    storeImageFolder:
-                      type: string
-                    store_address_id:
-                      format: int32
-                      type: integer
-                    store_category:
-                      format: int32
-                      type: integer
-                    store_category_name:
-                      type: string
-                    store_id:
-                      format: int32
-                      type: integer
-                    store_image: {}
-                    store_name:
-                      type: string
-                    updated_by: {}
-                    updated_on: {}
-                  required:
-                  - store_id
-                  - store_address_id
-                  - store_name
-                  - store_category
-                  - store_image
-                  - qc_partner_id
-                  - latitude
-                  - longitude
-                  - credit_flag
-                  - store_category_name
-                  - kmDistanceFromCostomer
-                  - address_id
-                  - addressline1
-                  - addressline2
-                  - pin
-                  - city
-                  - state
-                  - country
-                  - address_type
-                  - city_name
-                  - states_name
-                  - countries_name
-                  - partner_category
-                  - partner_code
-                  - partner_status
-                  - login_flag
-                  - created_on
-                  - partner_status_name
-                  - credit_flag_name
-                  - partner_detail_id
-                  - company_name
-                  - contact_phone
-                  - billing_name
-                  - gst_numbers
-                  - corporate_size
-                  - payment_term
-                  - updated_on
-                  - updated_by
-                  - partner_address_id
-                  - pan
-                  - contact_email
-                  - contact_person_firstname
-                  - contact_person_lastname
-                  - contact_person_designation
-                  - partner_bank_id
-                  - status
-                  - password
-                  - bucket_name
-                  - storeImageFolder
-                  type: object
-                - properties:
-                    address_id:
-                      format: int32
-                      type: integer
-                    address_type: {}
-                    addressline1:
-                      type: string
-                    addressline2:
-                      type: string
-                    billing_name:
-                      type: string
-                    bucket_name:
-                      type: string
-                    city:
-                      format: int32
-                      type: integer
-                    city_name:
-                      type: string
-                    company_name:
-                      type: string
-                    contact_email:
-                      type: string
-                    contact_person_designation:
-                      type: string
-                    contact_person_firstname:
-                      type: string
-                    contact_person_lastname:
-                      type: string
-                    contact_phone:
-                      type: string
-                    corporate_size: {}
-                    countries_name:
-                      type: string
-                    country:
-                      format: int32
-                      type: integer
-                    created_on:
-                      type: string
-                    credit_flag:
-                      format: int32
-                      type: integer
-                    credit_flag_name:
-                      type: string
-                    gst_numbers:
-                      type: string
-                    kmDistanceFromCostomer:
-                      format: int32
-                      type: integer
-                    latitude: {}
-                    login_flag: {}
-                    longitude: {}
-                    pan:
-                      type: string
-                    partner_address_id:
-                      format: int32
-                      type: integer
-                    partner_bank_id: {}
-                    partner_category:
-                      format: int32
-                      type: integer
-                    partner_code:
-                      type: string
-                    partner_detail_id:
-                      format: int32
-                      type: integer
-                    partner_status:
-                      format: int32
-                      type: integer
-                    partner_status_name:
-                      type: string
-                    password:
-                      type: string
-                    payment_term: {}
-                    pin:
-                      format: int32
-                      type: integer
-                    qc_partner_id:
-                      format: int32
-                      type: integer
-                    state:
-                      format: int32
-                      type: integer
-                    states_name:
-                      type: string
-                    status:
-                      format: int32
-                      type: integer
-                    storeImageFolder:
-                      type: string
-                    store_address_id:
-                      format: int32
-                      type: integer
-                    store_category:
-                      format: int32
-                      type: integer
-                    store_category_name:
-                      type: string
-                    store_id:
-                      format: int32
-                      type: integer
-                    store_image: {}
-                    store_name:
-                      type: string
-                    updated_by: {}
-                    updated_on:
-                      type: string
-                  required:
-                  - store_id
-                  - store_address_id
-                  - store_name
-                  - store_category
-                  - store_image
-                  - qc_partner_id
-                  - latitude
-                  - longitude
-                  - credit_flag
-                  - store_category_name
-                  - kmDistanceFromCostomer
-                  - address_id
-                  - addressline1
-                  - addressline2
-                  - pin
-                  - city
-                  - state
-                  - country
-                  - address_type
-                  - city_name
-                  - states_name
-                  - countries_name
-                  - partner_category
-                  - partner_code
-                  - partner_status
-                  - login_flag
-                  - created_on
-                  - partner_status_name
-                  - credit_flag_name
-                  - partner_detail_id
-                  - company_name
-                  - contact_phone
-                  - billing_name
-                  - gst_numbers
-                  - corporate_size
-                  - payment_term
-                  - updated_on
-                  - updated_by
-                  - partner_address_id
-                  - pan
-                  - contact_email
-                  - contact_person_firstname
-                  - contact_person_lastname
-                  - contact_person_designation
-                  - partner_bank_id
-                  - status
-                  - password
-                  - bucket_name
-                  - storeImageFolder
-                  type: object
-                - properties:
-                    address_id:
-                      format: int32
-                      type: integer
-                    address_type: {}
-                    addressline1:
-                      type: string
-                    addressline2:
-                      type: string
-                    billing_name:
-                      type: string
-                    bucket_name:
-                      type: string
-                    city:
-                      format: int32
-                      type: integer
-                    city_name:
-                      type: string
-                    company_name:
-                      type: string
-                    contact_email:
-                      type: string
-                    contact_person_designation:
-                      type: string
-                    contact_person_firstname:
-                      type: string
-                    contact_person_lastname:
-                      type: string
-                    contact_phone:
-                      type: string
-                    corporate_size: {}
-                    countries_name:
-                      type: string
-                    country:
-                      format: int32
-                      type: integer
-                    created_on:
-                      type: string
-                    credit_flag:
-                      format: int32
-                      type: integer
-                    credit_flag_name:
-                      type: string
-                    gst_numbers:
-                      type: string
-                    kmDistanceFromCostomer:
-                      format: int32
-                      type: integer
-                    latitude: {}
-                    login_flag: {}
-                    longitude: {}
-                    pan:
-                      type: string
-                    partner_address_id:
-                      format: int32
-                      type: integer
-                    partner_bank_id: {}
-                    partner_category:
-                      format: int32
-                      type: integer
-                    partner_code:
-                      type: string
-                    partner_detail_id:
-                      format: int32
-                      type: integer
-                    partner_status:
-                      format: int32
-                      type: integer
-                    partner_status_name:
-                      type: string
-                    password:
-                      type: string
-                    payment_term: {}
-                    pin:
-                      format: int32
-                      type: integer
-                    qc_partner_id:
-                      format: int32
-                      type: integer
-                    state:
-                      format: int32
-                      type: integer
-                    states_name:
-                      type: string
-                    status:
-                      format: int32
-                      type: integer
-                    storeImageFolder:
-                      type: string
-                    store_address_id:
-                      format: int32
-                      type: integer
-                    store_category:
-                      format: int32
-                      type: integer
-                    store_category_name:
-                      type: string
-                    store_id:
-                      format: int32
-                      type: integer
-                    store_image:
-                      type: string
-                    store_name:
-                      type: string
-                    updated_by: {}
-                    updated_on:
-                      type: string
-                  required:
-                  - store_id
-                  - store_address_id
-                  - store_name
-                  - store_category
-                  - store_image
-                  - qc_partner_id
-                  - latitude
-                  - longitude
-                  - credit_flag
-                  - store_category_name
-                  - kmDistanceFromCostomer
-                  - address_id
-                  - addressline1
-                  - addressline2
-                  - pin
-                  - city
-                  - state
-                  - country
-                  - address_type
-                  - city_name
-                  - states_name
-                  - countries_name
-                  - partner_category
-                  - partner_code
-                  - partner_status
-                  - login_flag
-                  - created_on
-                  - partner_status_name
-                  - credit_flag_name
-                  - partner_detail_id
-                  - company_name
-                  - contact_phone
-                  - billing_name
-                  - gst_numbers
-                  - corporate_size
-                  - payment_term
-                  - updated_on
-                  - updated_by
-                  - partner_address_id
-                  - pan
-                  - contact_email
-                  - contact_person_firstname
-                  - contact_person_lastname
-                  - contact_person_designation
-                  - partner_bank_id
-                  - status
-                  - password
-                  - bucket_name
-                  - storeImageFolder
-                  type: object
+                properties:
+                  Code:
+                    type: string
+                  Message:
+                    type: string
+                  Payload:
+                    items: {}
+                    type: array
+                required:
+                - Code
+                - Message
+                - Payload
+                type: object
+              type: array
+            Warnings:
+              items: {}
               type: array
           required:
-          - category
-          - stores
+          - Info
+          - Business_Errors
+          - Warnings
+          - System_Errors
           type: object
+        code: {}
         exception:
           format: 'null'
           type: boolean
@@ -1976,9 +2816,21 @@ components:
       - code
       - exception
       - Errors
-      - data
       type: object
     schemaQubecartPartnerStoreCreateproductPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+    schemaQubecartPartnerStoreEditproductPost200:
       properties:
         Errors: {}
         code:
@@ -2281,7 +3133,7 @@ components:
                       format: int32
                       type: integer
                     product_selling_price:
-                      type: float
+                      type: number
                     product_thumbnail:
                       type: string
                     product_title:
@@ -2411,7 +3263,7 @@ components:
                     format: int32
                     type: integer
                   product_selling_price:
-                    type: float
+                    type: number
                   product_thumbnail:
                     type: string
                   product_title:
@@ -2480,84 +3332,6 @@ components:
       - data
       type: object
     schemaQubecartPartnerStoreGetproductsbybrandPost200:
-      properties:
-        Errors: {}
-        code:
-          type: string
-        data:
-          items:
-            properties:
-              brand_created_by_role:
-                format: int32
-                type: integer
-              partner_product_id:
-                format: int32
-                type: integer
-              product_brand_id:
-                format: int32
-                type: integer
-              product_description:
-                type: string
-              product_quantity:
-                format: int32
-                type: integer
-              product_rating:
-                format: int32
-                type: integer
-              product_stock_id:
-                format: int32
-                type: integer
-              product_thumbnail:
-                type: string
-              product_unit:
-                format: int32
-                type: integer
-              stock_last_updated_on:
-                type: string
-              stock_quantity:
-                format: int32
-                type: integer
-              store_id:
-                format: int32
-                type: integer
-              store_name:
-                type: string
-              unit_short:
-                type: string
-              updated_by:
-                format: int32
-                type: integer
-              updated_on:
-                type: string
-            required:
-            - partner_product_id
-            - product_brand_id
-            - updated_on
-            - updated_by
-            - product_description
-            - store_id
-            - brand_created_by_role
-            - product_unit
-            - product_thumbnail
-            - product_rating
-            - product_quantity
-            - product_stock_id
-            - stock_quantity
-            - stock_last_updated_on
-            - store_name
-            - unit_short
-            type: object
-          type: array
-        exception:
-          format: 'null'
-          type: boolean
-      required:
-      - code
-      - exception
-      - Errors
-      - data
-      type: object
-    schemaQubecartPartnerStoreGetproductsbybrandPost200_1:
       properties:
         Errors: {}
         code:
@@ -2728,7 +3502,7 @@ components:
                         format: int32
                         type: integer
                       product_selling_price:
-                        type: float
+                        type: number
                       product_unit:
                         format: int32
                         type: integer
@@ -2791,6 +3565,119 @@ components:
       - Errors
       - data
       type: object
+    schemaQubecartPartnerStoreGetsingleproductPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          properties:
+            packaged_product:
+              format: int32
+              type: integer
+            partner_product_id:
+              format: int32
+              type: integer
+            product_description:
+              type: string
+            product_discount:
+              format: int32
+              type: integer
+            product_gst_percentage:
+              format: int32
+              type: integer
+            product_mrp:
+              format: int32
+              type: integer
+            product_quantity:
+              format: int32
+              type: integer
+            product_selling_price:
+              format: int32
+              type: integer
+            product_thumbnail:
+              type: string
+            unit:
+              format: int32
+              type: integer
+          required:
+          - partner_product_id
+          - product_mrp
+          - product_gst_percentage
+          - product_discount
+          - product_selling_price
+          - product_description
+          - unit
+          - product_quantity
+          - product_thumbnail
+          - packaged_product
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
+    schemaQubecartPartnerStoreGetstockhistoryPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              inevntory_txn_id:
+                format: int32
+                type: integer
+              partner_product_id:
+                format: int32
+                type: integer
+              product_brand_id:
+                format: int32
+                type: integer
+              product_id:
+                format: int32
+                type: integer
+              quantity:
+                format: int32
+                type: integer
+              store_id:
+                format: int32
+                type: integer
+              txn_date:
+                type: string
+              txn_ref_no:
+                type: string
+              txn_type:
+                format: int32
+                type: integer
+              txn_type_name:
+                type: string
+            required:
+            - partner_product_id
+            - product_brand_id
+            - inevntory_txn_id
+            - txn_date
+            - txn_ref_no
+            - quantity
+            - product_id
+            - txn_type
+            - store_id
+            - txn_type_name
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      type: object
     schemaQubecartPartnerStoreUpdatePost200:
       properties:
         Errors: {}
@@ -2816,6 +3703,48 @@ components:
       - code
       - exception
       - Errors
+      type: object
+    schemaQubecartPartnerTemplateGetPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        data:
+          items:
+            properties:
+              admn_template_refno:
+                type: string
+              item_name:
+                type: string
+              partner_template_detail_id:
+                format: int32
+                type: integer
+              status:
+                format: int32
+                type: integer
+              template_id:
+                format: int32
+                type: integer
+            required:
+            - partner_template_detail_id
+            - template_id
+            - item_name
+            - admn_template_refno
+            - status
+            type: object
+          type: array
+        exception:
+          format: 'null'
+          type: boolean
+        payload:
+          items: {}
+          type: array
+      required:
+      - code
+      - exception
+      - Errors
+      - data
+      - payload
       type: object
     schemaQubecartPartnerTemplateInfoPost200:
       properties:
@@ -2939,14 +3868,31 @@ components:
       - Errors
       - data
       type: object
+    schemaQubecartPartnerUpdatePost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+        payload:
+          items: {}
+          type: array
+      required:
+      - code
+      - exception
+      - Errors
+      - payload
+      type: object
 info:
-  title: Qubeacart_partner
+  title: Qubecart-Partner-Services
   version: 1.0.0
 openapi: 3.0.0
 paths:
   /qubecart/partner/generatecode/:
     post:
-      description: '## Generates partner code for regustration'
+      description: '## Generate partner Code while registration'
       operationId: QubecartPartnerGeneratecodePost
       requestBody:
         content:
@@ -2956,11 +3902,21 @@ paths:
                 \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
             schema:
               type: string
-            x-link-response: []
+            x-link-response:
+            - value: "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\"\
+                \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
+              x-response-id: bf2aad9e-d3be-48bc-996a-841c2f89799c
       responses:
         '200':
-          description: ''
-      summary: GENERATE PARTNER CODE
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerGeneratecode:
+                  $ref: '#/components/examples/exampleQubecartPartnerGeneratecodePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerGeneratecodePost200'
+          description: http://15.206.132.5:8003/qubecart/partner/generatecode/
+      summary: http://15.206.132.5:8003/qubecart/partner/generatecode/
   /qubecart/partner/signup/:
     post:
       description: '## Creates a partner using partner code '
@@ -2978,11 +3934,26 @@ paths:
                 \ : \"asdf12345\"\n}"
             schema:
               type: string
-            x-link-response: []
+            x-link-response:
+            - value: "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\"\
+                \ : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\"\
+                ,\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"\
+                700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n  \
+                \  \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"\
+                stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\"\
+                \ : \"asdf12345\"\n}"
+              x-response-id: 6fff9d02-1477-4e0f-a612-9196b24b8508
       responses:
         '200':
-          description: ''
-      summary: PARTNER CREATE
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerSignup:
+                  $ref: '#/components/examples/exampleQubecartPartnerSignupPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerSignupPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/signup/
+      summary: http://15.206.132.5:8003/qubecart/partner/signup/
   /qubecart/partner/login/:
     post:
       description: '## Partner login using email/phone as username and password'
@@ -2995,11 +3966,21 @@ paths:
                 \ : \"1234\"\n}"
             schema:
               type: string
-            x-link-response: []
+            x-link-response:
+            - value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
+                \ : \"1234\"\n}"
+              x-response-id: 5fbcb38c-628a-4bb3-8dc2-8281286b5463
       responses:
         '200':
-          description: ''
-      summary: PARTNER LOGIN
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerLogin:
+                  $ref: '#/components/examples/exampleQubecartPartnerLoginPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerLoginPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/login/
+      summary: http://15.206.132.5:8003/qubecart/partner/login/
   /qubecart/partner/checkunique/:
     post:
       description: '## Checks whether a partner is unique or not using phone and email'
@@ -3012,11 +3993,21 @@ paths:
                 \ : \"jon.Doe@dummy.com\"\n}"
             schema:
               type: string
-            x-link-response: []
+            x-link-response:
+            - value: "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\"\
+                \ : \"jon.Doe@dummy.com\"\n}"
+              x-response-id: ef3af717-f018-4294-ba48-789259e51c4d
       responses:
         '200':
-          description: ''
-      summary: CHECK UNIQUE PARTNER
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerCheckunique:
+                  $ref: '#/components/examples/exampleQubecartPartnerCheckuniquePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCheckuniquePost200'
+          description: http://15.206.132.5:8003/qubecart/partner/checkunique/
+      summary: http://15.206.132.5:8003/qubecart/partner/checkunique/
   /qubecart/partner/store/create/:
     post:
       description: '## Creates store for partner'
@@ -3025,18 +4016,31 @@ paths:
         content:
           '*/*':
             example:
-              value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12\"\
+              value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\"\
                 ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
                 \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
-                city_id\" : 1,\n    \"store_name\" : \"Daily Fashion branch\",\n \
-                \   \"store_category\" : 2\n}"
+                city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"\
+                store_category\" : 2\n}"
             schema:
               type: string
-            x-link-response: []
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\"\
+                ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
+                \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
+                city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"\
+                store_category\" : 2\n}"
+              x-response-id: e515f7e3-7996-4969-93de-02a9777dd6cb
       responses:
         '200':
-          description: ''
-      summary: CREATE STORE
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerStoreCreate:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreCreatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreatePost200'
+          description: http://15.206.132.5:8003/qubecart/partner/store/create/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/create/
   /qubecart/partner/store/get/:
     post:
       description: '## Returns stores of customer'
@@ -3050,18 +4054,18 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: 1cf2ebc1-df10-482c-87b5-c73d47c8531b
+              x-response-id: ee2149e2-ff2d-4715-9553-26ae4f7808cc
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetStore:
+                Http37661778003QubecartPartnerStoreGet:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreGetPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreGetPost200'
-          description: GET STORE
-      summary: GET STORE
+          description: http://15.206.132.5:8003/qubecart/partner/store/get/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/get/
   /qubecart/partner/store/getproducts/:
     post:
       description: '## Get products by store'
@@ -3077,18 +4081,18 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
                 context_value\" : 66\n}"
-              x-response-id: 51486154-7a6c-425c-aabf-30da2bd46263
+              x-response-id: 93ea2de1-ff11-4f63-8245-fddae3f56239
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetProducts:
+                Http37661778003QubecartPartnerStoreGetproducts:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsPost200'
-          description: GET PRODUCTS
-      summary: GET PRODUCTS
+          description: http://15.206.132.5:8003/qubecart/partner/store/getproducts/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/getproducts/
   /qubecart/partner/store/createproduct/:
     post:
       description: '## Creates a product for a store by partner'
@@ -3115,18 +4119,18 @@ paths:
                 \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
                 \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
                 \ : 2\n}"
-              x-response-id: adfc35f8-9ab1-42bd-8c67-44a3a98caee4
+              x-response-id: b74dbe9b-6131-4211-9250-f32aaa090f76
       responses:
         '200':
           content:
             application/json:
               examples:
-                CreateProduct:
+                Http37661778003QubecartPartnerStoreCreateproduct:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreCreateproductPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreCreateproductPost200'
-          description: CREATE PRODUCT
-      summary: CREATE PRODUCT
+          description: http://15.206.132.5:8003/qubecart/partner/store/createproduct/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/createproduct/
   /qubecart/partner/store/update/:
     post:
       description: '## Updates a store '
@@ -3148,18 +4152,18 @@ paths:
                 \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
                 \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
                 \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: 8e50b9c3-c025-45fa-b659-1897674b77f7
+              x-response-id: 8c2ca1cb-9f62-4a85-977a-b87f896323d3
       responses:
         '200':
           content:
             application/json:
               examples:
-                UpdateStore:
+                Http37661778003QubecartPartnerStoreUpdate:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatePost200'
-          description: UPDATE STORE
-      summary: UPDATE STORE
+          description: http://15.206.132.5:8003/qubecart/partner/store/update/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/update/
   /qubecart/partner/store/getbyid/:
     post:
       description: '## Returns a stores basic details by id'
@@ -3173,18 +4177,18 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: edb65c1b-a318-4259-a411-33d87037f4c8
+              x-response-id: b6b40ec9-68f3-4998-bea8-9622e15e4ec5
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetStoreById:
+                Http37661778003QubecartPartnerStoreGetbyid:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreGetbyidPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbyidPost200'
-          description: GET STORE BY ID
-      summary: GET STORE BY ID
+          description: http://15.206.132.5:8003/qubecart/partner/store/getbyid/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/getbyid/
   /qubecart/partner/store/updatestock/:
     post:
       description: "## Updates a stock using store_id and product_id \n### txn_type\
@@ -3201,18 +4205,18 @@ paths:
             x-link-response:
             - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
                 \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-              x-response-id: 0ee2e7d3-eebb-4307-b0c7-3e8294918099
+              x-response-id: efc28509-3997-453c-9dd2-057f210a67dc
       responses:
         '200':
           content:
             application/json:
               examples:
-                UpdateStock:
+                Http37661778003QubecartPartnerStoreUpdatestock:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatestockPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatestockPost200'
-          description: UPDATE STOCK
-      summary: UPDATE STOCK
+          description: http://15.206.132.5:8003/qubecart/partner/store/updatestock/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/updatestock/
   /qubecart/partner/brand/create/:
     post:
       description: '## Creates partner specific brand for a given subcategory'
@@ -3228,18 +4232,18 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 1,\n    \"qc_partner_id\" : 9,\n\
                 \    \"brand_name\" : \"Generic/Loose\"\n}"
-              x-response-id: 3c504c94-7582-40c8-8a15-e8343358de64
+              x-response-id: e5087705-b23d-478a-9d0a-40a045352abb
       responses:
         '200':
           content:
             application/json:
               examples:
-                CreateBrand:
+                Http37661778003QubecartPartnerBrandCreate:
                   $ref: '#/components/examples/exampleQubecartPartnerBrandCreatePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerBrandCreatePost200'
-          description: 'CREATE BRAND '
-      summary: 'CREATE BRAND '
+          description: http://15.206.132.5:8003/qubecart/partner/brand/create/
+      summary: http://15.206.132.5:8003/qubecart/partner/brand/create/
   /qubecart/partner/brand/inactivate/:
     post:
       description: '## Inactivates a partner brand '
@@ -3255,18 +4259,18 @@ paths:
             x-link-response:
             - value: "{\n    \"partner_product_brand_id\" : 2,\n    \"inactivate_flag\"\
                 \ : true\n}"
-              x-response-id: a6edd201-736d-4ddc-8b71-41aa818bd1b5
+              x-response-id: ae7f96ef-23d6-4a84-a1dc-d9e73e4f3b9e
       responses:
         '200':
           content:
             application/json:
               examples:
-                InactivateBrand:
+                Http37661778003QubecartPartnerBrandInactivate:
                   $ref: '#/components/examples/exampleQubecartPartnerBrandInactivatePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerBrandInactivatePost200'
-          description: INACTIVATE BRAND
-      summary: INACTIVATE BRAND
+          description: http://15.206.132.5:8003/qubecart/partner/brand/inactivate/
+      summary: http://15.206.132.5:8003/qubecart/partner/brand/inactivate/
   /qubecart/partner/brand/get/:
     post:
       description: '## Returns all brands defined by partner'
@@ -3280,18 +4284,18 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
-              x-response-id: 5967a7c1-2e20-4ff6-b524-68d0980999cd
+              x-response-id: 7b3a7beb-bd7f-47a3-bc14-de3526df1c4f
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetAllBrands:
+                Http37661778003QubecartPartnerBrandGet:
                   $ref: '#/components/examples/exampleQubecartPartnerBrandGetPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerBrandGetPost200'
-          description: GET ALL BRANDS
-      summary: GET ALL BRANDS
+          description: http://15.206.132.5:8003/qubecart/partner/brand/get/
+      summary: http://15.206.132.5:8003/qubecart/partner/brand/get/
   /qubecart/partner/orders/getactive/:
     post:
       description: '## Get all active bags of a store'
@@ -3305,18 +4309,18 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: f1eba163-22fa-4ba2-8100-9a9ae469304d
+              x-response-id: bf3cb3bd-26aa-4b46-bf1c-ef5fbdbd3d43
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetActiveOrders:
+                Http37661778003QubecartPartnerOrdersGetactive:
                   $ref: '#/components/examples/exampleQubecartPartnerOrdersGetactivePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerOrdersGetactivePost200'
-          description: GET ACTIVE ORDERS
-      summary: GET ACTIVE ORDERS
+          description: http://15.206.132.5:8003/qubecart/partner/orders/getactive/
+      summary: http://15.206.132.5:8003/qubecart/partner/orders/getactive/
   /qubecart/partner/template/info/:
     post:
       description: '## Get template and related information using template id'
@@ -3330,18 +4334,18 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: 94e5034a-07d7-48f7-becb-a49351990733
+              x-response-id: d2269876-b6af-4a6b-a1d5-f9dd78280450
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetTemplateInfo:
+                Http37661778003QubecartPartnerTemplateInfo:
                   $ref: '#/components/examples/exampleQubecartPartnerTemplateInfoPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerTemplateInfoPost200'
-          description: GET TEMPLATE INFO
-      summary: GET TEMPLATE INFO
+          description: http://15.206.132.5:8003/qubecart/partner/template/info/
+      summary: http://15.206.132.5:8003/qubecart/partner/template/info/
   /qubecart/partner/store/getproductsbybrand/:
     post:
       description: '## Get products by subcategory and store id'
@@ -3357,22 +4361,18 @@ paths:
             x-link-response:
             - value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
                 \ \"qc_partner_id\" : 24\n}"
-              x-response-id: fe88cff2-0489-40ab-8282-9f0e253bb7d9
+              x-response-id: c1c467c3-68e5-486d-992a-25569116d48d
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetProducts:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsbybrandPost200_1'
-                GetProductsByBrand:
+                Http37661778003QubecartPartnerStoreGetproductsbybrand:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsbybrandPost200'
               schema:
-                oneOf:
-                - $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200'
-                - $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200_1'
-          description: GET PRODUCTS
-      summary: GET PRODUCTS
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/store/getproductsbybrand/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/getproductsbybrand/
   /qubecart/partner/store/bycategory/:
     post:
       operationId: QubecartPartnerStoreBycategoryPost
@@ -3385,17 +4385,482 @@ paths:
               type: string
             x-link-response:
             - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: 5062c1d5-6cca-47ae-8e4c-d16d4f4ad47f
+              x-response-id: f950769d-c2c8-4c4f-a306-c23de5cfec3d
       responses:
         '200':
           content:
             application/json:
               examples:
-                GetStoreByCategory:
+                Http37661778003QubecartPartnerStoreBycategory:
                   $ref: '#/components/examples/exampleQubecartPartnerStoreBycategoryPost200'
               schema:
-                oneOf:
-                - $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200'
-                - $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200_1'
-          description: GET STORE BY CATEGORY
-      summary: GET STORE BY CATEGORY
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/store/bycategory/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/bycategory/
+  /qubecart/partner/store/getsingleproduct/:
+    post:
+      description: Get single product of store
+      operationId: QubecartPartnerStoreGetsingleproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_id\": 54\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_id\": 54\r\n}"
+              x-response-id: 49593411-c1b3-4368-a990-88bf6d407835
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerStoreGetsingleproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetsingleproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetsingleproductPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/store/getsingleproduct/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/getsingleproduct/
+  /qubecart/partner/store/editproduct/:
+    post:
+      description: Edit Store Products
+      operationId: QubecartPartnerStoreEditproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\"\
+                : \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"\
+                product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\"\
+                : 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\"\
+                : \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\"\
+                : 5,\r\n    \"packaged_product\": true\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\"\
+                : \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"\
+                product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\"\
+                : 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\"\
+                : \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\"\
+                : 5,\r\n    \"packaged_product\": true\r\n}"
+              x-response-id: 4f6d022f-d7a9-4f58-ae7a-a226f70e6617
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerStoreEditproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreEditproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreEditproductPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/store/editproduct/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/editproduct/
+  /qubecart/partner/cartdetails/:
+    post:
+      description: Cart Details
+      operationId: QubecartPartnerCartdetailsPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"customer_id\": 22,\r\n    \"credit_flag\" : 0,\r\n\
+                \    \"store_item_list\": [\r\n        {\r\n            \"store_id\"\
+                : 3,\r\n            \"item_id\": 47,\r\n            \"quantity\":\
+                \ 2\r\n        },\r\n        {\r\n            \"store_id\": 3,\r\n\
+                \            \"item_id\": 48,\r\n            \"quantity\": 3\r\n \
+                \       },\r\n        {\r\n            \"store_id\": 28,\r\n     \
+                \       \"item_id\": 33,\r\n            \"quantity\": 3\r\n      \
+                \  }\r\n    ]\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"customer_id\": 22,\r\n    \"credit_flag\" : 0,\r\n\
+                \    \"store_item_list\": [\r\n        {\r\n            \"store_id\"\
+                : 3,\r\n            \"item_id\": 47,\r\n            \"quantity\":\
+                \ 2\r\n        },\r\n        {\r\n            \"store_id\": 3,\r\n\
+                \            \"item_id\": 48,\r\n            \"quantity\": 3\r\n \
+                \       },\r\n        {\r\n            \"store_id\": 28,\r\n     \
+                \       \"item_id\": 33,\r\n            \"quantity\": 3\r\n      \
+                \  }\r\n    ]\r\n}"
+              x-response-id: 17f55b75-75db-44d4-a3b7-4d2164b05de7
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerCartdetails:
+                  $ref: '#/components/examples/exampleQubecartPartnerCartdetailsPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCartdetailsPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/cartdetails/
+      summary: http://15.206.132.5:8003/qubecart/partner/cartdetails/
+  /qubecart/partner/creditcustomer/get/:
+    post:
+      description: Get all credit customer
+      operationId: QubecartPartnerCreditcustomerGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_id\" : 25,\r\n    \"flag\" : 0\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_id\" : 25,\r\n    \"flag\" : 0\r\n}"
+              x-response-id: 06c2b8da-909e-40b5-bbb7-d62f6cfa983b
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerCreditcustomerGet:
+                  $ref: '#/components/examples/exampleQubecartPartnerCreditcustomerGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreditcustomerGetPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/creditcustomer/get/
+      summary: http://15.206.132.5:8003/qubecart/partner/creditcustomer/get/
+  /qubecart/partner/creditcustomer/updaterequest/:
+    post:
+      description: Update credit status by partner
+      operationId: QubecartPartnerCreditcustomerUpdaterequestPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n  \
+                \  \"customer_id\" : 22,\r\n    \"credit_status\" : 5,\r\n    \"credit_association_id\"\
+                :2,\r\n    \"max_monthly_credit\" : 1000\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_id\" : 24,\r\n    \"store_id\": 3,\r\n  \
+                \  \"customer_id\" : 22,\r\n    \"credit_status\" : 5,\r\n    \"credit_association_id\"\
+                :2,\r\n    \"max_monthly_credit\" : 1000\r\n}"
+              x-response-id: 3216df82-99eb-4c8e-b64f-eec4d60470b2
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerCreditcustomerUpdaterequest:
+                  $ref: '#/components/examples/exampleQubecartPartnerCreditcustomerUpdaterequestPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreditcustomerUpdaterequestPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/creditcustomer/updaterequest/
+      summary: http://15.206.132.5:8003/qubecart/partner/creditcustomer/updaterequest/
+  /qubecart/partner/orders/bagdetails/:
+    post:
+      description: Order bag details
+      operationId: QubecartPartnerOrdersBagdetailsPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"bag_id\" : 52\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"bag_id\" : 52\r\n}"
+              x-response-id: 2da25068-0d94-498e-ac5d-6250c17b512f
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerOrdersBagdetails:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersBagdetailsPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersBagdetailsPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/orders/bagdetails/
+      summary: http://15.206.132.5:8003/qubecart/partner/orders/bagdetails/
+  /qubecart/partner/orders/updatebagstatus/:
+    post:
+      description: Update bag status by partner
+      operationId: QubecartPartnerOrdersUpdatebagstatusPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}"
+              x-response-id: 9b49fb1c-aed9-4e88-849b-4465a31f8292
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerOrdersUpdatebagstatus:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersUpdatebagstatusPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersUpdatebagstatusPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/orders/updatebagstatus/
+      summary: http://15.206.132.5:8003/qubecart/partner/orders/updatebagstatus/
+  /qubecart/partner/createfcm/:
+    post:
+      description: Create partner fcm token
+      operationId: QubecartPartnerCreatefcmPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\
+                \r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\
+                \r\n}"
+              x-response-id: 883d1af6-dba5-4678-80ad-c19bc5ae23db
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerCreatefcm:
+                  $ref: '#/components/examples/exampleQubecartPartnerCreatefcmPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreatefcmPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/createfcm/
+      summary: http://15.206.132.5:8003/qubecart/partner/createfcm/
+  /qubecart/partner/store/getstockhistory/:
+    post:
+      description: Get stock history
+      operationId: QubecartPartnerStoreGetstockhistoryPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_id\" : 31\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_id\" : 31\r\n}"
+              x-response-id: 8675dd52-0968-4e17-9b60-8cb1a5fd84f4
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerStoreGetstockhistory:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetstockhistoryPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetstockhistoryPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/store/getstockhistory/
+      summary: http://15.206.132.5:8003/qubecart/partner/store/getstockhistory/
+  /qubecart/partner/template/get/:
+    post:
+      description: 'Get partner template '
+      operationId: QubecartPartnerTemplateGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}"
+              x-response-id: d5476acf-0596-415f-96e7-9ac3e81e7d00
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerTemplateGet:
+                  $ref: '#/components/examples/exampleQubecartPartnerTemplateGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerTemplateGetPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/template/get/
+      summary: http://15.206.132.5:8003/qubecart/partner/template/get/
+  /qubecart/partner/brand/update/:
+    post:
+      description: Partner  brand update
+      operationId: QubecartPartnerBrandUpdatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\"\
+                \ : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba\
+                \ Generic/Loose\"\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\"\
+                \ : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba\
+                \ Generic/Loose\"\r\n}"
+              x-response-id: 705574c3-2efb-4735-8b0e-45a875f070c0
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerBrandUpdate:
+                  $ref: '#/components/examples/exampleQubecartPartnerBrandUpdatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandUpdatePost200'
+          description: http://15.206.132.5:8003/qubecart/partner/brand/update/
+      summary: http://15.206.132.5:8003/qubecart/partner/brand/update/
+  /qubecart/partner/changepassword/:
+    post:
+      description: Partner change password
+      operationId: QubecartPartnerChangepasswordPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"\
+                4321\",\r\n    \"new_password\" : \"1234\"\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"\
+                4321\",\r\n    \"new_password\" : \"1234\"\r\n}"
+              x-response-id: 6228fcc0-70bc-461b-8fae-83756e7e75b2
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http37661778003QubecartPartnerChangepassword:
+                  $ref: '#/components/examples/exampleQubecartPartnerChangepasswordPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerChangepasswordPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/changepassword/
+      summary: http://15.206.132.5:8003/qubecart/partner/changepassword/
+  /qubecart/partner/detail/:
+    post:
+      description: Get Partner Detail By Partner Id
+      operationId: QubecartPartnerDetailPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"qc_partner_id\" : 31\r\n    \r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"qc_partner_id\" : 31\r\n    \r\n}"
+              x-response-id: dd4d2fe0-f9f3-4e1a-b8ac-cdfbcbe6a28f
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerDetail:
+                  $ref: '#/components/examples/exampleQubecartPartnerDetailPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerDetailPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/detail/
+      summary: http://15.206.132.5:8003/qubecart/partner/detail/
+  /qubecart/partner/update/:
+    post:
+      description: Partner Update
+      operationId: QubecartPartnerUpdatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: " {\r\n            \"qc_partner_id\": 31,\r\n            \"partner_category\"\
+                : 1,\r\n            \"partner_code\": \"Z5kTv5\",\r\n            \"\
+                partner_status\": 2,\r\n            \"login_flag\": null,\r\n    \
+                \        \"created_on\": \"2020-10-01T07:57:53\",\r\n            \"\
+                partner_detail_id\": 17,\r\n            \"company_name\": \"Shome\
+                \ Marts PVT. LTD.\",\r\n            \"contact_phone\": \"9123810564\"\
+                ,\r\n            \"billing_name\": \"Shome\",\r\n            \"gst_numbers\"\
+                : \"1234\",\r\n            \"corporate_size\": null,\r\n         \
+                \   \"payment_term\": null,\r\n            \"updated_on\": \"2020-10-01T07:57:53\"\
+                ,\r\n            \"updated_by\": null,\r\n            \"partner_address_id\"\
+                : 95,\r\n            \"pan\": \"1234\",\r\n            \"contact_email\"\
+                : null,\r\n            \"contact_person_firstname\": \"Subhadeep\"\
+                ,\r\n            \"contact_person_lastname\": \"Shome\",\r\n     \
+                \       \"contact_person_designation\": \"Owner\",\r\n           \
+                \ \"partner_bank_id\": 4,\r\n            \"status\": 1,\r\n      \
+                \      \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\r\n   \
+                \         \"partner_status_name\": \"Active\",\r\n            \"address_id\"\
+                : 95,\r\n            \"addressline1\": \"Dum dum\",\r\n          \
+                \  \"addressline2\": null,\r\n            \"pin\": 700123,\r\n   \
+                \         \"city\": 1,\r\n            \"state\": 1,\r\n          \
+                \  \"country\": 1,\r\n            \"address_type\": null,\r\n    \
+                \        \"city_name\": \"Kolkata\",\r\n            \"states_name\"\
+                : \"West Bengal\",\r\n            \"countries_name\": \"India\",\r\
+                \n            \"bank_id\": 4,\r\n            \"account_holder_name\"\
+                : \"HARANATH BASAK\",\r\n            \"account_no\": \"122344567\"\
+                ,\r\n            \"ifsc_code\": \"IFSC_SBINO1448\",\r\n          \
+                \  \"bank_name\": \"SBI\",\r\n            \"branch_name\": null,\r\
+                \n            \"cin_no\": null,\r\n            \"bank_address\": null\r\
+                \n        }"
+            schema:
+              type: string
+            x-link-response:
+            - value: " {\r\n            \"qc_partner_id\": 31,\r\n            \"partner_category\"\
+                : 1,\r\n            \"partner_code\": \"Z5kTv5\",\r\n            \"\
+                partner_status\": 2,\r\n            \"login_flag\": null,\r\n    \
+                \        \"created_on\": \"2020-10-01T07:57:53\",\r\n            \"\
+                partner_detail_id\": 17,\r\n            \"company_name\": \"Shome\
+                \ Marts PVT. LTD.\",\r\n            \"contact_phone\": \"9123810564\"\
+                ,\r\n            \"billing_name\": \"Shome\",\r\n            \"gst_numbers\"\
+                : \"1234\",\r\n            \"corporate_size\": null,\r\n         \
+                \   \"payment_term\": null,\r\n            \"updated_on\": \"2020-10-01T07:57:53\"\
+                ,\r\n            \"updated_by\": null,\r\n            \"partner_address_id\"\
+                : 95,\r\n            \"pan\": \"1234\",\r\n            \"contact_email\"\
+                : null,\r\n            \"contact_person_firstname\": \"Subhadeep\"\
+                ,\r\n            \"contact_person_lastname\": \"Shome\",\r\n     \
+                \       \"contact_person_designation\": \"Owner\",\r\n           \
+                \ \"partner_bank_id\": 4,\r\n            \"status\": 1,\r\n      \
+                \      \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\r\n   \
+                \         \"partner_status_name\": \"Active\",\r\n            \"address_id\"\
+                : 95,\r\n            \"addressline1\": \"Dum dum\",\r\n          \
+                \  \"addressline2\": null,\r\n            \"pin\": 700123,\r\n   \
+                \         \"city\": 1,\r\n            \"state\": 1,\r\n          \
+                \  \"country\": 1,\r\n            \"address_type\": null,\r\n    \
+                \        \"city_name\": \"Kolkata\",\r\n            \"states_name\"\
+                : \"West Bengal\",\r\n            \"countries_name\": \"India\",\r\
+                \n            \"bank_id\": 4,\r\n            \"account_holder_name\"\
+                : \"HARANATH BASAK\",\r\n            \"account_no\": \"122344567\"\
+                ,\r\n            \"ifsc_code\": \"IFSC_SBINO1448\",\r\n          \
+                \  \"bank_name\": \"SBI\",\r\n            \"branch_name\": null,\r\
+                \n            \"cin_no\": null,\r\n            \"bank_address\": null\r\
+                \n        }"
+              x-response-id: 3202bd8d-0ae8-4485-ae25-f897011f3072
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerUpdate:
+                  $ref: '#/components/examples/exampleQubecartPartnerUpdatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerUpdatePost200'
+          description: http://15.206.132.5:8003/qubecart/partner/update/
+      summary: http://15.206.132.5:8003/qubecart/partner/update/
+  /qubecart/partner/orders/activeordercount/:
+    post:
+      description: Active Order Count
+      operationId: QubecartPartnerOrdersActiveordercountPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_id\" : 24\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_id\" : 24\r\n}"
+              x-response-id: adc1e955-3ee1-474b-892d-adf24df161ee
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerOrdersActiveordercount:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersActiveordercountPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersActiveordercountPost200'
+          description: http://15.206.132.5:8003/qubecart/partner/orders/activeordercount/
+      summary: http://15.206.132.5:8003/qubecart/partner/orders/activeordercount/
