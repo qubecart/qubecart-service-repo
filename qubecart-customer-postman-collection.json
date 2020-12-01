@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/getallinfo/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/getallinfo/",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -27,7 +27,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/getallinfo/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/getallinfo/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -92,7 +92,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/getbystorecategory/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/getbystorecategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -122,7 +122,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/getbystorecategory/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/getbystorecategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -196,7 +196,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/dashboard/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/dashboard/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -224,7 +224,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/dashboard/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/dashboard/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -297,7 +297,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/address/delete/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/address/delete/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -327,7 +327,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/address/delete/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/address/delete/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -401,7 +401,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/insidestore/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/insidestore/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -431,7 +431,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/insidestore/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/insidestore/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -505,7 +505,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/getallorder/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/getallorder/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -534,7 +534,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/getallorder/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/getallorder/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -607,7 +607,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/creditrequesthistory/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/creditrequesthistory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -636,7 +636,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/creditrequesthistory/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/creditrequesthistory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -709,7 +709,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/address/update/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/address/update/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -739,7 +739,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/address/update/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/address/update/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -813,7 +813,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/creditrequest/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/creditrequest/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -842,7 +842,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/creditrequest/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/creditrequest/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -915,7 +915,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/wallet/transaction/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/wallet/transaction/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -945,7 +945,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/wallet/transaction/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/wallet/transaction/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1019,7 +1019,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/orderdetails/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/orderdetails/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1048,7 +1048,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/orderdetails/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/orderdetails/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1121,7 +1121,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/paytm/verifychecksum/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1135,7 +1135,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+					"raw": "http://15.206.132.5:8002/qubecart/customer/paytm/verifychecksum/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1156,7 +1156,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/paytm/verifychecksum/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1170,7 +1170,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8002/qubecart/customer/paytm/verifychecksum/",
+							"raw": "http://15.206.132.5:8002/qubecart/customer/paytm/verifychecksum/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1235,7 +1235,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/address/create/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/address/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1265,7 +1265,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/address/create/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/address/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1339,7 +1339,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/signup/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/signup/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1368,7 +1368,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/signup/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/signup/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1441,7 +1441,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/getstoresbycontext/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/getstoresbycontext/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1471,7 +1471,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/getstoresbycontext/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/getstoresbycontext/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1545,7 +1545,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/placedorder/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/placedorder/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1574,7 +1574,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/placedorder/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/placedorder/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1647,7 +1647,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/generateotp/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/generateotp/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1676,7 +1676,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/generateotp/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/generateotp/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1749,7 +1749,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/upi/paymentinitiate/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/upi/paymentinitiate/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1779,7 +1779,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/upi/paymentinitiate/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/upi/paymentinitiate/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1853,7 +1853,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/upi/validatepayment/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1867,7 +1867,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+					"raw": "http://15.206.132.5:8002/qubecart/customer/upi/validatepayment/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1888,7 +1888,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/upi/validatepayment/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1902,7 +1902,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8002/qubecart/customer/upi/validatepayment/",
+							"raw": "http://15.206.132.5:8002/qubecart/customer/upi/validatepayment/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1967,7 +1967,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/validateotp/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/validateotp/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1996,7 +1996,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/validateotp/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/validateotp/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2069,7 +2069,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/wallet/balance/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/wallet/balance/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2099,7 +2099,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/wallet/balance/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/wallet/balance/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2173,7 +2173,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/nearestmatches/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2187,7 +2187,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+					"raw": "http://15.206.132.5:8002/qubecart/customer/search/nearestmatches/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2208,7 +2208,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/nearestmatches/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2222,7 +2222,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8002/qubecart/customer/search/nearestmatches/",
+							"raw": "http://15.206.132.5:8002/qubecart/customer/search/nearestmatches/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2287,7 +2287,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/creditpay/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/creditpay/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2316,7 +2316,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/creditpay/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/creditpay/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2389,7 +2389,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/getall/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/getall/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2419,7 +2419,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/getall/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/getall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2493,7 +2493,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/address/get/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/address/get/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2523,7 +2523,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/address/get/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/address/get/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2597,7 +2597,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/paytm/createchecksum/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/paytm/createchecksum/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2627,7 +2627,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/paytm/createchecksum/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/paytm/createchecksum/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2701,7 +2701,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/search/getstorebybrand/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/search/getstorebybrand/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2731,7 +2731,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/search/getstorebybrand/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/search/getstorebybrand/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2805,7 +2805,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/instamojo/validatetransaction/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/instamojo/validatetransaction/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2819,7 +2819,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8002/qubecart/customer/instamojo/validatetransaction/",
+					"raw": "http://15.206.132.5:8002/qubecart/customer/instamojo/validatetransaction/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2840,7 +2840,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/instamojo/validatetransaction/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/instamojo/validatetransaction/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2854,7 +2854,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8002/qubecart/customer/instamojo/validatetransaction/",
+							"raw": "http://15.206.132.5:8002/qubecart/customer/instamojo/validatetransaction/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2911,7 +2911,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/instamojo/generatelongurl/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/instamojo/generatelongurl/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2925,7 +2925,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8002/qubecart/customer/instamojo/generatelongurl/",
+					"raw": "http://15.206.132.5:8002/qubecart/customer/instamojo/generatelongurl/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2946,7 +2946,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/instamojo/generatelongurl/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/instamojo/generatelongurl/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2960,7 +2960,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8002/qubecart/customer/instamojo/generatelongurl/",
+							"raw": "http://15.206.132.5:8002/qubecart/customer/instamojo/generatelongurl/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3017,12 +3017,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/instamojo/webhook/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/instamojo/webhook/",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8002/qubecart/customer/instamojo/webhook/",
+					"raw": "http://15.206.132.5:8002/qubecart/customer/instamojo/webhook/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3044,7 +3044,7 @@
 			"response": []
 		},
 		{
-			"name": "http://3.7.66.177:8002/qubecart/customer/adress/reversegeocode/",
+			"name": "http://15.206.132.5:8002/qubecart/customer/adress/reversegeocode/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3074,7 +3074,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8002/qubecart/customer/adress/reversegeocode/",
+					"name": "http://15.206.132.5:8002/qubecart/customer/adress/reversegeocode/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],

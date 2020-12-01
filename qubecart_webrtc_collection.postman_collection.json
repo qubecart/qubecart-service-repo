@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/offercall/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -23,7 +23,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/offercall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -43,7 +43,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/offercall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -59,7 +59,7 @@
 							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/offercall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -123,7 +123,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/answercall/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -139,7 +139,7 @@
 					"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/answercall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -159,7 +159,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/answercall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -175,7 +175,7 @@
 							"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/answercall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -239,7 +239,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/sendice/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -255,7 +255,7 @@
 					"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/sendice/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -275,7 +275,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/sendice/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -291,7 +291,7 @@
 							"raw": "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/sendice/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -355,7 +355,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/getoffers/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -371,7 +371,7 @@
 					"raw": "{\n\t\"partner_id\": 1\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/getoffers/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -391,7 +391,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/getoffers/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -407,7 +407,7 @@
 							"raw": "{\n\t\"partner_id\": 1\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/getoffers/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -471,7 +471,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/polloffer/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -487,7 +487,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/polloffer/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -507,7 +507,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/polloffer/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -523,7 +523,7 @@
 							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/polloffer/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -587,7 +587,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/pollanswer/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -603,7 +603,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/pollanswer/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -623,7 +623,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/pollanswer/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -639,7 +639,7 @@
 							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/pollanswer/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -703,7 +703,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+			"name": "http://15.206.132.5:8004/qubecart/webrtc/hangupcall/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -719,7 +719,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/hangupcall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -739,7 +739,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+					"name": "http://15.206.132.5:8004/qubecart/webrtc/hangupcall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -755,7 +755,7 @@
 							"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+							"raw": "http://15.206.132.5:8004/qubecart/webrtc/hangupcall/",
 							"protocol": "http",
 							"host": [
 								"3",

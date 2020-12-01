@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://3.7.66.177:8005/qubecart/delivery/registration/",
+			"name": "http://15.206.132.5:8005/qubecart/delivery/registration/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -20,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8005/qubecart/delivery/registration/",
+					"raw": "http://15.206.132.5:8005/qubecart/delivery/registration/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -40,7 +40,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8005/qubecart/delivery/registration/",
+					"name": "http://15.206.132.5:8005/qubecart/delivery/registration/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],

@@ -23,7 +23,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n    \"offer_payload\": {\n        \"type\": \"offer\"\n    },\n    \"store_id\": 1,\n    \"store_name\": \"Das Store\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/offercall/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/offercall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -60,7 +60,7 @@
 					"raw": "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/answercall/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/answercall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -97,7 +97,7 @@
 					"raw": "{\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\",\n\t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\": \"offer_ice\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/sendice/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/sendice/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -134,7 +134,7 @@
 					"raw": "{\n\t\"partner_id\": 1\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/getoffers/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/getoffers/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -171,7 +171,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\",\n\t\"webrtc_uuid\": \"d98024c4b2a14902b036238b0d747e22\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/polloffer/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/polloffer/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -208,7 +208,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/pollanswer/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/pollanswer/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -245,7 +245,7 @@
 					"raw": "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\n}"
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8004/qubecart/webrtc/hangupcall/",
+					"raw": "http://15.206.132.5:8004/qubecart/webrtc/hangupcall/",
 					"protocol": "http",
 					"host": [
 						"3",

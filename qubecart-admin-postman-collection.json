@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/partner/getall/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/partner/getall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -42,7 +42,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/partner/getall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -56,7 +56,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/getall/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/partner/getall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -117,7 +117,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/partner/approve/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -131,7 +131,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/partner/approve/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -152,7 +152,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/partner/approve/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -166,7 +166,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/approve/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/partner/approve/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -227,7 +227,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/partner/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -241,7 +241,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/partner/create/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -262,7 +262,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/partner/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -276,7 +276,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/create/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/partner/create/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -337,12 +337,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/errorframework/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/errorframework/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/errorframework/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/errorframework/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -362,7 +362,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/errorframework/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/errorframework/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -430,7 +430,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/domain/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/domain/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -444,7 +444,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/domain/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/domain/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -464,7 +464,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/domain/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/domain/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -478,7 +478,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/shared/domain/",
+							"raw": "http://15.206.132.5:8001/qubecart/shared/domain/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -542,7 +542,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/login/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/login/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -556,7 +556,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/login/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/login/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -576,7 +576,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/login/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/login/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -590,7 +590,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/login/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/login/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -654,12 +654,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/get/countries/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/get/countries/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/get/countries/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/get/countries/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -680,7 +680,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/get/countries/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/get/countries/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -746,12 +746,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/get/states/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/get/states/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/get/states/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/get/states/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -772,7 +772,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/get/states/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/get/states/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -838,12 +838,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/get/city/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/get/city/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/get/city/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/get/city/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -864,7 +864,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/get/city/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/get/city/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -930,12 +930,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/get/citystatecountry/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/get/citystatecountry/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/get/citystatecountry/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/get/citystatecountry/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -955,7 +955,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/get/citystatecountry/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/get/citystatecountry/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -1021,7 +1021,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/partner/detailsbyid/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1035,7 +1035,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/partner/detailsbyid/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1056,7 +1056,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/partner/detailsbyid/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1070,7 +1070,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/partner/detailsbyid/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/partner/detailsbyid/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1135,7 +1135,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/getbyid/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1149,7 +1149,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/getbyid/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1169,7 +1169,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/getbyid/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1183,7 +1183,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/getbyid/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/getbyid/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1243,7 +1243,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/update/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/update/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1257,7 +1257,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/update/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/update/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1277,7 +1277,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/update/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/update/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1291,7 +1291,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/update/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/update/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1355,7 +1355,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/getbycategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1369,7 +1369,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/getbycategory/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1389,7 +1389,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/getbycategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1403,7 +1403,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbycategory/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/getbycategory/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1468,12 +1468,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getall/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/getall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1494,7 +1494,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -1560,7 +1560,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/create/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1574,7 +1574,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/create/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/create/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1594,7 +1594,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/create/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1608,7 +1608,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/create/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/create/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1673,7 +1673,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/checkduplicate/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1687,7 +1687,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/checkduplicate/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1708,7 +1708,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/checkduplicate/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1722,7 +1722,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/checkduplicate/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/checkduplicate/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1787,7 +1787,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/deleteitem/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1801,7 +1801,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/deleteitem/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1822,7 +1822,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/deleteitem/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1836,7 +1836,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/deleteitem/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/deleteitem/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1901,7 +1901,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/inactive/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -1915,7 +1915,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/inactive/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1935,7 +1935,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/inactive/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -1949,7 +1949,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/inactive/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/inactive/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2014,7 +2014,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/getsubcategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2028,7 +2028,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/getsubcategory/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2049,7 +2049,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/getsubcategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2063,7 +2063,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getsubcategory/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/getsubcategory/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2128,7 +2128,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/getbrands/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2142,7 +2142,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/getbrands/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2163,7 +2163,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/getbrands/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2177,7 +2177,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getbrands/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/getbrands/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2242,7 +2242,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/createsubcategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2256,7 +2256,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/createsubcategory/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2277,7 +2277,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/createsubcategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2291,7 +2291,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/createsubcategory/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/createsubcategory/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2356,7 +2356,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/addbrands/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2370,7 +2370,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/addbrands/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2391,7 +2391,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/addbrands/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2405,7 +2405,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/addbrands/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/addbrands/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2470,7 +2470,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/getcategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2484,7 +2484,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/template/getcategory/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2505,7 +2505,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/getcategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2519,7 +2519,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/template/getcategory/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/template/getcategory/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2584,7 +2584,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/getunits/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/getunits/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2598,7 +2598,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/shared/getunits/",
+					"raw": "http://15.206.132.5:8001/qubecart/shared/getunits/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2618,7 +2618,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/getunits/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/getunits/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2632,7 +2632,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/shared/getunits/",
+							"raw": "http://15.206.132.5:8001/qubecart/shared/getunits/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2696,12 +2696,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/region/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/region/getall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2721,12 +2721,12 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/region/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/region/getall/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/region/getall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2791,7 +2791,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/region/create/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/region/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -2805,7 +2805,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/region/create/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/region/create/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2825,7 +2825,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/region/create/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/region/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -2839,7 +2839,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/region/create/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/region/create/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2904,12 +2904,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2929,12 +2929,12 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getall/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2999,7 +2999,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/personnel/approve/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3013,7 +3013,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/approve/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3034,7 +3034,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/personnel/approve/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3048,7 +3048,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/approve/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/approve/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3113,7 +3113,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getdetail/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3127,7 +3127,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/getdetail/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3147,7 +3147,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getdetail/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3161,7 +3161,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/personnel/getdetail/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/getdetail/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3226,7 +3226,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/getall/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3240,7 +3240,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/getall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3261,7 +3261,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/getall/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3275,7 +3275,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/order/getall/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/getall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3340,7 +3340,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/details/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/details/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3354,7 +3354,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/order/details/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/details/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3375,7 +3375,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/details/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/details/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3389,7 +3389,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/order/details/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/details/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3454,7 +3454,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/bagdetails/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3468,7 +3468,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/bagdetails/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3488,7 +3488,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/bagdetails/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3502,7 +3502,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/order/bagdetails/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/bagdetails/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3567,7 +3567,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/assignbag/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3581,7 +3581,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/assignbag/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3601,7 +3601,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/assignbag/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3615,7 +3615,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/order/assignbag/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/assignbag/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3680,7 +3680,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
+			"name": "http://15.206.132.5:8001qubecart/admin/order/updatestatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3694,7 +3694,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
+					"raw": "http://15.206.132.5:8001qubecart/admin/order/updatestatus/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3713,7 +3713,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
+					"name": "http://15.206.132.5:8001qubecart/admin/order/updatestatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3727,7 +3727,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001qubecart/admin/order/updatestatus/",
+							"raw": "http://15.206.132.5:8001qubecart/admin/order/updatestatus/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3791,7 +3791,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/updatepayment/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3805,7 +3805,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/updatepayment/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3825,7 +3825,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/updatepayment/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3839,7 +3839,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatepayment/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/updatepayment/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3904,7 +3904,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/updatestatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -3918,7 +3918,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/updatestatus/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -3938,7 +3938,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/updatestatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -3952,7 +3952,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/order/updatestatus/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/updatestatus/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4017,7 +4017,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/updatestatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4031,7 +4031,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/store/updatestatus/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4052,7 +4052,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/updatestatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4066,7 +4066,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/store/updatestatus/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/store/updatestatus/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4131,7 +4131,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/addregion/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4145,7 +4145,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/store/addregion/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4165,7 +4165,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/addregion/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4179,7 +4179,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/store/addregion/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/store/addregion/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4244,7 +4244,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/store/list/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/list/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4258,7 +4258,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/store/list/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/store/list/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4279,12 +4279,12 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/store/list/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/list/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/store/list/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/store/list/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4349,7 +4349,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/orderlist/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4363,7 +4363,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/store/orderlist/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4384,7 +4384,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/orderlist/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4398,7 +4398,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/store/orderlist/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/store/orderlist/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4463,7 +4463,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/commission/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4477,7 +4477,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/commission/create/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4497,7 +4497,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/commission/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4511,7 +4511,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/commission/create/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/commission/create/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4576,12 +4576,12 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/commission/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/commission/getall/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4601,12 +4601,12 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/commission/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/commission/getall/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/commission/getall/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4671,7 +4671,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/commissionhistory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4685,7 +4685,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
+					"raw": "http://15.206.132.5:8001/qubecart/admin/store/commissionhistory/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -4705,7 +4705,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/commissionhistory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4719,7 +4719,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://3.7.66.177:8001/qubecart/admin/store/commissionhistory/",
+							"raw": "http://15.206.132.5:8001/qubecart/admin/store/commissionhistory/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -4784,7 +4784,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/customer/getall/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/customer/getall/",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -4805,7 +4805,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/customer/getall/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/customer/getall/",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -4870,7 +4870,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/customer/details/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/customer/details/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -4900,7 +4900,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/customer/details/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/customer/details/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -4974,7 +4974,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/getfcm/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/getfcm/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5003,7 +5003,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/getfcm/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/getfcm/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5076,7 +5076,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/notificationmaster/create/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/notificationmaster/create/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5106,7 +5106,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/notificationmaster/create/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/notificationmaster/create/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5180,7 +5180,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/shared/send/pushnotification/",
+			"name": "http://15.206.132.5:8001/qubecart/shared/send/pushnotification/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5210,7 +5210,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/shared/send/pushnotification/",
+					"name": "http://15.206.132.5:8001/qubecart/shared/send/pushnotification/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5284,7 +5284,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/paytopartner/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/paytopartner/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5314,7 +5314,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/paytopartner/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/paytopartner/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5388,7 +5388,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/store/getdetails/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/store/getdetails/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5418,7 +5418,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/store/getdetails/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/store/getdetails/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5492,7 +5492,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getbyregion/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getbyregion/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5522,7 +5522,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/personnel/getbyregion/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getbyregion/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5596,7 +5596,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/commission/assignstore/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/commission/assignstore/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5626,7 +5626,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/commission/assignstore/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/commission/assignstore/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5700,7 +5700,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/updatebagstatus/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/updatebagstatus/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5730,7 +5730,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/updatebagstatus/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/updatebagstatus/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5804,7 +5804,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/order/bagaction/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/bagaction/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5834,7 +5834,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/order/bagaction/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/bagaction/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -5908,7 +5908,7 @@
 			]
 		},
 		{
-			"name": "http://3.7.66.177:8001/qubecart/admin/template/getbystorecategory/",
+			"name": "http://15.206.132.5:8001/qubecart/admin/template/getbystorecategory/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -5938,7 +5938,7 @@
 			},
 			"response": [
 				{
-					"name": "http://3.7.66.177:8001/qubecart/admin/template/getbystorecategory/",
+					"name": "http://15.206.132.5:8001/qubecart/admin/template/getbystorecategory/",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
