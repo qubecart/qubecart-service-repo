@@ -3042,6 +3042,106 @@
 				"description": "Instamojo Webhook"
 			},
 			"response": []
+		},
+		{
+			"name": "http://3.7.66.177:8002/qubecart/customer/adress/reversegeocode/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\" : 22.559158,\r\n    \"longitude\" : 88.4155672,\r\n    \"name\" : \"Haranath Basak\",\r\n    \"contact_no\" : \"9932047263\",\r\n    \"landmark\" : \"Near Sukantanagar Football Ground\",\r\n    \"house_number\" : \"G-98\",\r\n    \"address_type\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/adress/reversegeocode/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"adress",
+						"reversegeocode",
+						""
+					]
+				},
+				"description": "Reverse geocode"
+			},
+			"response": [
+				{
+					"name": "http://3.7.66.177:8002/qubecart/customer/adress/reversegeocode/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"latitude\" : 22.559158,\r\n    \"longitude\" : 88.4155672,\r\n    \"name\" : \"Haranath Basak\",\r\n    \"contact_no\" : \"9932047263\",\r\n    \"landmark\" : \"Near Sukantanagar Football Ground\",\r\n    \"house_number\" : \"G-98\",\r\n    \"address_type\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/adress/reversegeocode/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"adress",
+								"reversegeocode",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 01 Dec 2020 04:54:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.7.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "343"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"latitude\": 22.559158,\n        \"longitude\": 88.4155672,\n        \"name\": \"Haranath Basak\",\n        \"contact_no\": \"9932047263\",\n        \"landmark\": \"Near Sukantanagar Football Ground\",\n        \"address_type\": 1,\n        \"addressline1\": \"G-98\",\n        \"addressline2\": \" Kolkata\",\n        \"city\": \"North 24 Parganas\",\n        \"state\": \"West Bengal\",\n        \"pin\": \"700098\",\n        \"country\": \"India\"\n    }\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
