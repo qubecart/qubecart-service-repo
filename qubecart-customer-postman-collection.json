@@ -3142,6 +3142,524 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"latitude\": 22.559158,\n        \"longitude\": 88.4155672,\n        \"name\": \"Haranath Basak\",\n        \"contact_no\": \"9932047263\",\n        \"landmark\": \"Near Sukantanagar Football Ground\",\n        \"address_type\": 1,\n        \"addressline1\": \"G-98\",\n        \"addressline2\": \" Kolkata\",\n        \"city\": \"North 24 Parganas\",\n        \"state\": \"West Bengal\",\n        \"pin\": \"700098\",\n        \"country\": \"India\"\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8002/qubecart/customer/incident/report/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\" : 139,\r\n    \"raised_by\" : 29,\r\n    \"raised_by_role\" : 3,\r\n    \"problem_codes\" : [1,2],\r\n    \"problem_images\" : [],\r\n    \"bag_ids\" : [],\r\n    \"contact_person_no\" : \"9932047263\",\r\n    \"contact_person_email\" : \"hb@gmail.com\",\r\n    \"incident_description\" : \"Other Problem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/incident/report/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"incident",
+						"report",
+						""
+					]
+				},
+				"description": "Incident Report"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8002/qubecart/customer/incident/report/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_id\" : 139,\r\n    \"raised_by\" : 29,\r\n    \"raised_by_role\" : 3,\r\n    \"problem_codes\" : [1,2],\r\n    \"problem_images\" : [],\r\n    \"bag_ids\" : [],\r\n    \"contact_person_no\" : \"9932047263\",\r\n    \"contact_person_email\" : \"hb@gmail.com\",\r\n    \"incident_description\" : \"Other Problem\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/incident/report/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"incident",
+								"report",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:05:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8002/qubecart/customer/incident/getall/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_id\" : 29,\r\n    \"past_flag\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/incident/getall/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"incident",
+						"getall",
+						""
+					]
+				},
+				"description": "Incident Detail"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8002/qubecart/customer/incident/getall/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_id\" : 29,\r\n    \"past_flag\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/incident/getall/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"incident",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:08:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "856"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"incident_id\": 6,\n            \"incident_type\": 1,\n            \"reported_timestamp\": \"2020-12-17T08:05:21Z\",\n            \"incident_detail_id\": 6,\n            \"order_id\": 139,\n            \"incident_status\": 1,\n            \"incident_ref_no\": \"IRN756760\",\n            \"incident_priority\": 1,\n            \"contact_person_no\": \"9932047263\",\n            \"contact_person_email\": \"hb@gmail.com\",\n            \"order_ref_no\": \"QCO634260\",\n            \"incident_type_name\": \"Order Related Issue\",\n            \"incident_status_name\": \"Logged\",\n            \"incident_priority_name\": \"High\"\n        },\n        {\n            \"incident_id\": 4,\n            \"incident_type\": 1,\n            \"reported_timestamp\": \"2020-12-03T10:24:12Z\",\n            \"incident_detail_id\": 4,\n            \"order_id\": 139,\n            \"incident_status\": 1,\n            \"incident_ref_no\": \"IRN647700\",\n            \"incident_priority\": 1,\n            \"contact_person_no\": \"8013320216\",\n            \"contact_person_email\": \"das.sudipta94@gmail.com\",\n            \"order_ref_no\": \"QCO634260\",\n            \"incident_type_name\": \"Order Related Issue\",\n            \"incident_status_name\": \"Logged\",\n            \"incident_priority_name\": \"High\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8002/qubecart/customer/incident/details/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"incident_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/incident/details/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"incident",
+						"details",
+						""
+					]
+				},
+				"description": "Incedint Details"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8002/qubecart/customer/incident/details/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incident_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/incident/details/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"incident",
+								"details",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:10:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1004"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"incident_id\": 1,\n        \"incident_type\": 1,\n        \"raised_by\": 31,\n        \"raised_by_role\": \"Customer\",\n        \"reported_timestamp\": \"2020-12-01T09:27:01\",\n        \"incident_detail_id\": 1,\n        \"order_id\": 140,\n        \"problem_codes\": \"[1, 2]\",\n        \"incident_description\": \"closed\",\n        \"incident_status\": 4,\n        \"updated_by\": 31,\n        \"updated_on\": \"2020-12-01T09:27:01\",\n        \"problem_image_url\": \"['https://qubecart.s3.ap-south-1.amazonaws.com/qubecart_incedent_image/image1.jpg', 'https://qubecart.s3.ap-south-1.amazonaws.com/qubecart_incedent_image/image2.jpg']\",\n        \"incident_ref_no\": \"IRN210179\",\n        \"incident_priority\": 1,\n        \"resolution_reason_code\": null,\n        \"bag_ids\": \"[154,153]\",\n        \"contact_person_no\": \"9932047263\",\n        \"contact_person_email\": \"hb@gmail.com\",\n        \"order_ref_no\": \"QCO874628\",\n        \"incident_type_name\": \"Order Related Issue\",\n        \"incident_status_name\": \"Partner Reviewing\",\n        \"incident_priority_name\": \"High\",\n        \"problem_details\": [\n            {\n                \"problem_code\": \"1\",\n                \"problem_code_name\": \"Have not received order\"\n            },\n            {\n                \"problem_code\": \"2\",\n                \"problem_code_name\": \"Delay in order Delivery\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8002/qubecart/customer/reviewrating/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"review_type\": \"bag\",\r\n    \"reviewer_id\": 31,\r\n    \"item_value\": 150,\r\n    \"product_id\": null,\r\n    \"overall_rating\": 4,\r\n    \"comments\": \"Excellent product\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/reviewrating/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"reviewrating",
+						""
+					]
+				},
+				"description": "Review Rating"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8002/qubecart/customer/reviewrating/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review_type\": \"bag\",\r\n    \"reviewer_id\": 31,\r\n    \"item_value\": 150,\r\n    \"product_id\": null,\r\n    \"overall_rating\": 4,\r\n    \"comments\": \"Excellent product\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/reviewrating/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"reviewrating",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:13:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8002/qubecart/customer/reviewrating/getbystore/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"store_id\" : 34\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{customer}}/qubecart/customer/reviewrating/getbystore/",
+					"host": [
+						"{{customer}}"
+					],
+					"path": [
+						"qubecart",
+						"customer",
+						"reviewrating",
+						"getbystore",
+						""
+					]
+				},
+				"description": "Review By Store Id"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8002/qubecart/customer/reviewrating/getbystore/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\" : 34\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{customer}}/qubecart/customer/reviewrating/getbystore/",
+							"host": [
+								"{{customer}}"
+							],
+							"path": [
+								"qubecart",
+								"customer",
+								"reviewrating",
+								"getbystore",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:15:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1441"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": [\n        {\n            \"review_id\": 33,\n            \"reviewer_id\": 31,\n            \"dateof_review\": \"2020-12-17T08:13:51Z\",\n            \"overall_rating\": 4,\n            \"comments\": \"Excellent product\",\n            \"bag_id\": 150,\n            \"bag_ref_no\": \"QCB318212\",\n            \"order_id\": 136,\n            \"customer_first_name\": \"Pradipta\",\n            \"customer_last_name\": \"Das\",\n            \"store_name\": \"Das Store \"\n        },\n        {\n            \"review_id\": 31,\n            \"reviewer_id\": 31,\n            \"dateof_review\": \"2020-12-10T12:23:31Z\",\n            \"overall_rating\": 4,\n            \"comments\": \"Great product\",\n            \"bag_id\": 163,\n            \"bag_ref_no\": \"QCB824475\",\n            \"order_id\": 148,\n            \"customer_first_name\": \"Pradipta\",\n            \"customer_last_name\": \"Das\",\n            \"store_name\": \"Das Store \"\n        },\n        {\n            \"review_id\": 30,\n            \"reviewer_id\": 31,\n            \"dateof_review\": \"2020-12-09T14:48:22Z\",\n            \"overall_rating\": 4,\n            \"comments\": \"t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\",\n            \"bag_id\": 151,\n            \"bag_ref_no\": \"QCB555856\",\n            \"order_id\": 137,\n            \"customer_first_name\": \"Pradipta\",\n            \"customer_last_name\": \"Das\",\n            \"store_name\": \"Das Store \"\n        },\n        {\n            \"review_id\": 28,\n            \"reviewer_id\": 31,\n            \"dateof_review\": \"2020-12-09T14:47:39Z\",\n            \"overall_rating\": 3,\n            \"comments\": \"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years ol\",\n            \"bag_id\": 162,\n            \"bag_ref_no\": \"QCB635614\",\n            \"order_id\": 147,\n            \"customer_first_name\": \"Pradipta\",\n            \"customer_last_name\": \"Das\",\n            \"store_name\": \"Das Store \"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}

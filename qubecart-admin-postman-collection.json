@@ -6321,6 +6321,1948 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"code\": \"001\",\n        \"exception\": false,\n        \"Errors\": null,\n        \"data\": null\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/conversations/details/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"order_id\" : 140,\r\n    \"incident_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/conversations/details/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"conversations",
+						"details",
+						""
+					]
+				},
+				"description": "conversation details"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/conversations/details/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"order_id\" : 140,\r\n    \"incident_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/conversations/details/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"conversations",
+								"details",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 07:36:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4058"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": [\n        {\n            \"conversations_id\": 1954,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 31,\n            \"sender_role_id\": 3,\n            \"created_at\": \"2020-12-04T19:48:18Z\",\n            \"message\": \"Duplicate Product Delivered\",\n            \"sender_role\": \"Customer\"\n        },\n        {\n            \"conversations_id\": 1955,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 1,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-04T19:48:18Z\",\n            \"message\": \"Sorry for inconvenience, we look after your incident shortly\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1958,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T19:54:53Z\",\n            \"message\": \"Sorry for that but not delivered duplicate product\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1960,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 24,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T20:03:58Z\",\n            \"message\": \"We dont send you duplicate product\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"New Das Store\"\n        },\n        {\n            \"conversations_id\": 1961,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 31,\n            \"sender_role_id\": 3,\n            \"created_at\": \"2020-12-04T20:07:50Z\",\n            \"message\": \"Tora duplicate product dis ni to ki toder baap deachhe ...bokachodar dol\",\n            \"sender_role\": \"Customer\"\n        },\n        {\n            \"conversations_id\": 1962,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 1,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-04T20:08:56Z\",\n            \"message\": \"Kichhu mone korben na customer dada,......ei maal gulo khub dhaamna\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1963,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 24,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T20:10:26Z\",\n            \"message\": \"Duplicate product to gaar e guje rakh, k kinte bole6e toke babachoda\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"New Das Store\"\n        },\n        {\n            \"conversations_id\": 1964,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T20:12:29Z\",\n            \"message\": \"admin ta sala boro baal, tora bara vulval product guje dis deliveryr somoy\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1965,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-05T05:48:06Z\",\n            \"message\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1966,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-07T08:19:16Z\",\n            \"message\": \"Sorry for the inconvinience, we are getting back to you shortly\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1967,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-07T11:21:54Z\",\n            \"message\": \"dfdsfgds\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1968,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-07T11:22:39Z\",\n            \"message\": \"gjj\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1969,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-07T11:22:47Z\",\n            \"message\": \"gfdfgfddg\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1970,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-08T05:44:02Z\",\n            \"message\": \"Sorry for the inconvinience, we are getting back to you shortly\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1971,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-16T19:37:18Z\",\n            \"message\": \"Wersd\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1972,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-16T21:31:37Z\",\n            \"message\": \"Ghjhfcgjkkk\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/conversations/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender_id\" : 28,\r\n    \"sender_role_id\" : 2,\r\n    \"order_id\" : 140,\r\n    \"incident_id\" : 1,\r\n    \"message\" : \"admin ta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/conversations/create/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"conversations",
+						"create",
+						""
+					]
+				},
+				"description": "Conversation Create"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/conversations/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sender_id\" : 28,\r\n    \"sender_role_id\" : 2,\r\n    \"order_id\" : 140,\r\n    \"incident_id\" : 1,\r\n    \"message\" : \"admin ta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/conversations/create/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"conversations",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 07:38:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4255"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": [\n        {\n            \"conversations_id\": 1954,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 31,\n            \"sender_role_id\": 3,\n            \"created_at\": \"2020-12-04T19:48:18Z\",\n            \"message\": \"Duplicate Product Delivered\",\n            \"sender_role\": \"Customer\"\n        },\n        {\n            \"conversations_id\": 1955,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 1,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-04T19:48:18Z\",\n            \"message\": \"Sorry for inconvenience, we look after your incident shortly\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1958,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T19:54:53Z\",\n            \"message\": \"Sorry for that but not delivered duplicate product\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1960,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 24,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T20:03:58Z\",\n            \"message\": \"We dont send you duplicate product\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"New Das Store\"\n        },\n        {\n            \"conversations_id\": 1961,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 31,\n            \"sender_role_id\": 3,\n            \"created_at\": \"2020-12-04T20:07:50Z\",\n            \"message\": \"Tora duplicate product dis ni to ki toder baap deachhe ...bokachodar dol\",\n            \"sender_role\": \"Customer\"\n        },\n        {\n            \"conversations_id\": 1962,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 1,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-04T20:08:56Z\",\n            \"message\": \"Kichhu mone korben na customer dada,......ei maal gulo khub dhaamna\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1963,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 24,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T20:10:26Z\",\n            \"message\": \"Duplicate product to gaar e guje rakh, k kinte bole6e toke babachoda\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"New Das Store\"\n        },\n        {\n            \"conversations_id\": 1964,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-04T20:12:29Z\",\n            \"message\": \"admin ta sala boro baal, tora bara vulval product guje dis deliveryr somoy\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1965,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-05T05:48:06Z\",\n            \"message\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1966,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-07T08:19:16Z\",\n            \"message\": \"Sorry for the inconvinience, we are getting back to you shortly\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1967,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-07T11:21:54Z\",\n            \"message\": \"dfdsfgds\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1968,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-07T11:22:39Z\",\n            \"message\": \"gjj\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1969,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 6,\n            \"sender_role_id\": 1,\n            \"created_at\": \"2020-12-07T11:22:47Z\",\n            \"message\": \"gfdfgfddg\",\n            \"sender_role\": \"Admin\"\n        },\n        {\n            \"conversations_id\": 1970,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-08T05:44:02Z\",\n            \"message\": \"Sorry for the inconvinience, we are getting back to you shortly\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1971,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-16T19:37:18Z\",\n            \"message\": \"Wersd\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1972,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-16T21:31:37Z\",\n            \"message\": \"Ghjhfcgjkkk\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        },\n        {\n            \"conversations_id\": 1973,\n            \"order_id\": 140,\n            \"incident_id\": 1,\n            \"sender_id\": 28,\n            \"sender_role_id\": 2,\n            \"created_at\": \"2020-12-17T07:38:29Z\",\n            \"message\": \"admin ta\",\n            \"sender_role\": \"Partner\",\n            \"store_name\": \"hula bila\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/appversion/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"version_code\" : \"0.1.18\",\r\n    \"app_type\" : 1,\r\n    \"version_description\": \"Updated Version\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/appversion/create/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"appversion",
+						"create",
+						""
+					]
+				},
+				"description": "App version Create"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/appversion/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"version_code\" : \"0.1.18\",\r\n    \"app_type\" : 1,\r\n    \"version_description\": \"Updated Version\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/appversion/create/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"appversion",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 07:52:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/appversion/returnversioncode/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"app_type\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/appversion/returnversioncode/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"appversion",
+						"returnversioncode",
+						""
+					]
+				},
+				"description": "App Version Return"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/appversion/returnversioncode/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"app_type\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/appversion/returnversioncode/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"appversion",
+								"returnversioncode",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 07:55:58 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "78"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": {\n        \"version_code\": \"0.1.18\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/incidents/getbyid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"incident_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/incidents/getbyid/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"incidents",
+						"getbyid",
+						""
+					]
+				},
+				"description": "Incident Detail"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/incidents/getbyid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incident_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/incidents/getbyid/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"incidents",
+								"getbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:39:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3978"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"incident_id\": 1,\n        \"incident_type\": 1,\n        \"raised_by\": 31,\n        \"raised_by_role\": \"Customer\",\n        \"reported_timestamp\": \"2020-12-01T09:27:01Z\",\n        \"customer_detail_id\": 27,\n        \"first_name\": \"Pradipta\",\n        \"last_name\": \"Das\",\n        \"email_id\": \"das.pradipta.2011@gmail.com\",\n        \"phone_no\": \"9830623021\",\n        \"password\": \"\",\n        \"kyc_status\": 0,\n        \"email_verify_status\": 0,\n        \"kyc_authenticated\": null,\n        \"customer_id\": 31,\n        \"incident_detail_id\": 1,\n        \"order_id\": 140,\n        \"problem_codes\": [\n            {\n                \"code\": 1,\n                \"name\": \"Have not received order\"\n            },\n            {\n                \"code\": 2,\n                \"name\": \"Delay in order Delivery\"\n            }\n        ],\n        \"incident_description\": \"closed\",\n        \"incident_status\": 4,\n        \"updated_by\": 31,\n        \"updated_on\": \"2020-12-01T09:27:01\",\n        \"problem_image_url\": \"['https://qubecart.s3.ap-south-1.amazonaws.com/qubecart_incedent_image/image1.jpg', 'https://qubecart.s3.ap-south-1.amazonaws.com/qubecart_incedent_image/image2.jpg']\",\n        \"incident_ref_no\": \"IRN210179\",\n        \"incident_priority\": 1,\n        \"resolution_reason_code\": null,\n        \"bag_ids\": \"[154,153]\",\n        \"contact_person_no\": \"9932047263\",\n        \"contact_person_email\": \"hb@gmail.com\",\n        \"incident_status_name\": \"Partner Reviewing\",\n        \"order_ref_no\": \"QCO874628\",\n        \"order_created_at\": \"2020-11-30T12:39:26\",\n        \"order_delivery_date\": null,\n        \"scheduled_delivery_date\": \"2020-11-28T12:48:00\",\n        \"order_detail_id\": 140,\n        \"order_status\": 1,\n        \"billing_address_id\": 48,\n        \"price\": 178,\n        \"payment_type\": 1,\n        \"payment_status\": 0,\n        \"pre_order_flag\": 0,\n        \"payment_date\": null,\n        \"incident_assignment_id\": 1,\n        \"assigned_to_id\": 28,\n        \"assigned_on\": \"2020-12-07T12:56:42\",\n        \"incident_assignment_status\": 5,\n        \"accepted_on\": null,\n        \"accepted_location\": null,\n        \"incident_queue_id\": 1,\n        \"queue_type\": 1,\n        \"created_on\": \"2020-12-01T09:27:01\",\n        \"action_type\": 1,\n        \"action_comment\": null,\n        \"partner_details\": [\n            {\n                \"partner_detail_id\": 14,\n                \"company_name\": \"Das House \",\n                \"contact_phone\": \"8013320216\",\n                \"billing_name\": \"S Das\",\n                \"gst_numbers\": \"123456789\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-09-19T05:33:54\",\n                \"updated_by\": null,\n                \"partner_address_id\": 85,\n                \"pan\": \"dpup0009\",\n                \"contact_email\": \"das.sudipta94@gmail.com\",\n                \"contact_person_firstname\": \"sudipta\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"engineer \",\n                \"partner_bank_id\": null,\n                \"status\": 1,\n                \"qc_partner_id\": 28,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bag_id\": 154,\n                \"bag_ref_no\": \"QCB577030\"\n            },\n            {\n                \"partner_detail_id\": 11,\n                \"company_name\": \"Msqube\",\n                \"contact_phone\": \"9830623021\",\n                \"billing_name\": \"Snehasish\",\n                \"gst_numbers\": \"1234qwer\",\n                \"corporate_size\": null,\n                \"payment_term\": null,\n                \"updated_on\": \"2020-08-20T05:22:58\",\n                \"updated_by\": null,\n                \"partner_address_id\": 40,\n                \"pan\": \"asdf\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\",\n                \"contact_person_designation\": \"SDE\",\n                \"partner_bank_id\": 8,\n                \"status\": 1,\n                \"qc_partner_id\": 24,\n                \"password\": \"81dc9bdb52d04dc20036dbd8313ed055\",\n                \"bag_id\": 153,\n                \"bag_ref_no\": \"QCB168273\"\n            }\n        ],\n        \"bag_details\": [\n            {\n                \"bag_id\": 154,\n                \"bag_ref_no\": \"QCB577030\",\n                \"bag_status\": 1,\n                \"updated_on\": null,\n                \"bag_status_name\": \"Order Placed\",\n                \"store_id\": 64,\n                \"store_name\": \"hula bila\",\n                \"store_category\": 3,\n                \"qc_partner_id\": 28,\n                \"store_rating\": 0,\n                \"store_status\": 2,\n                \"region_id\": 2,\n                \"store_open_time\": \"05:02:30\",\n                \"store_close_time\": \"16:02:30\",\n                \"store_days\": \"[6, 0, 1, 2, 3, 4, 5]\",\n                \"store_policy\": null,\n                \"prebooking_flag\": 1,\n                \"store_status_name\": \"Activated\",\n                \"store_category_name\": \"Food\",\n                \"store_order_type_name\": \"scheduled\",\n                \"contact_phone\": \"8013320216\",\n                \"contact_email\": \"das.sudipta94@gmail.com\",\n                \"contact_person_firstname\": \"sudipta\",\n                \"contact_person_lastname\": \"Das\"\n            },\n            {\n                \"bag_id\": 153,\n                \"bag_ref_no\": \"QCB168273\",\n                \"bag_status\": 1,\n                \"updated_on\": null,\n                \"bag_status_name\": \"Order Placed\",\n                \"store_id\": 37,\n                \"store_name\": \"New Das Store\",\n                \"store_category\": 1,\n                \"qc_partner_id\": 24,\n                \"store_rating\": 4,\n                \"store_status\": 2,\n                \"region_id\": 2,\n                \"store_open_time\": \"08:00:00\",\n                \"store_close_time\": \"23:00:00\",\n                \"store_days\": \"[0,1,2,3,4,5,6]\",\n                \"store_policy\": null,\n                \"prebooking_flag\": 1,\n                \"store_status_name\": \"Activated\",\n                \"store_category_name\": \"Grocery\",\n                \"store_order_type_name\": \"scheduled\",\n                \"contact_phone\": \"9830623021\",\n                \"contact_email\": \"snehasishjames007@gmail.com\",\n                \"contact_person_firstname\": \"Snehasish\",\n                \"contact_person_lastname\": \"Das\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/incidents/getnextstatus/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"incident_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/incidents/getnextstatus/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"incidents",
+						"getnextstatus",
+						""
+					]
+				},
+				"description": "Incident Transaction Status"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/incidents/getnextstatus/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incident_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/incidents/getnextstatus/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"incidents",
+								"getnextstatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 08:41:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "343"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"domain_id\": 135,\n            \"domain_value\": \"Pending\",\n            \"domain_code\": 2,\n            \"domain_type\": \"incident_status\",\n            \"domain_text\": \"Pending\",\n            \"domain_data_type\": \"string\"\n        },\n        {\n            \"domain_id\": 138,\n            \"domain_value\": \"Resolved\",\n            \"domain_code\": 5,\n            \"domain_type\": \"incident_status\",\n            \"domain_text\": \"Resolved\",\n            \"domain_data_type\": \"string\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/incidents/updatestatus/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"incident_id\" : 1,\r\n    \"next_status\" : 5,\r\n    \"comment\" : \"Good\",\r\n    \"sender_role\" : 1,\r\n    \"sender_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/incidents/updatestatus/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"incidents",
+						"updatestatus",
+						""
+					]
+				},
+				"description": "Incident Update Status By Admin"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/incidents/updatestatus/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incident_id\" : 1,\r\n    \"next_status\" : 5,\r\n    \"comment\" : \"Good\",\r\n    \"sender_role\" : 1,\r\n    \"sender_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/incidents/updatestatus/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"incidents",
+								"updatestatus",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 09:49:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/incidents/getall/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_type\":null,\r\n    \"start_datetime\":null,\r\n    \"end_datetime\":null,\r\n    \"past_flag\":null,\r\n    \"partner_id\":28\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/incidents/getall/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"incidents",
+						"getall",
+						""
+					]
+				},
+				"description": "Incident Get All"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/incidents/getall/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_type\":null,\r\n    \"start_datetime\":null,\r\n    \"end_datetime\":null,\r\n    \"past_flag\":null,\r\n    \"partner_id\":28\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/incidents/getall/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"incidents",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 10:12:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "865"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"incident_id\": 1,\n            \"incident_type\": 1,\n            \"raised_by\": 31,\n            \"raised_by_role\": \"Customer\",\n            \"reported_timestamp\": \"2020-12-01T09:27:01Z\",\n            \"incident_detail_id\": 1,\n            \"order_id\": 140,\n            \"problem_codes\": \"[1, 2]\",\n            \"incident_description\": \"closed\",\n            \"incident_status\": 5,\n            \"updated_on\": \"2020-12-01T09:27:01\",\n            \"incident_ref_no\": \"IRN210179\",\n            \"incident_priority\": 1,\n            \"resolution_reason_code\": null,\n            \"bag_ids\": \"[154,153]\",\n            \"incident_assignment_id\": 1,\n            \"assigned_to_id\": 28,\n            \"assigned_on\": \"2020-12-07T12:56:42\",\n            \"incident_assignment_status\": 5,\n            \"accepted_on\": null,\n            \"accepted_location\": null,\n            \"incident_queue_id\": 1,\n            \"queue_type\": 1,\n            \"created_on\": \"2020-12-01T09:27:01\",\n            \"first_name\": \"Pradipta\",\n            \"last_name\": \"Das\",\n            \"incident_status_name\": \"Resolved\",\n            \"order_ref_no\": \"QCO874628\",\n            \"problem_codes_names\": \"Have not received order, Delay in order Delivery, \",\n            \"severity_name\": \"Medium\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"problem_description\" : \"Problem\",\r\n    \"problem_code\" : \"101\",\r\n    \"problem_severity\" : 1,\r\n    \"store_category\" : 1,\r\n    \"admn_user_id\" : 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/problemcodes/create/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"problemcodes",
+						"create",
+						""
+					]
+				},
+				"description": "Problem Code Create"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"problem_description\" : \"Problem\",\r\n    \"problem_code\" : \"101\",\r\n    \"problem_severity\" : 1,\r\n    \"store_category\" : 1,\r\n    \"admn_user_id\" : 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/problemcodes/create/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"problemcodes",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 10:29:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"Errors\": null,\n    \"exception\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/getall/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/problemcodes/getall/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"problemcodes",
+						"getall",
+						""
+					]
+				},
+				"description": "Get All Problem Code "
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/getall/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/problemcodes/getall/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"problemcodes",
+								"getall",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 10:30:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3830"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"Errors\": null,\n    \"exception\": false,\n    \"data\": [\n        {\n            \"problem_codes_id\": 18,\n            \"problem_code\": \"12\",\n            \"display_description\": \"Improper quantity of items received\",\n            \"updated_on\": \"2020-12-01T12:35:07\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 17,\n            \"problem_code\": \"11\",\n            \"display_description\": \"Damaged or spoil items received\",\n            \"updated_on\": \"2020-12-01T12:34:05\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 15,\n            \"problem_code\": \"9\",\n            \"display_description\": \"Wrong item delivered\",\n            \"updated_on\": \"2020-12-01T12:32:55\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 14,\n            \"problem_code\": \"8\",\n            \"display_description\": \"Items missing from my order\",\n            \"updated_on\": \"2020-12-01T12:32:34\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 10,\n            \"problem_code\": \"5\",\n            \"display_description\": \"Different Bill Received\",\n            \"updated_on\": \"2020-12-01T12:43:45\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 8,\n            \"problem_code\": \"3\",\n            \"display_description\": \"Money deducted but order not confirmed\",\n            \"updated_on\": \"2020-12-01T11:53:34\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 7,\n            \"problem_code\": \"2\",\n            \"display_description\": \"Delay in order Delivery\",\n            \"updated_on\": \"2020-12-01T11:52:55\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 6,\n            \"problem_code\": \"1\",\n            \"display_description\": \"Have not received order\",\n            \"updated_on\": \"2020-12-01T11:52:27\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 1,\n            \"status\": 1,\n            \"incident_severity_name\": \"High\"\n        },\n        {\n            \"problem_codes_id\": 21,\n            \"problem_code\": \"13\",\n            \"display_description\": \"Poor quality of products delivered\",\n            \"updated_on\": \"2020-12-01T12:37:27\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 2,\n            \"status\": 1,\n            \"incident_severity_name\": \"Medium\"\n        },\n        {\n            \"problem_codes_id\": 20,\n            \"problem_code\": \"14\",\n            \"display_description\": \"Items are tampered\",\n            \"updated_on\": \"2020-12-01T12:36:22\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 2,\n            \"status\": 1,\n            \"incident_severity_name\": \"Medium\"\n        },\n        {\n            \"problem_codes_id\": 13,\n            \"problem_code\": \"7\",\n            \"display_description\": \"Did not receive order invoice\",\n            \"updated_on\": \"2020-12-01T12:31:27\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 2,\n            \"status\": 1,\n            \"incident_severity_name\": \"Medium\"\n        },\n        {\n            \"problem_codes_id\": 11,\n            \"problem_code\": \"6\",\n            \"display_description\": \"Item amount does not match with total amount\",\n            \"updated_on\": \"2020-12-01T12:44:41\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 2,\n            \"status\": 1,\n            \"incident_severity_name\": \"Medium\"\n        },\n        {\n            \"problem_codes_id\": 9,\n            \"problem_code\": \"4\",\n            \"display_description\": \"Did not receive refund\",\n            \"updated_on\": \"2020-12-01T11:53:59\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 2,\n            \"status\": 1,\n            \"incident_severity_name\": \"Medium\"\n        },\n        {\n            \"problem_codes_id\": 24,\n            \"problem_code\": \"17\",\n            \"display_description\": \"Others\",\n            \"updated_on\": \"2020-12-01T12:38:52\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 3,\n            \"status\": 1,\n            \"incident_severity_name\": \"Low\"\n        },\n        {\n            \"problem_codes_id\": 23,\n            \"problem_code\": \"16\",\n            \"display_description\": \"App is misbehaving\",\n            \"updated_on\": \"2020-12-01T12:38:38\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 3,\n            \"status\": 1,\n            \"incident_severity_name\": \"Low\"\n        },\n        {\n            \"problem_codes_id\": 22,\n            \"problem_code\": \"15\",\n            \"display_description\": \"App not working properly\",\n            \"updated_on\": \"2020-12-01T12:37:57\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 3,\n            \"status\": 1,\n            \"incident_severity_name\": \"Low\"\n        },\n        {\n            \"problem_codes_id\": 16,\n            \"problem_code\": \"10\",\n            \"display_description\": \"Improper Packaging\",\n            \"updated_on\": \"2020-12-01T12:33:27\",\n            \"updated_by\": 6,\n            \"store_category\": null,\n            \"severity\": 3,\n            \"status\": 1,\n            \"incident_severity_name\": \"Low\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/getbyid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"problems_codes_id\" : 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/problemcodes/getbyid/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"problemcodes",
+						"getbyid",
+						""
+					]
+				},
+				"description": "Get problem details by problem code id"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/getbyid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"problems_codes_id\" : 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/problemcodes/getbyid/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"problemcodes",
+								"getbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 10:32:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"Errors\": null,\n    \"exception\": false,\n    \"data\": {\n        \"problem_code\": \"6\",\n        \"display_description\": \"Item amount does not match with total amount\",\n        \"updated_on\": \"2020-12-01T12:44:41\",\n        \"updated_by\": 6,\n        \"store_category\": null,\n        \"severity\": 2,\n        \"status\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/updatebyid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"problem_codes_id\" : 11,\r\n        \"problem_code\": \"6\",\r\n        \"display_description\": \"Item amount does not match with total amount\",\r\n        \"updated_on\": \"2020-12-01T12:44:41\",\r\n        \"updated_by\": 6,\r\n        \"store_category\": null,\r\n        \"severity\": 2,\r\n        \"status\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/problemcodes/updatebyid/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"problemcodes",
+						"updatebyid",
+						""
+					]
+				},
+				"description": "Update problem codes"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/updatebyid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"problem_codes_id\" : 11,\r\n        \"problem_code\": \"6\",\r\n        \"display_description\": \"Item amount does not match with total amount\",\r\n        \"updated_on\": \"2020-12-01T12:44:41\",\r\n        \"updated_by\": 6,\r\n        \"store_category\": null,\r\n        \"severity\": 2,\r\n        \"status\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/problemcodes/updatebyid/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"problemcodes",
+								"updatebyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 10:35:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/update/statusbyid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"problem_codes_id\" : 11,\r\n    \"pc_status\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/problemcodes/update/statusbyid/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"problemcodes",
+						"update",
+						"statusbyid",
+						""
+					]
+				},
+				"description": "Update problem code status"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/problemcodes/update/statusbyid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"problem_codes_id\" : 11,\r\n    \"pc_status\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/problemcodes/update/statusbyid/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"problemcodes",
+								"update",
+								"statusbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 10:37:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"Errors\": null,\n    \"exception\": false,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/incidents/assignpartner/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"incident_id\": 8,\r\n    \"order_id\": 149,\r\n    \"tasks\": [\r\n        {\r\n            \"qc_partner_id\": 24,\r\n            \"task_description\": \"Please resolve the app problem\",\r\n            \"task_flag\": 1,\r\n            \"task_name\": \"Please resolve the app problem\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/incidents/assignpartner/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"incidents",
+						"assignpartner",
+						""
+					]
+				},
+				"description": "Assign Partner"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/incidents/assignpartner/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incident_id\": 8,\r\n    \"order_id\": 149,\r\n    \"tasks\": [\r\n        {\r\n            \"qc_partner_id\": 24,\r\n            \"task_description\": \"Please resolve the app problem\",\r\n            \"task_flag\": 1,\r\n            \"task_name\": \"Please resolve the app problem\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/incidents/assignpartner/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"incidents",
+								"assignpartner",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 14:20:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/getalldata/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/adminparameter/getalldata/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"adminparameter",
+						"getalldata",
+						""
+					]
+				},
+				"description": "Get All Parameter Data"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/getalldata/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/adminparameter/getalldata/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"adminparameter",
+								"getalldata",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 14:23:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1547"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": [\n        {\n            \"admn_parameters_id\": 1,\n            \"parameter_key\": \"bucket_name\",\n            \"parameter_value\": \"qubecart\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 2,\n            \"parameter_key\": \"category_folder_name\",\n            \"parameter_value\": \"storecategory\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 3,\n            \"parameter_key\": \"store_folder\",\n            \"parameter_value\": \"qubecart_partner\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 4,\n            \"parameter_key\": \"Offer Folder\",\n            \"parameter_value\": \"qubecart_offer\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 5,\n            \"parameter_key\": \"Advertisement Folder\",\n            \"parameter_value\": \"qubecart_advertisement\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 6,\n            \"parameter_key\": \"Item_image_folder\",\n            \"parameter_value\": \"Item_image\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 7,\n            \"parameter_key\": \"store_customer_distance\",\n            \"parameter_value\": \"25\",\n            \"parameter_desc\": \"km\"\n        },\n        {\n            \"admn_parameters_id\": 8,\n            \"parameter_key\": \"partner_fcm_validity\",\n            \"parameter_value\": \"2\",\n            \"parameter_desc\": \"days\"\n        },\n        {\n            \"admn_parameters_id\": 9,\n            \"parameter_key\": \"delivery_charge\",\n            \"parameter_value\": \"40.0\",\n            \"parameter_desc\": \"Rs\"\n        },\n        {\n            \"admn_parameters_id\": 28,\n            \"parameter_key\": \"msqube_contact_number\",\n            \"parameter_value\": \"7585851723,9830623021,8001342092\",\n            \"parameter_desc\": null\n        },\n        {\n            \"admn_parameters_id\": 29,\n            \"parameter_key\": \"base_delivery_rate\",\n            \"parameter_value\": \"20\",\n            \"parameter_desc\": \"Rs\"\n        },\n        {\n            \"admn_parameters_id\": 30,\n            \"parameter_key\": \"base_delivery_kms\",\n            \"parameter_value\": \"3\",\n            \"parameter_desc\": \"km\"\n        },\n        {\n            \"admn_parameters_id\": 31,\n            \"parameter_key\": \"additional_delivery_rate\",\n            \"parameter_value\": \"6\",\n            \"parameter_desc\": \"Rs\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/getbyid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"admn_parameters_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/adminparameter/getbyid/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"adminparameter",
+						"getbyid",
+						""
+					]
+				},
+				"description": "Get Parameter Detail By Parameter Id"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/getbyid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"admn_parameters_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/adminparameter/getbyid/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"adminparameter",
+								"getbyid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 14:25:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": {\n        \"parameter_key\": \"bucket_name\",\n        \"parameter_value\": \"qubecart\",\n        \"parameter_desc\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"parameter_key\": \"Test_Key\",\r\n        \"parameter_value\": \"Test_value\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/adminparameter/create/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"adminparameter",
+						"create",
+						""
+					]
+				},
+				"description": "Admin Parameter Create"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"parameter_key\": \"Test_Key\",\r\n        \"parameter_value\": \"Test_value\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/adminparameter/create/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"adminparameter",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 14:29:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/update/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"admn_parameters_id\" : 32,\r\n        \"parameter_key\": \"Test\",\r\n        \"parameter_value\": \"Test_value\",\r\n        \"parameter_desc\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/adminparameter/update/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"adminparameter",
+						"update",
+						""
+					]
+				},
+				"description": "Update Parameter"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/update/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"admn_parameters_id\" : 32,\r\n        \"parameter_key\": \"Test\",\r\n        \"parameter_value\": \"Test_value\",\r\n        \"parameter_desc\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/adminparameter/update/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"adminparameter",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 14:32:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Error\": null,\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/checkparameterkey/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parameter_key\" : \"Test_key\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/shared/adminparameter/checkparameterkey/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"shared",
+						"adminparameter",
+						"checkparameterkey",
+						""
+					]
+				},
+				"description": "Check Duplicate Parameter Key"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/shared/adminparameter/checkparameterkey/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"parameter_key\" : \"Test_key\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/shared/adminparameter/checkparameterkey/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"shared",
+								"adminparameter",
+								"checkparameterkey",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 14:33:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Error\": {\n        \"Info\": [],\n        \"Business_Error\": [\n            {\n                \"Code\": \"BE028\",\n                \"Message\": \"Parameter key already exists\"\n            }\n        ],\n        \"Warning\": [],\n        \"System_Error\": []\n    },\n    \"data\": []\n}"
+				}
+			]
 		}
 	],
 	"variable": [
