@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2231326e-dd8a-4fce-856d-f9196db5dde1",
+		"_postman_id": "84e2c4fa-3c87-4576-8e63-1559fb14201d",
 		"name": "Qubecart-Partner-Services",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/generatecode/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/generatecode/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -54,7 +54,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/generatecode/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/generatecode/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -132,7 +132,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/signup/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/signup/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -166,7 +166,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/signup/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/signup/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -244,7 +244,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/login/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/login/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -278,7 +278,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/login/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/login/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -356,7 +356,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/checkunique/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/checkunique/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -390,7 +390,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/checkunique/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/checkunique/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -468,7 +468,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/create/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/create/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -503,7 +503,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/create/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/create/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -582,7 +582,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/get/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/get/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -617,7 +617,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/get/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/get/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -696,7 +696,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/getproducts/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproducts/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -731,7 +731,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/getproducts/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproducts/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -810,7 +810,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/createproduct/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/createproduct/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -845,7 +845,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/createproduct/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/createproduct/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -924,7 +924,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/update/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/update/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -959,7 +959,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/update/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/update/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1038,7 +1038,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/getbyid/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getbyid/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1073,7 +1073,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/getbyid/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getbyid/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1152,7 +1152,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/updatestock/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/updatestock/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1187,7 +1187,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/updatestock/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/updatestock/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1266,7 +1266,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/brand/create/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/brand/create/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1301,7 +1301,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/brand/create/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/brand/create/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1380,7 +1380,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/brand/inactivate/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/brand/inactivate/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1415,7 +1415,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/brand/inactivate/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/brand/inactivate/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1494,7 +1494,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/brand/get/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/brand/get/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1529,7 +1529,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/brand/get/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/brand/get/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1608,7 +1608,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/orders/getactive/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/orders/getactive/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1643,7 +1643,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/orders/getactive/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/orders/getactive/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1722,7 +1722,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/template/info/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/template/info/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1757,7 +1757,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/template/info/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/template/info/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1836,7 +1836,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/getproductsbybrand/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproductsbybrand/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1871,7 +1871,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/getproductsbybrand/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getproductsbybrand/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -1950,7 +1950,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/bycategory/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/bycategory/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -1984,7 +1984,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/bycategory/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/bycategory/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2063,7 +2063,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/getsingleproduct/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/getsingleproduct/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2098,7 +2098,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/getsingleproduct/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/getsingleproduct/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2177,7 +2177,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/store/editproduct/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/store/editproduct/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2212,7 +2212,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/store/editproduct/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/store/editproduct/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2291,7 +2291,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/cartdetails/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2325,7 +2325,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/cartdetails/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/cartdetails/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2403,7 +2403,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/creditcustomer/get/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/get/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2438,7 +2438,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/creditcustomer/get/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/get/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -2517,7 +2517,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://15.206.132.5:8003/qubecart/partner/creditcustomer/updaterequest/",
+					"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/updaterequest/",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -2552,7 +2552,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://15.206.132.5:8003/qubecart/partner/creditcustomer/updaterequest/",
+							"raw": "http://3.7.66.177:8003/qubecart/partner/creditcustomer/updaterequest/",
 							"protocol": "http",
 							"host": [
 								"3",
@@ -3750,7 +3750,429 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"order_id\": 33,\n            \"order_created_at\": \"2020-08-28T17:26:16\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 39,\n            \"bag_ref_no\": \"BAG155245\",\n            \"updated_on\": \"2020-08-29T06:16:05\",\n            \"bag_status\": 5,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 209,\n            \"bag_status_name\": \"Ready To Dispatch\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 204.82\n        },\n        {\n            \"order_id\": 41,\n            \"order_created_at\": \"2020-09-07T18:19:02\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 48,\n            \"bag_ref_no\": \"QCB942211\",\n            \"updated_on\": \"2020-09-08T18:45:02\",\n            \"bag_status\": 6,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 308.85,\n            \"bag_status_name\": \"Picked Up\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 302.673\n        },\n        {\n            \"order_id\": 48,\n            \"order_created_at\": \"2020-09-09T09:35:50\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 56,\n            \"bag_ref_no\": \"QCB329490\",\n            \"updated_on\": \"2020-09-09T12:52:19\",\n            \"bag_status\": 7,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 308.85,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 302.673\n        },\n        {\n            \"order_id\": 49,\n            \"order_created_at\": \"2020-09-09T09:36:30\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 5,\n            \"payment_status\": 0,\n            \"bag_id\": 57,\n            \"bag_ref_no\": \"QCB561856\",\n            \"updated_on\": \"2020-09-09T12:27:33\",\n            \"bag_status\": 7,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 1,\n            \"bag_price\": 308.85,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Credit\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 302.673\n        },\n        {\n            \"order_id\": 62,\n            \"order_created_at\": \"2020-09-11T12:53:16\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 5,\n            \"payment_status\": 0,\n            \"bag_id\": 70,\n            \"bag_ref_no\": \"QCB639095\",\n            \"updated_on\": null,\n            \"bag_status\": 7,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 1,\n            \"bag_price\": 517.85,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Credit\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 507.493\n        },\n        {\n            \"order_id\": 63,\n            \"order_created_at\": \"2020-09-11T12:53:40\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 5,\n            \"payment_status\": 0,\n            \"bag_id\": 71,\n            \"bag_ref_no\": \"QCB980159\",\n            \"updated_on\": null,\n            \"bag_status\": 7,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 1,\n            \"bag_price\": 209,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Credit\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 204.82\n        },\n        {\n            \"order_id\": 73,\n            \"order_created_at\": \"2020-10-10T13:04:25\",\n            \"customer_id\": 18,\n            \"billing_address_id\": 14,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 85,\n            \"bag_ref_no\": \"QCB589259\",\n            \"updated_on\": \"2020-10-10T13:07:12\",\n            \"bag_status\": 7,\n            \"paid_to_partner\": 1,\n            \"paid_to_qubecart\": 1,\n            \"bag_price\": 325,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 318.5\n        },\n        {\n            \"order_id\": 75,\n            \"order_created_at\": \"2020-10-10T17:35:17\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 5,\n            \"payment_status\": 0,\n            \"bag_id\": 87,\n            \"bag_ref_no\": \"QCB975279\",\n            \"updated_on\": \"2020-10-10T17:35:50\",\n            \"bag_status\": 7,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 1,\n            \"bag_price\": 308.85,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Credit\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 302.673\n        },\n        {\n            \"order_id\": 76,\n            \"order_created_at\": \"2020-10-10T18:44:57\",\n            \"customer_id\": 22,\n            \"billing_address_id\": 27,\n            \"payment_type\": 5,\n            \"payment_status\": 0,\n            \"bag_id\": 88,\n            \"bag_ref_no\": \"QCB979921\",\n            \"updated_on\": \"2020-10-10T18:45:09\",\n            \"bag_status\": 7,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 1,\n            \"bag_price\": 308.85,\n            \"bag_status_name\": \"Payment Settled\",\n            \"payment_type_name\": \"Credit\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 302.673\n        },\n        {\n            \"order_id\": 102,\n            \"order_created_at\": \"2020-11-26T10:30:05\",\n            \"customer_id\": 29,\n            \"billing_address_id\": 72,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 116,\n            \"bag_ref_no\": \"QCB624583\",\n            \"updated_on\": \"2020-11-27T13:06:05\",\n            \"bag_status\": 6,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 1300,\n            \"bag_status_name\": \"Picked Up\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 1274\n        },\n        {\n            \"order_id\": 103,\n            \"order_created_at\": \"2020-11-26T10:39:13\",\n            \"customer_id\": 29,\n            \"billing_address_id\": 73,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 117,\n            \"bag_ref_no\": \"QCB922160\",\n            \"updated_on\": \"2020-11-27T13:02:30\",\n            \"bag_status\": 5,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 325,\n            \"bag_status_name\": \"Ready To Dispatch\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 318.5\n        },\n        {\n            \"order_id\": 134,\n            \"order_created_at\": \"2020-11-27T14:10:46\",\n            \"customer_id\": 29,\n            \"billing_address_id\": 43,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 148,\n            \"bag_ref_no\": \"QCB844102\",\n            \"updated_on\": \"2020-11-27T14:23:03\",\n            \"bag_status\": 5,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 900,\n            \"bag_status_name\": \"Ready To Dispatch\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 882\n        },\n        {\n            \"order_id\": 137,\n            \"order_created_at\": \"2020-11-30T10:00:15\",\n            \"customer_id\": 31,\n            \"billing_address_id\": 94,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 151,\n            \"bag_ref_no\": \"QCB555856\",\n            \"updated_on\": \"2020-11-30T10:03:44\",\n            \"bag_status\": 8,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 325,\n            \"bag_status_name\": \"Delivered\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 318.5\n        },\n        {\n            \"order_id\": 147,\n            \"order_created_at\": \"2020-12-09T13:54:15\",\n            \"customer_id\": 31,\n            \"billing_address_id\": 94,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 161,\n            \"bag_ref_no\": \"QCB580349\",\n            \"updated_on\": \"2020-12-09T14:24:29\",\n            \"bag_status\": 8,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 900,\n            \"bag_status_name\": \"Delivered\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 882\n        },\n        {\n            \"order_id\": 147,\n            \"order_created_at\": \"2020-12-09T13:54:15\",\n            \"customer_id\": 31,\n            \"billing_address_id\": 94,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 162,\n            \"bag_ref_no\": \"QCB635614\",\n            \"updated_on\": \"2020-12-09T14:22:23\",\n            \"bag_status\": 8,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 325,\n            \"bag_status_name\": \"Delivered\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 318.5\n        },\n        {\n            \"order_id\": 148,\n            \"order_created_at\": \"2020-12-09T14:11:21\",\n            \"customer_id\": 31,\n            \"billing_address_id\": 94,\n            \"payment_type\": 1,\n            \"payment_status\": 0,\n            \"bag_id\": 163,\n            \"bag_ref_no\": \"QCB824475\",\n            \"updated_on\": \"2020-12-10T12:18:37\",\n            \"bag_status\": 8,\n            \"paid_to_partner\": 0,\n            \"paid_to_qubecart\": 0,\n            \"bag_price\": 325,\n            \"bag_status_name\": \"Delivered\",\n            \"payment_type_name\": \"Cash On Delivery\",\n            \"payment_status_name\": \"Not Settled\",\n            \"commission_percentage\": 2,\n            \"payment_date\": null,\n            \"expected_payment_flag\": null,\n            \"partner_share\": 318.5\n        }\n    ]\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"store_id\": 66,\r\n    \"store_category\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"getproductsforpartner",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"store_id\":65,\r\n    \"brand_id\":813\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"store",
+						"getbaseproductsbybrand",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"store_id\":65\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"gettemplatebystoreid",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"template_id\":70\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getcatbytempid",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\":182\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getsubcatbycatid",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subcategory_id\":259\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getproductsbysubid",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subcategory_id\":259\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getallpnbbysubid",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":1319\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getallvariants",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getallcolors",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":1319,\r\n    \"color_id\":29\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"getallsizes",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":1319\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"inactiveproduct",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":1319\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8003",
+					"path": [
+						"qubecart",
+						"partner",
+						"stores",
+						"reactivateproduct",
+						""
+					]
+				},
+				"description": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/"
+			},
+			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
