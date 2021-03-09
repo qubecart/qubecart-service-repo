@@ -3785,7 +3785,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"store_id\": 66,\r\n    \"store_category\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"getproductsforpartner",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:18:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "9792"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"allproducts\": [\n            {\n                \"partner_product_id\": 1324,\n                \"active\": 1,\n                \"updated_on\": \"2021-01-13T12:53:44\",\n                \"updated_by\": 39,\n                \"product_description\": \"Katha Stitch (C001)\",\n                \"product_unit\": 15,\n                \"product_quantity\": 1,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 8340,\n                \"product_selling_price\": 7349,\n                \"product_discount\": 12,\n                \"stock_quantity\": 2,\n                \"product_thumbnail\": \"2077985032\",\n                \"unit_short\": \"Pcs\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 821,\n                \"subcategory_id\": 267,\n                \"category_id\": 184,\n                \"brand_name\": \"Boutique\",\n                \"subcategory_name\": \"Saree\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Boutique Saree,1Pcs\",\n                \"category_name\": \"Ethnic\",\n                \"template_id\": 71,\n                \"template_name\": \"Womens Fashion\",\n                \"store_category\": 2,\n                \"store_category_name\": \"Garments\",\n                \"product_pdf\": null,\n                \"product_image\": null,\n                \"size\": null,\n                \"color\": null,\n                \"variant_info\": 1,\n                \"variants\": [\n                    {\n                        \"partner_product_id\": 1361,\n                        \"updated_on\": \"2021-02-03T13:55:09\",\n                        \"updated_by\": 39,\n                        \"product_description\": \"Katha Stitch (C001)\",\n                        \"product_unit\": 15,\n                        \"product_quantity\": null,\n                        \"product_rating\": 0,\n                        \"packaged_product\": 0,\n                        \"product_mrp\": 8340,\n                        \"product_selling_price\": 7349,\n                        \"product_discount\": 12,\n                        \"stock_quantity\": 1200,\n                        \"product_thumbnail\": null,\n                        \"product_variant\": 1324,\n                        \"unit_short\": \"Pcs\",\n                        \"brand_created_by_role\": 1,\n                        \"product_brand_id\": 821,\n                        \"active\": 1,\n                        \"subcategory_id\": 267,\n                        \"category_id\": 184,\n                        \"brand_name\": \"Boutique\",\n                        \"subcategory_name\": \"Saree\",\n                        \"stock_statement\": \"In Stock\",\n                        \"product_title\": null,\n                        \"category_name\": \"Ethnic\",\n                        \"template_id\": 71,\n                        \"template_name\": \"Womens Fashion\",\n                        \"store_category\": 2,\n                        \"store_category_name\": \"Garments\",\n                        \"product_pdf\": null,\n                        \"size\": \"2 Years-3 Years\",\n                        \"color\": \"White\",\n                        \"variant_info\": 2\n                    },\n                    {\n                        \"partner_product_id\": 1362,\n                        \"updated_on\": \"2021-02-08T07:37:22\",\n                        \"updated_by\": 39,\n                        \"product_description\": \"Katha Stitch (C001)\",\n                        \"product_unit\": 15,\n                        \"product_quantity\": null,\n                        \"product_rating\": 0,\n                        \"packaged_product\": 0,\n                        \"product_mrp\": 8340,\n                        \"product_selling_price\": 7349,\n                        \"product_discount\": 12,\n                        \"stock_quantity\": 1200,\n                        \"product_thumbnail\": \"1612769840829.png\",\n                        \"product_variant\": 1324,\n                        \"unit_short\": \"Pcs\",\n                        \"brand_created_by_role\": 1,\n                        \"product_brand_id\": 821,\n                        \"active\": 1,\n                        \"subcategory_id\": 267,\n                        \"category_id\": 184,\n                        \"brand_name\": \"Boutique\",\n                        \"subcategory_name\": \"Saree\",\n                        \"stock_statement\": \"In Stock\",\n                        \"product_title\": null,\n                        \"category_name\": \"Ethnic\",\n                        \"template_id\": 71,\n                        \"template_name\": \"Womens Fashion\",\n                        \"store_category\": 2,\n                        \"store_category_name\": \"Garments\",\n                        \"product_pdf\": null,\n                        \"size\": \"11 Years-12 Years\",\n                        \"color\": \"White\",\n                        \"variant_info\": 2\n                    },\n                    {\n                        \"partner_product_id\": 1364,\n                        \"updated_on\": \"2021-02-08T08:06:28\",\n                        \"updated_by\": 39,\n                        \"product_description\": \"Katha Stitch (C001)\",\n                        \"product_unit\": 15,\n                        \"product_quantity\": null,\n                        \"product_rating\": 0,\n                        \"packaged_product\": 0,\n                        \"product_mrp\": 8340,\n                        \"product_selling_price\": 7349,\n                        \"product_discount\": 12,\n                        \"stock_quantity\": 1212,\n                        \"product_thumbnail\": null,\n                        \"product_variant\": 1324,\n                        \"unit_short\": \"Pcs\",\n                        \"brand_created_by_role\": 1,\n                        \"product_brand_id\": 821,\n                        \"active\": 1,\n                        \"subcategory_id\": 267,\n                        \"category_id\": 184,\n                        \"brand_name\": \"Boutique\",\n                        \"subcategory_name\": \"Saree\",\n                        \"stock_statement\": \"In Stock\",\n                        \"product_title\": null,\n                        \"category_name\": \"Ethnic\",\n                        \"template_id\": 71,\n                        \"template_name\": \"Womens Fashion\",\n                        \"store_category\": 2,\n                        \"store_category_name\": \"Garments\",\n                        \"product_pdf\": null,\n                        \"size\": \"10 Years-11 Years\",\n                        \"color\": \"Green\",\n                        \"variant_info\": 2\n                    },\n                    {\n                        \"partner_product_id\": 1365,\n                        \"updated_on\": \"2021-02-08T08:13:23\",\n                        \"updated_by\": 39,\n                        \"product_description\": \"Katha Stitch (C001)\",\n                        \"product_unit\": 15,\n                        \"product_quantity\": null,\n                        \"product_rating\": 0,\n                        \"packaged_product\": 0,\n                        \"product_mrp\": 8340,\n                        \"product_selling_price\": 7349,\n                        \"product_discount\": 12,\n                        \"stock_quantity\": 123,\n                        \"product_thumbnail\": null,\n                        \"product_variant\": 1324,\n                        \"unit_short\": \"Pcs\",\n                        \"brand_created_by_role\": 1,\n                        \"product_brand_id\": 821,\n                        \"active\": 1,\n                        \"subcategory_id\": 267,\n                        \"category_id\": 184,\n                        \"brand_name\": \"Boutique\",\n                        \"subcategory_name\": \"Saree\",\n                        \"stock_statement\": \"In Stock\",\n                        \"product_title\": null,\n                        \"category_name\": \"Ethnic\",\n                        \"template_id\": 71,\n                        \"template_name\": \"Womens Fashion\",\n                        \"store_category\": 2,\n                        \"store_category_name\": \"Garments\",\n                        \"product_pdf\": null,\n                        \"size\": \"13 Years-14 Years\",\n                        \"color\": \"Green\",\n                        \"variant_info\": 2\n                    },\n                    {\n                        \"partner_product_id\": 1366,\n                        \"updated_on\": \"2021-02-08T08:30:15\",\n                        \"updated_by\": 39,\n                        \"product_description\": \"Katha Stitch (C001)\",\n                        \"product_unit\": 15,\n                        \"product_quantity\": null,\n                        \"product_rating\": 0,\n                        \"packaged_product\": 0,\n                        \"product_mrp\": 8340,\n                        \"product_selling_price\": 7349,\n                        \"product_discount\": 12,\n                        \"stock_quantity\": 12123,\n                        \"product_thumbnail\": null,\n                        \"product_variant\": 1324,\n                        \"unit_short\": \"Pcs\",\n                        \"brand_created_by_role\": 1,\n                        \"product_brand_id\": 821,\n                        \"active\": 1,\n                        \"subcategory_id\": 267,\n                        \"category_id\": 184,\n                        \"brand_name\": \"Boutique\",\n                        \"subcategory_name\": \"Saree\",\n                        \"stock_statement\": \"In Stock\",\n                        \"product_title\": null,\n                        \"category_name\": \"Ethnic\",\n                        \"template_id\": 71,\n                        \"template_name\": \"Womens Fashion\",\n                        \"store_category\": 2,\n                        \"store_category_name\": \"Garments\",\n                        \"product_pdf\": null,\n                        \"size\": \"2 Years-3 Years\",\n                        \"color\": \"Brown\",\n                        \"variant_info\": 2\n                    }\n                ]\n            },\n            {\n                \"partner_product_id\": 1354,\n                \"active\": 1,\n                \"updated_on\": \"2021-02-02T08:31:46\",\n                \"updated_by\": 39,\n                \"product_description\": \"xyz saree\",\n                \"product_unit\": 15,\n                \"product_quantity\": 1,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 1200,\n                \"product_selling_price\": 1100,\n                \"product_discount\": 5,\n                \"stock_quantity\": 200,\n                \"product_thumbnail\": \"1612254704270.png\",\n                \"unit_short\": \"Pcs\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 821,\n                \"subcategory_id\": 267,\n                \"category_id\": 184,\n                \"brand_name\": \"Boutique\",\n                \"subcategory_name\": \"Saree\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Boutique Saree,1Pcs\",\n                \"category_name\": \"Ethnic\",\n                \"template_id\": 71,\n                \"template_name\": \"Womens Fashion\",\n                \"store_category\": 2,\n                \"store_category_name\": \"Garments\",\n                \"product_pdf\": null,\n                \"product_image\": null,\n                \"size\": null,\n                \"color\": null,\n                \"variant_info\": 0,\n                \"variants\": []\n            },\n            {\n                \"partner_product_id\": 1355,\n                \"active\": 0,\n                \"updated_on\": \"2021-02-02T13:58:31\",\n                \"updated_by\": 39,\n                \"product_description\": \"abcd saree\",\n                \"product_unit\": 15,\n                \"product_quantity\": 1,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 1200,\n                \"product_selling_price\": 1200,\n                \"product_discount\": null,\n                \"stock_quantity\": 1200,\n                \"product_thumbnail\": \"1612274309573.png\",\n                \"unit_short\": \"Pcs\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 821,\n                \"subcategory_id\": 267,\n                \"category_id\": 184,\n                \"brand_name\": \"Boutique\",\n                \"subcategory_name\": \"Saree\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Boutique Saree,1Pcs\",\n                \"category_name\": \"Ethnic\",\n                \"template_id\": 71,\n                \"template_name\": \"Womens Fashion\",\n                \"store_category\": 2,\n                \"store_category_name\": \"Garments\",\n                \"product_pdf\": null,\n                \"product_image\": null,\n                \"size\": null,\n                \"color\": null,\n                \"variant_info\": 0,\n                \"variants\": []\n            },\n            {\n                \"partner_product_id\": 1356,\n                \"active\": 0,\n                \"updated_on\": \"2021-02-02T14:00:07\",\n                \"updated_by\": 39,\n                \"product_description\": \"abcd saree\",\n                \"product_unit\": 15,\n                \"product_quantity\": null,\n                \"product_rating\": 0,\n                \"packaged_product\": 0,\n                \"product_mrp\": 200,\n                \"product_selling_price\": 200,\n                \"product_discount\": null,\n                \"stock_quantity\": 100,\n                \"product_thumbnail\": \"1612274405275.png\",\n                \"unit_short\": \"Pcs\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 821,\n                \"subcategory_id\": 267,\n                \"category_id\": 184,\n                \"brand_name\": \"Boutique\",\n                \"subcategory_name\": \"Saree\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": null,\n                \"category_name\": \"Ethnic\",\n                \"template_id\": 71,\n                \"template_name\": \"Womens Fashion\",\n                \"store_category\": 2,\n                \"store_category_name\": \"Garments\",\n                \"product_pdf\": null,\n                \"product_image\": null,\n                \"size\": null,\n                \"color\": null,\n                \"variant_info\": 0,\n                \"variants\": []\n            },\n            {\n                \"partner_product_id\": 1360,\n                \"active\": 0,\n                \"updated_on\": \"2021-02-02T14:42:10\",\n                \"updated_by\": 23,\n                \"product_description\": \"abcdef saree\",\n                \"product_unit\": 15,\n                \"product_quantity\": null,\n                \"product_rating\": 0,\n                \"packaged_product\": 0,\n                \"product_mrp\": 2200,\n                \"product_selling_price\": 1800,\n                \"product_discount\": 12,\n                \"stock_quantity\": 100,\n                \"product_thumbnail\": \"1612254704270.png\",\n                \"unit_short\": \"Pcs\",\n                \"brand_created_by_role\": 1,\n                \"product_brand_id\": 821,\n                \"subcategory_id\": 267,\n                \"category_id\": 184,\n                \"brand_name\": \"Boutique\",\n                \"subcategory_name\": \"Saree\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": null,\n                \"category_name\": \"Ethnic\",\n                \"template_id\": 71,\n                \"template_name\": \"Womens Fashion\",\n                \"store_category\": 2,\n                \"store_category_name\": \"Garments\",\n                \"product_pdf\": null,\n                \"product_image\": null,\n                \"size\": \"15 Years-16 Years\",\n                \"color\": \"Multicolor\",\n                \"variant_info\": 0,\n                \"variants\": []\n            },\n            {\n                \"partner_product_id\": 1363,\n                \"active\": 0,\n                \"updated_on\": \"2021-02-08T08:04:03\",\n                \"updated_by\": 39,\n                \"product_description\": \"XYZ SAREE\",\n                \"product_unit\": 15,\n                \"product_quantity\": 2,\n                \"product_rating\": 0,\n                \"packaged_product\": 1,\n                \"product_mrp\": 1200,\n                \"product_selling_price\": 1140,\n                \"product_discount\": 5,\n                \"stock_quantity\": 1000,\n                \"product_thumbnail\": \"1612771441632.png\",\n                \"unit_short\": \"Pcs\",\n                \"brand_created_by_role\": 2,\n                \"product_brand_id\": 671,\n                \"subcategory_id\": 267,\n                \"category_id\": 184,\n                \"brand_name\": \"Boutiques\",\n                \"subcategory_name\": \"Saree\",\n                \"stock_statement\": \"In Stock\",\n                \"product_title\": \"Boutiques Saree\",\n                \"category_name\": \"Ethnic\",\n                \"template_id\": null,\n                \"template_name\": null,\n                \"store_category\": null,\n                \"store_category_name\": null,\n                \"product_pdf\": null,\n                \"product_image\": null,\n                \"size\": \"10 Years-11 Years\",\n                \"color\": \"Navy Blue\",\n                \"variant_info\": 0,\n                \"variants\": []\n            }\n        ],\n        \"searchedproducts\": [],\n        \"suggestedproducts\": [],\n        \"templates\": [\n            {\n                \"template_id\": 71,\n                \"template_name\": \"Womens Fashion\"\n            }\n        ],\n        \"categories\": [\n            {\n                \"category_name\": \"Ethnic\"\n            }\n        ],\n        \"bucket_name\": \"qubecart\",\n        \"folder_name\": \"Item_image\",\n        \"store\": {\n            \"store_id\": 66,\n            \"store_address_id\": 138,\n            \"store_name\": \"Pradisha Boutique\",\n            \"store_category\": 2,\n            \"store_image\": \"1897308615\",\n            \"qc_partner_id\": 39,\n            \"store_rating\": 0,\n            \"store_open_time\": \"2021-03-09T12:35:46Z\",\n            \"store_close_time\": \"2021-03-09T18:08:46Z\",\n            \"store_days\": \"[6, 1, 2, 3, 5]\",\n            \"store_policy\": null,\n            \"prebooking_flag\": 1,\n            \"store_open_flag\": 0,\n            \"latitude\": 22.62352,\n            \"longitude\": 88.442257,\n            \"credit_flag\": 0,\n            \"no_of_ratings\": null,\n            \"store_category_name\": \"Garments\",\n            \"kmDistanceFromCustomer\": 0,\n            \"address_id\": 138,\n            \"addressline1\": \"12, ghola road\",\n            \"addressline2\": null,\n            \"pin\": 700055,\n            \"city\": 39,\n            \"state\": 1,\n            \"country\": 1,\n            \"address_type\": null,\n            \"city_name\": \"North 24 Parganas\",\n            \"states_name\": \"West Bengal\",\n            \"countries_name\": \"India\",\n            \"credit_flag_name\": \"Credit Not Accept\",\n            \"bucket_name\": \"qubecart\",\n            \"storeImageFolder\": \"qubecart_partner\",\n            \"store_days_name\": [\n                \"Sunday\",\n                \"Tuesday\",\n                \"Wednesday\",\n                \"Thursday\",\n                \"Saturday\"\n            ]\n        }\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/",
@@ -3821,7 +3899,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\":65,\r\n    \"brand_id\":813\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"store",
+								"getbaseproductsbybrand",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:19:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": []\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/",
@@ -3857,7 +4013,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\":65\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"gettemplatebystoreid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:19:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "594"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_id\": 68,\n            \"category\": 4,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-12-23T08:02:37\",\n            \"template_name\": \"Books & Stationery\",\n            \"template_description\": \"<p>Book and Stationery items for a school</p>\",\n            \"template_ref_no\": \"1608710556\",\n            \"status\": 1,\n            \"store_name\": \"MSQube Institution\"\n        },\n        {\n            \"template_id\": 70,\n            \"category\": 4,\n            \"updated_by\": 6,\n            \"updated_on\": \"2020-12-23T09:56:07\",\n            \"template_name\": \"School Dress & Accessories\",\n            \"template_description\": \"<p>School Uniform and other neccessary access\",\n            \"template_ref_no\": \"1608717367\",\n            \"status\": 1,\n            \"store_name\": \"MSQube Institution\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/",
@@ -3893,7 +4127,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"template_id\":70\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getcatbytempid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:26:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "362"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"template_item_id\": 180,\n            \"product_category_name\": \"Nursery\",\n            \"template_id\": 70\n        },\n        {\n            \"template_item_id\": 181,\n            \"product_category_name\": \"Lower KG\",\n            \"template_id\": 70\n        },\n        {\n            \"template_item_id\": 182,\n            \"product_category_name\": \"Upper KG\",\n            \"template_id\": 70\n        },\n        {\n            \"template_item_id\": 183,\n            \"product_category_name\": \"Class - I\",\n            \"template_id\": 70\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/",
@@ -3929,7 +4241,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\":182\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getsubcatbycatid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:26:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "470"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"product_subcategory_id\": 257,\n            \"subcategory_name\": \"Shirt\",\n            \"product_category_id\": 182\n        },\n        {\n            \"product_subcategory_id\": 258,\n            \"subcategory_name\": \"Skirt\",\n            \"product_category_id\": 182\n        },\n        {\n            \"product_subcategory_id\": 259,\n            \"subcategory_name\": \"Pant\",\n            \"product_category_id\": 182\n        },\n        {\n            \"product_subcategory_id\": 260,\n            \"subcategory_name\": \"Shoe\",\n            \"product_category_id\": 182\n        },\n        {\n            \"product_subcategory_id\": 261,\n            \"subcategory_name\": \"Bag\",\n            \"product_category_id\": 182\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/",
@@ -3965,7 +4355,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subcategory_id\":259\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getproductsbysubid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:29:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "280"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_product_brand_id\": 813,\n            \"product_brand_name\": \"Upper KG Pant\",\n            \"product_brand_description\": \"Pant for Upper KG Students\",\n            \"subcategory_id\": 259,\n            \"updated_on\": \"2020-12-23T14:31:15\",\n            \"updated_by\": 6,\n            \"created_by_role\": 1,\n            \"status\": 1\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/",
@@ -4001,7 +4469,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subcategory_id\":259\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getallpnbbysubid",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:29:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"brand_id\": 813,\n            \"brand_name\": \"Upper KG Pant\",\n            \"brand_description\": \"Pant for Upper KG Students\",\n            \"brand_flag\": \"admin\",\n            \"subcategory_id\": 259,\n            \"store_category\": 4,\n            \"created_by_role\": 1\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/",
@@ -4037,7 +4583,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":1319\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getallvariants",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:31:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4060"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"colors\": [\n            {\n                \"variant_types_id\": 27,\n                \"variant_type\": 2,\n                \"variant_name\": \"White\",\n                \"variant_desc\": \"White\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 28,\n                \"variant_type\": 2,\n                \"variant_name\": \"Black\",\n                \"variant_desc\": \"Black\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 29,\n                \"variant_type\": 2,\n                \"variant_name\": \"Blue\",\n                \"variant_desc\": \"Blue\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 30,\n                \"variant_type\": 2,\n                \"variant_name\": \"Navy Blue\",\n                \"variant_desc\": \"Navy Blue\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 31,\n                \"variant_type\": 2,\n                \"variant_name\": \"Brown\",\n                \"variant_desc\": \"Brown\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 32,\n                \"variant_type\": 2,\n                \"variant_name\": \"Grey\",\n                \"variant_desc\": \"Grey\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 33,\n                \"variant_type\": 2,\n                \"variant_name\": \"Green\",\n                \"variant_desc\": \"Green\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 34,\n                \"variant_type\": 2,\n                \"variant_name\": \"Yellow\",\n                \"variant_desc\": \"Yellow\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 35,\n                \"variant_type\": 2,\n                \"variant_name\": \"Black,White\",\n                \"variant_desc\": \"Black,White\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 36,\n                \"variant_type\": 2,\n                \"variant_name\": \"Multicolor\",\n                \"variant_desc\": \"Multicolor\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 37,\n                \"variant_type\": 2,\n                \"variant_name\": \"Red\",\n                \"variant_desc\": \"Red\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 38,\n                \"variant_type\": 2,\n                \"variant_name\": \"Red,White\",\n                \"variant_desc\": \"Red,White\",\n                \"active\": 1\n            }\n        ],\n        \"sizes\": [\n            {\n                \"variant_types_id\": 1,\n                \"variant_type\": 1,\n                \"variant_name\": \"2 Years-3 Years\",\n                \"variant_desc\": \"2-3 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 2,\n                \"variant_type\": 1,\n                \"variant_name\": \"3 Years-4 Years\",\n                \"variant_desc\": \"3-4 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 4,\n                \"variant_type\": 1,\n                \"variant_name\": \"5 Years-6 Years\",\n                \"variant_desc\": \"5-6 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 5,\n                \"variant_type\": 1,\n                \"variant_name\": \"6 Years-7 Years\",\n                \"variant_desc\": \"6-7 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 6,\n                \"variant_type\": 1,\n                \"variant_name\": \"7 Years-8 Years\",\n                \"variant_desc\": \"7-8 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 7,\n                \"variant_type\": 1,\n                \"variant_name\": \"8 Years-9 Years\",\n                \"variant_desc\": \"8-9 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 8,\n                \"variant_type\": 1,\n                \"variant_name\": \"9 Years-10 Years\",\n                \"variant_desc\": \"9-10 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 9,\n                \"variant_type\": 1,\n                \"variant_name\": \"10 Years-11 Years\",\n                \"variant_desc\": \"10-11 Year of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 10,\n                \"variant_type\": 1,\n                \"variant_name\": \"11 Years-12 Years\",\n                \"variant_desc\": \"11-12 Years og age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 11,\n                \"variant_type\": 1,\n                \"variant_name\": \"12 Years-13 Years\",\n                \"variant_desc\": \"12-13 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 12,\n                \"variant_type\": 1,\n                \"variant_name\": \"13 Years-14 Years\",\n                \"variant_desc\": \"13-14 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 13,\n                \"variant_type\": 1,\n                \"variant_name\": \"14 Years-15 Years\",\n                \"variant_desc\": \"14-15 Years og age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 14,\n                \"variant_type\": 1,\n                \"variant_name\": \"15 Years-16 Years\",\n                \"variant_desc\": \"15-16 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 15,\n                \"variant_type\": 1,\n                \"variant_name\": \"3XS\",\n                \"variant_desc\": \"3 Extra Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 16,\n                \"variant_type\": 1,\n                \"variant_name\": \"2XS\",\n                \"variant_desc\": \"2 Extra Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 17,\n                \"variant_type\": 1,\n                \"variant_name\": \"XS\",\n                \"variant_desc\": \"Extra Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 18,\n                \"variant_type\": 1,\n                \"variant_name\": \"S\",\n                \"variant_desc\": \"Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 19,\n                \"variant_type\": 1,\n                \"variant_name\": \"M\",\n                \"variant_desc\": \"Medium\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 20,\n                \"variant_type\": 1,\n                \"variant_name\": \"L\",\n                \"variant_desc\": \"Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 21,\n                \"variant_type\": 1,\n                \"variant_name\": \"XL\",\n                \"variant_desc\": \"Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 22,\n                \"variant_type\": 1,\n                \"variant_name\": \"2XL\",\n                \"variant_desc\": \"2 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 23,\n                \"variant_type\": 1,\n                \"variant_name\": \"3XL\",\n                \"variant_desc\": \"3 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 24,\n                \"variant_type\": 1,\n                \"variant_name\": \"4XL\",\n                \"variant_desc\": \"4 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 25,\n                \"variant_type\": 1,\n                \"variant_name\": \"5XL\",\n                \"variant_desc\": \"5 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 26,\n                \"variant_type\": 1,\n                \"variant_name\": \"6XL\",\n                \"variant_desc\": \"6 Extra Large\",\n                \"active\": 1\n            }\n        ]\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/",
@@ -4064,7 +4688,76 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getallcolors",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:31:58 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1262"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"variant_types_id\": 27,\n            \"variant_type\": 2,\n            \"variant_name\": \"White\",\n            \"variant_desc\": \"White\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 28,\n            \"variant_type\": 2,\n            \"variant_name\": \"Black\",\n            \"variant_desc\": \"Black\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 29,\n            \"variant_type\": 2,\n            \"variant_name\": \"Blue\",\n            \"variant_desc\": \"Blue\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 30,\n            \"variant_type\": 2,\n            \"variant_name\": \"Navy Blue\",\n            \"variant_desc\": \"Navy Blue\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 31,\n            \"variant_type\": 2,\n            \"variant_name\": \"Brown\",\n            \"variant_desc\": \"Brown\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 32,\n            \"variant_type\": 2,\n            \"variant_name\": \"Grey\",\n            \"variant_desc\": \"Grey\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 33,\n            \"variant_type\": 2,\n            \"variant_name\": \"Green\",\n            \"variant_desc\": \"Green\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 34,\n            \"variant_type\": 2,\n            \"variant_name\": \"Yellow\",\n            \"variant_desc\": \"Yellow\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 35,\n            \"variant_type\": 2,\n            \"variant_name\": \"Black,White\",\n            \"variant_desc\": \"Black,White\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 36,\n            \"variant_type\": 2,\n            \"variant_name\": \"Multicolor\",\n            \"variant_desc\": \"Multicolor\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 37,\n            \"variant_type\": 2,\n            \"variant_name\": \"Red\",\n            \"variant_desc\": \"Red\",\n            \"active\": 1\n        },\n        {\n            \"variant_types_id\": 38,\n            \"variant_type\": 2,\n            \"variant_name\": \"Red,White\",\n            \"variant_desc\": \"Red,White\",\n            \"active\": 1\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/",
@@ -4100,7 +4793,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":1319,\r\n    \"color_id\":29\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"getallsizes",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:32:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2974"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": null,\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"sizes\": [\n            {\n                \"variant_types_id\": 1,\n                \"variant_type\": 1,\n                \"variant_name\": \"2 Years-3 Years\",\n                \"variant_desc\": \"2-3 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 2,\n                \"variant_type\": 1,\n                \"variant_name\": \"3 Years-4 Years\",\n                \"variant_desc\": \"3-4 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 3,\n                \"variant_type\": 1,\n                \"variant_name\": \"4 Years-5 Years\",\n                \"variant_desc\": \"4-5 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 4,\n                \"variant_type\": 1,\n                \"variant_name\": \"5 Years-6 Years\",\n                \"variant_desc\": \"5-6 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 5,\n                \"variant_type\": 1,\n                \"variant_name\": \"6 Years-7 Years\",\n                \"variant_desc\": \"6-7 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 6,\n                \"variant_type\": 1,\n                \"variant_name\": \"7 Years-8 Years\",\n                \"variant_desc\": \"7-8 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 7,\n                \"variant_type\": 1,\n                \"variant_name\": \"8 Years-9 Years\",\n                \"variant_desc\": \"8-9 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 8,\n                \"variant_type\": 1,\n                \"variant_name\": \"9 Years-10 Years\",\n                \"variant_desc\": \"9-10 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 9,\n                \"variant_type\": 1,\n                \"variant_name\": \"10 Years-11 Years\",\n                \"variant_desc\": \"10-11 Year of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 10,\n                \"variant_type\": 1,\n                \"variant_name\": \"11 Years-12 Years\",\n                \"variant_desc\": \"11-12 Years og age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 11,\n                \"variant_type\": 1,\n                \"variant_name\": \"12 Years-13 Years\",\n                \"variant_desc\": \"12-13 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 12,\n                \"variant_type\": 1,\n                \"variant_name\": \"13 Years-14 Years\",\n                \"variant_desc\": \"13-14 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 13,\n                \"variant_type\": 1,\n                \"variant_name\": \"14 Years-15 Years\",\n                \"variant_desc\": \"14-15 Years og age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 14,\n                \"variant_type\": 1,\n                \"variant_name\": \"15 Years-16 Years\",\n                \"variant_desc\": \"15-16 Years of age\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 15,\n                \"variant_type\": 1,\n                \"variant_name\": \"3XS\",\n                \"variant_desc\": \"3 Extra Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 16,\n                \"variant_type\": 1,\n                \"variant_name\": \"2XS\",\n                \"variant_desc\": \"2 Extra Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 17,\n                \"variant_type\": 1,\n                \"variant_name\": \"XS\",\n                \"variant_desc\": \"Extra Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 18,\n                \"variant_type\": 1,\n                \"variant_name\": \"S\",\n                \"variant_desc\": \"Small\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 19,\n                \"variant_type\": 1,\n                \"variant_name\": \"M\",\n                \"variant_desc\": \"Medium\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 20,\n                \"variant_type\": 1,\n                \"variant_name\": \"L\",\n                \"variant_desc\": \"Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 21,\n                \"variant_type\": 1,\n                \"variant_name\": \"XL\",\n                \"variant_desc\": \"Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 22,\n                \"variant_type\": 1,\n                \"variant_name\": \"2XL\",\n                \"variant_desc\": \"2 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 23,\n                \"variant_type\": 1,\n                \"variant_name\": \"3XL\",\n                \"variant_desc\": \"3 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 24,\n                \"variant_type\": 1,\n                \"variant_name\": \"4XL\",\n                \"variant_desc\": \"4 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 25,\n                \"variant_type\": 1,\n                \"variant_name\": \"5XL\",\n                \"variant_desc\": \"5 Extra Large\",\n                \"active\": 1\n            },\n            {\n                \"variant_types_id\": 26,\n                \"variant_type\": 1,\n                \"variant_name\": \"6XL\",\n                \"variant_desc\": \"6 Extra Large\",\n                \"active\": 1\n            }\n        ],\n        \"thumbnail\": \"\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/",
@@ -4136,7 +4907,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":1319\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"inactiveproduct",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:33:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/",
@@ -4172,7 +5021,85 @@
 				},
 				"description": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":1319\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8003",
+							"path": [
+								"qubecart",
+								"partner",
+								"stores",
+								"reactivateproduct",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 09 Mar 2021 10:33:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null\n}"
+				}
+			]
 		}
 	]
 }
