@@ -1,0 +1,816 @@
+components:
+  examples:
+    exampleQubecartWebrtcAnswercallPost200:
+      value:
+        code: '001'
+        exception: false
+      x-response-id: e94d064c-35c6-4cbc-b1a7-535aaf0552f1
+    exampleQubecartWebrtcGetoffersPost200:
+      value:
+        code: '001'
+        data:
+          offers:
+          - customer_email: snehasish.das.work@gmail.com
+            partner_id: 1
+            timestamp: 1600084248.271907
+            webrtc_ttl: 1600084488.282577
+            webrtc_uuid: 66eaab9f97dd4e8b912a8c0feb0833eb
+        exception: false
+      x-response-id: 3e69c1e9-a4fb-4e3a-8a69-1f55bb9fa152
+    exampleQubecartWebrtcHangupcallPost200:
+      value:
+        code: '001'
+        exception: false
+      x-response-id: 5c2a4c3c-b9a6-4f3c-aee8-7b69c27ab0a3
+    exampleQubecartWebrtcOffercallPost200:
+      value:
+        code: '001'
+        data:
+          webrtc_uuid: 66eaab9f97dd4e8b912a8c0feb0833eb
+        exception: false
+      x-response-id: b79ad2a4-a3b8-48fb-b08d-62fac65797a6
+    exampleQubecartWebrtcPollanswerPost200:
+      value:
+        code: '001'
+        data:
+          answer_item: null
+          answer_payloads: []
+        exception: false
+      x-response-id: a28577c2-19d4-4f42-b890-8a3a07de70b5
+    exampleQubecartWebrtcPollofferPost200:
+      value:
+        code: '001'
+        data:
+          offer_item: null
+          offer_payloads:
+          - payload:
+              type: answer
+            payload_ttl: 1600084545.094036
+            timestamp: 1600084305.092479
+            type: answer
+            webrtc_uuid: 66eaab9f97dd4e8b912a8c0feb0833eb
+          - payload:
+              type: candidate
+            payload_ttl: 1600084599.204108
+            timestamp: 1600084359.204058
+            type: offer_ice
+            webrtc_uuid: 66eaab9f97dd4e8b912a8c0feb0833eb
+        exception: false
+      x-response-id: 486b9860-b824-47e1-ad4c-d4418872d42c
+    exampleQubecartWebrtcSendicePost200:
+      value:
+        code: '001'
+        exception: false
+      x-response-id: 586bb8b3-d480-4eac-bae4-9c456b2ece89
+  schemas:
+    schemaQubecartWebrtcAnswercallPost200:
+      properties:
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      type: object
+    schemaQubecartWebrtcGetoffersPost200:
+      properties:
+        code:
+          type: string
+        data:
+          properties:
+            offers:
+              items:
+                properties:
+                  customer_email:
+                    type: string
+                  partner_id:
+                    format: int32
+                    type: integer
+                  timestamp:
+                    type: number
+                  webrtc_ttl:
+                    type: number
+                  webrtc_uuid:
+                    type: string
+                required:
+                - webrtc_ttl
+                - webrtc_uuid
+                - customer_email
+                - partner_id
+                - timestamp
+                type: object
+              type: array
+          required:
+          - offers
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - data
+      - exception
+      - code
+      type: object
+    schemaQubecartWebrtcHangupcallPost200:
+      properties:
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      type: object
+    schemaQubecartWebrtcOffercallPost200:
+      properties:
+        code:
+          type: string
+        data:
+          properties:
+            webrtc_uuid:
+              type: string
+          required:
+          - webrtc_uuid
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - data
+      - code
+      - exception
+      type: object
+    schemaQubecartWebrtcPollanswerPost200:
+      properties:
+        code:
+          type: string
+        data:
+          properties:
+            answer_item: {}
+            answer_payloads:
+              items: {}
+              type: array
+          required:
+          - answer_item
+          - answer_payloads
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - data
+      - code
+      - exception
+      type: object
+    schemaQubecartWebrtcPollofferPost200:
+      properties:
+        code:
+          type: string
+        data:
+          properties:
+            offer_item: {}
+            offer_payloads:
+              items:
+                properties:
+                  payload:
+                    properties:
+                      type:
+                        type: string
+                    required:
+                    - type
+                    type: object
+                  payload_ttl:
+                    type: number
+                  timestamp:
+                    type: number
+                  type:
+                    type: string
+                  webrtc_uuid:
+                    type: string
+                required:
+                - payload
+                - payload_ttl
+                - webrtc_uuid
+                - type
+                - timestamp
+                type: object
+              type: array
+          required:
+          - offer_item
+          - offer_payloads
+          type: object
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - data
+      - exception
+      - code
+      type: object
+    schemaQubecartWebrtcSendicePost200:
+      properties:
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      type: object
+info:
+  description: Qubecart Webrtc Services
+  title: Qubecart-Webrtc
+  version: 1.0.0
+openapi: 3.0.0
+servers:
+- url: https://execute-api.ap-south-1.amazonaws.com/{basePath}
+  variables:
+    basePath:
+      default: '/'
+paths:
+  /qubecart/webrtc/answercall/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcAnswercallPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Partner uses this service to answers a call offer request by a
+        customer.
+      operationId: QubecartWebrtcAnswercallPost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: e94d064c-35c6-4cbc-b1a7-535aaf0552f1
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\
+                \t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\
+                \t\"answer_payload\": {\n\t\t\"type\": \"answer\"\n\t}\n}"
+              x-response-id: e94d064c-35c6-4cbc-b1a7-535aaf0552f1
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcAnswercall:
+                  $ref: '#/components/examples/exampleQubecartWebrtcAnswercallPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcAnswercallPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/answercall/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/answercall/
+  /qubecart/webrtc/getoffers/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcGetoffersPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Partner polls this service to receive active call offers
+      operationId: QubecartWebrtcGetoffersPost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: 3e69c1e9-a4fb-4e3a-8a69-1f55bb9fa152
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"partner_id\": 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"partner_id\": 1\n}"
+              x-response-id: 3e69c1e9-a4fb-4e3a-8a69-1f55bb9fa152
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcGetoffers:
+                  $ref: '#/components/examples/exampleQubecartWebrtcGetoffersPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcGetoffersPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/getoffers/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/getoffers/
+  /qubecart/webrtc/hangupcall/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcHangupcallPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Customer and partner both can call this service to hangup a call.
+      operationId: QubecartWebrtcHangupcallPost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: 5c2a4c3c-b9a6-4f3c-aee8-7b69c27ab0a3
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                \n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                \n}"
+              x-response-id: 5c2a4c3c-b9a6-4f3c-aee8-7b69c27ab0a3
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcHangupcall:
+                  $ref: '#/components/examples/exampleQubecartWebrtcHangupcallPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcHangupcallPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/hangupcall/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/hangupcall/
+  /qubecart/webrtc/offercall/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcOffercallPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Cusstomer creates a call offer with this service
+      operationId: QubecartWebrtcOffercallPost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: b79ad2a4-a3b8-48fb-b08d-62fac65797a6
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                \n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                \n}"
+              x-response-id: b79ad2a4-a3b8-48fb-b08d-62fac65797a6
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcOffercall:
+                  $ref: '#/components/examples/exampleQubecartWebrtcOffercallPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcOffercallPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/offercall/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/offercall/
+  /qubecart/webrtc/pollanswer/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcPollanswerPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Customer polls this service to get answer payload from partner
+        and latest ice candidates
+      operationId: QubecartWebrtcPollanswerPost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: a28577c2-19d4-4f42-b890-8a3a07de70b5
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                \n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                \n}"
+              x-response-id: a28577c2-19d4-4f42-b890-8a3a07de70b5
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcPollanswer:
+                  $ref: '#/components/examples/exampleQubecartWebrtcPollanswerPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcPollanswerPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/pollanswer/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/pollanswer/
+  /qubecart/webrtc/polloffer/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcPollofferPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Partner polls this service to get offer payload with latest ice
+        candiates
+      operationId: QubecartWebrtcPollofferPost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: 486b9860-b824-47e1-ad4c-d4418872d42c
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                ,\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"partner_id\": 1,\n\t\"customer_email\": \"snehasish.das.work@gmail.com\"\
+                ,\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\"\n}"
+              x-response-id: 486b9860-b824-47e1-ad4c-d4418872d42c
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcPolloffer:
+                  $ref: '#/components/examples/exampleQubecartWebrtcPollofferPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcPollofferPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/polloffer/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/polloffer/
+  /qubecart/webrtc/sendice/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcSendicePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Both customer and partner use this to send ice candidates to the
+        other side
+      operationId: QubecartWebrtcSendicePost
+      parameters:
+      - in: header
+        name: Content-Type
+        schema:
+          example: application/json
+          type: string
+        x-link-response:
+        - value: application/json
+          x-response-id: 586bb8b3-d480-4eac-bae4-9c456b2ece89
+      requestBody:
+        content:
+          application/json:
+            example:
+              value: "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\
+                \t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\"\
+                : \"offer_ice\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n\t\"webrtc_uuid\": \"66eaab9f97dd4e8b912a8c0feb0833eb\",\n\
+                \t\"ice_payload\": {\n\t\t\"type\": \"candidate\"\n\t},\n\t\"type\"\
+                : \"offer_ice\"\n}"
+              x-response-id: 586bb8b3-d480-4eac-bae4-9c456b2ece89
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778004QubecartWebrtcSendice:
+                  $ref: '#/components/examples/exampleQubecartWebrtcSendicePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartWebrtcSendicePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/webrtc/sendice/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/webrtc/sendice/
+x-amazon-apigateway-gateway-responses:
+  DEFAULT_4XX:
+    responseParameters:
+      gatewayresponse.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+      gatewayresponse.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+      gatewayresponse.header.Access-Control-Allow-Origin: '''*'''
+  DEFAULT_5XX:
+    responseParameters:
+      gatewayresponse.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+      gatewayresponse.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+      gatewayresponse.header.Access-Control-Allow-Origin: '''*'''

@@ -1,0 +1,146 @@
+components:
+  examples:
+    exampleQubecartDeliveryRegistrationPost200:
+      value:
+        Errors: null
+        code: '001'
+        exception: false
+      x-response-id: f4ad47bf-c718-412d-9854-db1498f74262
+  schemas:
+    schemaQubecartDeliveryRegistrationPost200:
+      properties:
+        Errors: {}
+        code:
+          type: string
+        exception:
+          format: 'null'
+          type: boolean
+      required:
+      - code
+      - exception
+      - Errors
+      type: object
+info:
+  description: Qubecart Delivery Services
+  title: Qubecart-Delivery
+  version: 1.0.0
+openapi: 3.0.0
+servers:
+- url: https://execute-api.ap-south-1.amazonaws.com/{basePath}
+  variables:
+    basePath:
+      default: '/'
+paths:
+  /qubecart/delivery/registration/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartDeliveryRegistrationPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '* email is not mandetory
+
+        * phone and alternate_phone are mandetory
+
+        * We had current address and permanent address in FSQ and thats why same_address_flag
+        is user
+
+        * we can create different permanent address prefixxed with permanent word
+        and same_address_flag is false
+
+        * provide any documemt between pan, aadhaar.
+
+        * selfie is not mandetory
+
+        * get region from drop down'
+      operationId: QubecartDeliveryRegistrationPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"first_name\" : \"Jon\",\n    \"last_name\" : \"Wick\"\
+                ,\n    \"email\" : \"jon.wick@continental.com\",\n    \"phone\" :\
+                \ \"9999999999\",\n    \"alternate_phone\" : \"8888888888\",\n   \
+                \ \"region_id\" : 1,\n    \"password\" : \"1234\",\n    \"gender\"\
+                \ : \"M\",\n    \"same_address_flag\" : true,\n    \"date_of_birth\"\
+                \ : \"1995-06-13 00:0:00\",\n    \"currentaddressline1\" : \"112/4\"\
+                ,\n    \"currentaddressline2\" : \"Dummy road\",\n    \"currentpin\"\
+                \ : \"700010\",\n    \"currentstate\" : 1,\n    \"currentcountry\"\
+                \ : 1,\n    \"currentcity\" : 1,\n    \"pan\" : \"pan.jpg\",\n   \
+                \ \"aadhar\" : \"aadhar.jpg\",\n    \"selfie\" : \"selfie.jpg\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"first_name\" : \"Jon\",\n    \"last_name\" : \"Wick\"\
+                ,\n    \"email\" : \"jon.wick@continental.com\",\n    \"phone\" :\
+                \ \"9999999999\",\n    \"alternate_phone\" : \"8888888888\",\n   \
+                \ \"region_id\" : 1,\n    \"password\" : \"1234\",\n    \"gender\"\
+                \ : \"M\",\n    \"same_address_flag\" : true,\n    \"date_of_birth\"\
+                \ : \"1995-06-13 00:0:00\",\n    \"currentaddressline1\" : \"112/4\"\
+                ,\n    \"currentaddressline2\" : \"Dummy road\",\n    \"currentpin\"\
+                \ : \"700010\",\n    \"currentstate\" : 1,\n    \"currentcountry\"\
+                \ : 1,\n    \"currentcity\" : 1,\n    \"pan\" : \"pan.jpg\",\n   \
+                \ \"aadhar\" : \"aadhar.jpg\",\n    \"selfie\" : \"selfie.jpg\"\n}"
+              x-response-id: f4ad47bf-c718-412d-9854-db1498f74262
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http37661778005QubecartDeliveryRegistration:
+                  $ref: '#/components/examples/exampleQubecartDeliveryRegistrationPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartDeliveryRegistrationPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/delivery/registration/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/delivery/registration/
+x-amazon-apigateway-gateway-responses:
+  DEFAULT_4XX:
+    responseParameters:
+      gatewayresponse.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+      gatewayresponse.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+      gatewayresponse.header.Access-Control-Allow-Origin: '''*'''
+  DEFAULT_5XX:
+    responseParameters:
+      gatewayresponse.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+      gatewayresponse.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+      gatewayresponse.header.Access-Control-Allow-Origin: '''*'''

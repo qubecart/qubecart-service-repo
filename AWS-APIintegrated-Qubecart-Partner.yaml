@@ -7666,337 +7666,46 @@ components:
       type: object
 info:
   title: Qubecart-Partner-Services
+  description: Qubecart-Partner-Services 
   version: 1.0.0
 openapi: 3.0.0
+servers:
+- url: https://execute-api.ap-south-1.amazonaws.com/{basePath}
+  variables:
+    basePath:
+      default: /
 paths:
-  /qubecart/partner/generatecode/:
-    post:
-      description: '## Generate partner Code while registration'
-      operationId: QubecartPartnerGeneratecodePost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\"\
-                \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\"\
-                \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
-              x-response-id: 9fe8f000-612a-4766-b5da-22502d587b4d
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerGeneratecode:
-                  $ref: '#/components/examples/exampleQubecartPartnerGeneratecodePost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerGeneratecodePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/generatecode/
-      summary: http://15.206.132.5:8003/qubecart/partner/generatecode/
-  /qubecart/partner/signup/:
-    post:
-      description: '## Creates a partner using partner code '
-      operationId: QubecartPartnerSignupPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\"\
-                \ : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\"\
-                ,\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"\
-                700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n  \
-                \  \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"\
-                stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\"\
-                \ : \"asdf12345\"\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\"\
-                \ : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\"\
-                ,\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"\
-                700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n  \
-                \  \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"\
-                stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\"\
-                \ : \"asdf12345\"\n}"
-              x-response-id: 970a4206-0930-4a38-bf48-5d0b4803b6ea
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerSignup:
-                  $ref: '#/components/examples/exampleQubecartPartnerSignupPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerSignupPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/signup/
-      summary: http://15.206.132.5:8003/qubecart/partner/signup/
-  /qubecart/partner/login/:
-    post:
-      description: '## Partner login using email/phone as username and password'
-      operationId: QubecartPartnerLoginPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
-                \ : \"1234\"\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
-                \ : \"1234\"\n}"
-              x-response-id: 1f4a97aa-765c-4031-888b-0b5a6840898f
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerLogin:
-                  $ref: '#/components/examples/exampleQubecartPartnerLoginPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerLoginPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/login/
-      summary: http://15.206.132.5:8003/qubecart/partner/login/
-  /qubecart/partner/checkunique/:
-    post:
-      description: '## Checks whether a partner is unique or not using phone and email'
-      operationId: QubecartPartnerCheckuniquePost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\"\
-                \ : \"jon.Doe@dummy.com\"\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\"\
-                \ : \"jon.Doe@dummy.com\"\n}"
-              x-response-id: 113f125f-5c8d-40e1-a0c6-9f8c61e65b97
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerCheckunique:
-                  $ref: '#/components/examples/exampleQubecartPartnerCheckuniquePost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerCheckuniquePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/checkunique/
-      summary: http://15.206.132.5:8003/qubecart/partner/checkunique/
-  /qubecart/partner/store/create/:
-    post:
-      description: '## Creates store for partner'
-      operationId: QubecartPartnerStoreCreatePost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\"\
-                ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
-                \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
-                city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"\
-                store_category\" : 2\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\"\
-                ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
-                \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
-                city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"\
-                store_category\" : 2\n}"
-              x-response-id: 878e0b06-518e-4a53-bb33-dd05a7464d30
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreCreate:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreCreatePost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreatePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/create/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/create/
-  /qubecart/partner/store/get/:
-    post:
-      description: '## Returns stores of customer'
-      operationId: QubecartPartnerStoreGetPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"qc_partner_id\" : 9\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"qc_partner_id\" : 13\n}"
-              x-response-id: 3ca32b02-20d7-4d11-85db-5b4a0b19251e
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGet:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/get/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/get/
-  /qubecart/partner/store/getproducts/:
-    post:
-      description: '## Get products by store'
-      operationId: QubecartPartnerStoreGetproductsPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
-                context_value\" : 66\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
-                context_value\" : 66\n}"
-              x-response-id: bf13e280-cced-4e90-bc16-bcc9b7bf47b6
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetproducts:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getproducts/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getproducts/
-  /qubecart/partner/store/createproduct/:
-    post:
-      description: '## Creates a product for a store by partner'
-      operationId: QubecartPartnerStoreCreateproductPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"brand_id\" : 14,\n    \"store_id\" : 3,\n    \"qc_partner_id\"\
-                \ : 24,\n    \"product_description\" : \"Loose wheat\",\n    \"unit\"\
-                \ : 1,\n    \"product_mrp\" : 60,\n    \"product_selling_price\" :\
-                \ null,\n    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\"\
-                \ : \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
-                \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
-                \ : 2,\n    \"packaged_product\" : false\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\"\
-                \ : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for\
-                \ everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n\
-                \    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n\
-                \    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" :\
-                \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
-                \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
-                \ : 2\n}"
-              x-response-id: 87957a56-f3be-4732-bc5f-e4ff7592a08b
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreCreateproduct:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreCreateproductPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreateproductPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/createproduct/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/createproduct/
-  /qubecart/partner/store/update/:
-    post:
-      description: '## Updates a store '
-      operationId: QubecartPartnerStoreUpdatePost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
-                ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
-                \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
-                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store ps AC/DC\"\
-                ,\n    \"store_category\" : 1\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
-                ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
-                \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
-                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
-                \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
-              x-response-id: 5d141fe5-a52e-4686-b546-ac5789c8e7d5
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreUpdate:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatePost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/update/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/update/
-  /qubecart/partner/store/getbyid/:
-    post:
-      description: '## Returns a stores basic details by id'
-      operationId: QubecartPartnerStoreGetbyidPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"store_id\" : 16\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"store_id\" : 16\n}"
-              x-response-id: c07fd545-3865-4b33-ad53-5fb52d74a584
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetbyid:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetbyidPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbyidPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getbyid/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getbyid/
-  /qubecart/partner/store/updatestock/:
-    post:
-      description: "## Updates a stock using store_id and product_id \n### txn_type\
-        \ = 1 IN\n### txn_type = 2 OUT"
-      operationId: QubecartPartnerStoreUpdatestockPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
-                \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
-                \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
-              x-response-id: fd4583e6-0631-4d98-9571-34de426d7007
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreUpdatestock:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatestockPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatestockPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/updatestock/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/updatestock/
   /qubecart/partner/brand/create/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandCreatePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: '## Creates partner specific brand for a given subcategory'
       operationId: QubecartPartnerBrandCreatePost
@@ -8013,7 +7722,7 @@ paths:
                 \    \"brand_name\" : \"Generic/Loose\"\n}"
               x-response-id: 10e37d99-7de5-47e9-a1ac-836f91936535
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8021,9 +7730,124 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerBrandCreatePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerBrandCreatePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/brand/create/
-      summary: http://15.206.132.5:8003/qubecart/partner/brand/create/
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/brand/create/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/brand/create/
+  /qubecart/partner/brand/get/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandGetPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Returns all brands defined by partner'
+      operationId: QubecartPartnerBrandGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
+              x-response-id: 2d98b0fd-60b7-4a0d-96ed-3bcbbd33e275
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerBrandGet:
+                  $ref: '#/components/examples/exampleQubecartPartnerBrandGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandGetPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/brand/get/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/brand/get/
   /qubecart/partner/brand/inactivate/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandInactivatePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: '## Inactivates a partner brand '
       operationId: QubecartPartnerBrandInactivatePost
@@ -8040,7 +7864,7 @@ paths:
                 \ : true\n}"
               x-response-id: 0d921579-3eed-43c7-987c-0f9487c26670
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8048,195 +7872,128 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerBrandInactivatePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerBrandInactivatePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/brand/inactivate/
-      summary: http://15.206.132.5:8003/qubecart/partner/brand/inactivate/
-  /qubecart/partner/brand/get/:
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/brand/inactivate/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/brand/inactivate/
+  /qubecart/partner/brand/update/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandUpdatePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
-      description: '## Returns all brands defined by partner'
-      operationId: QubecartPartnerBrandGetPost
+      description: Partner  brand update
+      operationId: QubecartPartnerBrandUpdatePost
       requestBody:
         content:
           '*/*':
             example:
-              value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
+              value: "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\"\
+                \ : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba\
+                \ Generic/Loose\"\r\n}"
             schema:
               type: string
             x-link-response:
-            - value: "{\n    \"qc_partner_id\" : 9,\n    \"filter_flag\" : 1\n}"
-              x-response-id: 2d98b0fd-60b7-4a0d-96ed-3bcbbd33e275
+            - value: "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\"\
+                \ : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba\
+                \ Generic/Loose\"\r\n}"
+              x-response-id: 3f838148-f0ca-4cbe-a7e0-29bb4a36a63f
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
-                Http1520613258003QubecartPartnerBrandGet:
-                  $ref: '#/components/examples/exampleQubecartPartnerBrandGetPost200'
+                Http1520613258003QubecartPartnerBrandUpdate:
+                  $ref: '#/components/examples/exampleQubecartPartnerBrandUpdatePost200'
               schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerBrandGetPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/brand/get/
-      summary: http://15.206.132.5:8003/qubecart/partner/brand/get/
-  /qubecart/partner/orders/getactive/:
-    post:
-      description: '## Get all active bags of a store'
-      operationId: QubecartPartnerOrdersGetactivePost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"store_id\" : 3\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"store_id\" : 3\n}"
-              x-response-id: ece2e214-33d4-4679-9cb5-a49565afdac9
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerOrdersGetactive:
-                  $ref: '#/components/examples/exampleQubecartPartnerOrdersGetactivePost200'
+                $ref: '#/components/schemas/schemaQubecartPartnerBrandUpdatePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
               schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerOrdersGetactivePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/orders/getactive/
-      summary: http://15.206.132.5:8003/qubecart/partner/orders/getactive/
-  /qubecart/partner/template/info/:
-    post:
-      description: '## Get template and related information using template id'
-      operationId: QubecartPartnerTemplateInfoPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"template_id\" : 29\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"template_id\" : 29\n}"
-              x-response-id: 57670e99-3f0e-471a-b69a-e56d533cabb0
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerTemplateInfo:
-                  $ref: '#/components/examples/exampleQubecartPartnerTemplateInfoPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerTemplateInfoPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/template/info/
-      summary: http://15.206.132.5:8003/qubecart/partner/template/info/
-  /qubecart/partner/store/getproductsbybrand/:
-    post:
-      description: '## Get products by subcategory and store id'
-      operationId: QubecartPartnerStoreGetproductsbybrandPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
-                \ \"qc_partner_id\" : 24\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
-                \ \"qc_partner_id\" : 24\n}"
-              x-response-id: f06c7001-dd8f-4cad-a753-01d4bbc35861
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetproductsbybrand:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsbybrandPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getproductsbybrand/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getproductsbybrand/
-  /qubecart/partner/store/bycategory/:
-    post:
-      operationId: QubecartPartnerStoreBycategoryPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\n    \"store_category\" : 1\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\n    \"store_category\" : 1\n}"
-              x-response-id: e3db03e2-9ec3-4733-87b9-41f6e03789b3
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreBycategory:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreBycategoryPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/bycategory/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/bycategory/
-  /qubecart/partner/store/getsingleproduct/:
-    post:
-      description: Get single product of store
-      operationId: QubecartPartnerStoreGetsingleproductPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"partner_product_id\": 54\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"partner_product_id\": 54\r\n}"
-              x-response-id: a3e733f5-dc52-4b22-970c-a2ba670168d0
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetsingleproduct:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetsingleproductPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetsingleproductPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getsingleproduct/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getsingleproduct/
-  /qubecart/partner/store/editproduct/:
-    post:
-      description: Edit Store Products
-      operationId: QubecartPartnerStoreEditproductPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\"\
-                : \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"\
-                product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\"\
-                : 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\"\
-                : \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\"\
-                : 5,\r\n    \"packaged_product\": true\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\"\
-                : \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"\
-                product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\"\
-                : 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\"\
-                : \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\"\
-                : 5,\r\n    \"packaged_product\": true\r\n}"
-              x-response-id: b3265529-e4b5-48e7-8659-213488ac7dd3
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreEditproduct:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreEditproductPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreEditproductPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/editproduct/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/editproduct/
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/brand/update/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/brand/update/
   /qubecart/partner/cartdetails/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCartdetailsPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: Cart Details
       operationId: QubecartPartnerCartdetailsPost
@@ -8265,7 +8022,7 @@ paths:
                 \  }\r\n    ]\r\n}"
               x-response-id: 12708041-dd62-4a90-9cfd-5e2dffae429e
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8273,9 +8030,270 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerCartdetailsPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerCartdetailsPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/cartdetails/
-      summary: http://15.206.132.5:8003/qubecart/partner/cartdetails/
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/cartdetails/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/cartdetails/
+  /qubecart/partner/changepassword/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerChangepasswordPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Partner change password
+      operationId: QubecartPartnerChangepasswordPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"\
+                4321\",\r\n    \"new_password\" : \"1234\"\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"\
+                4321\",\r\n    \"new_password\" : \"1234\"\r\n}"
+              x-response-id: 87d08e40-b5a1-476e-88a7-c175f9db1bbf
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerChangepassword:
+                  $ref: '#/components/examples/exampleQubecartPartnerChangepasswordPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerChangepasswordPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/changepassword/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/changepassword/
+  /qubecart/partner/checkunique/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCheckuniquePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Checks whether a partner is unique or not using phone and email'
+      operationId: QubecartPartnerCheckuniquePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\"\
+                \ : \"jon.Doe@dummy.com\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"contact_phone\" : \"9999999999\",\n    \"contact_email\"\
+                \ : \"jon.Doe@dummy.com\"\n}"
+              x-response-id: 113f125f-5c8d-40e1-a0c6-9f8c61e65b97
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerCheckunique:
+                  $ref: '#/components/examples/exampleQubecartPartnerCheckuniquePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCheckuniquePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/checkunique/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/checkunique/
+  /qubecart/partner/createfcm/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreatefcmPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Create partner fcm token
+      operationId: QubecartPartnerCreatefcmPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\
+                \r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\
+                \r\n}"
+              x-response-id: 6032b564-2533-4982-9620-efa20cd50202
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerCreatefcm:
+                  $ref: '#/components/examples/exampleQubecartPartnerCreatefcmPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreatefcmPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/createfcm/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/createfcm/
   /qubecart/partner/creditcustomer/get/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreditcustomerGetPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: Get all credit customer
       operationId: QubecartPartnerCreditcustomerGetPost
@@ -8290,7 +8308,7 @@ paths:
             - value: "{\r\n    \"partner_id\" : 25,\r\n    \"flag\" : 0\r\n}"
               x-response-id: 5f49fb64-0dd5-418d-8f5f-83b9ac40021a
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8298,9 +8316,54 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerCreditcustomerGetPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerCreditcustomerGetPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/creditcustomer/get/
-      summary: http://15.206.132.5:8003/qubecart/partner/creditcustomer/get/
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/creditcustomer/get/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/creditcustomer/get/
   /qubecart/partner/creditcustomer/updaterequest/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerCreditcustomerUpdaterequestPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: Update credit status by partner
       operationId: QubecartPartnerCreditcustomerUpdaterequestPost
@@ -8319,7 +8382,7 @@ paths:
                 :2,\r\n    \"max_monthly_credit\" : 1000\r\n}"
               x-response-id: 433594a0-3013-4f37-aa2b-a6f9fa1511d1
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8327,192 +8390,54 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerCreditcustomerUpdaterequestPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerCreditcustomerUpdaterequestPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/creditcustomer/updaterequest/
-      summary: http://15.206.132.5:8003/qubecart/partner/creditcustomer/updaterequest/
-  /qubecart/partner/orders/bagdetails/:
-    post:
-      description: Order bag details
-      operationId: QubecartPartnerOrdersBagdetailsPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"bag_id\" : 52\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"bag_id\" : 52\r\n}"
-              x-response-id: 99f103a1-78d6-4a72-84a6-21b127c2ec21
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerOrdersBagdetails:
-                  $ref: '#/components/examples/exampleQubecartPartnerOrdersBagdetailsPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
               schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerOrdersBagdetailsPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/orders/bagdetails/
-      summary: http://15.206.132.5:8003/qubecart/partner/orders/bagdetails/
-  /qubecart/partner/orders/updatebagstatus/:
-    post:
-      description: Update bag status by partner
-      operationId: QubecartPartnerOrdersUpdatebagstatusPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}"
-              x-response-id: 29ba2dc4-b10f-4427-b06c-b5a810cbd64d
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerOrdersUpdatebagstatus:
-                  $ref: '#/components/examples/exampleQubecartPartnerOrdersUpdatebagstatusPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerOrdersUpdatebagstatusPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/orders/updatebagstatus/
-      summary: http://15.206.132.5:8003/qubecart/partner/orders/updatebagstatus/
-  /qubecart/partner/createfcm/:
-    post:
-      description: Create partner fcm token
-      operationId: QubecartPartnerCreatefcmPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\
-                \r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"partner_id\" : 26,\r\n    \"fcm_token\" : \"abc\"\
-                \r\n}"
-              x-response-id: 6032b564-2533-4982-9620-efa20cd50202
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerCreatefcm:
-                  $ref: '#/components/examples/exampleQubecartPartnerCreatefcmPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerCreatefcmPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/createfcm/
-      summary: http://15.206.132.5:8003/qubecart/partner/createfcm/
-  /qubecart/partner/store/getstockhistory/:
-    post:
-      description: Get stock history
-      operationId: QubecartPartnerStoreGetstockhistoryPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"partner_product_id\" : 31\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"partner_product_id\" : 31\r\n}"
-              x-response-id: cd941080-e3c7-4950-ad24-5c95c94dfa04
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetstockhistory:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetstockhistoryPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetstockhistoryPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getstockhistory/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getstockhistory/
-  /qubecart/partner/template/get/:
-    post:
-      description: 'Get partner template '
-      operationId: QubecartPartnerTemplateGetPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}"
-              x-response-id: 8928c74d-795a-402c-8a42-84e2f70abb53
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerTemplateGet:
-                  $ref: '#/components/examples/exampleQubecartPartnerTemplateGetPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerTemplateGetPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/template/get/
-      summary: http://15.206.132.5:8003/qubecart/partner/template/get/
-  /qubecart/partner/brand/update/:
-    post:
-      description: Partner  brand update
-      operationId: QubecartPartnerBrandUpdatePost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\"\
-                \ : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba\
-                \ Generic/Loose\"\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"partner_product_brand_id\" :1,\r\n    \"subcategory_id\"\
-                \ : 1,\r\n    \"qc_partner_id\" : 9,\r\n    \"brand_name\" : \" Kalobaba\
-                \ Generic/Loose\"\r\n}"
-              x-response-id: 3f838148-f0ca-4cbe-a7e0-29bb4a36a63f
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerBrandUpdate:
-                  $ref: '#/components/examples/exampleQubecartPartnerBrandUpdatePost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerBrandUpdatePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/brand/update/
-      summary: http://15.206.132.5:8003/qubecart/partner/brand/update/
-  /qubecart/partner/changepassword/:
-    post:
-      description: Partner change password
-      operationId: QubecartPartnerChangepasswordPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"\
-                4321\",\r\n    \"new_password\" : \"1234\"\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"qc_partner_id\" : 29,\r\n    \"old_password\" : \"\
-                4321\",\r\n    \"new_password\" : \"1234\"\r\n}"
-              x-response-id: 87d08e40-b5a1-476e-88a7-c175f9db1bbf
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerChangepassword:
-                  $ref: '#/components/examples/exampleQubecartPartnerChangepasswordPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerChangepasswordPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/changepassword/
-      summary: http://15.206.132.5:8003/qubecart/partner/changepassword/
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/creditcustomer/updaterequest/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/creditcustomer/updaterequest/
   /qubecart/partner/detail/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerDetailPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: Get Partner Detail By Partner Id
       operationId: QubecartPartnerDetailPost
@@ -8527,7 +8452,7 @@ paths:
             - value: "{\r\n    \"qc_partner_id\" : 31\r\n    \r\n}"
               x-response-id: 89c33465-dd36-40c5-b5ab-0f5758962564
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8535,9 +8460,2488 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerDetailPost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerDetailPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/detail/
-      summary: http://15.206.132.5:8003/qubecart/partner/detail/
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/detail/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/detail/
+  /qubecart/partner/generatecode/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerGeneratecodePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Generate partner Code while registration'
+      operationId: QubecartPartnerGeneratecodePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\"\
+                \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"partner_phone\" : \"9999999991\",\n    \"partner_email\"\
+                \ : \"jon.doe@mdummb.com\",\n    \"partner_category\" : 1\n}"
+              x-response-id: 9fe8f000-612a-4766-b5da-22502d587b4d
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerGeneratecode:
+                  $ref: '#/components/examples/exampleQubecartPartnerGeneratecodePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerGeneratecodePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/generatecode/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/generatecode/
+  /qubecart/partner/login/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerLoginPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Partner login using email/phone as username and password'
+      operationId: QubecartPartnerLoginPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
+                \ : \"1234\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"username\" : \"souravmondal@msqube.com\",\n    \"password\"\
+                \ : \"1234\"\n}"
+              x-response-id: 1f4a97aa-765c-4031-888b-0b5a6840898f
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerLogin:
+                  $ref: '#/components/examples/exampleQubecartPartnerLoginPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerLoginPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/login/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/login/
+  /qubecart/partner/orders/activeordercount/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersActiveordercountPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Active Order Count
+      operationId: QubecartPartnerOrdersActiveordercountPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_id\" : 24\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_id\" : 24\r\n}"
+              x-response-id: dd4d9d6f-93ba-46c8-9f34-9f8629049069
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerOrdersActiveordercount:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersActiveordercountPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersActiveordercountPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/orders/activeordercount/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/orders/activeordercount/
+  /qubecart/partner/orders/bagdetails/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersBagdetailsPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Order bag details
+      operationId: QubecartPartnerOrdersBagdetailsPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"bag_id\" : 52\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"bag_id\" : 52\r\n}"
+              x-response-id: 99f103a1-78d6-4a72-84a6-21b127c2ec21
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerOrdersBagdetails:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersBagdetailsPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersBagdetailsPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/orders/bagdetails/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/orders/bagdetails/
+  /qubecart/partner/orders/earninghistory/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersEarninghistoryPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      operationId: QubecartPartnerOrdersEarninghistoryPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"qc_partner_id\" : 24,\r\n    \"toggle_settled\" :\
+                \ 0\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"qc_partner_id\" : 24,\r\n    \"toggle_settled\" :\
+                \ 0\r\n}"
+              x-response-id: 5fc55ba6-37ad-4fdd-a2ff-594da35369c4
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerOrdersEarninghistory:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersEarninghistoryPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersEarninghistoryPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/orders/earninghistory/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/orders/earninghistory/
+  /qubecart/partner/orders/getactive/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersGetactivePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Get all active bags of a store'
+      operationId: QubecartPartnerOrdersGetactivePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 3\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 3\n}"
+              x-response-id: ece2e214-33d4-4679-9cb5-a49565afdac9
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerOrdersGetactive:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersGetactivePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersGetactivePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/orders/getactive/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/orders/getactive/
+  /qubecart/partner/orders/updatebagstatus/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersUpdatebagstatusPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Update bag status by partner
+      operationId: QubecartPartnerOrdersUpdatebagstatusPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"bag_id\" : 79,\r\n    \"bag_status\" : 2\r\n}"
+              x-response-id: 29ba2dc4-b10f-4427-b06c-b5a810cbd64d
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerOrdersUpdatebagstatus:
+                  $ref: '#/components/examples/exampleQubecartPartnerOrdersUpdatebagstatusPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerOrdersUpdatebagstatusPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/orders/updatebagstatus/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/orders/updatebagstatus/
+  /qubecart/partner/signup/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerSignupPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Creates a partner using partner code '
+      operationId: QubecartPartnerSignupPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\"\
+                \ : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\"\
+                ,\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"\
+                700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n  \
+                \  \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"\
+                stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\"\
+                \ : \"asdf12345\"\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"partner_code\" : \"yQAYtO\",\n    \"addressline1\"\
+                \ : \"112/4\",\n    \"addressline2\" : \"Dr, s.c baneerjee road\"\
+                ,\n    \"state_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"\
+                700010\",\n    \"city_id\" : 1,\n    \"password\" : \"1234\",\n  \
+                \  \"company_name\": \"stationary 001\",\n    \"billing_name\" : \"\
+                stationary 001\",\n    \"gst_numbers\" :\"1234qwerty\",\n    \"pan\"\
+                \ : \"asdf12345\"\n}"
+              x-response-id: 970a4206-0930-4a38-bf48-5d0b4803b6ea
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerSignup:
+                  $ref: '#/components/examples/exampleQubecartPartnerSignupPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerSignupPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/signup/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/signup/
+  /qubecart/partner/store/bycategory/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      operationId: QubecartPartnerStoreBycategoryPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_category\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_category\" : 1\n}"
+              x-response-id: e3db03e2-9ec3-4733-87b9-41f6e03789b3
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreBycategory:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreBycategoryPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreBycategoryPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/bycategory/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/bycategory/
+  /qubecart/partner/store/create/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreatePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Creates store for partner'
+      operationId: QubecartPartnerStoreCreatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\"\
+                ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
+                \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
+                city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"\
+                store_category\" : 2\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 24,\n    \"addressline1\" : \"12/A\"\
+                ,\n    \"addressline2\" : \"Baguiati main road\",\n    \"state_id\"\
+                \ : 1,\n    \"country_id\" : 1,\n    \"pin\" : \"700115\",\n    \"\
+                city_id\" : 1,\n    \"store_name\" : \"Daily Food branch\",\n    \"\
+                store_category\" : 2\n}"
+              x-response-id: 878e0b06-518e-4a53-bb33-dd05a7464d30
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreCreate:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreCreatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreatePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/create/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/create/
+  /qubecart/partner/store/createproduct/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreateproductPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Creates a product for a store by partner'
+      operationId: QubecartPartnerStoreCreateproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"brand_id\" : 14,\n    \"store_id\" : 3,\n    \"qc_partner_id\"\
+                \ : 24,\n    \"product_description\" : \"Loose wheat\",\n    \"unit\"\
+                \ : 1,\n    \"product_mrp\" : 60,\n    \"product_selling_price\" :\
+                \ null,\n    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\"\
+                \ : \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
+                \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
+                \ : 2,\n    \"packaged_product\" : false\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"brand_id\" : 1,\n    \"store_id\" : 3,\n    \"qc_partner_id\"\
+                \ : 9,\n    \"product_description\" : \"Kalobaba Basmati Rice for\
+                \ everyday use\",\n    \"unit\" : 1,\n    \"product_quantity\" : 2,\n\
+                \    \"product_mrp\" : 60,\n    \"product_selling_price\" : null,\n\
+                \    \"product_gst_percentage\" : 5,\n    \"product_thumbnail\" :\
+                \ \"basmati.jpg\",\n    \"product_discount\" : 10,\n    \"images\"\
+                \ : [\"basmati.jpg\"],\n    \"stock_quantity\" : 20,\n    \"created_by_role\"\
+                \ : 2\n}"
+              x-response-id: 87957a56-f3be-4732-bc5f-e4ff7592a08b
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreCreateproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreCreateproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreCreateproductPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/createproduct/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/createproduct/
+  /qubecart/partner/store/editproduct/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreEditproductPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Edit Store Products
+      operationId: QubecartPartnerStoreEditproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\"\
+                : \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"\
+                product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\"\
+                : 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\"\
+                : \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\"\
+                : 5,\r\n    \"packaged_product\": true\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_id\": 54,\r\n    \"product_description\"\
+                : \"India Gate Basmati Rice 25Kg\",\r\n    \"unit\": 1,\r\n    \"\
+                product_quantity\": 25,\r\n    \"product_mrp\": 1800,\r\n    \"product_selling_price\"\
+                : 1700,\r\n    \"product_gst_percentage\": 8,\r\n    \"product_thumbnail\"\
+                : \"d4d4ddf2-8c98-4a36-94eb-6788f7b1c723.jpg\",\r\n    \"product_discount\"\
+                : 5,\r\n    \"packaged_product\": true\r\n}"
+              x-response-id: b3265529-e4b5-48e7-8659-213488ac7dd3
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreEditproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreEditproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreEditproductPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/editproduct/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/editproduct/
+  /qubecart/partner/store/get/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Returns stores of customer'
+      operationId: QubecartPartnerStoreGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"qc_partner_id\" : 9\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"qc_partner_id\" : 13\n}"
+              x-response-id: 3ca32b02-20d7-4d11-85db-5b4a0b19251e
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGet:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/get/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/get/
+  /qubecart/partner/store/getbaseproductsbybrand/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbaseproductsbybrandPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/store/getbaseproductsbybrand/
+      operationId: QubecartPartnerStoreGetbaseproductsbybrandPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"store_id\":65,\r\n    \"brand_id\":813\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"store_id\":65,\r\n    \"brand_id\":813\r\n}"
+              x-response-id: dc1d2232-3eeb-4207-9ee7-17b7b94038ab
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetbaseproductsbybrand:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetbaseproductsbybrandPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbaseproductsbybrandPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getbaseproductsbybrand/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getbaseproductsbybrand/
+  /qubecart/partner/store/getbyid/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbyidPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Returns a stores basic details by id'
+      operationId: QubecartPartnerStoreGetbyidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 16\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 16\n}"
+              x-response-id: c07fd545-3865-4b33-ad53-5fb52d74a584
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetbyid:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetbyidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbyidPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getbyid/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getbyid/
+  /qubecart/partner/store/getproducts/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Get products by store'
+      operationId: QubecartPartnerStoreGetproductsPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
+                context_value\" : 66\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 26,\n    \"context_type\" : 1,\n    \"\
+                context_value\" : 66\n}"
+              x-response-id: bf13e280-cced-4e90-bc16-bcc9b7bf47b6
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetproducts:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getproducts/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getproducts/
+  /qubecart/partner/store/getproductsbybrand/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Get products by subcategory and store id'
+      operationId: QubecartPartnerStoreGetproductsbybrandPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
+                \ \"qc_partner_id\" : 24\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"subcategory_id\" : 28,\n    \"store_id\" : 3,\n   \
+                \ \"qc_partner_id\" : 24\n}"
+              x-response-id: f06c7001-dd8f-4cad-a753-01d4bbc35861
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetproductsbybrand:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsbybrandPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsbybrandPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getproductsbybrand/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getproductsbybrand/
+  /qubecart/partner/store/getproductsforpartner/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsforpartnerPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/store/getproductsforpartner/
+      operationId: QubecartPartnerStoreGetproductsforpartnerPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n     \"store_id\": 66,\r\n    \"store_category\": 2\r\n\
+                }"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n     \"store_id\": 66,\r\n    \"store_category\": 2\r\n\
+                }"
+              x-response-id: a5cbe651-8fc6-4aa5-8c7c-168897cc11d1
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetproductsforpartner:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsforpartnerPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsforpartnerPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getproductsforpartner/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getproductsforpartner/
+  /qubecart/partner/store/getsingleproduct/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetsingleproductPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Get single product of store
+      operationId: QubecartPartnerStoreGetsingleproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_id\": 54\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_id\": 54\r\n}"
+              x-response-id: a3e733f5-dc52-4b22-970c-a2ba670168d0
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetsingleproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetsingleproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetsingleproductPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getsingleproduct/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getsingleproduct/
+  /qubecart/partner/store/getstockhistory/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetstockhistoryPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: Get stock history
+      operationId: QubecartPartnerStoreGetstockhistoryPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"partner_product_id\" : 31\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"partner_product_id\" : 31\r\n}"
+              x-response-id: cd941080-e3c7-4950-ad24-5c95c94dfa04
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreGetstockhistory:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetstockhistoryPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetstockhistoryPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/getstockhistory/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/getstockhistory/
+  /qubecart/partner/store/update/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Updates a store '
+      operationId: QubecartPartnerStoreUpdatePost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
+                ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
+                \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
+                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store ps AC/DC\"\
+                ,\n    \"store_category\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 16,\n    \"addressline1\" : \"111/1\"\
+                ,\n    \"addressline2\" : \"highway to hell\",\n    \"state_id\" :\
+                \ 1,\n    \"city_id\" : 1,\n    \"country_id\" : 1,\n    \"pin\" :\
+                \ \"999999\",\n    \"store_name\" : \"HighwaytoHell Store\",\n   \
+                \ \"store_category\" : 1,\n    \"store_image\" : null\n}"
+              x-response-id: 5d141fe5-a52e-4686-b546-ac5789c8e7d5
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreUpdate:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatePost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatePost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/update/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/update/
+  /qubecart/partner/store/updatestock/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatestockPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: "## Updates a stock using store_id and product_id \n### txn_type\
+        \ = 1 IN\n### txn_type = 2 OUT"
+      operationId: QubecartPartnerStoreUpdatestockPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
+                \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"store_id\" : 3,\n    \"partner_product_id\" : 2,\n\
+                \    \"stock_quantity\" : 10,\n    \"txn_type\" : 1\n}"
+              x-response-id: fd4583e6-0631-4d98-9571-34de426d7007
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoreUpdatestock:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoreUpdatestockPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoreUpdatestockPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/store/updatestock/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/store/updatestock/
+  /qubecart/partner/stores/getallcolors/:
+    get:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getallcolors/
+      operationId: QubecartPartnerStoresGetallcolorsGet
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetallcolors:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallcolorsGet200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallcolorsGet200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getallcolors/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: GET
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getallcolors/
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallcolorsGet200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+  /qubecart/partner/stores/getallpnbbysubid/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallpnbbysubidPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getallpnbbysubid/
+      operationId: QubecartPartnerStoresGetallpnbbysubidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"subcategory_id\":259\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"subcategory_id\":259\r\n}"
+              x-response-id: eb5e16ec-e8ed-4c13-be14-cb5602e2ad0d
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetallpnbbysubid:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallpnbbysubidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallpnbbysubidPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getallpnbbysubid/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getallpnbbysubid/
+  /qubecart/partner/stores/getallsizes/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallsizesPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getallsizes/
+      operationId: QubecartPartnerStoresGetallsizesPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"product_id\":1319,\r\n    \"color_id\":29\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"product_id\":1319,\r\n    \"color_id\":29\r\n}"
+              x-response-id: 340fddff-c7b5-4a3f-8111-66d56e7d1b54
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetallsizes:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallsizesPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallsizesPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getallsizes/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getallsizes/
+  /qubecart/partner/stores/getallvariants/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallvariantsPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getallvariants/
+      operationId: QubecartPartnerStoresGetallvariantsPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"product_id\":1319\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"product_id\":1319\r\n}"
+              x-response-id: fb91fa7b-6caf-4899-b741-2d23f80a659c
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetallvariants:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallvariantsPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallvariantsPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getallvariants/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getallvariants/
+  /qubecart/partner/stores/getcatbytempid/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetcatbytempidPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getcatbytempid/
+      operationId: QubecartPartnerStoresGetcatbytempidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"template_id\":70\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"template_id\":70\r\n}"
+              x-response-id: 885db188-b39e-4f54-a6a2-d9ae1b92f24d
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetcatbytempid:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetcatbytempidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetcatbytempidPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getcatbytempid/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getcatbytempid/
+  /qubecart/partner/stores/getproductsbysubid/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetproductsbysubidPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getproductsbysubid/
+      operationId: QubecartPartnerStoresGetproductsbysubidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"subcategory_id\":259\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"subcategory_id\":259\r\n}"
+              x-response-id: 63e3b023-cabd-40fe-9391-c72bf33eeb66
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetproductsbysubid:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetproductsbysubidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetproductsbysubidPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getproductsbysubid/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getproductsbysubid/
+  /qubecart/partner/stores/getsubcatbycatid/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetsubcatbycatidPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/getsubcatbycatid/
+      operationId: QubecartPartnerStoresGetsubcatbycatidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"category_id\":182\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"category_id\":182\r\n}"
+              x-response-id: 8236ee6d-cf60-45e3-9c75-873c5e000a69
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGetsubcatbycatid:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetsubcatbycatidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetsubcatbycatidPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/getsubcatbycatid/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/getsubcatbycatid/
+  /qubecart/partner/stores/gettemplatebystoreid/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGettemplatebystoreidPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/gettemplatebystoreid/
+      operationId: QubecartPartnerStoresGettemplatebystoreidPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"store_id\":65\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"store_id\":65\r\n}"
+              x-response-id: bbb71346-6ca5-4e46-bf0e-46b1b59a1088
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresGettemplatebystoreid:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresGettemplatebystoreidPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresGettemplatebystoreidPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/gettemplatebystoreid/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/gettemplatebystoreid/
+  /qubecart/partner/stores/inactiveproduct/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresInactiveproductPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/inactiveproduct/
+      operationId: QubecartPartnerStoresInactiveproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"product_id\":1319\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"product_id\":1319\r\n}"
+              x-response-id: ca84236c-0e0f-4a93-8d69-7b4025327fdd
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresInactiveproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresInactiveproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresInactiveproductPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/inactiveproduct/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/inactiveproduct/
+  /qubecart/partner/stores/reactivateproduct/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresReactivateproductPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: http://${stageVariables.url}/qubecart/partner/stores/reactivateproduct/
+      operationId: QubecartPartnerStoresReactivateproductPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"product_id\":1319\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"product_id\":1319\r\n}"
+              x-response-id: 07baf448-15e3-4302-891b-1793f12b7172
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerStoresReactivateproduct:
+                  $ref: '#/components/examples/exampleQubecartPartnerStoresReactivateproductPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerStoresReactivateproductPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/stores/reactivateproduct/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/stores/reactivateproduct/
+  /qubecart/partner/template/get/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerTemplateGetPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: 'Get partner template '
+      operationId: QubecartPartnerTemplateGetPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\r\n    \"qc_partner_id\": 9,\r\n    \"store_id\" : 3\r\n}"
+              x-response-id: 8928c74d-795a-402c-8a42-84e2f70abb53
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerTemplateGet:
+                  $ref: '#/components/examples/exampleQubecartPartnerTemplateGetPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerTemplateGetPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/template/get/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/template/get/
+  /qubecart/partner/template/info/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerTemplateInfoPost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
+    post:
+      description: '## Get template and related information using template id'
+      operationId: QubecartPartnerTemplateInfoPost
+      requestBody:
+        content:
+          '*/*':
+            example:
+              value: "{\n    \"template_id\" : 29\n}"
+            schema:
+              type: string
+            x-link-response:
+            - value: "{\n    \"template_id\" : 29\n}"
+              x-response-id: 57670e99-3f0e-471a-b69a-e56d533cabb0
+      responses:
+        200:
+          content:
+            application/json:
+              examples:
+                Http1520613258003QubecartPartnerTemplateInfo:
+                  $ref: '#/components/examples/exampleQubecartPartnerTemplateInfoPost200'
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerTemplateInfoPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/template/info/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/template/info/
   /qubecart/partner/update/:
+    options:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/schemaQubecartPartnerUpdatePost200'
+          description: 200 response
+          headers:
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      x-amazon-apigateway-integration:
+        passthroughBehavior: when_no_match
+        requestTemplates:
+          application/json: '{"statusCode": 200}'
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+              method.response.header.Access-Control-Allow-Methods: '''POST,OPTIONS'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: mock
     post:
       description: Partner Update
       operationId: QubecartPartnerUpdatePost
@@ -8608,7 +11012,7 @@ paths:
                 \n        }"
               x-response-id: a6a356a6-8391-4067-88dd-b247acf688be
       responses:
-        '200':
+        200:
           content:
             application/json:
               examples:
@@ -8616,348 +11020,31 @@ paths:
                   $ref: '#/components/examples/exampleQubecartPartnerUpdatePost200'
               schema:
                 $ref: '#/components/schemas/schemaQubecartPartnerUpdatePost200'
-          description: http://15.206.132.5:8003/qubecart/partner/update/
-      summary: http://15.206.132.5:8003/qubecart/partner/update/
-  /qubecart/partner/orders/activeordercount/:
-    post:
-      description: Active Order Count
-      operationId: QubecartPartnerOrdersActiveordercountPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"partner_id\" : 24\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"partner_id\" : 24\r\n}"
-              x-response-id: dd4d9d6f-93ba-46c8-9f34-9f8629049069
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerOrdersActiveordercount:
-                  $ref: '#/components/examples/exampleQubecartPartnerOrdersActiveordercountPost200'
+          description: 200 Response
+          headers:
+            Access-Control-Allow-Origin:
               schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerOrdersActiveordercountPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/orders/activeordercount/
-      summary: http://15.206.132.5:8003/qubecart/partner/orders/activeordercount/
-  /qubecart/partner/orders/earninghistory/:
-    post:
-      operationId: QubecartPartnerOrdersEarninghistoryPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"qc_partner_id\" : 24,\r\n    \"toggle_settled\" :\
-                \ 0\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"qc_partner_id\" : 24,\r\n    \"toggle_settled\" :\
-                \ 0\r\n}"
-              x-response-id: 5fc55ba6-37ad-4fdd-a2ff-594da35369c4
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerOrdersEarninghistory:
-                  $ref: '#/components/examples/exampleQubecartPartnerOrdersEarninghistoryPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerOrdersEarninghistoryPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/orders/earninghistory/
-      summary: http://15.206.132.5:8003/qubecart/partner/orders/earninghistory/
-  /qubecart/partner/store/getproductsforpartner/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/
-      operationId: QubecartPartnerStoreGetproductsforpartnerPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n     \"store_id\": 66,\r\n    \"store_category\": 2\r\n\
-                }"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n     \"store_id\": 66,\r\n    \"store_category\": 2\r\n\
-                }"
-              x-response-id: a5cbe651-8fc6-4aa5-8c7c-168897cc11d1
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetproductsforpartner:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetproductsforpartnerPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetproductsforpartnerPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getproductsforpartner/
-  /qubecart/partner/store/getbaseproductsbybrand/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/
-      operationId: QubecartPartnerStoreGetbaseproductsbybrandPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"store_id\":65,\r\n    \"brand_id\":813\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"store_id\":65,\r\n    \"brand_id\":813\r\n}"
-              x-response-id: dc1d2232-3eeb-4207-9ee7-17b7b94038ab
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoreGetbaseproductsbybrand:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoreGetbaseproductsbybrandPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoreGetbaseproductsbybrandPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/
-      summary: http://15.206.132.5:8003/qubecart/partner/store/getbaseproductsbybrand/
-  /qubecart/partner/stores/gettemplatebystoreid/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/
-      operationId: QubecartPartnerStoresGettemplatebystoreidPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"store_id\":65\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"store_id\":65\r\n}"
-              x-response-id: bbb71346-6ca5-4e46-bf0e-46b1b59a1088
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGettemplatebystoreid:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGettemplatebystoreidPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGettemplatebystoreidPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/gettemplatebystoreid/
-  /qubecart/partner/stores/getcatbytempid/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/
-      operationId: QubecartPartnerStoresGetcatbytempidPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"template_id\":70\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"template_id\":70\r\n}"
-              x-response-id: 885db188-b39e-4f54-a6a2-d9ae1b92f24d
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetcatbytempid:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetcatbytempidPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetcatbytempidPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getcatbytempid/
-  /qubecart/partner/stores/getsubcatbycatid/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/
-      operationId: QubecartPartnerStoresGetsubcatbycatidPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"category_id\":182\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"category_id\":182\r\n}"
-              x-response-id: 8236ee6d-cf60-45e3-9c75-873c5e000a69
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetsubcatbycatid:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetsubcatbycatidPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetsubcatbycatidPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getsubcatbycatid/
-  /qubecart/partner/stores/getproductsbysubid/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/
-      operationId: QubecartPartnerStoresGetproductsbysubidPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"subcategory_id\":259\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"subcategory_id\":259\r\n}"
-              x-response-id: 63e3b023-cabd-40fe-9391-c72bf33eeb66
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetproductsbysubid:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetproductsbysubidPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetproductsbysubidPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getproductsbysubid/
-  /qubecart/partner/stores/getallpnbbysubid/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/
-      operationId: QubecartPartnerStoresGetallpnbbysubidPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"subcategory_id\":259\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"subcategory_id\":259\r\n}"
-              x-response-id: eb5e16ec-e8ed-4c13-be14-cb5602e2ad0d
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetallpnbbysubid:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallpnbbysubidPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallpnbbysubidPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getallpnbbysubid/
-  /qubecart/partner/stores/getallvariants/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/
-      operationId: QubecartPartnerStoresGetallvariantsPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"product_id\":1319\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"product_id\":1319\r\n}"
-              x-response-id: fb91fa7b-6caf-4899-b741-2d23f80a659c
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetallvariants:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallvariantsPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallvariantsPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getallvariants/
-  /qubecart/partner/stores/getallcolors/:
-    get:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/
-      operationId: QubecartPartnerStoresGetallcolorsGet
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetallcolors:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallcolorsGet200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallcolorsGet200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getallcolors/
-  /qubecart/partner/stores/getallsizes/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/
-      operationId: QubecartPartnerStoresGetallsizesPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"product_id\":1319,\r\n    \"color_id\":29\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"product_id\":1319,\r\n    \"color_id\":29\r\n}"
-              x-response-id: 340fddff-c7b5-4a3f-8111-66d56e7d1b54
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresGetallsizes:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresGetallsizesPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresGetallsizesPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/getallsizes/
-  /qubecart/partner/stores/inactiveproduct/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/
-      operationId: QubecartPartnerStoresInactiveproductPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"product_id\":1319\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"product_id\":1319\r\n}"
-              x-response-id: ca84236c-0e0f-4a93-8d69-7b4025327fdd
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresInactiveproduct:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresInactiveproductPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresInactiveproductPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/inactiveproduct/
-  /qubecart/partner/stores/reactivateproduct/:
-    post:
-      description: http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/
-      operationId: QubecartPartnerStoresReactivateproductPost
-      requestBody:
-        content:
-          '*/*':
-            example:
-              value: "{\r\n    \"product_id\":1319\r\n}"
-            schema:
-              type: string
-            x-link-response:
-            - value: "{\r\n    \"product_id\":1319\r\n}"
-              x-response-id: 07baf448-15e3-4302-891b-1793f12b7172
-      responses:
-        '200':
-          content:
-            application/json:
-              examples:
-                Http1520613258003QubecartPartnerStoresReactivateproduct:
-                  $ref: '#/components/examples/exampleQubecartPartnerStoresReactivateproductPost200'
-              schema:
-                $ref: '#/components/schemas/schemaQubecartPartnerStoresReactivateproductPost200'
-          description: http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/
-      summary: http://15.206.132.5:8003/qubecart/partner/stores/reactivateproduct/
+                type: string
+      summary: http://${stageVariables.url}/qubecart/partner/update/
+      x-amazon-apigateway-integration:
+        cors: true
+        httpMethod: POST
+        passthroughBehavior: when_no_match
+        responses:
+          default:
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            statusCode: 200
+        type: http
+        uri: http://${stageVariables.url}/qubecart/partner/update/
+x-amazon-apigateway-gateway-responses:
+  DEFAULT_4XX:
+    responseParameters:
+      gatewayresponse.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+      gatewayresponse.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+      gatewayresponse.header.Access-Control-Allow-Origin: '''*'''
+  DEFAULT_5XX:
+    responseParameters:
+      gatewayresponse.header.Access-Control-Allow-Headers: '''Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'''
+      gatewayresponse.header.Access-Control-Allow-Methods: '''GET,OPTIONS'''
+      gatewayresponse.header.Access-Control-Allow-Origin: '''*'''
