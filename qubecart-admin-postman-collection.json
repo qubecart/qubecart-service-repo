@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4cf88559-4653-4b77-bc99-7aa96d1004b0",
+		"_postman_id": "c49e98c8-9abe-4c2e-9513-472585088a62",
 		"name": "Qubecart-Admin-Services",
 		"description": "## API collection for qubecart admin backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -367,7 +367,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "3.7.66.177:8001/qubecart/shared/errorframework/",
+							"raw": "http://15.206.132.5:8001/qubecart/shared/errorframework/",
 							"host": [
 								"3",
 								"7",
@@ -8263,19 +8263,466 @@
 					"body": "{\n    \"code\": null,\n    \"exception\": true,\n    \"Error\": {\n        \"Info\": [],\n        \"Business_Error\": [\n            {\n                \"Code\": \"BE028\",\n                \"Message\": \"Parameter key already exists\"\n            }\n        ],\n        \"Warning\": [],\n        \"System_Error\": []\n    },\n    \"data\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/customeraddresses/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\" : 31\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8001/qubecart/admin/customeraddresses/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"customeraddresses",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/customeraddresses/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customer_id\" : 31\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8001/qubecart/admin/customeraddresses/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"customeraddresses",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Mar 2021 07:33:58 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "550"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"customer_address_id\": 94,\n            \"name\": \"Pradipta Das\",\n            \"contact_no\": \"9830623021\",\n            \"addressline1\": \"105\",\n            \"addressline2\": \"Service Road, Kolkata\",\n            \"city\": 39,\n            \"state\": 1,\n            \"pin\": 700136,\n            \"customer_id\": 31,\n            \"address_type\": 2,\n            \"address_status\": 1,\n            \"landmark\": \"Theque Restaurant\"\n        },\n        {\n            \"customer_address_id\": 102,\n            \"name\": \"Milas Mo\",\n            \"contact_no\": \"9674260228\",\n            \"addressline1\": \"34\",\n            \"addressline2\": \"National Highway 12, Kolkata\",\n            \"city\": 39,\n            \"state\": 1,\n            \"pin\": 700136,\n            \"customer_id\": 31,\n            \"address_type\": 1,\n            \"address_status\": 1,\n            \"landmark\": \"Hulas\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_ref_no\" : \"QCO_1234\",\n    \"billing_address_id\" : 103,\n    \"customer_id\" : 31,\n    \"store_id\" : 68,\n    \"product_id\" : 1374,\n    \"price\" : 69,\n    \"student_name\" : \"XXX\",\n    \"student_class\" : \"XXX\",\n    \"student_section\" : \"XXX\",\n    \"student_roll\" : \"000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8001/qubecart/admin/order/create/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"create",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_ref_no\" : \"QCO_1234\",\n    \"billing_address_id\" : 103,\n    \"customer_id\" : 31,\n    \"store_id\" : 68,\n    \"product_id\" : 1374,\n    \"price\" : 69,\n    \"student_name\" : \"XXX\",\n    \"student_class\" : \"XXX\",\n    \"student_section\" : \"XXX\",\n    \"student_roll\" : \"000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8001/qubecart/admin/order/create/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Mar 2021 07:38:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/customer/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"primary_login\" : \"9874319714\",\n    \"secondary_login\" : \"\",\n    \"first_name\" : \"sourav\",\n    \"last_name\" : \"mondal\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"beleghata main road\",\n    \"city\": 39,\n    \"state\" : 1,\n    \"pin\" : \"700010\",\n    \"latitude\" : 22.562833,\n    \"longitude\" : 88.396250,\n    \"landmark\" : \"near beleghata HPO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8001/qubecart/admin/customer/create/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"customer",
+						"create",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/customer/create/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"primary_login\" : \"9874319714\",\n    \"secondary_login\" : \"sourav.mondal@msqube.com\",\n    \"first_name\" : \"sourav\",\n    \"last_name\" : \"mondal\",\n    \"addressline1\" : \"112/4\",\n    \"addressline2\" : \"beleghata main road\",\n    \"city\": 39,\n    \"state\" : 1,\n    \"pin\" : \"700010\",\n    \"latitude\" : 22.562833,\n    \"longitude\" : 88.396250,\n    \"landmark\" : \"near beleghata HPO\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8001/qubecart/admin/customer/create/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"customer",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Mar 2021 07:44:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "98"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"customer_id\": 43,\n        \"customer_address_id\": 110\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/sendsms/order/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"store_link\" : \"https://google.com/\",\n    \"customer_id\" : 42\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://15.206.132.5:8001/qubecart/admin/sendsms/order/",
+					"protocol": "http",
+					"host": [
+						"15",
+						"206",
+						"132",
+						"5"
+					],
+					"port": "8001",
+					"path": [
+						"qubecart",
+						"admin",
+						"sendsms",
+						"order",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/sendsms/order/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store_link\" : \"https://google.com/\",\n    \"customer_id\" : 42\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://15.206.132.5:8001/qubecart/admin/sendsms/order/",
+							"protocol": "http",
+							"host": [
+								"15",
+								"206",
+								"132",
+								"5"
+							],
+							"port": "8001",
+							"path": [
+								"qubecart",
+								"admin",
+								"sendsms",
+								"order",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Mar 2021 07:49:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "551eda15-9f1b-47e2-b260-bdb5921b8ee3",
 			"key": "base_url",
-			"value": "3.7.66.177"
+			"value": "15.206.132.5"
 		},
 		{
-			"id": "7c9f1c2d-4069-419b-a3bf-88798943d365",
 			"key": "port",
 			"value": "8001"
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
