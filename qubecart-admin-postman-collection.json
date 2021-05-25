@@ -8713,6 +8713,112 @@
 					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": null\n}"
 				}
 			]
+		},
+		{
+			"name": "http://15.206.132.5:8001/qubecart/admin/order/details/external/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\": 264\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin}}/qubecart/admin/order/details/external/",
+					"host": [
+						"{{admin}}"
+					],
+					"path": [
+						"qubecart",
+						"admin",
+						"order",
+						"details",
+						"external",
+						""
+					]
+				},
+				"description": "Order Details for external page"
+			},
+			"response": [
+				{
+					"name": "http://15.206.132.5:8001/qubecart/admin/order/details/external/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_id\": 264\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin}}/qubecart/admin/order/details/external/",
+							"host": [
+								"{{admin}}"
+							],
+							"path": [
+								"qubecart",
+								"admin",
+								"order",
+								"details",
+								"external",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 25 May 2021 06:16:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4281"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"001\",\n    \"exception\": false,\n    \"Errors\": null,\n    \"data\": {\n        \"order_details\": {\n            \"order_id\": 264,\n            \"order_ref_no\": \"QCO693719\",\n            \"order_created_at\": \"2021-05-24T15:06:39Z\",\n            \"order_delivery_date\": null,\n            \"scheduled_delivery_date\": \"2021-05-25T18:30:00Z\",\n            \"order_status\": 6,\n            \"order_status_name\": \"Order Generated\",\n            \"customer_id\": 31,\n            \"price\": 78326,\n            \"payment_type\": 7,\n            \"payment_type_name\": \"Payment Link\",\n            \"payment_status\": 0,\n            \"payment_status_name\": \"Not Settled\",\n            \"pre_order_flag\": 1,\n            \"payment_link\": \"https://test.instamojo.com/@snehasish_das/8cfe462a591d437ab31ded9607f8bc63\"\n        },\n        \"store_details\": [\n            {\n                \"bag_id\": 280,\n                \"store_id\": 38,\n                \"bag_ref_no\": \"QCB940920\",\n                \"updated_on\": \"2020-09-19T05:41:41\",\n                \"updated_by\": null,\n                \"order_id\": 264,\n                \"bag_status\": 13,\n                \"paid_to_partner\": 0,\n                \"paid_to_qubecart\": 0,\n                \"special_request\": null,\n                \"msqube_percentage\": 0,\n                \"partner_percentage\": 0,\n                \"sales_person_percentage\": 0,\n                \"order_ref_no\": \"QCO693719\",\n                \"order_created_at\": \"2021-05-24T15:06:39Z\",\n                \"order_delivery_date\": null,\n                \"scheduled_delivery_date\": \"2021-05-25T18:30:00Z\",\n                \"store_address_id\": 86,\n                \"store_name\": \"Das Store\",\n                \"latitude\": 0.066942,\n                \"longitude\": 5.357128,\n                \"store_category\": 1,\n                \"qc_partner_id\": 28,\n                \"store_rating\": 0,\n                \"credit_flag\": 0,\n                \"store_status\": 2,\n                \"region_id\": 1,\n                \"created_on\": \"2020-09-19T05:39:00\",\n                \"store_image\": null,\n                \"no_item_show\": 0,\n                \"contact_phone\": \"8013320216\",\n                \"bag_status_name\": \"Order Generated\",\n                \"overall_rating\": null,\n                \"comments\": null,\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\",\n                \"item_details\": [\n                    {\n                        \"bag_item_id\": 283,\n                        \"product_id\": 1276,\n                        \"required_quantity\": 1,\n                        \"total_price\": 80,\n                        \"bag_id\": 280,\n                        \"bag_item_status\": 1,\n                        \"product_description\": \"chicken kabab\",\n                        \"product_thumbnail\": null,\n                        \"product_selling_price\": 80,\n                        \"unit\": \"pcs\",\n                        \"bucket_name\": \"qubecart\",\n                        \"itemImageFolder\": \"Item_image\"\n                    }\n                ]\n            },\n            {\n                \"bag_id\": 279,\n                \"store_id\": 41,\n                \"bag_ref_no\": \"QCB752374\",\n                \"updated_on\": \"2020-12-21T11:12:40\",\n                \"updated_by\": null,\n                \"order_id\": 264,\n                \"bag_status\": 13,\n                \"paid_to_partner\": 0,\n                \"paid_to_qubecart\": 0,\n                \"special_request\": null,\n                \"msqube_percentage\": 0,\n                \"partner_percentage\": 0,\n                \"sales_person_percentage\": 0,\n                \"order_ref_no\": \"QCO693719\",\n                \"order_created_at\": \"2021-05-24T15:06:39Z\",\n                \"order_delivery_date\": null,\n                \"scheduled_delivery_date\": \"2021-05-25T18:30:00Z\",\n                \"store_address_id\": 89,\n                \"store_name\": \"Sudipta Tea stall\",\n                \"latitude\": 23.3872,\n                \"longitude\": 88.499,\n                \"store_category\": 3,\n                \"qc_partner_id\": 28,\n                \"store_rating\": 0,\n                \"credit_flag\": 1,\n                \"store_status\": 2,\n                \"region_id\": 2,\n                \"created_on\": \"2020-09-19T05:41:12\",\n                \"store_image\": \"5d3a1b87-816c-4676-8cab-997a8c8de664.jpg\",\n                \"no_item_show\": 0,\n                \"contact_phone\": \"8013320216\",\n                \"bag_status_name\": \"Order Generated\",\n                \"overall_rating\": null,\n                \"comments\": null,\n                \"bucket_name\": \"qubecart\",\n                \"storeImageFolder\": \"qubecart_partner\",\n                \"item_details\": [\n                    {\n                        \"bag_item_id\": 281,\n                        \"product_id\": 1272,\n                        \"required_quantity\": 1,\n                        \"total_price\": 80,\n                        \"bag_id\": 279,\n                        \"bag_item_status\": 1,\n                        \"product_description\": \"Man Chow Soup\",\n                        \"product_thumbnail\": null,\n                        \"product_selling_price\": 80,\n                        \"unit\": \"pcs\",\n                        \"bucket_name\": \"qubecart\",\n                        \"itemImageFolder\": \"Item_image\"\n                    },\n                    {\n                        \"bag_item_id\": 282,\n                        \"product_id\": 1273,\n                        \"required_quantity\": 1,\n                        \"total_price\": 80,\n                        \"bag_id\": 279,\n                        \"bag_item_status\": 1,\n                        \"product_description\": \"Thai Soup\",\n                        \"product_thumbnail\": null,\n                        \"product_selling_price\": 80,\n                        \"unit\": \"pcs\",\n                        \"bucket_name\": \"qubecart\",\n                        \"itemImageFolder\": \"Item_image\"\n                    }\n                ]\n            }\n        ],\n        \"price_details\": [\n            {\n                \"price_breakup_details_id\": 980,\n                \"order_id\": 264,\n                \"breakup_item\": 1,\n                \"breakup_amount\": 258,\n                \"breakup_item_name\": \"Net Amount\"\n            },\n            {\n                \"price_breakup_details_id\": 981,\n                \"order_id\": 264,\n                \"breakup_item\": 2,\n                \"breakup_amount\": 2,\n                \"breakup_item_name\": \"GST\"\n            },\n            {\n                \"price_breakup_details_id\": 982,\n                \"order_id\": 264,\n                \"breakup_item\": 4,\n                \"breakup_amount\": 20,\n                \"breakup_item_name\": \"Discount\"\n            },\n            {\n                \"price_breakup_details_id\": 983,\n                \"order_id\": 264,\n                \"breakup_item\": 5,\n                \"breakup_amount\": 78086,\n                \"breakup_item_name\": \"Delivery Fee + GST\"\n            },\n            {\n                \"price_breakup_details_id\": 984,\n                \"order_id\": 264,\n                \"breakup_item\": 6,\n                \"breakup_amount\": 78326,\n                \"breakup_item_name\": \"Total\"\n            }\n        ],\n        \"student_details\": [],\n        \"delivery_address\": {\n            \"customer_address_id\": 94,\n            \"name\": \"Pradipta Das\",\n            \"contact_no\": \"9830623021\",\n            \"optional_contact_no\": null,\n            \"addressline1\": \"105\",\n            \"addressline2\": \"Service Road, Kolkata\",\n            \"city\": 39,\n            \"state\": 1,\n            \"pin\": 700136,\n            \"customer_id\": 31,\n            \"address_type\": 2,\n            \"default_flag\": null,\n            \"address_status\": 1,\n            \"landmark\": \"Theque Restaurant\",\n            \"latitude\": 22.6235224,\n            \"longitude\": 88.4422677,\n            \"city_name\": \"North 24 Parganas\",\n            \"states_name\": \"West Bengal\",\n            \"address_type_name\": \"Office\",\n            \"address_status_name\": \"Active\"\n        }\n    }\n}"
+				}
+			]
 		}
 	],
 	"variable": [
