@@ -1,4 +1,5 @@
-# Structured Documents to Apply a swaggerfile to AWS API Gateway :india: :smiley:
+# Structured Documents to Apply a swaggerfile to AWS API Gateway 
+:india: :smiley:
 ![Image of SwaggerFile](https://alexdunndev.files.wordpress.com/2018/05/swagger-logo-horizontal.png?w=600)  ![Image of AWS APIGateway](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggYroBxUMfU6Q2ggcThqSQEkV6dCg_bX7TxjJFoJI8VT9lEzNG7ZT0A8PNxmB614218M&usqp=CAU)
 
 ### <p5>The Following procedure is for develop or build a open API specified swagger file which can be easily integrated with AWS API Gateway to deploy a set of APIs according to our need. The Final swagger file which is specifically converted by a swagger convertion tool developed by us. The final converted API Gateway suitable swaggerfile is already **Descriptive**, **CORS Configured** & **Header Specific** by the tool. We just had to add the **Stage Variable URL** to add an extra layer of security in our deployment.</p5>
@@ -53,4 +54,4 @@
 > Document Consolidated by  `KINNAR CHOWDHURY, Software Developer`  under  `MSQUBE TECHNOLOGY SOLUTIONS PVT. LTD.`  company as on  `25th May,2021`.
 ![QUBECART](https://www.msqube.com/wp-content/uploads/2020/11/QC_Logo_500pxl-1.png) `Product Licensed & Registered Under` ![MSQube Technology Solutions Pvt. Ltd.](https://media-exp1.licdn.com/dms/image/C560BAQGnh6vxRglwOg/company-logo_200_200/0/1569092363489?e=2159024400&v=beta&t=gBG2VbNpyn2aDwybZRlpYxhbrFhcRWUEAL24G6-psZo)
 
-> `Thank You. Enjoy It! :smiley:`
+> `Thank You. Enjoy It!`:smiley: :+1:
