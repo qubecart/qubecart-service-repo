@@ -2906,18 +2906,22 @@
 		{
 			"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_type\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
-					"protocol": "http",
+					"raw": "{{admin}}/qubecart/admin/personnel/getall/",
 					"host": [
-						"3",
-						"7",
-						"66",
-						"177"
+						"{{admin}}"
 					],
-					"port": "8001",
 					"path": [
 						"qubecart",
 						"admin",
@@ -2925,24 +2929,29 @@
 						"getall",
 						""
 					]
-				}
+				},
+				"description": "get the sales personnels"
 			},
 			"response": [
 				{
 					"name": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
 					"originalRequest": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_type\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://15.206.132.5:8001/qubecart/admin/personnel/getall/",
-							"protocol": "http",
+							"raw": "{{admin}}/qubecart/admin/personnel/getall/",
 							"host": [
-								"3",
-								"7",
-								"66",
-								"177"
+								"{{admin}}"
 							],
-							"port": "8001",
 							"path": [
 								"qubecart",
 								"admin",
@@ -2958,7 +2967,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Mon, 07 Sep 2020 09:18:05 GMT"
+							"value": "Fri, 04 Jun 2021 07:29:41 GMT"
 						},
 						{
 							"key": "Server",
@@ -2974,7 +2983,7 @@
 						},
 						{
 							"key": "Allow",
-							"value": "OPTIONS, GET"
+							"value": "OPTIONS, POST"
 						},
 						{
 							"key": "X-Frame-Options",
@@ -2982,7 +2991,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "799"
+							"value": "1016"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -2994,7 +3003,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": \"001\",\n    \"exceptiopn\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_user_id\": 7,\n            \"username\": \"JonDoe\",\n            \"user_status\": 1,\n            \"user_type\": 2,\n            \"firstname\": \"Jon\",\n            \"lastname\": \"Doe\",\n            \"contact_phone\": \"9999999999\",\n            \"email_id\": \"jon.doe@doee.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Delivery Person\",\n            \"user_status_name\": \"Active\"\n        },\n        {\n            \"admn_user_id\": 8,\n            \"username\": \"JonWick\",\n            \"user_status\": 2,\n            \"user_type\": 2,\n            \"firstname\": \"Jon\",\n            \"lastname\": \"Wick\",\n            \"contact_phone\": \"9999999999\",\n            \"email_id\": \"jon.wick@continental.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Delivery Person\",\n            \"user_status_name\": \"requested\"\n        },\n        {\n            \"admn_user_id\": 9,\n            \"username\": \"JonWick\",\n            \"user_status\": 2,\n            \"user_type\": 2,\n            \"firstname\": \"Jon\",\n            \"lastname\": \"Wick\",\n            \"contact_phone\": \"9999999999\",\n            \"email_id\": \"jon.wick@continental.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Delivery Person\",\n            \"user_status_name\": \"requested\"\n        }\n    ]\n}"
+					"body": "{\n    \"code\": \"001\",\n    \"exceptiopn\": false,\n    \"Errors\": null,\n    \"data\": [\n        {\n            \"admn_user_id\": 12,\n            \"username\": \"abhial\",\n            \"user_status\": 1,\n            \"user_type\": 3,\n            \"firstname\": \"abhi\",\n            \"lastname\": \"al\",\n            \"contact_phone\": \"9123810564\",\n            \"email_id\": \"al@gmail.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Sales Person\",\n            \"user_status_name\": \"Active\",\n            \"region_name\": \"Dum Dum Station\",\n            \"region_id\": 10,\n            \"personnel_percentage\": 9\n        },\n        {\n            \"admn_user_id\": 13,\n            \"username\": \"souravmondal\",\n            \"user_status\": 1,\n            \"user_type\": 3,\n            \"firstname\": \"sourav\",\n            \"lastname\": \"mondal\",\n            \"contact_phone\": \"8335968075\",\n            \"email_id\": \"sourav.msqube.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Sales Person\",\n            \"user_status_name\": \"Active\",\n            \"region_name\": \"CHINAR PARK\",\n            \"region_id\": 2,\n            \"personnel_percentage\": 10\n        },\n        {\n            \"admn_user_id\": 14,\n            \"username\": \"SiddharthSharma\",\n            \"user_status\": 1,\n            \"user_type\": 3,\n            \"firstname\": \"Siddharth\",\n            \"lastname\": \"Sharma\",\n            \"contact_phone\": \"4756756776\",\n            \"email_id\": \"siddharth.sharma@msqube.com\",\n            \"gender\": \"M\",\n            \"user_type_name\": \"Sales Person\",\n            \"user_status_name\": \"Active\",\n            \"region_name\": \"BELEGHATA\",\n            \"region_id\": 1,\n            \"personnel_percentage\": 5\n        }\n    ]\n}"
 				}
 			]
 		},
